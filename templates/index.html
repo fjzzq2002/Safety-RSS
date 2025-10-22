@@ -21,6 +21,10 @@
             font-size: 0.875rem;
             font-weight: 600;
             color: #4E61D3;
+            transition: color 0.2s ease;
+        }
+        .slider-percentage.pending {
+            color: #93c5fd;
         }
     </style>
 </head>
@@ -35,52 +39,6 @@
         <div class="flex flex-col lg:flex-row gap-6">
             <!-- Filters Sidebar -->
             <aside class="w-full lg:w-96 flex-shrink-0 space-y-6">
-                <div class="bg-white rounded-lg shadow-md p-6 space-y-6">
-                    <div>
-                        <h2 class="text-xl font-semibold mb-3 text-gray-800">Date Filter</h2>
-                        <div class="space-y-4">
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1">Quick Select</label>
-                                <select id="dateQuick" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500">
-                                    <option value="7">Last 7 days</option>
-                                    <option value="30">Last 30 days</option>
-                                    <option value="90">Last 90 days</option>
-                                    <option value="365">Last year</option>
-                                    <option value="all">All time</option>
-                                    <option value="custom">Custom range...</option>
-                                </select>
-                            </div>
-                            <div id="customDateRange" class="hidden space-y-4">
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">Start Date</label>
-                                    <input type="date" id="dateStart" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500">
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-1">End Date</label>
-                                    <input type="date" id="dateEnd" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500">
-                                </div>
-                            </div>
-                            <div class="border-t border-gray-200 pt-4 space-y-4">
-                                <div class="text-sm text-gray-500 font-semibold uppercase tracking-wide">Primary Focus</div>
-                                <div id="primaryFocusToggles" class="flex flex-wrap gap-2">
-                                    <!-- Primary focus toggles populated by JavaScript -->
-                                </div>
-                                <div class="text-sm text-gray-500 font-semibold uppercase tracking-wide mt-4">Failure Modes</div>
-                                <div id="failureModeToggles" class="flex flex-wrap gap-2">
-                                    <!-- Failure mode toggles populated by JavaScript -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h2 class="text-xl font-semibold mb-3 text-gray-800">Feed Selection</h2>
-                        <div id="feedToggles" class="flex flex-wrap gap-2">
-                            <!-- Feed toggles populated by JavaScript -->
-                        </div>
-                    </div>
-                </div>
-
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <div class="flex justify-between items-center mb-4">
                         <h2 class="text-xl font-semibold text-gray-800">Score Weights</h2>
@@ -125,10 +83,49 @@
                     </div>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                    <button id="showResults" class="w-full px-6 py-3 bg-green-600 text-white text-lg font-semibold rounded-md hover:bg-green-700 transition shadow-md">
-                        Show Results
-                    </button>
+                <div class="bg-white rounded-lg shadow-md p-6 space-y-6">
+                    <div>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-800">Date Filter</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <select id="dateQuick" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500">
+                                    <option value="7">Last 7 days</option>
+                                    <option value="30">Last 30 days</option>
+                                    <option value="90">Last 90 days</option>
+                                    <option value="365">Last year</option>
+                                    <option value="all">All time</option>
+                                    <option value="custom">Custom range...</option>
+                                </select>
+                            </div>
+                            <div id="customDateRange" class="hidden space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Start Date</label>
+                                    <input type="date" id="dateStart" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">End Date</label>
+                                    <input type="date" id="dateEnd" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500">
+                                </div>
+                            </div>
+                            <div class="border-t border-gray-200 pt-4 space-y-4">
+                                <div class="text-sm text-gray-500 font-semibold uppercase tracking-wide">Primary Focus</div>
+                                <div id="primaryFocusToggles" class="flex flex-wrap gap-2">
+                                    <!-- Primary focus toggles populated by JavaScript -->
+                                </div>
+                                <div class="text-sm text-gray-500 font-semibold uppercase tracking-wide mt-4">Failure Modes</div>
+                                <div id="failureModeToggles" class="flex flex-wrap gap-2">
+                                    <!-- Failure mode toggles populated by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-xl font-semibold mb-3 text-gray-800">Feed Selection</h2>
+                        <div id="feedToggles" class="flex flex-wrap gap-2">
+                            <!-- Feed toggles populated by JavaScript -->
+                        </div>
+                    </div>
                 </div>
             </aside>
 
@@ -180,6 +177,7 @@
         let selectedFailureModes = new Set();
         let selectedPrimaryFocuses = new Set();
         let selectedFeeds = new Set();
+        let sliderUpdateTimeout = null;
 
         function getCurrentFilters() {
             const dateQuick = document.getElementById('dateQuick').value;
@@ -230,6 +228,27 @@
                 const pct = (normalized[key] * 100).toFixed(1);
                 document.getElementById(`weight-${key}-pct`).textContent = `${pct}%`;
             });
+        }
+
+        function setSliderPendingState(isPending) {
+            const weightKeys = ['interpretability', 'understanding', 'safety', 'technicality', 'surprisal'];
+            weightKeys.forEach(key => {
+                const el = document.getElementById(`weight-${key}-pct`);
+                if (!el) return;
+                el.classList.toggle('pending', isPending);
+            });
+        }
+
+        function handleSliderInput() {
+            updateWeightDisplays();
+            if (sliderUpdateTimeout) {
+                clearTimeout(sliderUpdateTimeout);
+            }
+            setSliderPendingState(true);
+            sliderUpdateTimeout = setTimeout(() => {
+                updateView();
+                sliderUpdateTimeout = null;
+            }, 2000);
         }
 
         function filterByDate(articles, dateFilter) {
@@ -326,6 +345,7 @@
                 selectedFeeds.add(feed);
             }
             renderFeedToggles();
+            updateView();
         }
 
         function renderArticles(articles) {
@@ -421,6 +441,7 @@
                 selectedFailureModes.add(mode);
             }
             renderFailureModeToggles();
+            updateView();
         }
 
         function renderPrimaryFocusToggles() {
@@ -454,6 +475,7 @@
                 selectedPrimaryFocuses.add(focus);
             }
             renderPrimaryFocusToggles();
+            updateView();
         }
 
         function encodeSelectedCategories() {
@@ -581,6 +603,12 @@
                 document.getElementById(`weight-${key}`).value = 0;
             });
             updateWeightDisplays();
+            if (sliderUpdateTimeout) {
+                clearTimeout(sliderUpdateTimeout);
+                sliderUpdateTimeout = null;
+            }
+            setSliderPendingState(false);
+            updateView();
         }
 
         function shareLink() {
@@ -591,6 +619,11 @@
         }
 
         async function updateView() {
+            if (sliderUpdateTimeout) {
+                clearTimeout(sliderUpdateTimeout);
+                sliderUpdateTimeout = null;
+            }
+            setSliderPendingState(false);
             const filters = getCurrentFilters();
 
             let filtered = allArticles;
@@ -621,21 +654,22 @@
             document.getElementById('dateQuick').addEventListener('change', (e) => {
                 const isCustom = e.target.value === 'custom';
                 document.getElementById('customDateRange').classList.toggle('hidden', !isCustom);
+                updateView();
             });
 
-            document.getElementById('dateStart').addEventListener('change', () => {});
-            document.getElementById('dateEnd').addEventListener('change', () => {});
+            document.getElementById('dateStart').addEventListener('change', () => {
+                updateView();
+            });
+            document.getElementById('dateEnd').addEventListener('change', () => {
+                updateView();
+            });
 
             ['interpretability', 'understanding', 'safety', 'technicality', 'surprisal'].forEach(key => {
-                document.getElementById(`weight-${key}`).addEventListener('input', updateWeightDisplays);
+                document.getElementById(`weight-${key}`).addEventListener('input', handleSliderInput);
             });
 
             document.getElementById('resetWeights').addEventListener('click', resetWeights);
             document.getElementById('shareLink').addEventListener('click', shareLink);
-
-            document.getElementById('showResults').addEventListener('click', () => {
-                updateView();
-            });
 
             await updateView();
         }
