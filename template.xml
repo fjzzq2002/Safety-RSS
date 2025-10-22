@@ -11,6 +11,7 @@
 <content:encoded><![CDATA[
 {% if entry.summary %}<div>{{ entry.summary }}</div>{% endif %}
 {{ entry.article }}
+{% if entry.extracted_authors %}<div><strong>Authors:</strong> {{ entry.extracted_authors | join(', ') }}</div>{% endif %}
 ]]></content:encoded>
 {% if entry.analysis_json %}<acme type="application/json"><![CDATA[
 {{ entry.analysis_json }}

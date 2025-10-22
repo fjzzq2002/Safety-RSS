@@ -86,7 +86,7 @@ class ArticleAnalysis(BaseModel):
     def keywords_list(self) -> Tuple[str, ...]:
         return tuple(kw.strip() for kw in self.keywords.split(",") if kw.strip())
 
-    def to_summary_html(self) -> str:
+    def to_summary_html(self, authors: Optional[List[str]] = None) -> str:
         blocks = [
             f"<strong>Summary:</strong> {self.summary}",
             f"<strong>Summary (CN):</strong> {self.summary_cn}",
@@ -103,6 +103,8 @@ class ArticleAnalysis(BaseModel):
             f"Failure mode - {category_dump['failure_mode_addressed']}; "
             f"Primary focus - {category_dump['primary_focus']}"
         )
+        if authors:
+            blocks.append(f"<strong>Authors:</strong> {', '.join(authors)}")
         return "<br>".join(blocks)
 
     def to_json_str(self) -> str:
@@ -149,7 +151,7 @@ if not BASE:
     BASE = "docs/"
 
 TOTAL_SUMMARIZATION_COST = 0.0
-MAX_SUMMARY_ATTEMPTS = 3
+MAX_SUMMARY_ATTEMPTS = 7
 SUMMARY_RETRY_DELAY_SECONDS = 1.0
 
 def fetch_feed(url, log_file):
@@ -273,6 +275,30 @@ def truncate_entries(entries, max_entries):
         entries = entries[:max_entries]
     return entries
 
+def extract_authors(entry: Any) -> List[str]:
+    authors: List[str] = []
+    if hasattr(entry, "authors"):
+        try:
+            for author in entry.authors:
+                if isinstance(author, dict):
+                    name = author.get("name")
+                else:
+                    name = getattr(author, "name", None) or str(author)
+                if name:
+                    name = name.strip()
+                    if name:
+                        authors.append(name)
+        except Exception:
+            pass
+    if not authors and hasattr(entry, "author"):
+        try:
+            name = entry.author.strip()
+            if name:
+                authors.append(name)
+        except Exception:
+            pass
+    return authors
+
 def usage_to_dict(usage_obj: Any) -> Dict[str, Any]:
     if usage_obj is None:
         return {}
@@ -382,15 +408,18 @@ async def async_generate_analysis(article_text: str, model_name: Optional[str] =
     raise RuntimeError("Failed to generate analysis after retries.")
 
 
-def store_analysis_snapshot(feed_name: str, entry: Any, analysis: ArticleAnalysis, usage: Dict[str, Any], model_name: str) -> None:
+def store_analysis_snapshot(feed_name: str, entry: Any, analysis: ArticleAnalysis, usage: Dict[str, Any], model_name: str, authors: List[str]) -> None:
     analysis_dir = Path(BASE) / "analysis"
     analysis_dir.mkdir(parents=True, exist_ok=True)
+    analysis_payload = analysis.model_dump()
+    if authors:
+        analysis_payload["authors"] = authors
     record = {
         "timestamp": datetime.datetime.now().isoformat(),
         "feed": feed_name,
         "title": getattr(entry, "title", ""),
         "link": getattr(entry, "link", ""),
-        "analysis": analysis.model_dump(),
+        "analysis": analysis_payload,
         "usage": usage,
         "model": model_name,
     }
@@ -406,6 +435,7 @@ class SummarizationJob(NamedTuple):
     article_input: str
     log_file: str
     model_name: str
+    authors: Tuple[str, ...]
 
 
 class SummarizationResult(NamedTuple):
@@ -537,6 +567,9 @@ def output(sec):
                 try: entry.article = entry.description
                 except: entry.article = entry.title
 
+            authors_list = extract_authors(entry)
+            entry.extracted_authors = authors_list
+
             cleaned_article = clean_html(entry.article)
 
             if not filter_entry(entry, filter_apply, filter_type, filter_rule):
@@ -571,12 +604,15 @@ def output(sec):
                         article_input=analysis_input,
                         log_file=log_file,
                         model_name=model_name,
+                        authors=tuple(authors_list),
                     )
                 )
 
             append_entries.append(entry)
             with open(log_file, 'a') as f:
                 f.write(f"Append: [{entry.title}]({entry.link})\n")
+                if authors_list:
+                    f.write("Authors: " + ", ".join(authors_list) + "\n")
 
     if SUMMARIZATION_ENABLED and summarization_jobs:
         print(f"Summarizing {len(summarization_jobs)} entries")
@@ -596,10 +632,14 @@ def output(sec):
 
             analysis = result.analysis
             usage_info = result.usage
-            entry.summary = analysis.to_summary_html()
-            entry.analysis = analysis.model_dump()
-            entry.analysis_json = analysis.to_json_str()
-            store_analysis_snapshot(job.feed_name, entry, analysis, usage_info, job.model_name)
+            authors = list(job.authors)
+            entry.summary = analysis.to_summary_html(authors if authors else None)
+            analysis_payload = analysis.model_dump()
+            if authors:
+                analysis_payload["authors"] = authors
+            entry.analysis = analysis_payload
+            entry.analysis_json = json.dumps(analysis_payload, ensure_ascii=False)
+            store_analysis_snapshot(job.feed_name, entry, analysis, usage_info, job.model_name, authors)
 
             cost_value = extract_cost(usage_info)
             usage_json = json.dumps(usage_info, ensure_ascii=False) if usage_info else "{}"

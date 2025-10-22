@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSS Aggregator</title>
+    <title>AI Safety Research Aggregator</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
     <style>
@@ -28,75 +28,73 @@
         }
     </style>
 </head>
-<body class="bg-gray-50">
-    <div class="container mx-auto px-4 py-8 max-w-7xl">
-        <!-- Header -->
-        <div class="mb-8">
-            <h1 class="text-4xl font-bold text-gray-800 mb-2">RSS Aggregator</h1>
-            <p class="text-gray-600">Filter, sort, and explore AI safety research papers</p>
-        </div>
-
-        <div class="flex flex-col lg:flex-row gap-6">
-            <!-- Filters Sidebar -->
-            <aside class="w-full lg:w-96 flex-shrink-0 space-y-6">
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <div class="flex justify-between items-center mb-4">
-                        <h2 class="text-xl font-semibold text-gray-800">Score Weights</h2>
-                        <button id="resetWeights" class="text-sm text-blue-600 hover:text-blue-800 font-medium">Reset All</button>
+<body class="m-0 h-screen overflow-hidden">
+    <!-- Overlay for sidebar -->
+    <div id="sidebarOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-5 lg:hidden hidden"></div>
+    <div class="h-full w-full flex flex-row">
+        <!-- Filters Sidebar -->
+        <aside id="sidebar" class="w-96 flex-shrink-0 border-r border-gray-300 border-dashed px-6 py-8 space-y-8 overflow-y-auto transition-all duration-300 lg:relative fixed -translate-x-full z-10 bg-gray-50 h-full">
+            <div class="rounded-lg p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h1 class="text-2xl font-bold text-gray-800">AI Safety Research Aggregator</h1>
+                    <button id="sidebarToggle" class="text-gray-600 hover:text-gray-800">
+                        <i class="ti ti-x text-2xl"></i>
+                    </button>
+                </div>
+                <p class="text-gray-500 mb-0 text-sm">Filter, sort, and explore AI safety research papers from RSS feeds</p>
+                <div class="flex justify-between items-center mb-4 mt-8">
+                    <h2 class="text-xl font-semibold text-gray-800">Score Weights</h2>
+                    <button id="resetWeights" class="text-sm text-blue-600 hover:text-blue-800 font-medium">Reset All</button>
+                </div>
+                <div class="space-y-4">
+                    <div class="slider-container">
+                        <div class="slider-header">
+                            <label class="text-sm font-medium text-gray-700">Interpretability</label>
+                            <span class="slider-percentage" id="weight-interpretability-pct">16.7%</span>
+                        </div>
+                        <input type="range" id="weight-interpretability" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
                     </div>
-                    <div class="space-y-4">
-                        <div class="slider-container">
-                            <div class="slider-header">
-                                <label class="text-sm font-medium text-gray-700">Interpretability</label>
-                                <span class="slider-percentage" id="weight-interpretability-pct">16.7%</span>
-                            </div>
-                            <input type="range" id="weight-interpretability" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                    <div class="slider-container">
+                        <div class="slider-header">
+                            <label class="text-sm font-medium text-gray-700">Understanding</label>
+                            <span class="slider-percentage" id="weight-understanding-pct">16.7%</span>
                         </div>
-                        <div class="slider-container">
-                            <div class="slider-header">
-                                <label class="text-sm font-medium text-gray-700">Understanding</label>
-                                <span class="slider-percentage" id="weight-understanding-pct">16.7%</span>
-                            </div>
-                            <input type="range" id="weight-understanding" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                        <input type="range" id="weight-understanding" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-header">
+                            <label class="text-sm font-medium text-gray-700">Safety</label>
+                            <span class="slider-percentage" id="weight-safety-pct">16.7%</span>
                         </div>
-                        <div class="slider-container">
-                            <div class="slider-header">
-                                <label class="text-sm font-medium text-gray-700">Safety</label>
-                                <span class="slider-percentage" id="weight-safety-pct">16.7%</span>
-                            </div>
-                            <input type="range" id="weight-safety" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                        <input type="range" id="weight-safety" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-header">
+                            <label class="text-sm font-medium text-gray-700">Technicality</label>
+                            <span class="slider-percentage" id="weight-technicality-pct">16.7%</span>
                         </div>
-                        <div class="slider-container">
-                            <div class="slider-header">
-                                <label class="text-sm font-medium text-gray-700">Technicality</label>
-                                <span class="slider-percentage" id="weight-technicality-pct">16.7%</span>
-                            </div>
-                            <input type="range" id="weight-technicality" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                        <input type="range" id="weight-technicality" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-header">
+                            <label class="text-sm font-medium text-gray-700">Surprisal</label>
+                            <span class="slider-percentage" id="weight-surprisal-pct">16.7%</span>
                         </div>
-                        <div class="slider-container">
-                            <div class="slider-header">
-                                <label class="text-sm font-medium text-gray-700">Surprisal</label>
-                                <span class="slider-percentage" id="weight-surprisal-pct">16.7%</span>
-                            </div>
-                            <input type="range" id="weight-surprisal" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
-                        </div>
+                        <input type="range" id="weight-surprisal" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
                     </div>
                 </div>
-
-                <div class="bg-white rounded-lg shadow-md p-6 space-y-6">
-                    <div>
-                        <h2 class="text-xl font-semibold mb-3 text-gray-800">Date Filter</h2>
-                        <div class="space-y-4">
-                            <div>
-                                <select id="dateQuick" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500">
-                                    <option value="7">Last 7 days</option>
-                                    <option value="30">Last 30 days</option>
-                                    <option value="90">Last 90 days</option>
-                                    <option value="365">Last year</option>
-                                    <option value="all">All time</option>
-                                    <option value="custom">Custom range...</option>
-                                </select>
-                            </div>
+                <div class="mt-8">
+                    <h2 class="text-xl font-semibold mb-3 text-gray-800">Filter</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <select id="dateQuick" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500">
+                                <option value="7">Last 7 days</option>
+                                <option value="30">Last 30 days</option>
+                                <option value="90">Last 90 days</option>
+                                <option value="365">Last year</option>
+                                <option value="all">All time</option>
+                                <option value="custom">Custom range...</option>
+                            </select>
                             <div id="customDateRange" class="hidden space-y-4">
                                 <div>
                                     <label class="block text-sm font-medium text-gray-700 mb-1">Start Date</label>
@@ -120,30 +118,61 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div class="mt-8">
                         <h2 class="text-xl font-semibold mb-3 text-gray-800">Feed Selection</h2>
                         <div id="feedToggles" class="flex flex-wrap gap-2">
                             <!-- Feed toggles populated by JavaScript -->
                         </div>
                     </div>
-                </div>
-            </aside>
 
-            <!-- Main Content -->
-            <section class="flex-1 space-y-6">
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <div class="flex justify-between items-center mb-4">
-                        <h2 class="text-2xl font-semibold text-gray-800">Articles <span id="articleCount" class="text-gray-500 text-lg"></span></h2>
-                        <button id="shareLink" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-                            Share Current View
-                        </button>
-                    </div>
-                    <div id="articleList" class="space-y-4">
-                        <!-- Articles populated by JavaScript -->
+                    <div class="mt-8">
+                        <h2 class="text-xl font-semibold mb-3 text-gray-800">Customization</h2>
+                        <div class="space-y-2">
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" id="toggle-summary" class="w-4 h-4 rounded accent-blue-600" checked>
+                                <span class="text-sm text-gray-700">Show English Summary</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" id="toggle-summary-cn" class="w-4 h-4 rounded accent-blue-600" checked>
+                                <span class="text-sm text-gray-700">Show Chinese Summary (摘要)</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" id="toggle-keywords" class="w-4 h-4 rounded accent-blue-600" checked>
+                                <span class="text-sm text-gray-700">Show Keywords</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" id="toggle-scores" class="w-4 h-4 rounded accent-blue-600" checked>
+                                <span class="text-sm text-gray-700">Show Scores</span>
+                            </label>
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="checkbox" id="toggle-authors" class="w-4 h-4 rounded accent-blue-600" checked>
+                                <span class="text-sm text-gray-700">Show Authors</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <section class="flex-1 min-w-0 p-6 lg:p-10 overflow-y-auto">
+            <div class="bg-white rounded-lg p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center gap-3">
+                        <button id="openSidebar" class="text-gray-600 hover:text-gray-800">
+                            <i class="ti ti-menu-2 text-2xl"></i>
+                        </button>
+                        <h2 class="text-2xl font-semibold text-gray-800">Recent Research <span id="articleCount" class="text-gray-500 text-lg"></span></h2>
+                    </div>
+                    <button id="shareLink" class="text-gray-600 hover:text-gray-800 self-end">
+                        <i class="ti ti-share-2 text-2xl"></i>
+                    </button>
+                </div>
+                <div id="articleList" class="space-y-4">
+                    <!-- Articles populated by JavaScript -->
+                </div>
+            </div>
+        </section>
     </div>
 <script>
 
@@ -178,6 +207,38 @@
         let selectedPrimaryFocuses = new Set();
         let selectedFeeds = new Set();
         let sliderUpdateTimeout = null;
+        let sidebarOpen = false;
+        let showSummary = true;
+        let showSummaryCn = true;
+        let showKeywords = true;
+        let showScores = true;
+        let showAuthors = true;
+
+        // Sidebar toggle functions
+        function toggleSidebar(open) {
+            sidebarOpen = open;
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+            const isLargeScreen = window.innerWidth >= 1024;
+
+            if (open) {
+                sidebar.classList.remove('-translate-x-full', 'lg:hidden');
+                sidebar.classList.add('translate-x-0');
+                // Only show overlay on small screens
+                if (!isLargeScreen) {
+                    overlay.classList.remove('hidden');
+                }
+            } else {
+                sidebar.classList.remove('translate-x-0');
+                sidebar.classList.add('-translate-x-full');
+                // On large screens, also add lg:hidden so it doesn't take up space
+                if (isLargeScreen) {
+                    sidebar.classList.add('lg:hidden');
+                }
+                overlay.classList.add('hidden');
+            }
+            updateURL();
+        }
 
         function getCurrentFilters() {
             const dateQuick = document.getElementById('dateQuick').value;
@@ -325,7 +386,35 @@
             const container = document.getElementById('feedToggles');
             container.innerHTML = '';
 
-            allFeeds.forEach(feed => {
+            // Separate arxiv feeds from others
+            const arxivFeeds = allFeeds.filter(feed => feed.toLowerCase().includes('arxiv'));
+            const otherFeeds = allFeeds.filter(feed => !feed.toLowerCase().includes('arxiv'));
+
+            // Render arxiv feeds first if they exist
+            if (arxivFeeds.length > 0) {
+                const arxivContainer = document.createElement('div');
+                arxivContainer.className = 'flex flex-wrap gap-2 mb-2';
+
+                arxivFeeds.forEach(feed => {
+                    const isSelected = selectedFeeds.size === 0 || selectedFeeds.has(feed);
+                    const toggle = document.createElement('button');
+                    toggle.className = 'px-4 py-2 rounded-md font-medium transition border';
+                    toggle.style.cssText = isSelected
+                        ? 'background-color: #eef2ff; color: #1f2937; border-color: #4E61D3;'
+                        : 'background-color: #f9fafb; color: #1f2937; border-color: #d1d5db;';
+                    toggle.textContent = feed;
+                    toggle.addEventListener('click', () => toggleFeed(feed));
+                    arxivContainer.appendChild(toggle);
+                });
+
+                container.appendChild(arxivContainer);
+            }
+
+            // Render other feeds
+            const otherContainer = document.createElement('div');
+            otherContainer.className = 'flex flex-wrap gap-2';
+
+            otherFeeds.forEach(feed => {
                 const isSelected = selectedFeeds.size === 0 || selectedFeeds.has(feed);
                 const toggle = document.createElement('button');
                 toggle.className = 'px-4 py-2 rounded-md font-medium transition border';
@@ -334,8 +423,10 @@
                     : 'background-color: #f9fafb; color: #1f2937; border-color: #d1d5db;';
                 toggle.textContent = feed;
                 toggle.addEventListener('click', () => toggleFeed(feed));
-                container.appendChild(toggle);
+                otherContainer.appendChild(toggle);
             });
+
+            container.appendChild(otherContainer);
         }
 
         function toggleFeed(feed) {
@@ -362,6 +453,7 @@
             container.innerHTML = articles.map(article => {
                 const date = article.published ? new Date(article.published).toLocaleDateString() : 'Unknown date';
                 const keywords = article.keywords.join(', ');
+                const authors = article.authors ? article.authors.join(', ') : '';
                 const focusColor = PRIMARY_FOCUS_COLORS[article.primary_focus] || '#4E61D3';
                 const focusIconClass = PRIMARY_FOCUS_ICONS[article.primary_focus];
                 const failureIconClass = FAILURE_MODE_ICONS[article.failure_mode];
@@ -371,42 +463,45 @@
 
                 return `
                     <div class="border rounded-lg p-6 hover:shadow-lg transition" style="border-color: ${focusColor};">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-semibold text-blue-600 hover:text-blue-800">
+                        <div class="mb-3">
+                            <h3 class="text-xl font-semibold text-blue-600 hover:text-blue-800 ${showAuthors && authors ? 'mb-2' : 'mb-3'}">
                                 <a href="${article.link}" target="_blank" class="hover:underline">${article.title}</a>
                             </h3>
-                            <div class="flex flex-col items-end gap-1 ml-4">
-                                <span class="text-sm text-gray-500 whitespace-nowrap">${date}</span>
-                                ${iconGroupMarkup}
+                            ${showAuthors && authors ? `<div class="mb-3"><p class="text-sm text-gray-600 italic">${authors}</p></div>` : ''}
+
+                            <div class="flex justify-between items-end gap-4">
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">
+                                        ${article.feed_name}
+                                    </span>
+                                    <span class="inline-block bg-purple-100 text-purple-800 text-xs font-semibold px-2 py-1 rounded">
+                                        ${article.failure_mode}
+                                    </span>
+                                    <span class="inline-block text-xs font-semibold px-2 py-1 rounded" style="background-color: ${(PRIMARY_FOCUS_COLORS[article.primary_focus] || '#4E61D3')}22; color: ${PRIMARY_FOCUS_COLORS[article.primary_focus] || '#4E61D3'};">
+                                        ${article.primary_focus}
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-sm text-gray-500 whitespace-nowrap">${date}</span>
+                                    ${iconGroupMarkup}
+                                </div>
                             </div>
                         </div>
 
-                        <div class="mb-3">
-                            <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-2">
-                                ${article.feed_name}
-                            </span>
-                            <span class="inline-block bg-purple-100 text-purple-800 text-xs font-semibold px-2 py-1 rounded mr-2">
-                                ${article.failure_mode}
-                            </span>
-                            <span class="inline-block text-xs font-semibold px-2 py-1 rounded" style="background-color: ${(PRIMARY_FOCUS_COLORS[article.primary_focus] || '#4E61D3')}22; color: ${PRIMARY_FOCUS_COLORS[article.primary_focus] || '#4E61D3'};">
-                                ${article.primary_focus}
-                            </span>
-                        </div>
+                        ${(showSummary || showSummaryCn) ? `<div class="mb-3">
+                            ${showSummary ? `<p class="text-gray-700 mb-2"><strong>Summary:</strong> ${article.summary_en || 'No summary available'}</p>` : ''}
+                            ${showSummaryCn ? `<p class="text-gray-700"><strong>摘要：</strong>${article.summary_cn || '无摘要'}</p>` : ''}
+                        </div>` : ''}
 
-                        <div class="mb-3">
-                            <p class="text-gray-700 mb-2"><strong>Summary:</strong> ${article.summary_en || 'No summary available'}</p>
-                            <p class="text-gray-700"><strong>摘要：</strong> ${article.summary_cn || '无摘要'}</p>
-                        </div>
+                        ${showKeywords && keywords ? `<div class="mb-3"><p class="text-sm text-gray-600"><strong>Keywords:</strong> ${keywords}</p></div>` : ''}
 
-                        ${keywords ? `<div class="mb-3"><p class="text-sm text-gray-600"><strong>Keywords:</strong> ${keywords}</p></div>` : ''}
-
-                        <div class="flex gap-4 text-sm">
+                        ${showScores ? `<div class="flex gap-4 text-sm">
                             <span class="text-gray-600"><strong>Interpretability:</strong> ${article.interpretability}</span>
                             <span class="text-gray-600"><strong>Understanding:</strong> ${article.understanding}</span>
                             <span class="text-gray-600"><strong>Safety:</strong> ${article.safety}</span>
                             <span class="text-gray-600"><strong>Technicality:</strong> ${article.technicality}</span>
                             <span class="text-gray-600"><strong>Surprisal:</strong> ${article.surprisal}</span>
-                        </div>
+                        </div>` : ''}
                     </div>
                 `;
             }).join('');
@@ -552,6 +647,20 @@
                 params.set('feeds', feedArray.join(','));
             }
 
+            // Only persist sidebar state if it differs from default
+            const isLargeScreen = window.innerWidth >= 1024;
+            const defaultState = isLargeScreen;
+            if (sidebarOpen !== defaultState) {
+                params.set('sidebar', sidebarOpen ? '1' : '0');
+            }
+
+            // Persist customization settings only if different from defaults
+            if (!showSummary) params.set('hideSummary', '1');
+            if (!showSummaryCn) params.set('hideSummaryCn', '1');
+            if (!showKeywords) params.set('hideKeywords', '1');
+            if (!showScores) params.set('hideScores', '1');
+            if (!showAuthors) params.set('hideAuthors', '1');
+
             const url = params.toString() ? `?${params.toString()}` : window.location.pathname;
             window.history.replaceState({}, '', url);
         }
@@ -594,6 +703,45 @@
                 selectedFeeds = new Set(params.get('feeds').split(',').filter(Boolean));
             } else {
                 selectedFeeds = new Set();
+            }
+
+            // Load customization settings
+            showSummary = !params.has('hideSummary');
+            showSummaryCn = !params.has('hideSummaryCn');
+            showKeywords = !params.has('hideKeywords');
+            showScores = !params.has('hideScores');
+            showAuthors = !params.has('hideAuthors');
+
+            // Update checkbox states
+            document.getElementById('toggle-summary').checked = showSummary;
+            document.getElementById('toggle-summary-cn').checked = showSummaryCn;
+            document.getElementById('toggle-keywords').checked = showKeywords;
+            document.getElementById('toggle-scores').checked = showScores;
+            document.getElementById('toggle-authors').checked = showAuthors;
+
+            // Handle sidebar state
+            const isLargeScreen = window.innerWidth >= 1024;
+            if (params.has('sidebar')) {
+                sidebarOpen = params.get('sidebar') === '1';
+            } else {
+                // Default: open on large screens, closed on small screens
+                sidebarOpen = isLargeScreen;
+            }
+
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebarOverlay');
+
+            if (sidebarOpen) {
+                sidebar.classList.remove('-translate-x-full', 'lg:hidden');
+                sidebar.classList.add('translate-x-0');
+                if (!isLargeScreen) {
+                    overlay.classList.remove('hidden');
+                }
+            } else {
+                // Sidebar is closed
+                if (isLargeScreen) {
+                    sidebar.classList.add('lg:hidden');
+                }
             }
         }
 
@@ -670,6 +818,33 @@
 
             document.getElementById('resetWeights').addEventListener('click', resetWeights);
             document.getElementById('shareLink').addEventListener('click', shareLink);
+
+            // Customization toggle event listeners
+            document.getElementById('toggle-summary').addEventListener('change', (e) => {
+                showSummary = e.target.checked;
+                updateView();
+            });
+            document.getElementById('toggle-summary-cn').addEventListener('change', (e) => {
+                showSummaryCn = e.target.checked;
+                updateView();
+            });
+            document.getElementById('toggle-keywords').addEventListener('change', (e) => {
+                showKeywords = e.target.checked;
+                updateView();
+            });
+            document.getElementById('toggle-scores').addEventListener('change', (e) => {
+                showScores = e.target.checked;
+                updateView();
+            });
+            document.getElementById('toggle-authors').addEventListener('change', (e) => {
+                showAuthors = e.target.checked;
+                updateView();
+            });
+
+            // Sidebar toggle event listeners
+            document.getElementById('openSidebar').addEventListener('click', () => toggleSidebar(true));
+            document.getElementById('sidebarToggle').addEventListener('click', () => toggleSidebar(false));
+            document.getElementById('sidebarOverlay').addEventListener('click', () => toggleSidebar(false));
 
             await updateView();
         }

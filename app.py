@@ -52,6 +52,7 @@ class Article:
     surprisal: int
     failure_mode: str
     primary_focus: str
+    authors: Optional[List[str]]
 
     def to_dict(self) -> Dict[str, Any]:
         """Convert to dictionary for JSON serialization."""
@@ -106,6 +107,14 @@ def extract_acme_data(item_node: Optional[BeautifulSoup]) -> Dict[str, Any]:
     failure_mode = category_raw.get("failure_mode_addressed") or category_raw.get("failure_mode") or ""
     primary_focus = category_raw.get("primary_focus") or ""
 
+    authors = data.get("authors", [])
+    if isinstance(authors, str):
+        authors = [authors]
+    elif isinstance(authors, Iterable):
+        authors = [str(a).strip() for a in authors if str(a).strip()]
+    else:
+        authors = []
+
     return {
         "summary_en": summary_en,
         "summary_cn": summary_cn,
@@ -114,7 +123,8 @@ def extract_acme_data(item_node: Optional[BeautifulSoup]) -> Dict[str, Any]:
         "categories": {
             "failure_mode": failure_mode,
             "primary_focus": primary_focus
-        }
+        },
+        "authors": authors
     }
 
 
@@ -253,7 +263,8 @@ def parse_xml_file(xml_path: Path) -> List[Article]:
                 technicality=scores.get("technicality", 0),
                 surprisal=scores.get("surprisal", 0),
                 failure_mode=failure_mode,
-                primary_focus=primary_focus
+                primary_focus=primary_focus,
+                authors=parsed.get("authors", None)
             )
 
             articles.append(article)

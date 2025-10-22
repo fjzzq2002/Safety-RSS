@@ -67,3 +67,4 @@ I will consider hosting more feeds in the future. Email me or submit an issue if
 - https://politepol.com/fd/R5zvvYykxppD.xml -> aisi.xml
 - https://politepol.com/fd/CugSKbvPdpjY.xml -> metr.xml
 - https://politepol.com/fd/C3wOvys8aPKp.xml -> goodfire.xml
+- https://papers.cool/arxiv/cs.AI/feed -> arxiv_csai.xml
