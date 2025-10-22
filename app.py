@@ -5,9 +5,11 @@ Provides a web interface to filter, sort, and browse RSS feed articles with AI-g
 import os
 import re
 import time
+import json
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Any, Iterable
+from typing import Dict, List, Optional, Any
+from collections.abc import Iterable
 from dataclasses import dataclass, asdict
 
 import feedparser
@@ -63,6 +65,57 @@ def normalize_category(value: Optional[str], allowed: Iterable[str], default: st
 
     slug = re.sub(r'[^a-z0-9]+', '-', value.strip().lower()).strip('-')
     return slug if slug in set(allowed) else default
+
+
+def extract_acme_data(item_node: Optional[BeautifulSoup]) -> Dict[str, Any]:
+    """Extract structured metadata from the <acme> JSON block when present."""
+    if item_node is None:
+        return {}
+
+    acme_tag = item_node.find("acme")
+    if not acme_tag or not acme_tag.string:
+        return {}
+
+    try:
+        data = json.loads(acme_tag.string)
+    except json.JSONDecodeError:
+        return {}
+
+    summary_en = data.get("summary", "") or ""
+    summary_cn = data.get("summary_cn", "") or ""
+
+    raw_keywords = data.get("keywords", [])
+    if isinstance(raw_keywords, str):
+        keywords = [k.strip() for k in re.split(r'[,;]', raw_keywords) if k.strip()]
+    elif isinstance(raw_keywords, Iterable):
+        keywords = [str(k).strip() for k in raw_keywords if str(k).strip()]
+    else:
+        keywords = []
+
+    scores_raw = data.get("scoring", {}) or {}
+    scores: Dict[str, int] = {}
+    for key, value in scores_raw.items():
+        if not isinstance(key, str):
+            continue
+        try:
+            scores[key.strip().lower()] = int(value)
+        except (ValueError, TypeError):
+            continue
+
+    category_raw = data.get("category", {}) or {}
+    failure_mode = category_raw.get("failure_mode_addressed") or category_raw.get("failure_mode") or ""
+    primary_focus = category_raw.get("primary_focus") or ""
+
+    return {
+        "summary_en": summary_en,
+        "summary_cn": summary_cn,
+        "keywords": keywords,
+        "scores": scores,
+        "categories": {
+            "failure_mode": failure_mode,
+            "primary_focus": primary_focus
+        }
+    }
 
 
 def parse_summary_html(summary_html: str) -> Dict[str, Any]:
@@ -128,6 +181,16 @@ def parse_summary_html(summary_html: str) -> Dict[str, Any]:
     return result
 
 
+def get_entry_metadata(entry: Any, item_node: Optional[BeautifulSoup]) -> Dict[str, Any]:
+    """Obtain structured metadata for a feed entry, preferring ACME JSON."""
+    acme_data = extract_acme_data(item_node)
+    if acme_data:
+        return acme_data
+
+    summary_html = getattr(entry, 'summary', '')
+    return parse_summary_html(summary_html)
+
+
 def parse_xml_file(xml_path: Path) -> List[Article]:
     """Parse a single XML feed file and extract all articles."""
     articles = []
@@ -138,11 +201,12 @@ def parse_xml_file(xml_path: Path) -> List[Article]:
             content = f.read()
 
         feed = feedparser.parse(content)
+        soup = BeautifulSoup(content, "xml")
+        item_nodes = soup.find_all("item")
 
-        for entry in feed.entries:
-            # Parse the structured summary
-            summary_html = getattr(entry, 'summary', '')
-            parsed = parse_summary_html(summary_html)
+        for idx, entry in enumerate(feed.entries):
+            item_node = item_nodes[idx] if idx < len(item_nodes) else None
+            parsed = get_entry_metadata(entry, item_node)
 
             # Get publication date
             published = getattr(entry, 'published', None) or getattr(entry, 'updated', None)

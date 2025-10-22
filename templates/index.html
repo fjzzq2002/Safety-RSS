@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RSS Aggregator</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
     <style>
         .slider-container {
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .slider-percentage {
-            position: absolute;
-            right: 0;
-            top: -20px;
             font-size: 0.875rem;
             font-weight: 600;
-            color: #3b82f6;
+            color: #4E61D3;
         }
     </style>
 </head>
@@ -55,6 +60,16 @@
                                     <input type="date" id="dateEnd" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500">
                                 </div>
                             </div>
+                            <div class="border-t border-gray-200 pt-4 space-y-4">
+                                <div class="text-sm text-gray-500 font-semibold uppercase tracking-wide">Primary Focus</div>
+                                <div id="primaryFocusToggles" class="flex flex-wrap gap-2">
+                                    <!-- Primary focus toggles populated by JavaScript -->
+                                </div>
+                                <div class="text-sm text-gray-500 font-semibold uppercase tracking-wide mt-4">Failure Modes</div>
+                                <div id="failureModeToggles" class="flex flex-wrap gap-2">
+                                    <!-- Failure mode toggles populated by JavaScript -->
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -73,44 +88,39 @@
                     </div>
                     <div class="space-y-4">
                         <div class="slider-container">
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Interpretability</label>
-                            <span class="slider-percentage" id="weight-interpretability-pct">16.7%</span>
+                            <div class="slider-header">
+                                <label class="text-sm font-medium text-gray-700">Interpretability</label>
+                                <span class="slider-percentage" id="weight-interpretability-pct">16.7%</span>
+                            </div>
                             <input type="range" id="weight-interpretability" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
                         </div>
                         <div class="slider-container">
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Understanding</label>
-                            <span class="slider-percentage" id="weight-understanding-pct">16.7%</span>
+                            <div class="slider-header">
+                                <label class="text-sm font-medium text-gray-700">Understanding</label>
+                                <span class="slider-percentage" id="weight-understanding-pct">16.7%</span>
+                            </div>
                             <input type="range" id="weight-understanding" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
                         </div>
                         <div class="slider-container">
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Safety</label>
-                            <span class="slider-percentage" id="weight-safety-pct">16.7%</span>
+                            <div class="slider-header">
+                                <label class="text-sm font-medium text-gray-700">Safety</label>
+                                <span class="slider-percentage" id="weight-safety-pct">16.7%</span>
+                            </div>
                             <input type="range" id="weight-safety" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
                         </div>
                         <div class="slider-container">
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Technicality</label>
-                            <span class="slider-percentage" id="weight-technicality-pct">16.7%</span>
+                            <div class="slider-header">
+                                <label class="text-sm font-medium text-gray-700">Technicality</label>
+                                <span class="slider-percentage" id="weight-technicality-pct">16.7%</span>
+                            </div>
                             <input type="range" id="weight-technicality" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
                         </div>
                         <div class="slider-container">
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Surprisal</label>
-                            <span class="slider-percentage" id="weight-surprisal-pct">16.7%</span>
+                            <div class="slider-header">
+                                <label class="text-sm font-medium text-gray-700">Surprisal</label>
+                                <span class="slider-percentage" id="weight-surprisal-pct">16.7%</span>
+                            </div>
                             <input type="range" id="weight-surprisal" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-md p-6 space-y-6">
-                    <div>
-                        <h2 class="text-xl font-semibold text-gray-800 mb-3">Failure Modes</h2>
-                        <div id="failureModeToggles" class="flex flex-wrap gap-2">
-                            <!-- Failure mode toggles populated by JavaScript -->
-                        </div>
-                    </div>
-                    <div>
-                        <h2 class="text-xl font-semibold text-gray-800 mb-3">Primary Focus</h2>
-                        <div id="primaryFocusToggles" class="flex flex-wrap gap-2">
-                            <!-- Primary focus toggles populated by JavaScript -->
                         </div>
                     </div>
                 </div>
@@ -139,19 +149,38 @@
         </div>
     </div>
 <script>
+
         const FAILURE_MODES = ['human-misuse', 'misalignment', 'societal-disruption', 'other', 'non-applicable'];
         const PRIMARY_FOCUSES = ['interpretability', 'alignment', 'robustness', 'control', 'other'];
+        const PRIMARY_FOCUS_COLORS = {
+            interpretability: '#a855f7',
+            alignment: '#e06814',
+            robustness: '#16a34a',
+            control: '#e6126e',
+            other: '#475569'
+        };
         const GRID_KEYS = FAILURE_MODES.flatMap(fm => PRIMARY_FOCUSES.map(pf => `${fm}:${pf}`));
+        const formatLabel = (value) => value.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase());
+        const PRIMARY_FOCUS_ICONS = {
+            interpretability: 'ti ti-microscope',
+            alignment: 'ti ti-heart-handshake',
+            robustness: 'ti ti-shield-half',
+            control: 'ti ti-prison'
+        };
+        const FAILURE_MODE_ICONS = {
+            'human-misuse': 'ti ti-user-exclamation',
+            misalignment: 'ti ti-mood-sad-dizzy',
+            'societal-disruption': 'ti ti-world-bolt',
+            other: 'ti ti-route-x-2'
+        };
 
         // Global state
         let allArticles = [];
         let allFeeds = [];
-        let selectedCategories = new Set();
+        let selectedFailureModes = new Set();
+        let selectedPrimaryFocuses = new Set();
         let selectedFeeds = new Set();
-        const gridCells = new Map();
-        let gridRequestToken = 0;
 
-        // Get current filters from state
         function getCurrentFilters() {
             const dateQuick = document.getElementById('dateQuick').value;
             const weights = {
@@ -171,11 +200,9 @@
             return { dateFilter, weights };
         }
 
-        // Calculate normalized weights
         function getNormalizedWeights(weights) {
             const sum = Object.values(weights).reduce((a, b) => a + b, 0);
             if (sum === 0) {
-                // All zeros: equal weights
                 return {
                     interpretability: 1 / 5,
                     understanding: 1 / 5,
@@ -191,7 +218,6 @@
             return normalized;
         }
 
-        // Update weight percentage displays
         function updateWeightDisplays() {
             const weightKeys = ['interpretability', 'understanding', 'safety', 'technicality', 'surprisal'];
             const weights = {};
@@ -206,13 +232,12 @@
             });
         }
 
-        // Filter articles by date
         function filterByDate(articles, dateFilter) {
             if (dateFilter.type === 'all') {
                 return articles;
             }
 
-            const now = Date.now() / 1000; // current time in seconds
+            const now = Date.now() / 1000;
 
             if (dateFilter.type === 'custom') {
                 if (!dateFilter.start && !dateFilter.end) return articles;
@@ -239,28 +264,25 @@
             });
         }
 
-        // Filter articles by categories
         function filterByCategories(articles) {
-            if (selectedCategories.size === 0) {
+            if (selectedFailureModes.size === 0 && selectedPrimaryFocuses.size === 0) {
                 return articles;
             }
 
             return articles.filter(article => {
-                const key = `${article.failure_mode}:${article.primary_focus}`;
-                return selectedCategories.has(key);
+                const failureMatch = selectedFailureModes.size === 0 || selectedFailureModes.has(article.failure_mode);
+                const focusMatch = selectedPrimaryFocuses.size === 0 || selectedPrimaryFocuses.has(article.primary_focus);
+                return failureMatch && focusMatch;
             });
         }
 
-        // Filter articles by feeds
         function filterByFeeds(articles) {
             if (selectedFeeds.size === 0) {
-                return articles; // Show all if none selected
+                return articles;
             }
-
             return articles.filter(article => selectedFeeds.has(article.feed_name));
         }
 
-        // Calculate weighted score for an article
         function calculateScore(article, weights) {
             return (
                 article.interpretability * weights.interpretability +
@@ -271,137 +293,32 @@
             );
         }
 
-        // Sort articles by weighted score
         function sortArticles(articles, weights) {
             const normalized = getNormalizedWeights(weights);
             return articles.sort((a, b) => {
                 const scoreA = calculateScore(a, normalized);
                 const scoreB = calculateScore(b, normalized);
-                return scoreB - scoreA; // Descending order
+                return scoreB - scoreA;
             });
         }
 
-        // Initialize the category grid once
-        function initializeCategoryGrid() {
-            const grid = document.getElementById('categoryGrid');
-            grid.innerHTML = '';
-            gridCells.clear();
-
-            FAILURE_MODES.forEach(failureMode => {
-                const row = document.createElement('tr');
-
-                const headerCell = document.createElement('th');
-                headerCell.className = 'border border-gray-300 bg-gray-100 p-2';
-
-                const headerButton = document.createElement('button');
-                headerButton.className = 'row-toggle text-sm font-semibold text-blue-600 hover:text-blue-800';
-                headerButton.dataset.row = failureMode;
-                headerButton.textContent = failureMode;
-                headerButton.addEventListener('click', () => toggleRow(failureMode));
-                headerCell.appendChild(headerButton);
-
-                row.appendChild(headerCell);
-
-                PRIMARY_FOCUSES.forEach(primaryFocus => {
-                    const key = `${failureMode}:${primaryFocus}`;
-                    const cell = document.createElement('td');
-                    cell.className = 'category-cell border border-gray-300 p-4 text-center';
-                    cell.dataset.key = key;
-                    cell.textContent = '0';
-
-                    cell.addEventListener('click', () => toggleCategory(key));
-
-                    row.appendChild(cell);
-
-                    gridCells.set(key, cell);
-                });
-
-                grid.appendChild(row);
-            });
-
-            document.querySelectorAll('.col-toggle').forEach(btn => {
-                btn.addEventListener('click', () => toggleCol(btn.dataset.col));
-            });
-        }
-
-        function updateCategoryGridCounts(counts) {
-            GRID_KEYS.forEach(key => {
-                const cell = gridCells.get(key);
-                if (cell) {
-                    cell.textContent = counts[key] ?? 0;
-                }
-            });
-        }
-
-        function updateCategoryHighlights() {
-            GRID_KEYS.forEach(key => {
-                const cell = gridCells.get(key);
-                if (cell) {
-                    cell.classList.toggle('selected', selectedCategories.has(key));
-                }
-            });
-        }
-
-        // Toggle category cell
-        function toggleCategory(key) {
-            if (selectedCategories.has(key)) {
-                selectedCategories.delete(key);
-            } else {
-                selectedCategories.add(key);
-            }
-            updateCategoryHighlights();
-        }
-
-        // Toggle entire row
-        function toggleRow(failureMode) {
-            const keys = PRIMARY_FOCUSES.map(pf => `${failureMode}:${pf}`);
-            const anySelected = keys.some(k => selectedCategories.has(k));
-
-            if (anySelected) {
-                keys.forEach(k => selectedCategories.delete(k));
-            } else {
-                keys.forEach(k => selectedCategories.add(k));
-            }
-
-            updateCategoryHighlights();
-        }
-
-        // Toggle entire column
-        function toggleCol(primaryFocus) {
-            const keys = FAILURE_MODES.map(fm => `${fm}:${primaryFocus}`);
-            const anySelected = keys.some(k => selectedCategories.has(k));
-
-            if (anySelected) {
-                keys.forEach(k => selectedCategories.delete(k));
-            } else {
-                keys.forEach(k => selectedCategories.add(k));
-            }
-
-            updateCategoryHighlights();
-        }
-
-        // Render feed toggles
         function renderFeedToggles() {
             const container = document.getElementById('feedToggles');
             container.innerHTML = '';
 
             allFeeds.forEach(feed => {
                 const isSelected = selectedFeeds.size === 0 || selectedFeeds.has(feed);
-
                 const toggle = document.createElement('button');
-                toggle.className = `px-4 py-2 rounded-md font-medium transition ${
-                    isSelected
-                        ? 'bg-blue-600 text-white hover:bg-blue-700'
-                        : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
-                }`;
+                toggle.className = 'px-4 py-2 rounded-md font-medium transition border';
+                toggle.style.cssText = isSelected
+                    ? 'background-color: #eef2ff; color: #1f2937; border-color: #4E61D3;'
+                    : 'background-color: #f9fafb; color: #1f2937; border-color: #d1d5db;';
                 toggle.textContent = feed;
                 toggle.addEventListener('click', () => toggleFeed(feed));
-
                 container.appendChild(toggle);
             });
         }
 
-        // Toggle feed
         function toggleFeed(feed) {
             if (selectedFeeds.has(feed)) {
                 selectedFeeds.delete(feed);
@@ -409,10 +326,8 @@
                 selectedFeeds.add(feed);
             }
             renderFeedToggles();
-            updateGridCounts();
         }
 
-        // Render articles
         function renderArticles(articles) {
             const container = document.getElementById('articleList');
             const countElement = document.getElementById('articleCount');
@@ -427,14 +342,23 @@
             container.innerHTML = articles.map(article => {
                 const date = article.published ? new Date(article.published).toLocaleDateString() : 'Unknown date';
                 const keywords = article.keywords.join(', ');
+                const focusColor = PRIMARY_FOCUS_COLORS[article.primary_focus] || '#4E61D3';
+                const focusIconClass = PRIMARY_FOCUS_ICONS[article.primary_focus];
+                const failureIconClass = FAILURE_MODE_ICONS[article.failure_mode];
+                const focusIconMarkup = focusIconClass ? `<i class="${focusIconClass} text-base" aria-hidden="true" title="${formatLabel(article.primary_focus)}"></i>` : '';
+                const failureIconMarkup = failureIconClass ? `<i class="${failureIconClass} text-base" aria-hidden="true" title="${formatLabel(article.failure_mode)}"></i>` : '';
+                const iconGroupMarkup = (focusIconMarkup || failureIconMarkup) ? `<div class="flex gap-2 text-gray-900">${focusIconMarkup}${failureIconMarkup}</div>` : '';
 
                 return `
-                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="border rounded-lg p-6 hover:shadow-lg transition" style="border-color: ${focusColor};">
                         <div class="flex justify-between items-start mb-3">
                             <h3 class="text-xl font-semibold text-blue-600 hover:text-blue-800">
-                                <a href="${article.link}" target="_blank">${article.title}</a>
+                                <a href="${article.link}" target="_blank" class="hover:underline">${article.title}</a>
                             </h3>
-                            <span class="text-sm text-gray-500 ml-4 whitespace-nowrap">${date}</span>
+                            <div class="flex flex-col items-end gap-1 ml-4">
+                                <span class="text-sm text-gray-500 whitespace-nowrap">${date}</span>
+                                ${iconGroupMarkup}
+                            </div>
                         </div>
 
                         <div class="mb-3">
@@ -444,7 +368,7 @@
                             <span class="inline-block bg-purple-100 text-purple-800 text-xs font-semibold px-2 py-1 rounded mr-2">
                                 ${article.failure_mode}
                             </span>
-                            <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">
+                            <span class="inline-block text-xs font-semibold px-2 py-1 rounded" style="background-color: ${(PRIMARY_FOCUS_COLORS[article.primary_focus] || '#4E61D3')}22; color: ${PRIMARY_FOCUS_COLORS[article.primary_focus] || '#4E61D3'};">
                                 ${article.primary_focus}
                             </span>
                         </div>
@@ -468,67 +392,121 @@
             }).join('');
         }
 
-        async function fetchGridCounts(filters) {
-            const params = new URLSearchParams();
-            const { dateFilter } = filters;
+        function renderFailureModeToggles() {
+            const container = document.getElementById('failureModeToggles');
+            container.innerHTML = '';
 
-            params.set('date', dateFilter.type);
-            if (dateFilter.type === 'custom') {
-                if (dateFilter.start) params.set('dateStart', dateFilter.start);
-                if (dateFilter.end) params.set('dateEnd', dateFilter.end);
-            }
-
-            if (selectedFeeds.size > 0 && selectedFeeds.size !== allFeeds.length) {
-                params.set('feeds', Array.from(selectedFeeds).join(','));
-            }
-
-            const query = params.toString();
-            const response = await fetch(query ? `/api/grid?${query}` : '/api/grid');
-            if (!response.ok) {
-                throw new Error('Failed to fetch grid counts');
-            }
-            const data = await response.json();
-            return data.counts || {};
+            FAILURE_MODES.forEach(mode => {
+                const isSelected = selectedFailureModes.size === 0 || selectedFailureModes.has(mode);
+                const toggle = document.createElement('button');
+                const iconClass = FAILURE_MODE_ICONS[mode];
+                toggle.className = 'px-4 py-2 rounded-md font-medium transition flex items-center gap-2 border';
+                toggle.style.cssText = isSelected
+                    ? 'background-color: #f3f4f6; color: #1f2937; border-color: #475569;'
+                    : 'background-color: #f3f4f6; color: #1f2937; border-color: #e5e7eb;';
+                toggle.setAttribute('title', formatLabel(mode));
+                toggle.innerHTML = `
+                    ${iconClass ? `<i class="${iconClass} text-base" aria-hidden="true"></i>` : ''}
+                    <span>${formatLabel(mode)}</span>
+                `;
+                toggle.addEventListener('click', () => toggleFailureMode(mode));
+                container.appendChild(toggle);
+            });
         }
 
-        async function updateGridCounts(presetFilters) {
-            if (!gridCells.size) {
-                return;
+        function toggleFailureMode(mode) {
+            if (selectedFailureModes.has(mode)) {
+                selectedFailureModes.delete(mode);
+            } else {
+                selectedFailureModes.add(mode);
             }
-            const filters = presetFilters || getCurrentFilters();
-            gridRequestToken += 1;
-            const token = gridRequestToken;
+            renderFailureModeToggles();
+        }
 
-            try {
-                const counts = await fetchGridCounts(filters);
-                if (token !== gridRequestToken) return;
-                updateCategoryGridCounts(counts);
-            } catch (error) {
-                console.error('Failed to update grid counts', error);
+        function renderPrimaryFocusToggles() {
+            const container = document.getElementById('primaryFocusToggles');
+            container.innerHTML = '';
+
+            PRIMARY_FOCUSES.forEach(focus => {
+                const isSelected = selectedPrimaryFocuses.size === 0 || selectedPrimaryFocuses.has(focus);
+                const toggle = document.createElement('button');
+                const color = PRIMARY_FOCUS_COLORS[focus] || '#4E61D3';
+                const iconClass = PRIMARY_FOCUS_ICONS[focus];
+                const activeStyles = `background-color: ${color}1a; color: #1f2937; border-color: ${color};`;
+                const inactiveStyles = 'background-color: #f3f4f6; color: #1f2937; border-color: #e5e7eb;';
+                toggle.className = 'px-4 py-2 rounded-md font-medium transition flex items-center gap-2 border';
+                toggle.style.cssText = isSelected ? activeStyles : inactiveStyles;
+                toggle.dataset.focusColor = color;
+                toggle.setAttribute('title', formatLabel(focus));
+                toggle.innerHTML = `
+                    ${iconClass ? `<i class="${iconClass} text-base" aria-hidden="true"></i>` : ''}
+                    <span>${formatLabel(focus)}</span>
+                `;
+                toggle.addEventListener('click', () => togglePrimaryFocus(focus));
+                container.appendChild(toggle);
+            });
+        }
+
+        function togglePrimaryFocus(focus) {
+            if (selectedPrimaryFocuses.has(focus)) {
+                selectedPrimaryFocuses.delete(focus);
+            } else {
+                selectedPrimaryFocuses.add(focus);
             }
+            renderPrimaryFocusToggles();
         }
 
         function encodeSelectedCategories() {
-            return GRID_KEYS.map(key => (selectedCategories.has(key) ? '1' : '0')).join('');
+            if (selectedFailureModes.size === 0 && selectedPrimaryFocuses.size === 0) {
+                return GRID_KEYS.map(() => '0').join('');
+            }
+
+            const failures = selectedFailureModes.size ? Array.from(selectedFailureModes) : FAILURE_MODES;
+            const focuses = selectedPrimaryFocuses.size ? Array.from(selectedPrimaryFocuses) : PRIMARY_FOCUSES;
+            const combos = new Set();
+            failures.forEach(fm => {
+                focuses.forEach(pf => combos.add(`${fm}:${pf}`));
+            });
+
+            return GRID_KEYS.map(key => (combos.has(key) ? '1' : '0')).join('');
         }
 
         function decodeSelectedCategories(encoded) {
-            const newSet = new Set();
+            if (!encoded || encoded.length !== GRID_KEYS.length) {
+                selectedFailureModes = new Set();
+                selectedPrimaryFocuses = new Set();
+                return;
+            }
+
+            const combos = new Set();
             GRID_KEYS.forEach((key, idx) => {
                 if (encoded[idx] === '1') {
-                    newSet.add(key);
+                    combos.add(key);
                 }
             });
-            selectedCategories = newSet;
-            updateCategoryHighlights();
+
+            if (combos.size === 0) {
+                selectedFailureModes = new Set();
+                selectedPrimaryFocuses = new Set();
+                return;
+            }
+
+            const failuresInCombos = new Set();
+            const focusesInCombos = new Set();
+            combos.forEach(key => {
+                const [fm, pf] = key.split(':');
+                failuresInCombos.add(fm);
+                focusesInCombos.add(pf);
+            });
+
+            selectedFailureModes = failuresInCombos.size === FAILURE_MODES.length ? new Set() : failuresInCombos;
+            selectedPrimaryFocuses = focusesInCombos.size === PRIMARY_FOCUSES.length ? new Set() : focusesInCombos;
         }
 
-        // Update URL with current state
         function updateURL() {
             const filters = getCurrentFilters();
             const params = new URLSearchParams();
 
-            // Date filter
             if (filters.dateFilter.type !== '7') {
                 params.set('date', filters.dateFilter.type);
                 if (filters.dateFilter.type === 'custom') {
@@ -537,19 +515,16 @@
                 }
             }
 
-            // Weights (only if not all zeros)
             const hasNonZeroWeight = Object.values(filters.weights).some(w => w > 0);
             if (hasNonZeroWeight) {
                 params.set('weights', Object.values(filters.weights).join(','));
             }
 
-            // Categories
             const categoriesBinary = encodeSelectedCategories();
             if (categoriesBinary.includes('1')) {
                 params.set('categories', categoriesBinary);
             }
 
-            // Feeds
             const feedArray = Array.from(selectedFeeds);
             if (feedArray.length > 0 && feedArray.length < allFeeds.length) {
                 params.set('feeds', feedArray.join(','));
@@ -559,11 +534,9 @@
             window.history.replaceState({}, '', url);
         }
 
-        // Load state from URL
         function loadStateFromURL() {
             const params = new URLSearchParams(window.location.search);
 
-            // Date filter
             if (params.has('date')) {
                 const dateType = params.get('date');
                 document.getElementById('dateQuick').value = dateType;
@@ -578,7 +551,6 @@
                 }
             }
 
-            // Weights
             if (params.has('weights')) {
                 const weights = params.get('weights').split(',').map(w => parseInt(w, 10));
                 const weightKeys = ['interpretability', 'understanding', 'safety', 'technicality', 'surprisal'];
@@ -589,20 +561,13 @@
                 });
             }
 
-            // Categories
             if (params.has('categories')) {
                 const encoded = params.get('categories');
-                if (/^[01]+$/.test(encoded) && encoded.length === GRID_KEYS.length) {
+                if (/^[01]+$/.test(encoded)) {
                     decodeSelectedCategories(encoded);
-                } else {
-                    selectedCategories = new Set(encoded.split(',').filter(Boolean));
-                    updateCategoryHighlights();
                 }
-            } else {
-                selectedCategories = new Set();
             }
 
-            // Feeds
             if (params.has('feeds')) {
                 selectedFeeds = new Set(params.get('feeds').split(',').filter(Boolean));
             } else {
@@ -610,7 +575,6 @@
             }
         }
 
-        // Reset all weights to 0
         function resetWeights() {
             const weightKeys = ['interpretability', 'understanding', 'safety', 'technicality', 'surprisal'];
             weightKeys.forEach(key => {
@@ -619,7 +583,6 @@
             updateWeightDisplays();
         }
 
-        // Share link
         function shareLink() {
             const url = window.location.href;
             navigator.clipboard.writeText(url).then(() => {
@@ -627,11 +590,8 @@
             });
         }
 
-        // Update the entire view (call this when Show Results is clicked)
         async function updateView() {
             const filters = getCurrentFilters();
-
-            await updateGridCounts(filters);
 
             let filtered = allArticles;
             filtered = filterByDate(filtered, filters.dateFilter);
@@ -645,30 +605,26 @@
             updateURL();
         }
 
-        // Initialize
         async function init() {
-            // Fetch data
             const response = await fetch('/api/data');
             const data = await response.json();
 
             allArticles = data.articles;
             allFeeds = data.feeds;
 
-            initializeCategoryGrid();
             loadStateFromURL();
             renderFeedToggles();
-            updateCategoryHighlights();
+            renderPrimaryFocusToggles();
+            renderFailureModeToggles();
             updateWeightDisplays();
 
-            // Setup event listeners
             document.getElementById('dateQuick').addEventListener('change', (e) => {
                 const isCustom = e.target.value === 'custom';
                 document.getElementById('customDateRange').classList.toggle('hidden', !isCustom);
-                updateGridCounts();
             });
 
-            document.getElementById('dateStart').addEventListener('change', () => updateGridCounts());
-            document.getElementById('dateEnd').addEventListener('change', () => updateGridCounts());
+            document.getElementById('dateStart').addEventListener('change', () => {});
+            document.getElementById('dateEnd').addEventListener('change', () => {});
 
             ['interpretability', 'understanding', 'safety', 'technicality', 'surprisal'].forEach(key => {
                 document.getElementById(`weight-${key}`).addEventListener('input', updateWeightDisplays);
@@ -684,9 +640,5 @@
             await updateView();
         }
 
-        // Start the app
         init();
-    </script>
-
-</body>
-</html>
+</script>
