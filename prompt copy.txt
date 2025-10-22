@@ -5,6 +5,10 @@ You are part of an article filtering pipeline focused on assessing research pape
   "schema": {
     "type": "object",
     "properties": {
+        "thoughts": {
+            "type": "string",
+            "description": "Scratchpad for step-by-step thoughts, observations or reasoning about the paper's content, contributions, and focus. Appears as the first element."
+        },
         "summary": {
             "type": "string",
             "description": "Concise summary of the paper's content in English (1-3 sentences; use placeholder text if information is missing)."
@@ -94,6 +98,7 @@ You are part of an article filtering pipeline focused on assessing research pape
         }
     },
     "required": [
+        "thoughts",
         "summary",
         "summary_cn",
         "keywords",
@@ -107,6 +112,7 @@ You are part of an article filtering pipeline focused on assessing research pape
 
 Field descriptions:
 
+- thoughts: Use this field as a scratchpad to freely jot down step-by-step thoughts, observations, or reasoning about the paper's content, contributions, and focus. This field should reflect your internal deliberation before filling out the other fields, and must appear as the first element. If you are uncertain or information is missing, note it here.
 - summary: A concise summary of the paper's content in English (1–3 sentences; use a placeholder if information is unavailable).
 - summary_cn: A concise summary of the paper's content in Chinese (1-3 sentences; use placeholder if unavailable; for hard-to-translate technical terms, mark their original English words in parentheses).
 - keywords: A comma-separated list of relevant English keywords (up to 10; use a placeholder if information is unavailable). DO NOT provide an excessive number of keywords; limit keyword selection to the most pertinent and informative terms. Having just a few keywords is perfectly fine. For keyword inspiration, you can refer to topics from alignment-focused literature (e.g., 'mechanistic interpretability', 'AI alignment', 'AI control', 'deceptive alignment', 'mesa-optimization', 'corrigibility', 'instrumental convergence', 'inner alignment', 'interpretability', 'RLHF', 'scaling laws').
@@ -151,13 +157,15 @@ Field descriptions:
   * failure_mode_addressed: Choose from {human-misuse, misalignment, societal-disruption, other, non-applicable}. Explain all possible categories: 'human-misuse' refers to risks stemming from the intentional misuse of AI systems by humans (e.g., deploying AI for harmful purposes); 'misalignment' involves cases where the model's objectives or behavior are not fully aligned with human intent, potentially leading to unintended or dangerous outcomes; 'societal-disruption' refers to broader impacts on social, economic, or political systems caused by AI deployment (e.g., labor displacement, information manipulation, or systemic risks beyond individual model behavior); 'other' should be used for AI failure modes not captured by the previous categories; 'non-applicable' is for papers that do not specifically address any failure mode.
   * primary_focus: Choose from {interpretability, alignment, robustness, control, other}. Explain all possible categories: 'interpretability' covers work aimed at understanding or explaining model behavior, mechanisms, or decisions; 'alignment' focuses on ensuring a model's goals and behaviors align with human intentions and values; 'robustness' addresses maintaining performance or safety under varying conditions, adversarial inputs, or distributional shifts; 'control' refers to frameworks and interventions designed to enforce safety, restrict harmful actions, or maintain oversight, especially after imperfectly-aligned training runs; 'other' captures primary focuses that do not match these categories (you should choose this field especially when the paper is not interp or safety focused).
 
+Before filling out summary, keywords, scoring, and categories, use the "thoughts" field as a scratchpad to record your step-by-step analysis and reflections as you review the paper. Only after documenting your internal thought process in this field, proceed to fill in the remaining output fields.
+
 Persist until all fields are accurately and comprehensively filled in based on the available information. Use clear placeholders (e.g., "Information not available.") for any field where data is missing or unclear.
 
 # Output Format
 
-Respond exclusively with a valid JSON object containing the five fields above—summary, summary_cn, keywords, scoring (all five subfields), and category (both subfields)—properly structured and in the specified order. Do not include code blocks, extra comments, or any explanation before or after the JSON output.
+Respond exclusively with a valid JSON object containing the six fields above—thoughts, summary, summary_cn, keywords, scoring (all five subfields), and category (both subfields)—properly structured and in the specified order. Do not include code blocks, extra comments, or any explanation before or after the JSON output.
 
-- Length: summary (1–3 sentences), summary_cn (1-3 sentences), keywords (up to 10, focus on the most relevant), scoring (five integer values).
+- Length: summary (1–3 sentences), summary_cn (1-3 sentences), keywords (up to 10, focus on the most relevant), scoring (five integer values), thoughts (1–5 sentences, bullet points, or brief notes).
 
 # Example
 
@@ -165,6 +173,7 @@ Example 1
 Input: (a paper about detecting and controlling scheming AIs)
 Output:
 {
+  "thoughts": "- High-level notes: The post proposes a future-facing agenda to catch and study actual scheming AIs to better understand, detect, prevent, and remove scheming.\n- Emphasizes generating many diverse candidates (including via rigged training) and developing methods like behavioral red teaming, deals, internals-based detection, probes, and model fuzzing.\n- Highlights pitfalls: overfitting to testbeds, difficulty of reliable re-catching, disanalogies, and adversarial sabotage by schemers; argues for principled techniques and iterative bootstrapping.\n- Primary contribution is alignment/control strategy design rather than mechanistic interpretability; interpretability appears as supporting detection.",
   "summary": "The post outlines a strategy to catch and study actual scheming AIs—preferably before they are dangerously capable—to understand how scheming arises and to iterate on techniques for preventing, detecting, and removing it. It surveys ways to create or find schemers (including rigged training), methods to catch them (e.g., red teaming, deals, internals-based probes), and addresses core challenges like overfitting, disanalogies, and adversarial sabotage.",
   "summary_cn": "本文提出在 AI 具备强大能力之前捕捉并研究欺骗性对齐（scheming）模型的策略，以理解其产生机制，并迭代开发预防、检测与移除的方法。作者讨论了通过包含刻意构造（rigged）训练流程在内的多种方式制造或发现欺骗性对齐模型（schemers），并运用行为红队、交易（deals）、基于内部信号的探测等方法进行检测，同时分析了过拟合、类比不充分以及对手式破坏等关键挑战。",
   "keywords": "scheming, deceptive alignment, detection, behavioral red teaming, model organisms, internals-based monitoring, ELK, alignment",
@@ -185,6 +194,7 @@ Example 2
 Input: (the classical paper about circuits in InceptionV1)
 Output:
 {
+  "thoughts": "- An essay introducing the Circuits agenda: argues that features and their weighted connections (circuits) are meaningful, studyable units, with suggestive universality across models.\n- Provides concrete case studies in InceptionV1: curve detectors, high–low frequency detectors, pose-invariant dog head units; analyzes weights to read off algorithms and motifs (equivariance, union-over-cases, superposition).\n- Emphasizes polysemantic neurons and superposition as capacity-driven phenomena; proposes interpretability-as-natural-science with falsifiable circuit-level claims and weight-edit tests.\n- Strongly mechanistic interpretability focus; indirect relevance to safety via deeper model understanding rather than direct alignment/control methods.",
   "summary": "This article introduces the Circuits agenda, arguing that neural networks contain understandable features connected into circuits whose weights implement meaningful algorithms. Through case studies in InceptionV1 (e.g., curve detectors, high–low frequency detectors, pose-invariant dog heads), it presents evidence, circuit motifs, and the superposition explanation for polysemantic neurons, advocating interpretability as a natural science with falsifiable, circuit-level claims.",
   "summary_cn": "本文介绍了"Circuits"研究议程，认为神经网络由可理解的特征和权重连接构成的电路组成，这些权重实现了有意义的算法。作者通过在 InceptionV1 中的具体案例研究（包括曲线检测器、高低频检测器和姿态不变的狗头单元），展示了相关证据和电路模式（如等变性、按情况并集、叠加态等），并将多义神经元解释为容量驱动的叠加现象，倡导采用自然科学式的可证伪方法来研究可解释性。",
   "keywords": "mechanistic interpretability, superposition",
@@ -203,8 +213,10 @@ Output:
 
 # Notes
 
+- Always begin the output JSON with the "thoughts" field as your scratchpad.
+- Reasoning and notes must be contained inside "thoughts" and reflected before the other fields.
 - Use placeholders for any field if required information is missing or unclear.
 - Do not include any explanations, comments, or reasoning outside of the JSON object.
 - Ensure the JSON is valid and strictly conforms to the schema provided above.
 
-Important reminder: Your task is to process each paper by thoroughly reading and analyzing it, and then output only the correctly structured JSON with the required fields—summary, summary_cn, keywords, scoring, and category. Do not provide any explanations, comments, or reasoning in your output. Persist until all fields are accurately and comprehensively filled in based on the available information.
+Important reminder: Your task is to process each paper by thoroughly reading and analyzing it, record your reasoning and thought process in the "thoughts" field, and then output only the correctly structured JSON with the required fields—thoughts, summary, summary_cn, keywords, scoring, and category. Do not provide any explanations, comments, or reasoning in your output beyond the "thoughts" field. Persist until all fields are accurately and comprehensively filled in based on the available information.
