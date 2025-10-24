@@ -88,7 +88,8 @@
                     <div class="space-y-4">
                         <div>
                             <select id="dateQuick" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-blue-500">
-                                <option value="7">Last 7 days</option>
+                                <option value="3">Last 3 days</option>
+                                <option value="7" selected>Last 7 days</option>
                                 <option value="30">Last 30 days</option>
                                 <option value="90">Last 90 days</option>
                                 <option value="365">Last year</option>
@@ -127,6 +128,15 @@
 
                     <div class="mt-8">
                         <h2 class="text-xl font-semibold mb-3 text-gray-800">Customization</h2>
+                        <div class="mb-4">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">ArXiv Link Format</label>
+                            <select id="arxiv-link-format" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500">
+                                <option value="papers.cool">papers.cool</option>
+                                <option value="arxiv-abs">arxiv.org</option>
+                                <option value="arxiv-pdf">arxiv.org (PDF)</option>
+                                <option value="alphaxiv">alphaxiv.org</option>
+                            </select>
+                        </div>
                         <div class="space-y-2">
                             <label class="flex items-center gap-2 cursor-pointer">
                                 <input type="checkbox" id="toggle-summary" class="w-4 h-4 rounded accent-blue-600" checked>
@@ -213,6 +223,41 @@
         let showKeywords = true;
         let showScores = true;
         let showAuthors = true;
+        let arxivLinkFormat = 'papers.cool';
+
+        // Transform arxiv links based on format preference
+        function transformArxivLink(link) {
+            // Match patterns for different sources
+            const patterns = [
+                { regex: /papers\.cool\/arxiv\/(\d+\.\d+)/, id: 1 },
+                { regex: /arxiv\.org\/(abs|pdf)\/(\d+\.\d+)/, id: 2 },
+                { regex: /alphaxiv\.org\/abs\/(\d+\.\d+)/, id: 1 }
+            ];
+
+            let arxivId = null;
+            for (const pattern of patterns) {
+                const match = link.match(pattern.regex);
+                if (match) {
+                    arxivId = match[pattern.id];
+                    break;
+                }
+            }
+
+            if (!arxivId) return link; // Not an arxiv link, return original
+
+            // Transform based on selected format
+            switch (arxivLinkFormat) {
+                case 'arxiv-abs':
+                    return `https://arxiv.org/abs/${arxivId}`;
+                case 'arxiv-pdf':
+                    return `https://arxiv.org/pdf/${arxivId}`;
+                case 'alphaxiv':
+                    return `https://alphaxiv.org/abs/${arxivId}`;
+                case 'papers.cool':
+                default:
+                    return `https://papers.cool/arxiv/${arxivId}`;
+            }
+        }
 
         // Sidebar toggle functions
         function toggleSidebar(open) {
@@ -386,16 +431,34 @@
             const container = document.getElementById('feedToggles');
             container.innerHTML = '';
 
-            // Separate arxiv feeds from others
+            // Separate arxiv feeds
             const arxivFeeds = allFeeds.filter(feed => feed.toLowerCase().includes('arxiv'));
-            const otherFeeds = allFeeds.filter(feed => !feed.toLowerCase().includes('arxiv'));
+            const nonArxivFeeds = allFeeds.filter(feed => !feed.toLowerCase().includes('arxiv'));
 
-            // Render arxiv feeds first if they exist
-            if (arxivFeeds.length > 0) {
-                const arxivContainer = document.createElement('div');
-                arxivContainer.className = 'flex flex-wrap gap-2 mb-2';
+            // Separate feeds by year (conferences) and others
+            const yearPattern = /\b(20\d{2})\b/;
+            const feedsByYear = {};
+            const regularFeeds = [];
 
-                arxivFeeds.forEach(feed => {
+            nonArxivFeeds.forEach(feed => {
+                const match = feed.match(yearPattern);
+                if (match) {
+                    const year = match[1];
+                    if (!feedsByYear[year]) {
+                        feedsByYear[year] = [];
+                    }
+                    feedsByYear[year].push(feed);
+                } else {
+                    regularFeeds.push(feed);
+                }
+            });
+
+            // Helper function to render a group of feeds
+            const renderFeedGroup = (feeds, isLast = false) => {
+                const groupContainer = document.createElement('div');
+                groupContainer.className = `flex flex-wrap gap-2 ${!isLast ? 'mb-2' : ''}`;
+
+                feeds.forEach(feed => {
                     const isSelected = selectedFeeds.size === 0 || selectedFeeds.has(feed);
                     const toggle = document.createElement('button');
                     toggle.className = 'px-4 py-2 rounded-md font-medium transition border';
@@ -404,29 +467,28 @@
                         : 'background-color: #f9fafb; color: #1f2937; border-color: #d1d5db;';
                     toggle.textContent = feed;
                     toggle.addEventListener('click', () => toggleFeed(feed));
-                    arxivContainer.appendChild(toggle);
+                    groupContainer.appendChild(toggle);
                 });
 
-                container.appendChild(arxivContainer);
+                return groupContainer;
+            };
+
+            // Render arxiv feeds first
+            if (arxivFeeds.length > 0) {
+                container.appendChild(renderFeedGroup(arxivFeeds));
             }
 
-            // Render other feeds
-            const otherContainer = document.createElement('div');
-            otherContainer.className = 'flex flex-wrap gap-2';
-
-            otherFeeds.forEach(feed => {
-                const isSelected = selectedFeeds.size === 0 || selectedFeeds.has(feed);
-                const toggle = document.createElement('button');
-                toggle.className = 'px-4 py-2 rounded-md font-medium transition border';
-                toggle.style.cssText = isSelected
-                    ? 'background-color: #eef2ff; color: #1f2937; border-color: #4E61D3;'
-                    : 'background-color: #f9fafb; color: #1f2937; border-color: #d1d5db;';
-                toggle.textContent = feed;
-                toggle.addEventListener('click', () => toggleFeed(feed));
-                otherContainer.appendChild(toggle);
+            // Render year-based feeds (conferences), sorted by year descending
+            const years = Object.keys(feedsByYear).sort((a, b) => b - a);
+            years.forEach(year => {
+                container.appendChild(renderFeedGroup(feedsByYear[year]));
             });
 
-            container.appendChild(otherContainer);
+            // Render regular feeds last
+            if (regularFeeds.length > 0) {
+                const isLast = years.length === 0 && arxivFeeds.length === 0;
+                container.appendChild(renderFeedGroup(regularFeeds, isLast));
+            }
         }
 
         function toggleFeed(feed) {
@@ -454,6 +516,7 @@
                 const date = article.published ? new Date(article.published).toLocaleDateString() : 'Unknown date';
                 const keywords = article.keywords.join(', ');
                 const authors = article.authors ? article.authors.join(', ') : '';
+                const articleLink = transformArxivLink(article.link);
                 const focusColor = PRIMARY_FOCUS_COLORS[article.primary_focus] || '#4E61D3';
                 const focusIconClass = PRIMARY_FOCUS_ICONS[article.primary_focus];
                 const failureIconClass = FAILURE_MODE_ICONS[article.failure_mode];
@@ -464,21 +527,21 @@
                 return `
                     <div class="border rounded-lg p-6 hover:shadow-lg transition" style="border-color: ${focusColor};">
                         <div class="mb-3">
-                            <h3 class="text-xl font-semibold text-blue-600 hover:text-blue-800 ${showAuthors && authors ? 'mb-2' : 'mb-3'}">
-                                <a href="${article.link}" target="_blank" class="hover:underline">${article.title}</a>
+                            <h3 class="text-xl font-semibold text-blue-600 hover:text-blue-800 ${showAuthors && authors ? 'mb-1' : 'mb-3'}">
+                                <a href="${articleLink}" target="_blank" class="hover:underline">${article.title}</a>
                             </h3>
-                            ${showAuthors && authors ? `<div class="mb-3"><p class="text-sm text-gray-600 italic">${authors}</p></div>` : ''}
+                            ${showAuthors && authors ? `<div class="mb-3.5"><p class="text-sm text-gray-600 italic">${authors}</p></div>` : ''}
 
                             <div class="flex justify-between items-end gap-4">
                                 <div class="flex flex-wrap gap-2">
                                     <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">
                                         ${article.feed_name}
                                     </span>
-                                    <span class="inline-block bg-purple-100 text-purple-800 text-xs font-semibold px-2 py-1 rounded">
-                                        ${article.failure_mode}
-                                    </span>
                                     <span class="inline-block text-xs font-semibold px-2 py-1 rounded" style="background-color: ${(PRIMARY_FOCUS_COLORS[article.primary_focus] || '#4E61D3')}22; color: ${PRIMARY_FOCUS_COLORS[article.primary_focus] || '#4E61D3'};">
                                         ${article.primary_focus}
+                                    </span>
+                                    <span class="inline-block text-xs font-semibold px-2 py-1 rounded" style="background-color: ${article.failure_mode === 'non-applicable' ? (PRIMARY_FOCUS_COLORS['other'] || '#475569') + '22' : '#fee2e2'}; color: ${article.failure_mode === 'non-applicable' ? (PRIMARY_FOCUS_COLORS['other'] || '#475569') : '#b91c1c'};">
+                                        ${article.failure_mode}
                                     </span>
                                 </div>
                                 <div class="flex items-center gap-2">
@@ -660,6 +723,7 @@
             if (!showKeywords) params.set('hideKeywords', '1');
             if (!showScores) params.set('hideScores', '1');
             if (!showAuthors) params.set('hideAuthors', '1');
+            if (arxivLinkFormat !== 'arxiv-pdf') params.set('arxivLink', arxivLinkFormat);
 
             const url = params.toString() ? `?${params.toString()}` : window.location.pathname;
             window.history.replaceState({}, '', url);
@@ -711,6 +775,7 @@
             showKeywords = !params.has('hideKeywords');
             showScores = !params.has('hideScores');
             showAuthors = !params.has('hideAuthors');
+            arxivLinkFormat = params.get('arxivLink') || 'arxiv-pdf';
 
             // Update checkbox states
             document.getElementById('toggle-summary').checked = showSummary;
@@ -718,6 +783,7 @@
             document.getElementById('toggle-keywords').checked = showKeywords;
             document.getElementById('toggle-scores').checked = showScores;
             document.getElementById('toggle-authors').checked = showAuthors;
+            document.getElementById('arxiv-link-format').value = arxivLinkFormat;
 
             // Handle sidebar state
             const isLargeScreen = window.innerWidth >= 1024;
@@ -838,6 +904,10 @@
             });
             document.getElementById('toggle-authors').addEventListener('change', (e) => {
                 showAuthors = e.target.checked;
+                updateView();
+            });
+            document.getElementById('arxiv-link-format').addEventListener('change', (e) => {
+                arxivLinkFormat = e.target.value;
                 updateView();
             });
 

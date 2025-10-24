@@ -16,8 +16,8 @@
 {% if entry.analysis_json %}<acme type="application/json"><![CDATA[
 {{ entry.analysis_json }}
 ]]></acme>{% endif %}
-{% if entry.published %}<pubDate>{{ entry.published }}</pubDate>{% endif %}
-{% if entry.updated %}<pubDate>{{ entry.updated }}</pubDate>{% endif %}
+{% if entry.published %}<pubDate>{{ entry.published }}</pubDate>{% endif %}{% if entry.updated %}
+<pubDate>{{ entry.updated }}</pubDate>{% endif %}
 </item>{% endfor %}
 {% for entry in existing_entries %}
 <item>
@@ -27,6 +27,10 @@
 <content:encoded><![CDATA[
 {{ entry.content[0].value }}
 ]]></content:encoded>
+{% if entry.analysis_json %}<acme type="application/json"><![CDATA[
+{{ entry.analysis_json }}
+]]></acme>{% endif %}
+
 <pubDate>{{ entry.published }}</pubDate>
 </item>{% endfor %}
 </channel>

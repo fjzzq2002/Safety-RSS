@@ -8,6 +8,8 @@ import re
 import sys
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple, NamedTuple, List
+import xml.etree.ElementTree as ET
+from types import SimpleNamespace
 
 import requests
 from bs4 import BeautifulSoup
@@ -120,7 +122,7 @@ config = configparser.ConfigParser()
 config.read('config.ini')
 secs = config.sections()
 # Maxnumber of entries to in a feed.xml file
-max_entries = 1000
+max_entries = 50000
 
 OPENROUTER_API_KEY = os.environ.get('OPENROUTER_API_KEY') or os.environ.get('OPENAI_API_KEY')
 OPENROUTER_BASE_URL = os.environ.get('OPENROUTER_BASE_URL', 'https://openrouter.ai/api/v1')
@@ -133,6 +135,12 @@ BASE = get_cfg('cfg', 'base') or get_cfg('cfg', 'BASE')
 keyword_length = int(get_cfg('cfg', 'keyword_length'))
 summary_length = int(get_cfg('cfg', 'summary_length'))
 DEFAULT_MODEL = get_cfg('cfg', 'model') or OPENROUTER_MODEL
+
+def resolve_local_jsonl(path_str: str) -> Optional[Path]:
+    candidate = Path(path_str.strip()).expanduser()
+    if not candidate.is_file():
+        candidate = (SCRIPT_DIR / path_str.strip()).resolve()
+    return candidate if candidate.is_file() else None
 
 ASYNC_OPENROUTER_CLIENT: Optional[AsyncOpenAI] = None
 if OPENROUTER_API_KEY:
@@ -151,7 +159,7 @@ if not BASE:
     BASE = "docs/"
 
 TOTAL_SUMMARIZATION_COST = 0.0
-MAX_SUMMARY_ATTEMPTS = 7
+MAX_SUMMARY_ATTEMPTS = 20
 SUMMARY_RETRY_DELAY_SECONDS = 1.0
 
 def fetch_feed(url, log_file):
@@ -266,6 +274,39 @@ def read_entry_from_file(sec):
         with open(out_dir + '.xml', 'r') as f:
             rss = f.read()
         feed = feedparser.parse(rss)
+        try:
+            root = ET.fromstring(rss)
+            metadata_by_link: Dict[str, Dict[str, Any]] = {}
+            for item in root.findall('./channel/item'):
+                link_el = item.find('link')
+                guid_el = item.find('guid')
+                link_text = link_el.text.strip() if link_el is not None and link_el.text else None
+                if not link_text and guid_el is not None and guid_el.text:
+                    link_text = guid_el.text.strip()
+                acme_el = item.find('acme')
+                analysis_json = None
+                authors = []
+                if acme_el is not None and acme_el.text:
+                    analysis_json = acme_el.text.strip()
+                    try:
+                        payload = json.loads(analysis_json)
+                        if isinstance(payload, dict) and 'authors' in payload and isinstance(payload['authors'], list):
+                            authors = [str(a) for a in payload['authors']]
+                    except json.JSONDecodeError:
+                        pass
+                if link_text:
+                    metadata_by_link[link_text] = {
+                        'analysis_json': analysis_json,
+                        'authors': authors,
+                    }
+            for entry in feed.entries:
+                entry_link = getattr(entry, 'link', None)
+                if entry_link and entry_link in metadata_by_link:
+                    meta = metadata_by_link[entry_link]
+                    entry.analysis_json = meta.get('analysis_json')
+                    entry.extracted_authors = meta.get('authors', [])
+        except ET.ParseError:
+            pass
         return feed.entries
     except:
         return []
@@ -298,6 +339,117 @@ def extract_authors(entry: Any) -> List[str]:
         except Exception:
             pass
     return authors
+
+
+def normalize_authors(value: Any) -> List[str]:
+    if isinstance(value, list):
+        authors = []
+        for item in value:
+            if isinstance(item, str):
+                name = item.strip()
+            elif isinstance(item, dict):
+                name = item.get("name", "")
+            else:
+                name = str(item)
+            if name:
+                authors.append(name.strip())
+        return [a for a in authors if a]
+    if isinstance(value, str):
+        parts = re.split(r"[;,]", value)
+        return [part.strip() for part in parts if part.strip()]
+    return []
+
+
+def build_entry_from_record(record: Dict[str, Any], feed_name: str, log_file: str) -> Optional[Any]:
+    title = (record.get("title") or record.get("paper_title") or "").strip()
+    link = (record.get("link") or record.get("url") or record.get("id") or "").strip()
+    abstract = (record.get("abstract") or record.get("summary") or record.get("description") or "").strip()
+    content_text = record.get("content")
+    if isinstance(content_text, str) and content_text.strip():
+        content_value = content_text.strip()
+    else:
+        content_value = abstract or title
+
+    if not title:
+        title = "Untitled"
+    if not link:
+        link = f"urn:jsonl:{feed_name}:{hash(title + abstract)}"
+
+    authors = normalize_authors(record.get("authors") or record.get("author"))
+
+    content_ns = SimpleNamespace(value=content_value)
+    pub_date = record.get("pubDate") or record.get("date") or record.get("published") or record.get("cdate")
+    updated = record.get("updated") or record.get("mdate")
+
+    entry = SimpleNamespace(
+        title=title,
+        link=link,
+        guid=link,
+        content=[content_ns],
+        description=abstract or content_value,
+        summary=abstract or content_value,
+        article=content_value,
+        extracted_authors=authors,
+        published=pub_date,
+        updated=updated,
+    )
+
+    analysis_payload = record.get("analysis_json") or record.get("analysis")
+    if isinstance(analysis_payload, dict):
+        entry.analysis = analysis_payload
+        entry.analysis_json = json.dumps(analysis_payload, ensure_ascii=False)
+    elif isinstance(analysis_payload, str) and analysis_payload.strip():
+        entry.analysis_json = analysis_payload.strip()
+        try:
+            entry.analysis = json.loads(entry.analysis_json)
+        except json.JSONDecodeError:
+            entry.analysis = None
+
+    if authors and entry.analysis and "authors" not in entry.analysis:
+        entry.analysis["authors"] = authors
+        entry.analysis_json = json.dumps(entry.analysis, ensure_ascii=False)
+
+    return entry
+
+
+def load_jsonl_feed(jsonl_path: Path, feed_name: str, log_file: str) -> Optional[Any]:
+    entries: List[Any] = []
+    try:
+        with jsonl_path.open("r", encoding="utf-8") as handle:
+            for line_no, line in enumerate(handle, 1):
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    record = json.loads(line)
+                except json.JSONDecodeError as exc:
+                    with open(log_file, 'a') as f:
+                        f.write(f"JSONL parse error at line {line_no}: {exc}\n")
+                    continue
+                if not isinstance(record, dict):
+                    continue
+                entry = build_entry_from_record(record, feed_name, log_file)
+                if entry:
+                    entries.append(entry)
+    except OSError as exc:
+        with open(log_file, 'a') as f:
+            f.write(f"Failed to read JSONL file {jsonl_path}: {exc}\n")
+        return None
+
+    if not entries:
+        with open(log_file, 'a') as f:
+            f.write(f"No valid entries found in {jsonl_path}\n")
+        return None
+
+    feed_title = entries[0].title if len(entries) == 1 else feed_name
+    feed_link = entries[0].link if entries else jsonl_path.as_uri()
+
+    feed_meta = SimpleNamespace(
+        feed=SimpleNamespace(title=feed_title, link=feed_link),
+        entries=entries,
+    )
+    return feed_meta
+
 
 def usage_to_dict(usage_obj: Any) -> Dict[str, Any]:
     if usage_obj is None:
@@ -385,6 +537,14 @@ async def async_generate_analysis(article_text: str, model_name: Optional[str] =
 
             analysis = ArticleAnalysis.model_validate(parsed_payload)
             usage_info = usage_to_dict(completion.usage)
+            # also if analysis's summary is too short, also retry
+            # I think this is usually due to stupid alignment in gpt-oss
+            summary_cleaned = analysis.summary.replace(" ", "").replace("\t", "").replace("\n", "").replace("\r", "").replace(".", "")
+            if len(summary_cleaned) < 25 and attempt < MAX_SUMMARY_ATTEMPTS:
+                raise ValueError(f"Summary is too short: {analysis.summary}")
+            summary_cn_cleaned = analysis.summary_cn.replace(" ", "").replace("\t", "").replace("\n", "").replace("\r", "").replace(".", "")
+            if len(summary_cn_cleaned) < 20 and attempt < MAX_SUMMARY_ATTEMPTS:
+                raise ValueError(f"Summary (CN) is too short: {analysis.summary_cn}")
             return analysis, usage_info
 
         except asyncio.CancelledError:
@@ -495,8 +655,12 @@ def output(sec):
     log_file = os.path.join(BASE, feed_name + '.log')
     out_dir = os.path.join(BASE, feed_name)
     # read rss_url as a list separated by comma
-    rss_urls = get_cfg(sec, 'url')
-    rss_urls = rss_urls.split(',')
+    rss_urls_value = get_cfg(sec, 'url')
+    if not rss_urls_value:
+        with open(log_file, 'a') as f:
+            f.write("No URLs configured; skipping section.\n")
+        return
+    rss_urls = [url.strip() for url in rss_urls_value.split(',') if url.strip()]
 
     # RSS feed filter apply, filter title, article or link, summarize title, article or link
     filter_apply = get_cfg(sec, 'filter_apply')
@@ -523,6 +687,15 @@ def output(sec):
         max_items = int(max_items)
     cnt = 0
     existing_entries = read_entry_from_file(sec)
+    default_feed_link = f"{deployment_url}{feed_name}.xml" if deployment_url else feed_name
+    default_feed_meta = SimpleNamespace(
+        feed=SimpleNamespace(
+            title=feed_name,
+            link=default_feed_link,
+        ),
+        entries=[],
+    )
+    feed = default_feed_meta
     with open(log_file, 'a') as f:
         f.write('------------------------------------------------------\n')
         f.write(f'Started: {datetime.datetime.now()}\n')
@@ -539,7 +712,18 @@ def output(sec):
         with open(log_file, 'a') as f:
             f.write(f"Fetching from {rss_url}\n")
             print(f"Fetching from {rss_url}")
-        feed = fetch_feed(rss_url, log_file)['feed']
+
+        local_path = resolve_local_jsonl(rss_url)
+        if local_path:
+            feed_obj = load_jsonl_feed(local_path, feed_name, log_file)
+            if not feed_obj:
+                with open(log_file, 'a') as f:
+                    f.write(f"Failed to load JSONL from {local_path}\n")
+                continue
+            feed = feed_obj
+        else:
+            fetched = fetch_feed(rss_url, log_file)
+            feed = fetched['feed']
         if not feed:
             with open(log_file, 'a') as f:
                 f.write(f"Fetch failed from {rss_url}\n")
