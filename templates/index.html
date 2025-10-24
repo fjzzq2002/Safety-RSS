@@ -27,6 +27,16 @@
             color: #93c5fd;
         }
     </style>
+    <script>
+        window.WEIGHT_KEYS = [
+            "interpretability",
+            "understanding",
+            "safety",
+            "technicality",
+            "nontechnicality",
+            "surprisal"
+        ];
+    </script>
 </head>
 <body class="m-0 h-screen overflow-hidden">
     <!-- Overlay for sidebar -->
@@ -50,35 +60,42 @@
                     <div class="slider-container">
                         <div class="slider-header">
                             <label class="text-sm font-medium text-gray-700">Interpretability</label>
-                            <span class="slider-percentage" id="weight-interpretability-pct">16.7%</span>
+                            <span class="slider-percentage" id="weight-interpretability-pct">20.0%</span>
                         </div>
                         <input type="range" id="weight-interpretability" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
                     </div>
                     <div class="slider-container">
                         <div class="slider-header">
                             <label class="text-sm font-medium text-gray-700">Understanding</label>
-                            <span class="slider-percentage" id="weight-understanding-pct">16.7%</span>
+                            <span class="slider-percentage" id="weight-understanding-pct">20.0%</span>
                         </div>
                         <input type="range" id="weight-understanding" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
                     </div>
                     <div class="slider-container">
                         <div class="slider-header">
                             <label class="text-sm font-medium text-gray-700">Safety</label>
-                            <span class="slider-percentage" id="weight-safety-pct">16.7%</span>
+                            <span class="slider-percentage" id="weight-safety-pct">20.0%</span>
                         </div>
                         <input type="range" id="weight-safety" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
                     </div>
                     <div class="slider-container">
                         <div class="slider-header">
                             <label class="text-sm font-medium text-gray-700">Technicality</label>
-                            <span class="slider-percentage" id="weight-technicality-pct">16.7%</span>
+                            <span class="slider-percentage" id="weight-technicality-pct">20.0%</span>
                         </div>
                         <input type="range" id="weight-technicality" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
                     </div>
                     <div class="slider-container">
                         <div class="slider-header">
+                            <label class="text-sm font-medium text-gray-700">Nontechnicality</label>
+                            <span class="slider-percentage" id="weight-nontechnicality-pct">0.0%</span>
+                        </div>
+                        <input type="range" id="weight-nontechnicality" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-header">
                             <label class="text-sm font-medium text-gray-700">Surprisal</label>
-                            <span class="slider-percentage" id="weight-surprisal-pct">16.7%</span>
+                            <span class="slider-percentage" id="weight-surprisal-pct">20.0%</span>
                         </div>
                         <input type="range" id="weight-surprisal" min="0" max="100" value="0" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
                     </div>
@@ -178,6 +195,29 @@
                         <i class="ti ti-share-2 text-2xl"></i>
                     </button>
                 </div>
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-4" id="articleControls">
+                    <p id="resultSummary" class="text-sm text-gray-600">Loading articles...</p>
+                    <div class="flex items-center gap-3">
+                        <label class="flex items-center gap-2 text-sm text-gray-600">
+                            <span>Per page</span>
+                            <select id="pageSize" class="border border-gray-300 rounded-md px-2 py-1 text-sm focus:ring-2 focus:ring-blue-500">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100" selected>100</option>
+                            </select>
+                        </label>
+                        <div class="flex items-center gap-2">
+                            <button id="prevPage" class="px-3 py-1 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                                Prev
+                            </button>
+                            <span id="pageInfo" class="text-sm text-gray-600 w-28 text-center">Page 1 of 1</span>
+                            <button id="nextPage" class="px-3 py-1 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <div id="articleList" class="space-y-4">
                     <!-- Articles populated by JavaScript -->
                 </div>
@@ -210,8 +250,9 @@
             other: 'ti ti-route-x-2'
         };
 
+        const PAGE_SIZE_DEFAULT = 25;
+
         // Global state
-        let allArticles = [];
         let allFeeds = [];
         let selectedFailureModes = new Set();
         let selectedPrimaryFocuses = new Set();
@@ -224,6 +265,13 @@
         let showScores = true;
         let showAuthors = true;
         let arxivLinkFormat = 'papers.cool';
+        let currentArticles = [];
+        let totalArticles = 0;
+        let totalPages = 0;
+        let currentPage = 1;
+        let pageSize = PAGE_SIZE_DEFAULT;
+        let isLoadingArticles = false;
+        let currentFetchToken = 0;
 
         // Transform arxiv links based on format preference
         function transformArxivLink(link) {
@@ -292,6 +340,7 @@
                 understanding: parseInt(document.getElementById('weight-understanding').value, 10),
                 safety: parseInt(document.getElementById('weight-safety').value, 10),
                 technicality: parseInt(document.getElementById('weight-technicality').value, 10),
+                nontechnicality: parseInt(document.getElementById('weight-nontechnicality').value, 10),
                 surprisal: parseInt(document.getElementById('weight-surprisal').value, 10)
             };
 
@@ -307,23 +356,25 @@
         function getNormalizedWeights(weights) {
             const sum = Object.values(weights).reduce((a, b) => a + b, 0);
             if (sum === 0) {
-                return {
-                    interpretability: 1 / 5,
-                    understanding: 1 / 5,
-                    safety: 1 / 5,
-                    technicality: 1 / 5,
-                    surprisal: 1 / 5
-                };
+                const normalized = {};
+                const baselineKeys = WEIGHT_KEYS.filter(key => key !== 'nontechnicality');
+                const equal = baselineKeys.length > 0 ? 1 / baselineKeys.length : 0;
+                baselineKeys.forEach(key => {
+                    normalized[key] = equal;
+                });
+                normalized.nontechnicality = 0;
+                return normalized;
             }
             const normalized = {};
-            for (const key in weights) {
-                normalized[key] = weights[key] / sum;
-            }
+            WEIGHT_KEYS.forEach(key => {
+                const value = weights[key] || 0;
+                normalized[key] = value / sum;
+            });
             return normalized;
         }
 
         function updateWeightDisplays() {
-            const weightKeys = ['interpretability', 'understanding', 'safety', 'technicality', 'surprisal'];
+            const weightKeys = WEIGHT_KEYS.slice();
             const weights = {};
             weightKeys.forEach(key => {
                 weights[key] = parseInt(document.getElementById(`weight-${key}`).value, 10);
@@ -337,7 +388,7 @@
         }
 
         function setSliderPendingState(isPending) {
-            const weightKeys = ['interpretability', 'understanding', 'safety', 'technicality', 'surprisal'];
+            const weightKeys = WEIGHT_KEYS.slice();
             weightKeys.forEach(key => {
                 const el = document.getElementById(`weight-${key}-pct`);
                 if (!el) return;
@@ -357,86 +408,119 @@
             }, 2000);
         }
 
-        function filterByDate(articles, dateFilter) {
-            if (dateFilter.type === 'all') {
-                return articles;
+        function buildArticleQueryParams(filters) {
+            const params = new URLSearchParams();
+            params.set('page', currentPage);
+            params.set('pageSize', pageSize);
+            params.set('date', filters.dateFilter.type || 'all');
+
+            if (filters.dateFilter.type === 'custom') {
+                if (filters.dateFilter.start) {
+                    params.set('dateStart', filters.dateFilter.start);
+                }
+                if (filters.dateFilter.end) {
+                    params.set('dateEnd', filters.dateFilter.end);
+                }
             }
 
-            const now = Date.now() / 1000;
-
-            if (dateFilter.type === 'custom') {
-                if (!dateFilter.start && !dateFilter.end) return articles;
-
-                const startTime = dateFilter.start ? new Date(dateFilter.start).getTime() / 1000 : 0;
-                const endTime = dateFilter.end ? (new Date(dateFilter.end).getTime() / 1000) + 86399.999 : now;
-
-                return articles.filter(article => {
-                    if (!article.published_timestamp) return true;
-                    return article.published_timestamp >= startTime && article.published_timestamp <= endTime;
-                });
+            if (selectedFeeds.size > 0) {
+                params.set('feeds', Array.from(selectedFeeds).join(','));
+            }
+            if (selectedFailureModes.size > 0) {
+                params.set('failureModes', Array.from(selectedFailureModes).join(','));
+            }
+            if (selectedPrimaryFocuses.size > 0) {
+                params.set('primaryFocuses', Array.from(selectedPrimaryFocuses).join(','));
             }
 
-            const days = parseInt(dateFilter.type, 10);
-            if (isNaN(days)) {
-                return articles;
-            }
+            const weightValues = WEIGHT_KEYS.map(key => filters.weights[key] || 0);
+            params.set('weights', weightValues.join(','));
 
-            const cutoff = now - (days * 24 * 60 * 60);
-
-            return articles.filter(article => {
-                if (!article.published_timestamp) return true;
-                return article.published_timestamp >= cutoff;
-            });
+            return params;
         }
 
-        function filterByCategories(articles) {
-            if (selectedFailureModes.size === 0 && selectedPrimaryFocuses.size === 0) {
-                return articles;
+        function setLoadingState(isLoading) {
+            isLoadingArticles = isLoading;
+            const list = document.getElementById('articleList');
+            const summary = document.getElementById('resultSummary');
+            if (isLoading) {
+                summary.textContent = 'Loading articles...';
+                list.classList.add('opacity-60');
+            } else {
+                list.classList.remove('opacity-60');
+            }
+        }
+
+        function updatePaginationControls(pagination) {
+            const countElement = document.getElementById('articleCount');
+            const summaryElement = document.getElementById('resultSummary');
+            const pageInfo = document.getElementById('pageInfo');
+            const prevButton = document.getElementById('prevPage');
+            const nextButton = document.getElementById('nextPage');
+            const pageSizeSelect = document.getElementById('pageSize');
+
+            pageSize = pagination.page_size || pageSize;
+            if (pageSizeSelect.value !== String(pageSize)) {
+                pageSizeSelect.value = String(pageSize);
             }
 
-            return articles.filter(article => {
-                const failureMatch = selectedFailureModes.size === 0 || selectedFailureModes.has(article.failure_mode);
-                const focusMatch = selectedPrimaryFocuses.size === 0 || selectedPrimaryFocuses.has(article.primary_focus);
-                return failureMatch && focusMatch;
-            });
-        }
+            totalArticles = pagination.total;
+            totalPages = pagination.total_pages || 0;
+            currentPage = totalArticles === 0 ? 1 : pagination.page;
 
-        function filterByFeeds(articles) {
-            if (selectedFeeds.size === 0) {
-                return articles;
+            const startValue = typeof pagination.start === 'number' ? pagination.start : 0;
+            const endValue = typeof pagination.end === 'number' ? pagination.end : 0;
+            const displayTotalPages = totalPages || (totalArticles === 0 ? 1 : 0);
+            const displayCurrentPage = totalArticles === 0 ? 1 : currentPage;
+
+            countElement.textContent = `(${totalArticles})`;
+
+            if (totalArticles === 0) {
+                summaryElement.textContent = 'No articles match your filters.';
+            } else {
+                summaryElement.textContent = `Showing ${startValue}–${endValue} of ${totalArticles} articles`;
             }
-            return articles.filter(article => selectedFeeds.has(article.feed_name));
+
+            pageInfo.textContent = `Page ${displayCurrentPage} of ${displayTotalPages}`;
+
+            prevButton.disabled = !pagination.has_prev;
+            nextButton.disabled = !pagination.has_next;
         }
 
-        function calculateScore(article, weights) {
-            return (
-                article.interpretability * weights.interpretability +
-                article.understanding * weights.understanding +
-                article.safety * weights.safety +
-                article.technicality * weights.technicality +
-                article.surprisal * weights.surprisal
-            );
+        function goToPage(page) {
+            const maxPage = totalPages || 1;
+            const targetPage = Math.max(1, Math.min(page, maxPage));
+            if (targetPage === currentPage) {
+                return;
+            }
+            currentPage = targetPage;
+            updateView({ preservePage: true });
         }
 
-        function sortArticles(articles, weights) {
-            const normalized = getNormalizedWeights(weights);
-            return articles.sort((a, b) => {
-                const scoreA = calculateScore(a, normalized);
-                const scoreB = calculateScore(b, normalized);
-                return scoreB - scoreA;
-            });
+        function renderErrorState() {
+            const container = document.getElementById('articleList');
+            container.innerHTML = '<p class="text-red-500 text-center py-8">Failed to load articles. Please try again.</p>';
+            document.getElementById('articleCount').textContent = '';
+            document.getElementById('resultSummary').textContent = 'Failed to load articles. Please try again.';
+            document.getElementById('pageInfo').textContent = 'Page - of -';
+            document.getElementById('prevPage').disabled = true;
+            document.getElementById('nextPage').disabled = true;
         }
 
         function renderFeedToggles() {
             const container = document.getElementById('feedToggles');
             container.innerHTML = '';
 
-            // Separate arxiv feeds
-            const arxivFeeds = allFeeds.filter(feed => feed.toLowerCase().includes('arxiv'));
-            const nonArxivFeeds = allFeeds.filter(feed => !feed.toLowerCase().includes('arxiv'));
+            // Separate arxiv feeds (always first)
+            const arxivFeeds = allFeeds
+                .filter(feed => feed.toLowerCase().includes('arxiv'))
+                .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+            const nonArxivFeeds = allFeeds
+                .filter(feed => !feed.toLowerCase().includes('arxiv'))
+                .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
             // Separate feeds by year (conferences) and others
-            const yearPattern = /\b(20\d{2})\b/;
+            const yearPattern = /(20\d{2})/;
             const feedsByYear = {};
             const regularFeeds = [];
 
@@ -451,6 +535,10 @@
                 } else {
                     regularFeeds.push(feed);
                 }
+            });
+
+            Object.keys(feedsByYear).forEach(year => {
+                feedsByYear[year].sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
             });
 
             // Helper function to render a group of feeds
@@ -503,9 +591,6 @@
 
         function renderArticles(articles) {
             const container = document.getElementById('articleList');
-            const countElement = document.getElementById('articleCount');
-
-            countElement.textContent = `(${articles.length})`;
 
             if (articles.length === 0) {
                 container.innerHTML = '<p class="text-gray-500 text-center py-8">No articles match your filters.</p>';
@@ -710,6 +795,13 @@
                 params.set('feeds', feedArray.join(','));
             }
 
+            if (pageSize !== PAGE_SIZE_DEFAULT) {
+                params.set('pageSize', pageSize);
+            }
+            if (currentPage > 1) {
+                params.set('page', currentPage);
+            }
+
             // Only persist sidebar state if it differs from default
             const isLargeScreen = window.innerWidth >= 1024;
             const defaultState = isLargeScreen;
@@ -723,7 +815,7 @@
             if (!showKeywords) params.set('hideKeywords', '1');
             if (!showScores) params.set('hideScores', '1');
             if (!showAuthors) params.set('hideAuthors', '1');
-            if (arxivLinkFormat !== 'arxiv-pdf') params.set('arxivLink', arxivLinkFormat);
+            if (arxivLinkFormat !== 'papers.cool') params.set('arxivLink', arxivLinkFormat);
 
             const url = params.toString() ? `?${params.toString()}` : window.location.pathname;
             window.history.replaceState({}, '', url);
@@ -748,7 +840,7 @@
 
             if (params.has('weights')) {
                 const weights = params.get('weights').split(',').map(w => parseInt(w, 10));
-                const weightKeys = ['interpretability', 'understanding', 'safety', 'technicality', 'surprisal'];
+                const weightKeys = WEIGHT_KEYS.slice();
                 weights.forEach((w, i) => {
                     if (!Number.isNaN(w) && weightKeys[i]) {
                         document.getElementById(`weight-${weightKeys[i]}`).value = w;
@@ -769,13 +861,39 @@
                 selectedFeeds = new Set();
             }
 
+            let parsedPageSize = PAGE_SIZE_DEFAULT;
+            if (params.has('pageSize')) {
+                const candidate = parseInt(params.get('pageSize'), 10);
+                if (!Number.isNaN(candidate) && candidate > 0) {
+                    parsedPageSize = candidate;
+                }
+            }
+            const pageSizeSelect = document.getElementById('pageSize');
+            if (pageSizeSelect) {
+                const hasOption = Array.from(pageSizeSelect.options).some(option => option.value === String(parsedPageSize));
+                if (hasOption) {
+                    pageSizeSelect.value = String(parsedPageSize);
+                } else {
+                    parsedPageSize = parseInt(pageSizeSelect.value, 10) || PAGE_SIZE_DEFAULT;
+                }
+            }
+            pageSize = parsedPageSize;
+
+            currentPage = 1;
+            if (params.has('page')) {
+                const parsedPage = parseInt(params.get('page'), 10);
+                if (!Number.isNaN(parsedPage) && parsedPage > 0) {
+                    currentPage = parsedPage;
+                }
+            }
+
             // Load customization settings
             showSummary = !params.has('hideSummary');
             showSummaryCn = !params.has('hideSummaryCn');
             showKeywords = !params.has('hideKeywords');
             showScores = !params.has('hideScores');
             showAuthors = !params.has('hideAuthors');
-            arxivLinkFormat = params.get('arxivLink') || 'arxiv-pdf';
+            arxivLinkFormat = params.get('arxivLink') || 'papers.cool';
 
             // Update checkbox states
             document.getElementById('toggle-summary').checked = showSummary;
@@ -812,7 +930,7 @@
         }
 
         function resetWeights() {
-            const weightKeys = ['interpretability', 'understanding', 'safety', 'technicality', 'surprisal'];
+            const weightKeys = WEIGHT_KEYS.slice();
             weightKeys.forEach(key => {
                 document.getElementById(`weight-${key}`).value = 0;
             });
@@ -832,38 +950,87 @@
             });
         }
 
-        async function updateView() {
+        async function updateView(options = {}) {
             if (sliderUpdateTimeout) {
                 clearTimeout(sliderUpdateTimeout);
                 sliderUpdateTimeout = null;
             }
             setSliderPendingState(false);
+
+            const { preservePage = false } = options;
+            if (!preservePage) {
+                currentPage = 1;
+            }
+
             const filters = getCurrentFilters();
+            const params = buildArticleQueryParams(filters);
 
-            let filtered = allArticles;
-            filtered = filterByDate(filtered, filters.dateFilter);
-            filtered = filterByCategories(filtered);
-            filtered = filterByFeeds(filtered);
+            const requestToken = ++currentFetchToken;
+            setLoadingState(true);
 
-            const sorted = sortArticles([...filtered], filters.weights);
-
-            renderArticles(sorted);
-            updateWeightDisplays();
-            updateURL();
+            try {
+                const response = await fetch(`/api/articles?${params.toString()}`);
+                if (!response.ok) {
+                    throw new Error(`Request failed with status ${response.status}`);
+                }
+                const data = await response.json();
+                 if (requestToken !== currentFetchToken) {
+                     return;
+                 }
+                currentArticles = data.articles || [];
+                const pagination = data.pagination || {
+                    page: currentPage,
+                    page_size: pageSize,
+                    total: currentArticles.length,
+                    total_pages: currentArticles.length > 0 ? 1 : 0,
+                    has_next: false,
+                    has_prev: false,
+                    start: currentArticles.length > 0 ? 1 : 0,
+                    end: currentArticles.length
+                };
+                updatePaginationControls(pagination);
+                renderArticles(currentArticles);
+            } catch (error) {
+                console.error('Failed to load articles', error);
+                if (requestToken !== currentFetchToken) {
+                    return;
+                }
+                currentArticles = [];
+                totalArticles = 0;
+                totalPages = 0;
+                currentPage = 1;
+                renderErrorState();
+            } finally {
+                if (requestToken === currentFetchToken) {
+                    setLoadingState(false);
+                    updateWeightDisplays();
+                    updateURL();
+                }
+            }
         }
 
         async function init() {
-            const response = await fetch('/api/data');
-            const data = await response.json();
-
-            allArticles = data.articles;
-            allFeeds = data.feeds;
+            try {
+                const response = await fetch('/api/data');
+                if (!response.ok) {
+                    throw new Error(`Failed to load metadata: ${response.status}`);
+                }
+                const data = await response.json();
+                allFeeds = data.feeds || [];
+            } catch (error) {
+                console.error('Failed to load metadata', error);
+                renderErrorState();
+                document.getElementById('resultSummary').textContent = 'Unable to load feed metadata.';
+                return;
+            }
 
             loadStateFromURL();
             renderFeedToggles();
             renderPrimaryFocusToggles();
             renderFailureModeToggles();
             updateWeightDisplays();
+
+            document.getElementById('pageSize').value = String(pageSize);
 
             document.getElementById('dateQuick').addEventListener('change', (e) => {
                 const isCustom = e.target.value === 'custom';
@@ -878,37 +1045,66 @@
                 updateView();
             });
 
-            ['interpretability', 'understanding', 'safety', 'technicality', 'surprisal'].forEach(key => {
+            ['interpretability', 'understanding', 'safety', 'technicality', 'nontechnicality', 'surprisal'].forEach(key => {
                 document.getElementById(`weight-${key}`).addEventListener('input', handleSliderInput);
             });
 
             document.getElementById('resetWeights').addEventListener('click', resetWeights);
             document.getElementById('shareLink').addEventListener('click', shareLink);
 
+            document.getElementById('pageSize').addEventListener('change', (e) => {
+                const value = parseInt(e.target.value, 10);
+                if (Number.isNaN(value) || value <= 0) {
+                    return;
+                }
+                pageSize = value;
+                currentPage = 1;
+                updateView();
+            });
+            document.getElementById('prevPage').addEventListener('click', () => {
+                if (currentPage > 1) {
+                    goToPage(currentPage - 1);
+                }
+            });
+            document.getElementById('nextPage').addEventListener('click', () => {
+                if (totalPages === 0) {
+                    return;
+                }
+                if (currentPage < totalPages) {
+                    goToPage(currentPage + 1);
+                }
+            });
+
             // Customization toggle event listeners
             document.getElementById('toggle-summary').addEventListener('change', (e) => {
                 showSummary = e.target.checked;
-                updateView();
+                renderArticles(currentArticles);
+                updateURL();
             });
             document.getElementById('toggle-summary-cn').addEventListener('change', (e) => {
                 showSummaryCn = e.target.checked;
-                updateView();
+                renderArticles(currentArticles);
+                updateURL();
             });
             document.getElementById('toggle-keywords').addEventListener('change', (e) => {
                 showKeywords = e.target.checked;
-                updateView();
+                renderArticles(currentArticles);
+                updateURL();
             });
             document.getElementById('toggle-scores').addEventListener('change', (e) => {
                 showScores = e.target.checked;
-                updateView();
+                renderArticles(currentArticles);
+                updateURL();
             });
             document.getElementById('toggle-authors').addEventListener('change', (e) => {
                 showAuthors = e.target.checked;
-                updateView();
+                renderArticles(currentArticles);
+                updateURL();
             });
             document.getElementById('arxiv-link-format').addEventListener('change', (e) => {
                 arxivLinkFormat = e.target.value;
-                updateView();
+                renderArticles(currentArticles);
+                updateURL();
             });
 
             // Sidebar toggle event listeners
@@ -916,7 +1112,7 @@
             document.getElementById('sidebarToggle').addEventListener('click', () => toggleSidebar(false));
             document.getElementById('sidebarOverlay').addEventListener('click', () => toggleSidebar(false));
 
-            await updateView();
+            await updateView({ preservePage: true });
         }
 
         init();

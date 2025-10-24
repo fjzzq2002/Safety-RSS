@@ -6,6 +6,7 @@ import os
 import re
 import time
 import json
+import math
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Any
@@ -25,6 +26,18 @@ CACHE_DURATION = 300  # 5 minutes in seconds
 # Categories from schema.json
 FAILURE_MODES = ["human-misuse", "misalignment", "societal-disruption", "other", "non-applicable"]
 PRIMARY_FOCUSES = ["interpretability", "alignment", "robustness", "control", "other"]
+
+# Scoring configuration
+WEIGHT_KEYS = [
+    "interpretability",
+    "understanding",
+    "safety",
+    "technicality",
+    "nontechnicality",
+    "surprisal",
+]
+DEFAULT_PAGE_SIZE = 25
+MAX_PAGE_SIZE = 200
 
 # Global cache
 _cache: Dict[str, Any] = {
@@ -50,6 +63,7 @@ class Article:
     safety: int
     technicality: int
     surprisal: int
+    nontechnicality: int
     failure_mode: str
     primary_focus: str
     authors: Optional[List[str]]
@@ -186,7 +200,7 @@ def parse_summary_html(summary_html: str) -> Dict[str, Any]:
                 if "Failure mode -" in cat_part:
                     result["categories"]["failure_mode"] = cat_part.split("-", 1)[1].strip()
                 elif "Primary focus -" in cat_part:
-                    result["categories"]["primary_focus"] = cat_part.split("-", 1)[1].strip()
+                    result["categories"]["primary_focus"] = cat_part.split("-", 1)[1].strip().split()[0]
 
     return result
 
@@ -248,6 +262,9 @@ def parse_xml_file(xml_path: Path) -> List[Article]:
                 "other",
             )
 
+            technicality_score = int(scores.get("technicality", 0) or 0)
+            nontechnicality_score = max(0, 11 - technicality_score)
+
             article = Article(
                 feed_name=feed_name,
                 title=getattr(entry, 'title', 'Untitled'),
@@ -260,8 +277,9 @@ def parse_xml_file(xml_path: Path) -> List[Article]:
                 interpretability=scores.get("interpretability", 0),
                 understanding=scores.get("understanding", 0),
                 safety=scores.get("safety", 0),
-                technicality=scores.get("technicality", 0),
+                technicality=technicality_score,
                 surprisal=scores.get("surprisal", 0),
+                nontechnicality=nontechnicality_score,
                 failure_mode=failure_mode,
                 primary_focus=primary_focus,
                 authors=parsed.get("authors", None)
@@ -371,16 +389,194 @@ def _filter_articles_by_feeds(articles: List[Dict[str, Any]], feeds: Optional[Li
     return [article for article in articles if article.get("feed_name") in feeds_set]
 
 
+def _filter_articles_by_categories(articles: List[Dict[str, Any]],
+                                   failure_modes: Optional[List[str]],
+                                   primary_focuses: Optional[List[str]]) -> List[Dict[str, Any]]:
+    """Filter articles by failure modes and primary focuses."""
+    if not failure_modes and not primary_focuses:
+        return articles
+
+    failure_set = set(failure_modes) if failure_modes else None
+    focus_set = set(primary_focuses) if primary_focuses else None
+
+    filtered: List[Dict[str, Any]] = []
+    for article in articles:
+        failure_value = article.get("failure_mode")
+        focus_value = article.get("primary_focus")
+        failure_match = True if failure_set is None else failure_value in failure_set
+        focus_match = True if focus_set is None else focus_value in focus_set
+        if failure_match and focus_match:
+            filtered.append(article)
+    return filtered
+
+
+def _parse_csv_param(raw_value: Optional[str], allowed: Optional[Iterable[str]] = None) -> Optional[List[str]]:
+    """Parse a comma-separated string into a validated list."""
+    if not raw_value:
+        return None
+
+    items = [item.strip() for item in raw_value.split(',') if item.strip()]
+    if allowed is not None:
+        allowed_set = set(allowed)
+        items = [item for item in items if item in allowed_set]
+    return items or None
+
+
+def _parse_weights(raw_value: Optional[str]) -> Dict[str, float]:
+    """Parse slider weights into a normalized weight mapping."""
+    weights = {key: 0.0 for key in WEIGHT_KEYS}
+
+    if raw_value:
+        parts = raw_value.split(',')
+        for idx, part in enumerate(parts):
+            if idx >= len(WEIGHT_KEYS):
+                break
+            try:
+                value = float(part)
+            except (TypeError, ValueError):
+                continue
+            weights[WEIGHT_KEYS[idx]] = max(0.0, value)
+
+    total = sum(weights.values())
+    if total <= 0:
+        defaults: Dict[str, float] = {}
+        baseline_keys = [key for key in WEIGHT_KEYS if key != "nontechnicality"]
+        if baseline_keys:
+            equal_weight = 1.0 / len(baseline_keys)
+            for key in baseline_keys:
+                defaults[key] = equal_weight
+        else:
+            # Fallback to equal distribution if nontechnicality is the only key
+            equal_weight = 1.0 / len(WEIGHT_KEYS) if WEIGHT_KEYS else 0.0
+            for key in WEIGHT_KEYS:
+                defaults[key] = equal_weight
+        defaults["nontechnicality"] = 0.0
+        return defaults
+
+    return {key: weight / total for key, weight in weights.items()}
+
+
+def _calculate_score(article: Dict[str, Any], normalized_weights: Dict[str, float]) -> float:
+    """Calculate a weighted score for an article."""
+    score = 0.0
+    for key in WEIGHT_KEYS:
+        if key == "nontechnicality":
+            value = article.get("nontechnicality")
+            if value is None:
+                tech = article.get("technicality", 0) or 0
+                value = max(0, 11 - int(tech))
+        else:
+            value = article.get(key, 0) or 0
+        score += float(value) * normalized_weights.get(key, 0.0)
+    return score
+
+
+def _apply_filters(articles: List[Dict[str, Any]],
+                   date_type: str,
+                   date_start: Optional[str],
+                   date_end: Optional[str],
+                   feeds: Optional[List[str]],
+                   failure_modes: Optional[List[str]],
+                   primary_focuses: Optional[List[str]]) -> List[Dict[str, Any]]:
+    """Apply all supported filters to the article list."""
+    filtered = _filter_articles_by_date(articles, date_type, date_start, date_end)
+    filtered = _filter_articles_by_feeds(filtered, feeds)
+    filtered = _filter_articles_by_categories(filtered, failure_modes, primary_focuses)
+    return filtered
+
+
 @app.route('/api/data')
 def api_data():
-    """Get all articles and feeds."""
+    """Get available feeds and category metadata."""
     data = get_cached_data()
     return jsonify({
-        "articles": data["articles"],
         "feeds": data["feeds"],
         "categories": {
             "failure_modes": FAILURE_MODES,
             "primary_focuses": PRIMARY_FOCUSES
+        },
+        "total_articles": len(data["articles"]),
+        "last_refresh": data["last_refresh"]
+    })
+
+
+@app.route('/api/articles')
+def api_articles():
+    """Return paginated, filtered, and sorted articles."""
+    data = get_cached_data()
+    articles = data["articles"]
+
+    date_type = request.args.get('date', '7')
+    date_start = request.args.get('dateStart')
+    date_end = request.args.get('dateEnd')
+
+    feeds = _parse_csv_param(request.args.get('feeds'))
+    failure_modes = _parse_csv_param(request.args.get('failureModes'), FAILURE_MODES)
+    primary_focuses = _parse_csv_param(request.args.get('primaryFocuses'), PRIMARY_FOCUSES)
+
+    normalized_weights = _parse_weights(request.args.get('weights'))
+
+    filtered = _apply_filters(
+        articles,
+        date_type=date_type,
+        date_start=date_start,
+        date_end=date_end,
+        feeds=feeds,
+        failure_modes=failure_modes,
+        primary_focuses=primary_focuses
+    )
+
+    scored_articles = [
+        (_calculate_score(article, normalized_weights), article)
+        for article in filtered
+    ]
+    scored_articles.sort(key=lambda item: item[0], reverse=True)
+
+    try:
+        page = int(request.args.get('page', 1))
+    except (TypeError, ValueError):
+        page = 1
+    try:
+        page_size = int(request.args.get('pageSize', DEFAULT_PAGE_SIZE))
+    except (TypeError, ValueError):
+        page_size = DEFAULT_PAGE_SIZE
+
+    page = max(1, page)
+    page_size = max(1, min(page_size, MAX_PAGE_SIZE))
+
+    total = len(scored_articles)
+    if total == 0:
+        total_pages = 0
+        page = 1
+    else:
+        total_pages = math.ceil(total / page_size)
+        if page > total_pages:
+            page = total_pages
+
+    start_idx = (page - 1) * page_size
+    end_idx = start_idx + page_size
+    page_items = scored_articles[start_idx:end_idx]
+
+    payload: List[Dict[str, Any]] = []
+    for score, article in page_items:
+        article_copy = dict(article)
+        article_copy["score"] = round(score, 5)
+        payload.append(article_copy)
+
+    start_item = start_idx + 1 if total else 0
+    end_item = min(end_idx, total) if total else 0
+
+    return jsonify({
+        "articles": payload,
+        "pagination": {
+            "page": page,
+            "page_size": page_size,
+            "total": total,
+            "total_pages": total_pages,
+            "has_next": page < total_pages if total_pages else False,
+            "has_prev": page > 1 and total > 0,
+            "start": start_item,
+            "end": end_item
         }
     })
 
@@ -395,11 +591,19 @@ def api_grid():
     date_start = request.args.get('dateStart')
     date_end = request.args.get('dateEnd')
 
-    feeds_param = request.args.get('feeds')
-    feeds = [f for f in feeds_param.split(',') if f] if feeds_param else None
+    feeds = _parse_csv_param(request.args.get('feeds'))
+    failure_modes = _parse_csv_param(request.args.get('failureModes'), FAILURE_MODES)
+    primary_focuses = _parse_csv_param(request.args.get('primaryFocuses'), PRIMARY_FOCUSES)
 
-    filtered = _filter_articles_by_date(articles, date_type, date_start, date_end)
-    filtered = _filter_articles_by_feeds(filtered, feeds)
+    filtered = _apply_filters(
+        articles,
+        date_type=date_type,
+        date_start=date_start,
+        date_end=date_end,
+        feeds=feeds,
+        failure_modes=failure_modes,
+        primary_focuses=primary_focuses
+    )
 
     counts = {
         f"{failure}:{focus}": 0

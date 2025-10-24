@@ -52,4 +52,20 @@
 
 <a href="https://www.buymeacoffee.com/yinan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
+- https://www.alignmentforum.org/feed.xml?view=community-rss -> alignmentforum.xml
+- https://www.lesswrong.com/feed.xml?view=frontpage-rss, https://www.lesswrong.com/feed.xml?view=frontpage-rss&karmaThreshold=30 -> lesswrong.xml
+- https://kexue.fm/feed -> kexuefm.xml
+- https://politepol.com/fd/uZeHlhOKLWF6.xml -> alignmentscience.xml
+- https://politepol.com/fd/hvc24CgONayV.xml -> transformercircuits.xml
+- https://politepol.com/fd/pix21PKyG4KK.xml -> grayswan.xml
+- https://politepol.com/fd/JQseHIwNibhm.xml -> cais.xml
+- https://politepol.com/fd/tEEQSjBKfPNk.xml, https://politepol.com/fd/HG65yVQWovKg.xml -> truthfulai.xml
+- https://politepol.com/fd/6DNgCpV6Vl9l.xml -> transluce.xml
+- https://politepol.com/fd/R5zvvYykxppD.xml -> aisi.xml
+- https://politepol.com/fd/CugSKbvPdpjY.xml -> metr.xml
+- https://politepol.com/fd/C3wOvys8aPKp.xml -> goodfire.xml
+- https://papers.cool/arxiv/cs.AI/feed -> arxiv_csai.xml
+- https://papers.cool/arxiv/cs.CV/feed -> arxiv_cscv.xml
+- https://papers.cool/arxiv/cs.CL/feed -> arxiv_cscl.xml
+- https://papers.cool/arxiv/cs.LG/feed -> arxiv_cslg.xml
 - artifacts/iclr2026_preprints.jsonl -> iclr2026_preprints.xml
