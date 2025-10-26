@@ -15,7 +15,7 @@ from collections.abc import Iterable
 from dataclasses import dataclass, asdict
 
 import feedparser
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, send_from_directory
 from bs4 import BeautifulSoup
 
 app = Flask(__name__)
@@ -337,6 +337,12 @@ def get_cached_data():
 def index():
     """Render the main page."""
     return render_template('index.html')
+
+
+@app.route('/docs/<path:filename>')
+def serve_docs(filename: str):
+    """Serve static files from the docs directory."""
+    return send_from_directory(str(DOCS_DIR), filename, conditional=True)
 
 
 def _filter_articles_by_date(articles: List[Dict[str, Any]], date_type: str,
