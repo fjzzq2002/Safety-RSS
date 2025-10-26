@@ -657,8 +657,14 @@ def api_refresh():
 
 
 if __name__ == '__main__':
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Run the Flask application')
+    parser.add_argument('--port', type=int, default=5000, help='Port to run the server on (default: 5000)')
+    args = parser.parse_args()
+    
     # Initial data load
     refresh_data()
 
     # Run the app
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=args.port)
