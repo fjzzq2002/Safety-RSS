@@ -182,8 +182,8 @@
         </aside>
 
         <!-- Main Content -->
-        <section class="flex-1 min-w-0 p-6 lg:p-10 overflow-y-auto">
-            <div class="bg-white rounded-lg p-6">
+        <section class="flex-1 min-w-0 p-4 sm:p-6 lg:p-10 overflow-y-auto">
+            <div class="bg-white rounded-lg sm:p-6">
                 <div class="flex justify-between items-center mb-4">
                     <div class="flex items-center gap-3">
                         <button id="openSidebar" class="text-gray-600 hover:text-gray-800">
@@ -197,7 +197,7 @@
                 </div>
                 <div class="flex flex-wrap items-center justify-between gap-3 mb-4" id="articleControls">
                     <p id="resultSummary" class="text-sm text-gray-600">Loading articles...</p>
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-3 flex-wrap">
                         <label class="flex items-center gap-2 text-sm text-gray-600">
                             <span>Per page</span>
                             <select id="pageSize" class="border border-gray-300 rounded-md px-2 py-1 text-sm focus:ring-2 focus:ring-blue-500">
@@ -610,14 +610,14 @@
                 const iconGroupMarkup = (focusIconMarkup || failureIconMarkup) ? `<div class="flex gap-2 text-gray-900">${focusIconMarkup}${failureIconMarkup}</div>` : '';
 
                 return `
-                    <div class="border rounded-lg p-6 hover:shadow-lg transition" style="border-color: ${focusColor};">
+                    <div class="border rounded-lg p-4 sm:p-6 hover:shadow-lg transition" style="border-color: ${focusColor};">
                         <div class="mb-3">
                             <h3 class="text-xl font-semibold text-blue-600 hover:text-blue-800 ${showAuthors && authors ? 'mb-1' : 'mb-3'}">
                                 <a href="${articleLink}" target="_blank" class="hover:underline">${article.title}</a>
                             </h3>
                             ${showAuthors && authors ? `<div class="mb-3.5"><p class="text-sm text-gray-600 italic">${authors}</p></div>` : ''}
 
-                            <div class="flex justify-between items-end gap-4">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-3">
                                 <div class="flex flex-wrap gap-2">
                                     <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">
                                         ${article.feed_name}
@@ -629,7 +629,7 @@
                                         ${article.failure_mode}
                                     </span>
                                 </div>
-                                <div class="flex items-center gap-2">
+                                <div class="flex items-center gap-2 mt-2 sm:mt-0">
                                     <span class="text-sm text-gray-500 whitespace-nowrap">${date}</span>
                                     ${iconGroupMarkup}
                                 </div>
@@ -643,12 +643,12 @@
 
                         ${showKeywords && keywords ? `<div class="mb-3"><p class="text-sm text-gray-600"><strong>Keywords:</strong> ${keywords}</p></div>` : ''}
 
-                        ${showScores ? `<div class="flex gap-4 text-sm">
-                            <span class="text-gray-600"><strong>Interpretability:</strong> ${article.interpretability}</span>
-                            <span class="text-gray-600"><strong>Understanding:</strong> ${article.understanding}</span>
-                            <span class="text-gray-600"><strong>Safety:</strong> ${article.safety}</span>
-                            <span class="text-gray-600"><strong>Technicality:</strong> ${article.technicality}</span>
-                            <span class="text-gray-600"><strong>Surprisal:</strong> ${article.surprisal}</span>
+                        ${showScores ? `<div class="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+                            <span class="text-gray-600 whitespace-nowrap"><strong>Interpretability:</strong> ${article.interpretability}</span>
+                            <span class="text-gray-600 whitespace-nowrap"><strong>Understanding:</strong> ${article.understanding}</span>
+                            <span class="text-gray-600 whitespace-nowrap"><strong>Safety:</strong> ${article.safety}</span>
+                            <span class="text-gray-600 whitespace-nowrap"><strong>Technicality:</strong> ${article.technicality}</span>
+                            <span class="text-gray-600 whitespace-nowrap"><strong>Surprisal:</strong> ${article.surprisal}</span>
                         </div>` : ''}
                     </div>
                 `;

@@ -74,6 +74,35 @@ class Article:
         return asdict(self)
 
 
+def _article_dedup_key(article: Article) -> Optional[tuple[str, str]]:
+    """Create a canonical key for deduplicating articles."""
+    title = (article.title or "").strip().lower()
+    link = (article.link or "").strip()
+    if title and link:
+        return (title, link)
+    return None
+
+
+def _deduplicate_articles(articles: List[Article]) -> List[Article]:
+    """Remove duplicate articles with the same title and link."""
+    deduped: List[Article] = []
+    seen: set[tuple[str, str]] = set()
+
+    for article in articles:
+        key = _article_dedup_key(article)
+        if key is None:
+            deduped.append(article)
+            continue
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+        deduped.append(article)
+
+    return deduped
+
+
 def normalize_category(value: Optional[str], allowed: Iterable[str], default: str) -> str:
     """Normalize category strings to slug format defined in schema."""
     if not value:
@@ -315,6 +344,8 @@ def refresh_data():
             articles.extend(parsed_articles)
             if parsed_articles:
                 feeds.add(xml_file.stem)
+
+    articles = _deduplicate_articles(articles)
 
     _cache["articles"] = [article.to_dict() for article in articles]
     _cache["feeds"] = sorted(list(feeds))
