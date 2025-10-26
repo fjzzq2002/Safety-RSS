@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Goodfire - Research</title>
+<link>https://www.goodfire.ai/research</link>
+
+
+<item>
+<title>Finding the Tree of Life in Evo 2</title>
+<link>https://www.goodfire.ai/research/phylogeny-manifold</link>
+<guid>https://www.goodfire.ai/research/phylogeny-manifold</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces a method for reconstructing the tree of life by mapping genomic data onto a learned Evo 2 manifold, allowing visualization and analysis of evolutionary relationships among species. It demonstrates how manifold embeddings can capture phylogenetic structure and discusses validation against known taxonomic hierarchies.<br /><strong>Summary (CN):</strong> 本文提出一种将基因组数据映射到学习得到的 Evo 2 流形上，以重建生命树并可视化物种之间进化关系的方法。研究展示了流形嵌入能够捕获系统发育结构，并与已知的分类层级进行验证。<br /><strong>Keywords:</strong> phylogeny, tree of life, manifold learning, Evo 2, genomic embeddings, bioinformatics, evolutionary relationships<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 5, Safety: 1, Technicality: 6, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces a method for reconstructing the tree of life by mapping genomic data onto a learned Evo 2 manifold, allowing visualization and analysis of evolutionary relationships among species. It demonstrates how manifold embeddings can capture phylogenetic structure and discusses validation against known taxonomic hierarchies.", "summary_cn": "本文提出一种将基因组数据映射到学习得到的 Evo 2 流形上，以重建生命树并可视化物种之间进化关系的方法。研究展示了流形嵌入能够捕获系统发育结构，并与已知的分类层级进行验证。", "keywords": "phylogeny, tree of life, manifold learning, Evo 2, genomic embeddings, bioinformatics, evolutionary relationships", "scoring": {"interpretability": 2, "understanding": 5, "safety": 1, "technicality": 6, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}}
+]]></acme>
+
+<pubDate>Thu, 28 Aug 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Discovering Undesired Rare Behaviors via Model Diff Amplification</title>
+<link>https://www.goodfire.ai/research/model-diff-amplification</link>
+<guid>https://www.goodfire.ai/research/model-diff-amplification</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces Model Diff Amplification (MDA), a method that compares outputs of successive model checkpoints to amplify and surface rare, undesired behaviors that are otherwise hard to detect. By iteratively prompting the model toward observed differences, MDA uncovers failure modes such as covert policy violations and harmful content generation. The technique provides a systematic way to audit and improve safety of large language models.<br /><strong>Summary (CN):</strong> 本文提出模型差分放大（Model Diff Amplification，MDA）方法，通过比较相继模型检查点的输出差异来放大并发现难以捕获的罕见不良行为。该方法在迭代提示模型趋向观察到的差异时，能够揭示如隐蔽政策违规和有害内容生成等失效模式。MDA 为大型语言模型的安全审计与改进提供了一套系统化手段。<br /><strong>Keywords:</strong> rare behaviors, model diff amplification, safety testing, failure detection, AI alignment, robustness, model auditing<br /><strong>Scores:</strong> Interpretability: 6, Understanding: 6, Safety: 7, Technicality: 7, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - interpretability</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces Model Diff Amplification (MDA), a method that compares outputs of successive model checkpoints to amplify and surface rare, undesired behaviors that are otherwise hard to detect. By iteratively prompting the model toward observed differences, MDA uncovers failure modes such as covert policy violations and harmful content generation. The technique provides a systematic way to audit and improve safety of large language models.", "summary_cn": "本文提出模型差分放大（Model Diff Amplification，MDA）方法，通过比较相继模型检查点的输出差异来放大并发现难以捕获的罕见不良行为。该方法在迭代提示模型趋向观察到的差异时，能够揭示如隐蔽政策违规和有害内容生成等失效模式。MDA 为大型语言模型的安全审计与改进提供了一套系统化手段。", "keywords": "rare behaviors, model diff amplification, safety testing, failure detection, AI alignment, robustness, model auditing", "scoring": {"interpretability": 6, "understanding": 6, "safety": 7, "technicality": 7, "surprisal": 7}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Thu, 21 Aug 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>The Circuits Research Landscape: Results and Perspectives</title>
+<link>https://www.goodfire.ai/research/the-circuits-research-landscape</link>
+<guid>https://www.goodfire.ai/research/the-circuits-research-landscape</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper surveys the recent progress of circuit‑level mechanistic interpretability research, summarizing key results, methodologies, and open challenges across various neural network architectures. It organizes the literature into thematic areas, evaluates the impact of discovered circuits on our comprehension of model behavior, and outlines promising future directions for the field.<br /><strong>Summary (CN):</strong> 本文回顾了近年来电路层面机械可解释性研究的进展，梳理了关键成果、方法论以及在不同神经网络结构中的未解挑战。文章将文献按主题分类，评估已发现电路对模型行为理解的影响，并展望了该领域的未来研究方向。<br /><strong>Keywords:</strong> mechanistic interpretability, circuits, neural network internals, research survey, Goodfire, model analysis, landscape review<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 3, Technicality: 6, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper surveys the recent progress of circuit‑level mechanistic interpretability research, summarizing key results, methodologies, and open challenges across various neural network architectures. It organizes the literature into thematic areas, evaluates the impact of discovered circuits on our comprehension of model behavior, and outlines promising future directions for the field.", "summary_cn": "本文回顾了近年来电路层面机械可解释性研究的进展，梳理了关键成果、方法论以及在不同神经网络结构中的未解挑战。文章将文献按主题分类，评估已发现电路对模型行为理解的影响，并展望了该领域的未来研究方向。", "keywords": "mechanistic interpretability, circuits, neural network internals, research survey, Goodfire, model analysis, landscape review", "scoring": {"interpretability": 8, "understanding": 7, "safety": 3, "technicality": 6, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 05 Aug 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Towards Scalable Parameter Decomposition</title>
+<link>https://www.goodfire.ai/research/stochastic-param-decomp</link>
+<guid>https://www.goodfire.ai/research/stochastic-param-decomp</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces a scalable stochastic parameter decomposition method that factorizes large neural network weight matrices into a sum of low‑rank components, enabling efficient analysis of individual parameter contributions. It provides algorithmic details, theoretical guarantees, and empirical evaluations on language models demonstrating that the decomposition captures meaningful functional modules while remaining computationally tractable.<br /><strong>Summary (CN):</strong> 本文提出了一种可扩展的随机参数分解方法，将大型神经网络权重矩阵分解为若干低秩组件之和，从而能够高效分析各参数的贡献。文中给出算法细节、理论保证，并在语言模型上进行实验验证，表明该分解能够捕获有意义的功能模块且计算成本可控。<br /><strong>Keywords:</strong> parameter decomposition, stochastic factorization, scalable interpretability, low-rank approximation, neural network analysis, model internals<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 7, Safety: 3, Technicality: 8, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces a scalable stochastic parameter decomposition method that factorizes large neural network weight matrices into a sum of low‑rank components, enabling efficient analysis of individual parameter contributions. It provides algorithmic details, theoretical guarantees, and empirical evaluations on language models demonstrating that the decomposition captures meaningful functional modules while remaining computationally tractable.", "summary_cn": "本文提出了一种可扩展的随机参数分解方法，将大型神经网络权重矩阵分解为若干低秩组件之和，从而能够高效分析各参数的贡献。文中给出算法细节、理论保证，并在语言模型上进行实验验证，表明该分解能够捕获有意义的功能模块且计算成本可控。", "keywords": "parameter decomposition, stochastic factorization, scalable interpretability, low-rank approximation, neural network analysis, model internals", "scoring": {"interpretability": 7, "understanding": 7, "safety": 3, "technicality": 8, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Sat, 28 Jun 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Replicating Circuit Tracing for a Simple Known Mechanism</title>
+<link>https://www.goodfire.ai/research/replicating-circuit-tracing-for-a-simple-mechanism</link>
+<guid>https://www.goodfire.ai/research/replicating-circuit-tracing-for-a-simple-mechanism</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper replicates a circuit tracing approach on a synthetic task with a simple, pre‑defined mechanism, evaluating how accurately the method can recover the ground‑truth circuit and highlighting reproducibility challenges. It provides a step‑by‑step analysis, compares results to the known mechanism, and discusses limitations and potential improvements for mechanistic interpretability research.<br /><strong>Summary (CN):</strong> 本文在一个已知的简单机制的合成任务上复现了电路追踪方法，评估该技术能否准确恢复真实的内部电路，并指出可复现性方面的挑战。文章详细阐述了实验步骤，比较了得到的电路与已知机制的差异，讨论了局限性并提出改进方向，以推动机械可解释性研究。<br /><strong>Keywords:</strong> circuit tracing, mechanistic interpretability, replication, known mechanism, neural network analysis, reproducibility<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 3, Technicality: 7, Surprisal: 4<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper replicates a circuit tracing approach on a synthetic task with a simple, pre‑defined mechanism, evaluating how accurately the method can recover the ground‑truth circuit and highlighting reproducibility challenges. It provides a step‑by‑step analysis, compares results to the known mechanism, and discusses limitations and potential improvements for mechanistic interpretability research.", "summary_cn": "本文在一个已知的简单机制的合成任务上复现了电路追踪方法，评估该技术能否准确恢复真实的内部电路，并指出可复现性方面的挑战。文章详细阐述了实验步骤，比较了得到的电路与已知机制的差异，讨论了局限性并提出改进方向，以推动机械可解释性研究。", "keywords": "circuit tracing, mechanistic interpretability, replication, known mechanism, neural network analysis, reproducibility", "scoring": {"interpretability": 8, "understanding": 7, "safety": 3, "technicality": 7, "surprisal": 4}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Wed, 11 Jun 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Painting With Concepts Using Diffusion Model Latents</title>
+<link>https://www.goodfire.ai/research/painting-with-concepts</link>
+<guid>https://www.goodfire.ai/research/painting-with-concepts</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces a method for manipulating diffusion model latents to paint images conditioned on high‑level concepts, allowing users to steer generation by editing latent representations associated with semantic attributes. It proposes a framework that extracts concept vectors from latent space and demonstrates controlled image synthesis across various concepts, showcasing the potential for more interpretable and controllable diffusion generation.<br /><strong>Summary (CN):</strong> 本文提出了一种在扩散模型潜在空间中操作概念向量以实现概念驱动绘画的方法，用户可通过编辑与语义属性对应的潜在表示来引导图像生成。文中构建了概念向量提取框架，并在多种概念上展示了受控的图像合成，展示了提升扩散模型可解释性和可控性的潜力。<br /><strong>Keywords:</strong> diffusion models, latent space manipulation, concept editing, image synthesis, representation learning, generative modeling<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 6, Safety: 3, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces a method for manipulating diffusion model latents to paint images conditioned on high‑level concepts, allowing users to steer generation by editing latent representations associated with semantic attributes. It proposes a framework that extracts concept vectors from latent space and demonstrates controlled image synthesis across various concepts, showcasing the potential for more interpretable and controllable diffusion generation.", "summary_cn": "本文提出了一种在扩散模型潜在空间中操作概念向量以实现概念驱动绘画的方法，用户可通过编辑与语义属性对应的潜在表示来引导图像生成。文中构建了概念向量提取框架，并在多种概念上展示了受控的图像合成，展示了提升扩散模型可解释性和可控性的潜力。", "keywords": "diffusion models, latent space manipulation, concept editing, image synthesis, representation learning, generative modeling", "scoring": {"interpretability": 7, "understanding": 6, "safety": 3, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 27 May 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Under the Hood of a Reasoning Model</title>
+<link>https://www.goodfire.ai/research/under-the-hood-of-a-reasoning-model</link>
+<guid>https://www.goodfire.ai/research/under-the-hood-of-a-reasoning-model</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article examines the internal mechanisms of a large language model designed for reasoning tasks, employing activation analysis, attribution methods, and targeted probing to reveal how chain‑of‑thought computations are orchestrated across layers. It identifies specific subnetworks that correspond to logical inference steps and demonstrates how interventions on these components affect downstream reasoning performance.<br /><strong>Summary (CN):</strong> 本文通过激活分析、归因方法和专门的探针，研究了用于推理任务的大型语言模型的内部机制，揭示了链式思考（chain‑of‑thought）计算在各层之间的组织方式。研究识别出对应逻辑推理步骤的子网络，并展示对这些子网络的干预如何影响后续的推理表现。<br /><strong>Keywords:</strong> mechanistic interpretability, reasoning model, chain-of-thought, probing, internal representations, neural circuits<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 7, Safety: 5, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article examines the internal mechanisms of a large language model designed for reasoning tasks, employing activation analysis, attribution methods, and targeted probing to reveal how chain‑of‑thought computations are orchestrated across layers. It identifies specific subnetworks that correspond to logical inference steps and demonstrates how interventions on these components affect downstream reasoning performance.", "summary_cn": "本文通过激活分析、归因方法和专门的探针，研究了用于推理任务的大型语言模型的内部机制，揭示了链式思考（chain‑of‑thought）计算在各层之间的组织方式。研究识别出对应逻辑推理步骤的子网络，并展示对这些子网络的干预如何影响后续的推理表现。", "keywords": "mechanistic interpretability, reasoning model, chain-of-thought, probing, internal representations, neural circuits", "scoring": {"interpretability": 7, "understanding": 7, "safety": 5, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 15 Apr 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Interpreting Evo 2: Arc Institute's Next-Generation Genomic Foundation Model</title>
+<link>https://www.goodfire.ai/research/interpreting-evo-2</link>
+<guid>https://www.goodfire.ai/research/interpreting-evo-2</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article examines Evo 2, Arc Institute's next‑generation genomic foundation model, by applying a suite of interpretability techniques to uncover how the model encodes biological sequences and functional information. It presents probing experiments, attention visualizations, and attribution analyses to reveal the internal representations that support tasks such as variant effect prediction and gene annotation. The findings highlight both the strengths and limitations of current probing methods for large-scale genomic transformers.<br /><strong>Summary (CN):</strong> 本文通过一系列可解释性技术对 Arc Institute 的下一代基因组基础模型 Evo 2 进行分析，揭示模型如何对生物序列和功能信息进行编码。文章展示了探针实验、注意力可视化以及特征归因分析，以揭示模型在变异效应预测和基因注释等任务中的内部表征。研究结果指出了当前大规模基因组 Transformer 探索方法的优势与局限。<br /><strong>Keywords:</strong> genomic foundation model, Evo 2, mechanistic interpretability, model probing, transformer, bioinformatics, representation analysis, feature attribution<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 6, Safety: 4, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article examines Evo 2, Arc Institute's next‑generation genomic foundation model, by applying a suite of interpretability techniques to uncover how the model encodes biological sequences and functional information. It presents probing experiments, attention visualizations, and attribution analyses to reveal the internal representations that support tasks such as variant effect prediction and gene annotation. The findings highlight both the strengths and limitations of current probing methods for large-scale genomic transformers.", "summary_cn": "本文通过一系列可解释性技术对 Arc Institute 的下一代基因组基础模型 Evo 2 进行分析，揭示模型如何对生物序列和功能信息进行编码。文章展示了探针实验、注意力可视化以及特征归因分析，以揭示模型在变异效应预测和基因注释等任务中的内部表征。研究结果指出了当前大规模基因组 Transformer 探索方法的优势与局限。", "keywords": "genomic foundation model, Evo 2, mechanistic interpretability, model probing, transformer, bioinformatics, representation analysis, feature attribution", "scoring": {"interpretability": 7, "understanding": 6, "safety": 4, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Thu, 20 Feb 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Mapping the Latent Space of Llama 3.3 70B</title>
+<link>https://www.goodfire.ai/research/mapping-latent-spaces-llama</link>
+<guid>https://www.goodfire.ai/research/mapping-latent-spaces-llama</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper investigates the internal latent representations of the Llama 3.3 70B model by applying probing techniques, dimensionality reduction, and clustering to visualize and characterize how semantic information is organized across layers. It presents quantitative analyses linking latent directions to specific linguistic and factual features, offering insights into the structure of large language model embeddings. The authors discuss implications for future mechanistic interpretability research.<br /><strong>Summary (CN):</strong> 本文通过探针技术、降维和聚类方法研究 Llama 3.3 70B 模型的内部潜在表示，展示了语义信息在不同层级的组织方式。文章提供了将潜在空间方向与特定语言和事实特征关联的定量分析，为大规模语言模型嵌入的结构提供了洞见，并讨论了对未来机械可解释性研究的意义。<br /><strong>Keywords:</strong> latent space, Llama 3.3 70B, representation probing, mechanistic interpretability, embedding analysis, clustering, model visualization<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 7, Safety: 2, Technicality: 8, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper investigates the internal latent representations of the Llama 3.3 70B model by applying probing techniques, dimensionality reduction, and clustering to visualize and characterize how semantic information is organized across layers. It presents quantitative analyses linking latent directions to specific linguistic and factual features, offering insights into the structure of large language model embeddings. The authors discuss implications for future mechanistic interpretability research.", "summary_cn": "本文通过探针技术、降维和聚类方法研究 Llama 3.3 70B 模型的内部潜在表示，展示了语义信息在不同层级的组织方式。文章提供了将潜在空间方向与特定语言和事实特征关联的定量分析，为大规模语言模型嵌入的结构提供了洞见，并讨论了对未来机械可解释性研究的意义。", "keywords": "latent space, Llama 3.3 70B, representation probing, mechanistic interpretability, embedding analysis, clustering, model visualization", "scoring": {"interpretability": 7, "understanding": 7, "safety": 2, "technicality": 8, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Mon, 23 Dec 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Understanding and Steering Llama 3 with Sparse Autoencoders</title>
+<link>https://www.goodfire.ai/research/understanding-and-steering-llama-3</link>
+<guid>https://www.goodfire.ai/research/understanding-and-steering-llama-3</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article applies sparse autoencoders to Llama 3 to extract low‑dimensional, sparse latent features from the model’s hidden states, enabling mechanistic interpretation of internal circuitry. It demonstrates how these learned features can be used to steer model behavior through targeted activation interventions, providing concrete case studies of feature‑driven control. The work highlights both scientific insights into Llama 3’s representations and potential safety benefits from controllable, interpretable steering mechanisms.<br /><strong>Summary (CN):</strong> 本文将稀疏自编码器应用于 Llama 3，提取模型隐藏层的低维稀疏潜在特征，从而实现对内部电路的机制性解释。通过有针对性的激活干预，展示了如何利用这些学习到的特征对模型行为进行引导，提供了特征驱动控制的具体案例研究。该工作既揭示了 Llama 3 表征的科学洞见，也展示了可解释、可控的引导机制在安全方面的潜在价值。<br /><strong>Keywords:</strong> Llama 3, sparse autoencoders, mechanistic interpretability, representation learning, model steering, activation patching, latent features, AI safety<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 5, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - interpretability</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article applies sparse autoencoders to Llama 3 to extract low‑dimensional, sparse latent features from the model’s hidden states, enabling mechanistic interpretation of internal circuitry. It demonstrates how these learned features can be used to steer model behavior through targeted activation interventions, providing concrete case studies of feature‑driven control. The work highlights both scientific insights into Llama 3’s representations and potential safety benefits from controllable, interpretable steering mechanisms.", "summary_cn": "本文将稀疏自编码器应用于 Llama 3，提取模型隐藏层的低维稀疏潜在特征，从而实现对内部电路的机制性解释。通过有针对性的激活干预，展示了如何利用这些学习到的特征对模型行为进行引导，提供了特征驱动控制的具体案例研究。该工作既揭示了 Llama 3 表征的科学洞见，也展示了可解释、可控的引导机制在安全方面的潜在价值。", "keywords": "Llama 3, sparse autoencoders, mechanistic interpretability, representation learning, model steering, activation patching, latent features, AI safety", "scoring": {"interpretability": 8, "understanding": 7, "safety": 5, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Wed, 25 Sep 2024 00:00:00 -0000</pubDate>
+</item>
+</channel>
+</rss>

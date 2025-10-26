@@ -71,4 +71,4 @@ I will consider hosting more feeds in the future. Email me or submit an issue if
 - https://papers.cool/arxiv/cs.CV/feed -> arxiv_cscv.xml
 - https://papers.cool/arxiv/cs.CL/feed -> arxiv_cscl.xml
 - https://papers.cool/arxiv/cs.LG/feed -> arxiv_cslg.xml
-- artifacts/iclr2026_preprints.jsonl -> iclr2026_preprints.xml
+- https://politepol.com/fd/e02qzlafmBbi.xml -> apollo.xml

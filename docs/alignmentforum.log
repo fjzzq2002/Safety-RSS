@@ -1,0 +1,132 @@
+------------------------------------------------------
+Started: 2025-10-22 02:56:03.246445
+Existing_entries: 0
+Fetching from https://www.alignmentforum.org/feed.xml?view=community-rss
+Append: [Reducing risk from scheming by studying trained-in scheming behavior](https://www.alignmentforum.org/posts/v6K3hnq5c9roa5MbS/reducing-risk-from-scheming-by-studying-trained-in-scheming)
+Authors: Ryan Greenblatt
+Append: [Rogue internal deployments via external APIs](https://www.alignmentforum.org/posts/fqRmcuspZuYBNiQuQ/rogue-internal-deployments-via-external-apis)
+Authors: Fabien Roger
+Append: [Current Language Models Struggle to Reason in Ciphered Language](https://www.alignmentforum.org/posts/Lz8cvGskgXmLRgmN4/current-language-models-struggle-to-reason-in-ciphered)
+Authors: Fabien Roger
+Append: [Recontextualization Mitigates Specification Gaming Without Modifying the Specification](https://www.alignmentforum.org/posts/whkMnqFWKsBm7Gyd7/recontextualization-mitigates-specification-gaming-without)
+Authors: ariana_azarbal
+Append: [Iterated Development and Study of Schemers (IDSS)](https://www.alignmentforum.org/posts/QpzTmFLXMJcdRkPLZ/iterated-development-and-study-of-schemers-idss)
+Authors: Ryan Greenblatt
+Append: [Assuring Agent Safety Evaluations By Analysing Transcripts](https://www.alignmentforum.org/posts/e8nMZewwonifENQYB/assuring-agent-safety-evaluations-by-analysing-transcripts)
+Authors: Jerome Wynne
+Append: [Realistic Reward Hacking Induces Different and Deeper Misalignment](https://www.alignmentforum.org/posts/HLJoJYi52mxgomujc/realistic-reward-hacking-induces-different-and-deeper-1)
+Authors: Arun Jose
+Append: [The Thinking Machines Tinker API is good news for AI control and security](https://www.alignmentforum.org/posts/r68nCQK3veQtCdqGt/the-thinking-machines-tinker-api-is-good-news-for-ai-control)
+Authors: Buck Shlegeris
+Append: [Inoculation prompting: Instructing models to misbehave at train-time can improve run-time behavior](https://www.alignmentforum.org/posts/AXRHzCPMv6ywCxCFp/inoculation-prompting-instructing-models-to-misbehave-at)
+Authors: Sam Marks
+Append: [Plans A, B, C, and D for misalignment risk](https://www.alignmentforum.org/posts/E8n93nnEaFeXTbHn5/plans-a-b-c-and-d-for-misalignment-risk)
+Authors: Ryan Greenblatt
+------------------------------------------------------
+Started: 2025-10-22 02:56:18.042379
+Existing_entries: 0
+Fetching from https://www.alignmentforum.org/feed.xml?view=community-rss
+Append: [Reducing risk from scheming by studying trained-in scheming behavior](https://www.alignmentforum.org/posts/v6K3hnq5c9roa5MbS/reducing-risk-from-scheming-by-studying-trained-in-scheming)
+Authors: Ryan Greenblatt
+Append: [Rogue internal deployments via external APIs](https://www.alignmentforum.org/posts/fqRmcuspZuYBNiQuQ/rogue-internal-deployments-via-external-apis)
+Authors: Fabien Roger
+Append: [Current Language Models Struggle to Reason in Ciphered Language](https://www.alignmentforum.org/posts/Lz8cvGskgXmLRgmN4/current-language-models-struggle-to-reason-in-ciphered)
+Authors: Fabien Roger
+Append: [Recontextualization Mitigates Specification Gaming Without Modifying the Specification](https://www.alignmentforum.org/posts/whkMnqFWKsBm7Gyd7/recontextualization-mitigates-specification-gaming-without)
+Authors: ariana_azarbal
+Append: [Iterated Development and Study of Schemers (IDSS)](https://www.alignmentforum.org/posts/QpzTmFLXMJcdRkPLZ/iterated-development-and-study-of-schemers-idss)
+Authors: Ryan Greenblatt
+Append: [Assuring Agent Safety Evaluations By Analysing Transcripts](https://www.alignmentforum.org/posts/e8nMZewwonifENQYB/assuring-agent-safety-evaluations-by-analysing-transcripts)
+Authors: Jerome Wynne
+Append: [Realistic Reward Hacking Induces Different and Deeper Misalignment](https://www.alignmentforum.org/posts/HLJoJYi52mxgomujc/realistic-reward-hacking-induces-different-and-deeper-1)
+Authors: Arun Jose
+Append: [The Thinking Machines Tinker API is good news for AI control and security](https://www.alignmentforum.org/posts/r68nCQK3veQtCdqGt/the-thinking-machines-tinker-api-is-good-news-for-ai-control)
+Authors: Buck Shlegeris
+Append: [Inoculation prompting: Instructing models to misbehave at train-time can improve run-time behavior](https://www.alignmentforum.org/posts/AXRHzCPMv6ywCxCFp/inoculation-prompting-instructing-models-to-misbehave-at)
+Authors: Sam Marks
+Append: [Plans A, B, C, and D for misalignment risk](https://www.alignmentforum.org/posts/E8n93nnEaFeXTbHn5/plans-a-b-c-and-d-for-misalignment-risk)
+Authors: Ryan Greenblatt
+Token length: 9270
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 836, "prompt_tokens": 5201, "total_tokens": 6037, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 586, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 0}, "cost": 0.00128175, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00078015, "upstream_inference_completions_cost": 0.0005016}}
+Cost (USD): 0.001282
+Token length: 45505
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 657, "prompt_tokens": 13025, "total_tokens": 13682, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 365, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 0}, "cost": 0.0007838, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.000521, "upstream_inference_completions_cost": 0.0002628}}
+Cost (USD): 0.000784
+Token length: 10296
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 258, "prompt_tokens": 5188, "total_tokens": 5446, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 0, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 0}, "cost": 0.0003755, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.0002594, "upstream_inference_completions_cost": 0.0001161}}
+Cost (USD): 0.000376
+Token length: 32732
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 765, "prompt_tokens": 10506, "total_tokens": 11271, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 453, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 0}, "cost": 0.00071655, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.0005253, "upstream_inference_completions_cost": 0.00019125}}
+Cost (USD): 0.000717
+Token length: 11361
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 692, "prompt_tokens": 6003, "total_tokens": 6695, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 359, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 0}, "cost": 0.00047315, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030015, "upstream_inference_completions_cost": 0.000173}}
+Cost (USD): 0.000473
+Token length: 21424
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 646, "prompt_tokens": 7291, "total_tokens": 7937, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 395, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 0}, "cost": 0.00065525, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00036455, "upstream_inference_completions_cost": 0.0002907}}
+Cost (USD): 0.000655
+Token length: 3573
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 633, "prompt_tokens": 3911, "total_tokens": 4544, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 360, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 0}, "cost": 0.00040964, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00015644, "upstream_inference_completions_cost": 0.0002532}}
+Cost (USD): 0.000410
+Token length: 22823
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 684, "prompt_tokens": 7741, "total_tokens": 8425, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 372, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 64}, "cost": 0.00149867, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00115667, "upstream_inference_completions_cost": 0.000342}}
+Cost (USD): 0.001499
+Token length: 12230
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 713, "prompt_tokens": 5676, "total_tokens": 6389, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 449, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 0}, "cost": 0.00060465, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.0002838, "upstream_inference_completions_cost": 0.00032085}}
+Cost (USD): 0.000605
+Token length: 14597
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 841, "prompt_tokens": 6668, "total_tokens": 7509, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 485, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 0}, "cost": 0.00054365, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.0003334, "upstream_inference_completions_cost": 0.00021025}}
+Cost (USD): 0.000544
+append_entries: 10
+Finish: 2025-10-22 02:56:35.697419
+------------------------------------------------------
+Started: 2025-10-24 17:27:43.692853
+Existing_entries: 10
+Fetching from https://www.alignmentforum.org/feed.xml?view=community-rss
+Append: [Should AI Developers Remove Discussion of AI Misalignment from AI Training Data?](https://www.alignmentforum.org/posts/6DfWFtL7mcs3vnHPn/should-ai-developers-remove-discussion-of-ai-misalignment)
+Authors: Alek Westover
+Append: [Technical Acceleration Methods for AI Safety: Summary from October 2025 Symposium](https://www.alignmentforum.org/posts/524pFXTPD8iDWmX4x/technical-acceleration-methods-for-ai-safety-summary-from)
+Authors: Martin Leitgab
+Token length: 12014
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 233, "prompt_tokens": 5424, "total_tokens": 5657, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 0, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 0}, "cost": 0.00037605, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.0002712, "upstream_inference_completions_cost": 0.00010485}}
+Cost (USD): 0.000376
+Token length: 15666
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 612, "prompt_tokens": 6362, "total_tokens": 6974, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 380, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 0}, "cost": 0.0005935, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.0003181, "upstream_inference_completions_cost": 0.0002754}}
+Cost (USD): 0.000593
+append_entries: 2
+Finish: 2025-10-24 17:27:49.841748
+------------------------------------------------------
+Started: 2025-10-25 20:08:27.490477
+Existing_entries: 12
+Fetching from https://www.alignmentforum.org/feed.xml?view=community-rss
+append_entries: 0
+Finish: 2025-10-25 20:08:28.496956
+------------------------------------------------------
+Started: 2025-10-25 20:18:45.297284
+Existing_entries: 12
+Fetching from https://www.alignmentforum.org/feed.xml?view=community-rss
+append_entries: 0
+Finish: 2025-10-25 20:18:46.198620

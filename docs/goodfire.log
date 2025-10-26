@@ -1,0 +1,84 @@
+------------------------------------------------------
+Started: 2025-10-22 03:19:09.724821
+Existing_entries: 0
+Fetching from https://politepol.com/fd/C3wOvys8aPKp.xml
+Append: [Finding the Tree of Life in Evo 2](https://www.goodfire.ai/research/phylogeny-manifold)
+Append: [Discovering Undesired Rare Behaviors via Model Diff Amplification](https://www.goodfire.ai/research/model-diff-amplification)
+Append: [The Circuits Research Landscape: Results and Perspectives](https://www.goodfire.ai/research/the-circuits-research-landscape)
+Append: [Towards Scalable Parameter Decomposition](https://www.goodfire.ai/research/stochastic-param-decomp)
+Append: [Replicating Circuit Tracing for a Simple Known Mechanism](https://www.goodfire.ai/research/replicating-circuit-tracing-for-a-simple-mechanism)
+Append: [Painting With Concepts Using Diffusion Model Latents](https://www.goodfire.ai/research/painting-with-concepts)
+Append: [Under the Hood of a Reasoning Model](https://www.goodfire.ai/research/under-the-hood-of-a-reasoning-model)
+Append: [Interpreting Evo 2: Arc Institute's Next-Generation Genomic Foundation Model](https://www.goodfire.ai/research/interpreting-evo-2)
+Append: [Mapping the Latent Space of Llama 3.3 70B](https://www.goodfire.ai/research/mapping-latent-spaces-llama)
+Append: [Understanding and Steering Llama 3 with Sparse Autoencoders](https://www.goodfire.ai/research/understanding-and-steering-llama-3)
+Token length: 0
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 539, "prompt_tokens": 3189, "total_tokens": 3728, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 348, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00052721, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00025771, "upstream_inference_completions_cost": 0.0002695}}
+Cost (USD): 0.000527
+Token length: 0
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 515, "prompt_tokens": 3185, "total_tokens": 3700, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 334, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3136}, "cost": 0.00051573, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00025823, "upstream_inference_completions_cost": 0.0002575}}
+Cost (USD): 0.000516
+Token length: 0
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 564, "prompt_tokens": 3184, "total_tokens": 3748, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 342, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00053896, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00025696, "upstream_inference_completions_cost": 0.000282}}
+Cost (USD): 0.000539
+Token length: 0
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 517, "prompt_tokens": 3187, "total_tokens": 3704, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 338, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00051591, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00025741, "upstream_inference_completions_cost": 0.0002585}}
+Cost (USD): 0.000516
+Token length: 0
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 538, "prompt_tokens": 3194, "total_tokens": 3732, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 270, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00052746, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00025846, "upstream_inference_completions_cost": 0.000269}}
+Cost (USD): 0.000527
+Token length: 0
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 575, "prompt_tokens": 3181, "total_tokens": 3756, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 428, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00054401, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00025651, "upstream_inference_completions_cost": 0.0002875}}
+Cost (USD): 0.000544
+Token length: 0
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 641, "prompt_tokens": 3196, "total_tokens": 3837, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 486, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3136}, "cost": 0.00058038, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00025988, "upstream_inference_completions_cost": 0.0003205}}
+Cost (USD): 0.000580
+Token length: 0
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 637, "prompt_tokens": 3195, "total_tokens": 3832, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 386, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00057711, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00025861, "upstream_inference_completions_cost": 0.0003185}}
+Cost (USD): 0.000577
+Token length: 0
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 594, "prompt_tokens": 3189, "total_tokens": 3783, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 367, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00055471, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00025771, "upstream_inference_completions_cost": 0.000297}}
+Cost (USD): 0.000555
+Token length: 0
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 817, "prompt_tokens": 3193, "total_tokens": 4010, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 625, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00066681, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00025831, "upstream_inference_completions_cost": 0.0004085}}
+Cost (USD): 0.000667
+append_entries: 10
+Finish: 2025-10-22 03:19:26.199149
+------------------------------------------------------
+Started: 2025-10-24 17:29:44.582619
+Existing_entries: 10
+Fetching from https://politepol.com/fd/C3wOvys8aPKp.xml
+append_entries: 0
+Finish: 2025-10-24 17:29:45.103325
+------------------------------------------------------
+Started: 2025-10-25 20:09:21.349968
+Existing_entries: 10
+Fetching from https://politepol.com/fd/C3wOvys8aPKp.xml
+append_entries: 0
+Finish: 2025-10-25 20:09:22.214006
+------------------------------------------------------
+Started: 2025-10-25 20:18:58.526999
+Existing_entries: 10
+Fetching from https://politepol.com/fd/C3wOvys8aPKp.xml
+append_entries: 0
+Finish: 2025-10-25 20:18:59.501291

@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Anthropic - Transformer Circuits</title>
+<link>https://transformer-circuits.pub/</link>
+
+
+<item>
+<title>Circuits Updates — October 2025</title>
+<link>https://transformer-circuits.pub/2025/october-update/index.html</link>
+<guid>https://transformer-circuits.pub/2025/october-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> This update reports minor advances in the mechanistic interpretability of transformer models, focusing on new visual feature analyses and a refined dictionary initialization method for circuit discovery. The authors present additional case studies that illustrate how these techniques reveal clearer internal representations within vision transformers.<br /><strong>Summary (CN):</strong> 本文简要报告了在 transformer 可解释性方面的少量进展，重点介绍了新的视觉特征分析以及用于电路发现的字典初始化改进。作者展示了若干案例，说明这些技术如何揭示视觉 transformer 内部表征的更清晰结构。<br /><strong>Keywords:</strong> transformer circuits, visual features, dictionary initialization, mechanistic interpretability, feature visualization<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 7, Safety: 3, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+Small updates on visual features and dictionary initialization.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "This update reports minor advances in the mechanistic interpretability of transformer models, focusing on new visual feature analyses and a refined dictionary initialization method for circuit discovery. The authors present additional case studies that illustrate how these techniques reveal clearer internal representations within vision transformers.", "summary_cn": "本文简要报告了在 transformer 可解释性方面的少量进展，重点介绍了新的视觉特征分析以及用于电路发现的字典初始化改进。作者展示了若干案例，说明这些技术如何揭示视觉 transformer 内部表征的更清晰结构。", "keywords": "transformer circuits, visual features, dictionary initialization, mechanistic interpretability, feature visualization", "scoring": {"interpretability": 7, "understanding": 7, "safety": 3, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Fri, 24 Oct 2025 21:29:34 -0000</pubDate>
+</item>
+<item>
+<title>When Models Manipulate Manifolds: The Geometry of a Counting Task</title>
+<link>https://transformer-circuits.pub/2025/linebreaks/index.html</link>
+<guid>https://transformer-circuits.pub/2025/linebreaks/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper uncovers a geometric structure in transformer language models that underlies their ability to perform a counting task, showing that the model manipulates low‑dimensional manifolds to represent integer quantities. By analysing activation patterns and attention pathways, the authors identify specific circuit components that embed and update counting representations across layers. This mechanistic insight reveals how abstract numerical reasoning can emerge from structured geometry within the model’s internal state space.<br /><strong>Summary (CN):</strong> 本文揭示了 Transformer 语言模型在执行计数任务时所依赖的几何结构，指出模型通过操作低维流形来表示整数数量。通过分析激活模式和注意力路径，作者识别出在各层中嵌入和更新计数表示的具体电路组件。此机制性解释展示了抽象数值推理如何在模型内部状态空间的结构化几何中自然出现。<br /><strong>Keywords:</strong> counting, manifolds, geometry, transformer circuits, mechanistic interpretability, latent space, linebreaks, language model behavior<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 3, Technicality: 8, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+We find geometric structure underlying the mechanisms of a fundamental language model behavior.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper uncovers a geometric structure in transformer language models that underlies their ability to perform a counting task, showing that the model manipulates low‑dimensional manifolds to represent integer quantities. By analysing activation patterns and attention pathways, the authors identify specific circuit components that embed and update counting representations across layers. This mechanistic insight reveals how abstract numerical reasoning can emerge from structured geometry within the model’s internal state space.", "summary_cn": "本文揭示了 Transformer 语言模型在执行计数任务时所依赖的几何结构，指出模型通过操作低维流形来表示整数数量。通过分析激活模式和注意力路径，作者识别出在各层中嵌入和更新计数表示的具体电路组件。此机制性解释展示了抽象数值推理如何在模型内部状态空间的结构化几何中自然出现。", "keywords": "counting, manifolds, geometry, transformer circuits, mechanistic interpretability, latent space, linebreaks, language model behavior", "scoring": {"interpretability": 8, "understanding": 7, "safety": 3, "technicality": 8, "surprisal": 7}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Wed, 01 Oct 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — September 2025</title>
+<link>https://transformer-circuits.pub/2025/september-update/index.html</link>
+<guid>https://transformer-circuits.pub/2025/september-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The September 2025 update presents new findings on transformer features and the mechanisms underlying in-context learning, extending the circuits agenda with additional case studies and refined analytical tools. It highlights novel feature primitives, explores how they combine across layers, and provides preliminary interpretations of how context is stored and retrieved during inference.<br /><strong>Summary (CN):</strong> 2025 年 9 月的更新报告了关于 Transformer 特征和上下文学习机制的新发现，进一步推进了电路研究议程并加入了新的案例研究与分析工具。文章重点介绍了新颖的特征基元、它们在不同层之间的组合方式，以及对推理过程中上下文如何被存储和检索的初步解释。<br /><strong>Keywords:</strong> transformer circuits, mechanistic interpretability, feature analysis, in-context learning, attention heads, MLP pathways, circuit discovery<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 3, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A small update on features and in-context learning.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The September 2025 update presents new findings on transformer features and the mechanisms underlying in-context learning, extending the circuits agenda with additional case studies and refined analytical tools. It highlights novel feature primitives, explores how they combine across layers, and provides preliminary interpretations of how context is stored and retrieved during inference.", "summary_cn": "2025 年 9 月的更新报告了关于 Transformer 特征和上下文学习机制的新发现，进一步推进了电路研究议程并加入了新的案例研究与分析工具。文章重点介绍了新颖的特征基元、它们在不同层之间的组合方式，以及对推理过程中上下文如何被存储和检索的初步解释。", "keywords": "transformer circuits, mechanistic interpretability, feature analysis, in-context learning, attention heads, MLP pathways, circuit discovery", "scoring": {"interpretability": 8, "understanding": 7, "safety": 3, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Mon, 01 Sep 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — August 2025</title>
+<link>https://transformer-circuits.pub/2025/august-update/index.html</link>
+<guid>https://transformer-circuits.pub/2025/august-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The August 2025 Circuits Update reports recent mechanistic analyses of how a persona prompt modifies a transformer‑based assistant's responses, focusing on changes in attention patterns, feed‑forward activations, and token‑level routing. The authors present new probing methods and case studies that illuminate the internal pathways through which persona conditioning influences generated text.<br /><strong>Summary (CN):</strong> 2025 年 8 月的电路更新报告了对 persona 提示如何改变基于 Transformer 的助手回复的机制性分析，重点研究注意力模式、前馈激活以及 token 级别的路由变化。作者提出了新的探测方法和案例，阐明了 persona 条件如何在内部路径上影响生成文本。<br /><strong>Keywords:</strong> transformer circuits, mechanistic interpretability, persona conditioning, attention heads, activation analysis, alignment<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 4, Technicality: 8, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A small update: How does a persona modify the assistant’s response?
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The August 2025 Circuits Update reports recent mechanistic analyses of how a persona prompt modifies a transformer‑based assistant's responses, focusing on changes in attention patterns, feed‑forward activations, and token‑level routing. The authors present new probing methods and case studies that illuminate the internal pathways through which persona conditioning influences generated text.", "summary_cn": "2025 年 8 月的电路更新报告了对 persona 提示如何改变基于 Transformer 的助手回复的机制性分析，重点研究注意力模式、前馈激活以及 token 级别的路由变化。作者提出了新的探测方法和案例，阐明了 persona 条件如何在内部路径上影响生成文本。", "keywords": "transformer circuits, mechanistic interpretability, persona conditioning, attention heads, activation analysis, alignment", "scoring": {"interpretability": 8, "understanding": 7, "safety": 4, "technicality": 8, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Fri, 01 Aug 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>A Toy Model of Mechanistic (Un)Faithfulness</title>
+<link>https://transformer-circuits.pub/2025/faithfulness-toy-model/index.html</link>
+<guid>https://transformer-circuits.pub/2025/faithfulness-toy-model/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper presents a simple toy model to illustrate how mechanistic explanations of transformer internals, particularly transcoders, can be unfaithful to the true computations of the network. By analyzing a controlled setting, the authors show conditions under which the inferred circuit matches or diverges from the actual behavior, highlighting limits of current interpretability methods. The work underscores the need for rigorous validation of mechanistic claims.<br /><strong>Summary (CN):</strong> 本文提出一个简化的玩具模型，展示对 Transformer 内部机制（尤其是转码器）的机械化解释可能与网络的真实计算不一致。通过在受控环境中的分析，作者揭示了推断电路与实际行为相匹配或偏离的条件，突显现有可解释性方法的局限性。研究强调了对机械解释进行严格验证的必要性。<br /><strong>Keywords:</strong> mechanistic interpretability, toy model, faithfulness, transcoders, transformer circuits, unfaithfulness, model analysis<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 4, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+When transcoders go awry.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper presents a simple toy model to illustrate how mechanistic explanations of transformer internals, particularly transcoders, can be unfaithful to the true computations of the network. By analyzing a controlled setting, the authors show conditions under which the inferred circuit matches or diverges from the actual behavior, highlighting limits of current interpretability methods. The work underscores the need for rigorous validation of mechanistic claims.", "summary_cn": "本文提出一个简化的玩具模型，展示对 Transformer 内部机制（尤其是转码器）的机械化解释可能与网络的真实计算不一致。通过在受控环境中的分析，作者揭示了推断电路与实际行为相匹配或偏离的条件，突显现有可解释性方法的局限性。研究强调了对机械解释进行严格验证的必要性。", "keywords": "mechanistic interpretability, toy model, faithfulness, transcoders, transformer circuits, unfaithfulness, model analysis", "scoring": {"interpretability": 8, "understanding": 7, "safety": 4, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 01 Jul 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Tracing Attention Computation Through Feature Interactions</title>
+<link>https://transformer-circuits.pub/2025/attention-qk/index.html</link>
+<guid>https://transformer-circuits.pub/2025/attention-qk/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces a technique for dissecting attention heads by attributing their outputs to interactions between input features, and visualizes these relationships using attribution graphs. By tracing how queries and keys combine, the method provides a detailed mechanistic explanation of attention patterns in transformer models.<br /><strong>Summary (CN):</strong> 本文提出一种通过特征交互解释注意力模式的方法，并将这些信息整合到归因图中，以追踪查询和键的计算过程，从而对 Transformer 模型的注意力机制提供细粒度的机理解释。<br /><strong>Keywords:</strong> attention interpretability, feature interaction, attribution graphs, mechanistic analysis, transformer circuits, query-key analysis<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 3, Technicality: 8, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+We describe and apply a method to explain attention patterns in terms of feature interactions, and integrate this information into attribution graphs.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces a technique for dissecting attention heads by attributing their outputs to interactions between input features, and visualizes these relationships using attribution graphs. By tracing how queries and keys combine, the method provides a detailed mechanistic explanation of attention patterns in transformer models.", "summary_cn": "本文提出一种通过特征交互解释注意力模式的方法，并将这些信息整合到归因图中，以追踪查询和键的计算过程，从而对 Transformer 模型的注意力机制提供细粒度的机理解释。", "keywords": "attention interpretability, feature interaction, attribution graphs, mechanistic analysis, transformer circuits, query-key analysis", "scoring": {"interpretability": 8, "understanding": 7, "safety": 3, "technicality": 8, "surprisal": 7}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 01 Jul 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>A Toy Model of Interference Weights</title>
+<link>https://transformer-circuits.pub/2025/interference-weights/index.html</link>
+<guid>https://transformer-circuits.pub/2025/interference-weights/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces a simplified toy model that isolates and visualizes "interference weights"—the components of transformer attention that cause competing signal interactions. By analytically solving the toy system and comparing it to empirical measurements in real transformers, the authors illustrate how interference shapes information flow and propose metrics for detecting it. The work deepens mechanistic insight into transformer circuits and suggests avenues for future interpretability research.<br /><strong>Summary (CN):</strong> 本文提出一个简化的玩具模型，用于分离并可视化 "interference weights"（干扰权重），即 transformer 注意力中导致信号竞争的成分。通过对该模型进行解析求解并与真实 transformer 的经验测量对比，展示了干扰如何影响信息流，并提出了检测干扰的度量方法。此工作深化了对 transformer 电路的机械化理解，为后续可解释性研究提供了思路。<br /><strong>Keywords:</strong> transformer, interference weights, toy model, mechanistic interpretability, circuit analysis, attention head<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 4, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+Unpacking "interference weights" in some more depth.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces a simplified toy model that isolates and visualizes \"interference weights\"—the components of transformer attention that cause competing signal interactions. By analytically solving the toy system and comparing it to empirical measurements in real transformers, the authors illustrate how interference shapes information flow and propose metrics for detecting it. The work deepens mechanistic insight into transformer circuits and suggests avenues for future interpretability research.", "summary_cn": "本文提出一个简化的玩具模型，用于分离并可视化 \"interference weights\"（干扰权重），即 transformer 注意力中导致信号竞争的成分。通过对该模型进行解析求解并与真实 transformer 的经验测量对比，展示了干扰如何影响信息流，并提出了检测干扰的度量方法。此工作深化了对 transformer 电路的机械化理解，为后续可解释性研究提供了思路。", "keywords": "transformer, interference weights, toy model, mechanistic interpretability, circuit analysis, attention head", "scoring": {"interpretability": 8, "understanding": 7, "safety": 4, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 01 Jul 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Sparse mixtures of linear transforms</title>
+<link>https://transformer-circuits.pub/2025/bulk-update/index.html</link>
+<guid>https://transformer-circuits.pub/2025/bulk-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces Sparse Mixtures of Linear Transforms (MOLT), a novel architecture for building transcoders that leverages sparsity to combine multiple linear transformations. It describes the design, training procedure, and experimental results that show improved efficiency and more interpretable internal dynamics compared to dense alternatives.<br /><strong>Summary (CN):</strong> 本文提出稀疏线性变换混合（MOLT）这一新型转码器架构，通过稀疏方式组合多个线性变换，实现高效且易解释的模型行为。文中阐述了其设计、训练方法以及实验结果，展示了相较于密集模型的效率提升和内部机制的可解释性。<br /><strong>Keywords:</strong> sparse mixture, linear transforms, MOLT, transcoders, mechanistic interpretability, transformer circuits<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 4, Technicality: 8, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces Sparse Mixtures of Linear Transforms (MOLT), a novel architecture for building transcoders that leverages sparsity to combine multiple linear transformations. It describes the design, training procedure, and experimental results that show improved efficiency and more interpretable internal dynamics compared to dense alternatives.", "summary_cn": "本文提出稀疏线性变换混合（MOLT）这一新型转码器架构，通过稀疏方式组合多个线性变换，实现高效且易解释的模型行为。文中阐述了其设计、训练方法以及实验结果，展示了相较于密集模型的效率提升和内部机制的可解释性。", "keywords": "sparse mixture, linear transforms, MOLT, transcoders, mechanistic interpretability, transformer circuits", "scoring": {"interpretability": 8, "understanding": 7, "safety": 4, "technicality": 8, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 01 Jul 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — July 2025</title>
+<link>https://transformer-circuits.pub/2025/july-update/index.html</link>
+<guid>https://transformer-circuits.pub/2025/july-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> This update revisits the 'A Mathematical Framework' for transformer circuits and presents new small-scale interpretability applications to biology, highlighting refinements to circuit analysis methods and novel biological insights derived from transformer models.<br /><strong>Summary (CN):</strong> 本次更新重新审视了《A Mathematical Framework》中的 Transformer 电路模型，并展示了解释性方法在生物学中的若干新应用，重点阐述了电路分析方法的改进以及从 Transformer 模型获得的生物学新见解。<br /><strong>Keywords:</strong> mechanistic interpretability, transformer circuits, mathematical framework, interpretability biology, circuit analysis, neural network mechanisms<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 2, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A collection of small updates: revisiting A Mathematical Framework and applications of interpretability to biology.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "This update revisits the 'A Mathematical Framework' for transformer circuits and presents new small-scale interpretability applications to biology, highlighting refinements to circuit analysis methods and novel biological insights derived from transformer models.", "summary_cn": "本次更新重新审视了《A Mathematical Framework》中的 Transformer 电路模型，并展示了解释性方法在生物学中的若干新应用，重点阐述了电路分析方法的改进以及从 Transformer 模型获得的生物学新见解。", "keywords": "mechanistic interpretability, transformer circuits, mathematical framework, interpretability biology, circuit analysis, neural network mechanisms", "scoring": {"interpretability": 8, "understanding": 7, "safety": 2, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 01 Jul 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Automated Auditing</title>
+<link>https://transformer-circuits.pub/https://alignment.anthropic.com/2025/automated-auditing/</link>
+<guid>https://transformer-circuits.pub/https://alignment.anthropic.com/2025/automated-auditing/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper proposes using autonomous agents to conduct automated alignment audits of large language models, leveraging existing interpretability techniques to detect misaligned capabilities and unsafe behaviours. It outlines a framework where agents generate, execute, and analyze audit queries, incorporating circuit‑level probes and attribution methods to provide scalable safety monitoring. The approach aims to reduce human labor while increasing coverage and precision of alignment evaluations.<br /><strong>Summary (CN):</strong> 本文提出利用自主代理对大型语言模型进行自动化对齐审计，结合现有可解释性技术检测潜在的对齐偏差和不安全行为。文中阐述了一个框架，代理生成、执行并分析审计查询，使用电路层面的探针和归因方法实现可扩展的安全监控。该方法旨在降低人工投入，同时提升对齐评估的覆盖范围和精度。<br /><strong>Keywords:</strong> automated auditing, AI alignment, interpretability tools, agent-based audit, safety testing, transformer circuits, alignment verification, mechanistic interpretability<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 7, Safety: 8, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - interpretability</div>
+A note on using agents to perform automated alignment audits, including using interpretability tools.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper proposes using autonomous agents to conduct automated alignment audits of large language models, leveraging existing interpretability techniques to detect misaligned capabilities and unsafe behaviours. It outlines a framework where agents generate, execute, and analyze audit queries, incorporating circuit‑level probes and attribution methods to provide scalable safety monitoring. The approach aims to reduce human labor while increasing coverage and precision of alignment evaluations.", "summary_cn": "本文提出利用自主代理对大型语言模型进行自动化对齐审计，结合现有可解释性技术检测潜在的对齐偏差和不安全行为。文中阐述了一个框架，代理生成、执行并分析审计查询，使用电路层面的探针和归因方法实现可扩展的安全监控。该方法旨在降低人工投入，同时提升对齐评估的覆盖范围和精度。", "keywords": "automated auditing, AI alignment, interpretability tools, agent-based audit, safety testing, transformer circuits, alignment verification, mechanistic interpretability", "scoring": {"interpretability": 7, "understanding": 7, "safety": 8, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 01 Jul 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — April 2025</title>
+<link>https://transformer-circuits.pub/2025/april-update/index.html</link>
+<guid>https://transformer-circuits.pub/2025/april-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The April 2025 update from the Transformer Circuits project presents a series of brief advances, including new findings on jailbreak behaviors, identification of dense feature representations, and progress on interpretability methods for probing transformer internals. The authors provide illustrative examples and preliminary analyses that extend previous circuit‑level work.<br /><strong>Summary (CN):</strong> 2025年4月的 Transformer Circuits 更新汇总了一系列小幅进展，涵盖新的 jailbreak 行为发现、密集特征的识别以及推进对 transformer 内部机制的可解释性分析方法。作者展示了示例和初步分析，进一步扩展了以往的电路层面研究。<br /><strong>Keywords:</strong> transformer circuits, mechanistic interpretability, jailbreak, dense features, circuit analysis, model internals<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 5, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - human-misuse; Primary focus - interpretability</div>
+A collection of small updates: jailbreaks, dense features, and spinning up on interpretability.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The April 2025 update from the Transformer Circuits project presents a series of brief advances, including new findings on jailbreak behaviors, identification of dense feature representations, and progress on interpretability methods for probing transformer internals. The authors provide illustrative examples and preliminary analyses that extend previous circuit‑level work.", "summary_cn": "2025年4月的 Transformer Circuits 更新汇总了一系列小幅进展，涵盖新的 jailbreak 行为发现、密集特征的识别以及推进对 transformer 内部机制的可解释性分析方法。作者展示了示例和初步分析，进一步扩展了以往的电路层面研究。", "keywords": "transformer circuits, mechanistic interpretability, jailbreak, dense features, circuit analysis, model internals", "scoring": {"interpretability": 8, "understanding": 7, "safety": 5, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "human-misuse", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 01 Apr 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Progress on Attention</title>
+<link>https://transformer-circuits.pub/2025/attention-update/index.html</link>
+<guid>https://transformer-circuits.pub/2025/attention-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper provides an update on the authors' ongoing mechanistic study of the attention mechanism in transformer language models, presenting new circuit‑level analyses of attention heads, their functional roles, and emergent patterns observed across layers. It introduces refined probing methods, visualizations of token‑to‑token interactions, and insights that advance broader interpretability research.<br /><strong>Summary (CN):</strong> 本文更新了作者对 Transformer 模型中注意力机制的机械化研究，展示了注意力头的电路层面分析、功能角色以及跨层出现的模式。文中提出了改进的探测方法和 token‑to‑token 交互可视化，为更广泛的可解释性研究提供了新见解。<br /><strong>Keywords:</strong> attention, transformer, mechanistic interpretability, circuit analysis, attention heads, token attribution, model internals<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 4, Technicality: 8, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+An update on our progress studying attention.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper provides an update on the authors' ongoing mechanistic study of the attention mechanism in transformer language models, presenting new circuit‑level analyses of attention heads, their functional roles, and emergent patterns observed across layers. It introduces refined probing methods, visualizations of token‑to‑token interactions, and insights that advance broader interpretability research.", "summary_cn": "本文更新了作者对 Transformer 模型中注意力机制的机械化研究，展示了注意力头的电路层面分析、功能角色以及跨层出现的模式。文中提出了改进的探测方法和 token‑to‑token 交互可视化，为更广泛的可解释性研究提供了新见解。", "keywords": "attention, transformer, mechanistic interpretability, circuit analysis, attention heads, token attribution, model internals", "scoring": {"interpretability": 8, "understanding": 7, "safety": 4, "technicality": 8, "surprisal": 7}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 01 Apr 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>On the Biology of a Large Language Model</title>
+<link>https://transformer-circuits.pub/2025/attribution-graphs/biology.html</link>
+<guid>https://transformer-circuits.pub/2025/attribution-graphs/biology.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper investigates the internal mechanisms of Anthropic's Claude 3.5 Haiku by applying transformer circuit analysis and attribution graphs, revealing how the model processes information across layers and heads. It maps functional subcircuits and provides case studies that illustrate emergent behaviors and the model’s "biology" in various contexts.<br /><strong>Summary (CN):</strong> 本文通过 transformer 电路分析和 attribution 图，对 Anthropic 的 Claude 3.5 Haiku 的内部机制进行研究，揭示模型在不同层级和注意力头上的信息处理方式。文章绘制了功能子电路并通过案例展示模型在多种情境下的“生物学”特征与新出现的行为。<br /><strong>Keywords:</strong> mechanistic interpretability, transformer circuits, attribution graphs, large language model, Claude 3.5 Haiku, model biology, internal mechanisms<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 4, Technicality: 8, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+We investigate the internal mechanisms used by Claude 3.5 Haiku — Anthropic's lightweight production model — in a variety of contexts.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper investigates the internal mechanisms of Anthropic's Claude 3.5 Haiku by applying transformer circuit analysis and attribution graphs, revealing how the model processes information across layers and heads. It maps functional subcircuits and provides case studies that illustrate emergent behaviors and the model’s \"biology\" in various contexts.", "summary_cn": "本文通过 transformer 电路分析和 attribution 图，对 Anthropic 的 Claude 3.5 Haiku 的内部机制进行研究，揭示模型在不同层级和注意力头上的信息处理方式。文章绘制了功能子电路并通过案例展示模型在多种情境下的“生物学”特征与新出现的行为。", "keywords": "mechanistic interpretability, transformer circuits, attribution graphs, large language model, Claude 3.5 Haiku, model biology, internal mechanisms", "scoring": {"interpretability": 8, "understanding": 7, "safety": 4, "technicality": 8, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Sat, 01 Mar 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuit Tracing: Revealing Computational Graphs in Language Models</title>
+<link>https://transformer-circuits.pub/2025/attribution-graphs/methods.html</link>
+<guid>https://transformer-circuits.pub/2025/attribution-graphs/methods.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces a method for tracing the step‑by‑step computation of a transformer language model when responding to a single prompt, constructing an explicit computational graph (attribution graph) that links token‑level activations across layers. By combining activation and gradient attribution techniques, the approach reveals which components of the model contribute to specific outputs, enabling more fine‑grained mechanistic analysis of language model behavior.<br /><strong>Summary (CN):</strong> 本文提出一种在单个提示下追踪 Transformer 语言模型逐步计算的方法，构建显式的计算图（归因图），将不同层次的 token 激活相互关联。通过结合激活和梯度归因技术，该方法揭示了模型中哪些组件对特定输出产生贡献，从而实现对语言模型行为的更细粒度机制解析。<br /><strong>Keywords:</strong> transformer circuits, attribution graph, mechanistic interpretability, circuit tracing, language model, computational graph, activation analysis<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 5, Technicality: 8, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+We describe an approach to tracing the "step-by-step" computation involved when a model responds to a single prompt.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces a method for tracing the step‑by‑step computation of a transformer language model when responding to a single prompt, constructing an explicit computational graph (attribution graph) that links token‑level activations across layers. By combining activation and gradient attribution techniques, the approach reveals which components of the model contribute to specific outputs, enabling more fine‑grained mechanistic analysis of language model behavior.", "summary_cn": "本文提出一种在单个提示下追踪 Transformer 语言模型逐步计算的方法，构建显式的计算图（归因图），将不同层次的 token 激活相互关联。通过结合激活和梯度归因技术，该方法揭示了模型中哪些组件对特定输出产生贡献，从而实现对语言模型行为的更细粒度机制解析。", "keywords": "transformer circuits, attribution graph, mechanistic interpretability, circuit tracing, language model, computational graph, activation analysis", "scoring": {"interpretability": 8, "understanding": 7, "safety": 5, "technicality": 8, "surprisal": 7}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Sat, 01 Mar 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Insights on Crosscoder Model Diffing</title>
+<link>https://transformer-circuits.pub/2025/crosscoder-diffing-update/index.html</link>
+<guid>https://transformer-circuits.pub/2025/crosscoder-diffing-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The note introduces a cross‑coder framework for diffing two transformer models by learning a mapping between their internal representations, enabling systematic comparison of circuit‑level changes. Preliminary experiments demonstrate that the approach can highlight functional differences and suggest where architectural or training variations have altered learned computations. The authors discuss limitations, evaluation protocols, and future directions for scaling the method to larger models.<br /><strong>Summary (CN):</strong> 本文提出了一种跨编码器（cross‑coder）框架，用于通过学习两个 Transformer 模型内部表征之间的映射来进行模型差异分析，从而系统性地比较电路层面的变化。初步实验表明，该方法能够突出功能差异，揭示架构或训练变化对学习到的计算产生的影响。作者还讨论了方法的局限性、评估方案以及向更大规模模型扩展的未来方向。<br /><strong>Keywords:</strong> crosscoder, model diffing, mechanistic interpretability, representation alignment, transformer circuits, model comparison<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 4, Technicality: 8, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A preliminary note on using crosscoders to diff models.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The note introduces a cross‑coder framework for diffing two transformer models by learning a mapping between their internal representations, enabling systematic comparison of circuit‑level changes. Preliminary experiments demonstrate that the approach can highlight functional differences and suggest where architectural or training variations have altered learned computations. The authors discuss limitations, evaluation protocols, and future directions for scaling the method to larger models.", "summary_cn": "本文提出了一种跨编码器（cross‑coder）框架，用于通过学习两个 Transformer 模型内部表征之间的映射来进行模型差异分析，从而系统性地比较电路层面的变化。初步实验表明，该方法能够突出功能差异，揭示架构或训练变化对学习到的计算产生的影响。作者还讨论了方法的局限性、评估方案以及向更大规模模型扩展的未来方向。", "keywords": "crosscoder, model diffing, mechanistic interpretability, representation alignment, transformer circuits, model comparison", "scoring": {"interpretability": 8, "understanding": 7, "safety": 4, "technicality": 8, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Sat, 01 Feb 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — January 2025</title>
+<link>https://transformer-circuits.pub/2025/january-update/index.html</link>
+<guid>https://transformer-circuits.pub/2025/january-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The January 2025 update presents a series of incremental improvements to transformer circuit analysis, focusing on new dictionary learning optimization techniques that enhance the extraction of sparse representations from model internals. These methods aim to streamline the discovery of circuit components and provide modest performance gains for mechanistic interpretability workflows.<br /><strong>Summary (CN):</strong> 本文在 2025 年 1 月的更新中介绍了一系列针对 Transformer 电路分析的细微改进，重点是新的字典学习优化技术，可提升从模型内部提取稀疏表示的效果。这些方法旨在简化电路组件的发现，并为机械可解释性工作流带来适度的性能提升。<br /><strong>Keywords:</strong> dictionary learning, transformer circuits, mechanistic interpretability, optimization, neural network analysis, circuit discovery<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 3, Technicality: 7, Surprisal: 4<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A collection of small updates: dictionary learning optimization techniques.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The January 2025 update presents a series of incremental improvements to transformer circuit analysis, focusing on new dictionary learning optimization techniques that enhance the extraction of sparse representations from model internals. These methods aim to streamline the discovery of circuit components and provide modest performance gains for mechanistic interpretability workflows.", "summary_cn": "本文在 2025 年 1 月的更新中介绍了一系列针对 Transformer 电路分析的细微改进，重点是新的字典学习优化技术，可提升从模型内部提取稀疏表示的效果。这些方法旨在简化电路组件的发现，并为机械可解释性工作流带来适度的性能提升。", "keywords": "dictionary learning, transformer circuits, mechanistic interpretability, optimization, neural network analysis, circuit discovery", "scoring": {"interpretability": 8, "understanding": 7, "safety": 3, "technicality": 7, "surprisal": 4}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Wed, 01 Jan 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Stage-Wise Model Diffing</title>
+<link>https://transformer-circuits.pub/2024/model-diffing/index.html</link>
+<guid>https://transformer-circuits.pub/2024/model-diffing/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces a stage‑wise model‑diffing technique that uses dictionary fine‑tuning to isolate and compare changes between transformer checkpoints. By training a lightweight dictionary on a target model and probing its transfer to a source model, the method reveals which components have been altered across training stages, facilitating mechanistic analysis of model evolution.<br /><strong>Summary (CN):</strong> 本文提出一种分阶段模型差异分析方法，通过在目标模型上进行字典微调再转移到源模型，来隔离并比较 Transformer 不同 checkpoints 之间的内部变化。此技术能够揭示模型训练不同阶段所修改的组件，为模型机制的演化提供可解释的分析手段。<br /><strong>Keywords:</strong> model diffing, dictionary fine-tuning, transformer interpretability, mechanistic analysis, weight comparison, stage-wise, representation change<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 2, Technicality: 8, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A preliminary note on model diffing through dictionary fine-tuning.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces a stage‑wise model‑diffing technique that uses dictionary fine‑tuning to isolate and compare changes between transformer checkpoints. By training a lightweight dictionary on a target model and probing its transfer to a source model, the method reveals which components have been altered across training stages, facilitating mechanistic analysis of model evolution.", "summary_cn": "本文提出一种分阶段模型差异分析方法，通过在目标模型上进行字典微调再转移到源模型，来隔离并比较 Transformer 不同 checkpoints 之间的内部变化。此技术能够揭示模型训练不同阶段所修改的组件，为模型机制的演化提供可解释的分析手段。", "keywords": "model diffing, dictionary fine-tuning, transformer interpretability, mechanistic analysis, weight comparison, stage-wise, representation change", "scoring": {"interpretability": 8, "understanding": 7, "safety": 2, "technicality": 8, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Sun, 01 Dec 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Sparse Crosscoders for Cross-Layer Features and Model Diffing</title>
+<link>https://transformer-circuits.pub/2024/crosscoders/index.html</link>
+<guid>https://transformer-circuits.pub/2024/crosscoders/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper presents Sparse Crosscoders, a set of sparse linear mappings trained to translate activations between transformer layers and even between different models, thereby producing consistent cross‑layer features. By applying these crosscoders, the authors show that many neurons encode similar concepts across depths and model instances, enabling systematic model diffing and deeper mechanistic analysis of internal representations.<br /><strong>Summary (CN):</strong> 本文提出稀疏交叉编码器（Sparse Crosscoders），一种稀疏线性映射模型，可将 Transformer 不同层乃至不同模型的激活进行转换，从而获得跨层一致的特征。通过训练这些交叉编码器，研究者展示了许多神经元在不同层次和模型中表示相似概念的现象，实现了模型差异分析并深化了内部机制的理解。<br /><strong>Keywords:</strong> sparse crosscoders, transformer interpretability, cross-layer representation, model diffing, feature alignment, mechanistic analysis, linear probing, representation mapping<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 2, Technicality: 8, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A preliminary note on a way to get consistent features across layers, and even models.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper presents Sparse Crosscoders, a set of sparse linear mappings trained to translate activations between transformer layers and even between different models, thereby producing consistent cross‑layer features. By applying these crosscoders, the authors show that many neurons encode similar concepts across depths and model instances, enabling systematic model diffing and deeper mechanistic analysis of internal representations.", "summary_cn": "本文提出稀疏交叉编码器（Sparse Crosscoders），一种稀疏线性映射模型，可将 Transformer 不同层乃至不同模型的激活进行转换，从而获得跨层一致的特征。通过训练这些交叉编码器，研究者展示了许多神经元在不同层次和模型中表示相似概念的现象，实现了模型差异分析并深化了内部机制的理解。", "keywords": "sparse crosscoders, transformer interpretability, cross-layer representation, model diffing, feature alignment, mechanistic analysis, linear probing, representation mapping", "scoring": {"interpretability": 8, "understanding": 7, "safety": 2, "technicality": 8, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 01 Oct 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Using Dictionary Learning Features as Classifiers</title>
+<link>https://transformer-circuits.pub/2024/features-as-classifiers/index.html</link>
+<guid>https://transformer-circuits.pub/2024/features-as-classifiers/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper investigates using dictionary‑learned feature vectors from transformer activations as inputs to simple classifiers for detecting harmful content, and compares their performance to classifiers that operate directly on raw activation vectors. The authors find that feature‑based classifiers can achieve comparable or better accuracy while offering clearer mechanistic insight into what the model uses to make safety judgments. This work highlights a promising direction for building interpretable safety tools for large language models.<br /><strong>Summary (CN):</strong> 本文研究了使用字典学习得到的特征向量作为分类器输入，以检测 Transformers 的有害内容，并将其表现与直接使用原始激活向量的分类器进行比较。结果表明，基于特征的分类器在准确率上可与甚至超越原始激活分类器，同时提供了模型安全判断机制的更清晰解释。此工作展示了构建可解释安全工具的潜在路径。<br /><strong>Keywords:</strong> dictionary learning, feature classifiers, transformer circuits, harmfulness detection, mechanistic interpretability, safety, LLM safety, classifier interpretability<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 6, Safety: 6, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - interpretability</div>
+A preliminary note comparing feature-based and raw-activation based harmfulness classifiers.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper investigates using dictionary‑learned feature vectors from transformer activations as inputs to simple classifiers for detecting harmful content, and compares their performance to classifiers that operate directly on raw activation vectors. The authors find that feature‑based classifiers can achieve comparable or better accuracy while offering clearer mechanistic insight into what the model uses to make safety judgments. This work highlights a promising direction for building interpretable safety tools for large language models.", "summary_cn": "本文研究了使用字典学习得到的特征向量作为分类器输入，以检测 Transformers 的有害内容，并将其表现与直接使用原始激活向量的分类器进行比较。结果表明，基于特征的分类器在准确率上可与甚至超越原始激活分类器，同时提供了模型安全判断机制的更清晰解释。此工作展示了构建可解释安全工具的潜在路径。", "keywords": "dictionary learning, feature classifiers, transformer circuits, harmfulness detection, mechanistic interpretability, safety, LLM safety, classifier interpretability", "scoring": {"interpretability": 7, "understanding": 6, "safety": 6, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 01 Oct 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — September 2024</title>
+<link>https://transformer-circuits.pub/2024/september-update/index.html</link>
+<guid>https://transformer-circuits.pub/2024/september-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The September 2024 update presents brief reports on two ongoing lines of circuit research: analysis of successor attention heads across transformer layers and experiments with oversampling data during sparse autoencoder training. Preliminary findings suggest patterns in head succession and highlight potential benefits of tailored data sampling for SAE representation quality.<br /><strong>Summary (CN):</strong> 2024年9月的更新简要报告了两项电路研究进展：跨层注意头的后继（successor）关系分析以及在稀疏自编码器（SAE）训练中使用数据过采样的实验。初步结果显示了注意头继承的模式，并指出针对性的数据采样可能提升 SAE 表征质量。<br /><strong>Keywords:</strong> transformer circuits, successor heads, sparse autoencoders, oversampling, mechanistic interpretability, activation patterns<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 6, Safety: 2, Technicality: 6, Surprisal: 4<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A collection of small updates: investigating successor heads, oversampling data in SAEs.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The September 2024 update presents brief reports on two ongoing lines of circuit research: analysis of successor attention heads across transformer layers and experiments with oversampling data during sparse autoencoder training. Preliminary findings suggest patterns in head succession and highlight potential benefits of tailored data sampling for SAE representation quality.", "summary_cn": "2024年9月的更新简要报告了两项电路研究进展：跨层注意头的后继（successor）关系分析以及在稀疏自编码器（SAE）训练中使用数据过采样的实验。初步结果显示了注意头继承的模式，并指出针对性的数据采样可能提升 SAE 表征质量。", "keywords": "transformer circuits, successor heads, sparse autoencoders, oversampling, mechanistic interpretability, activation patterns", "scoring": {"interpretability": 7, "understanding": 6, "safety": 2, "technicality": 6, "surprisal": 4}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Sun, 01 Sep 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — August 2024</title>
+<link>https://transformer-circuits.pub/2024/august-update/index.html</link>
+<guid>https://transformer-circuits.pub/2024/august-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The August 2024 update from the Transformer Circuits project presents a collection of brief advances, including new evaluation metrics for mechanistic interpretability and a reproduction study of self‑explanation techniques in transformer models.<br /><strong>Summary (CN):</strong> 2024 年 8 月的 Transformer 电路项目更新汇集了一系列小幅进展，包含用于机械可解释性的全新评估指标以及对 transformer 模型自解释技术的复现研究。<br /><strong>Keywords:</strong> transformer circuits, mechanistic interpretability, evaluation metrics, self-explanation, reproducibility, interpretability benchmarks<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 6, Safety: 2, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A collection of small updates: interpretability evals, reproducing self-explanation.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The August 2024 update from the Transformer Circuits project presents a collection of brief advances, including new evaluation metrics for mechanistic interpretability and a reproduction study of self‑explanation techniques in transformer models.", "summary_cn": "2024 年 8 月的 Transformer 电路项目更新汇集了一系列小幅进展，包含用于机械可解释性的全新评估指标以及对 transformer 模型自解释技术的复现研究。", "keywords": "transformer circuits, mechanistic interpretability, evaluation metrics, self-explanation, reproducibility, interpretability benchmarks", "scoring": {"interpretability": 7, "understanding": 6, "safety": 2, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Thu, 01 Aug 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — July 2024</title>
+<link>https://transformer-circuits.pub/2024/july-update/index.html</link>
+<guid>https://transformer-circuits.pub/2024/july-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The July 2024 update provides a set of short progress reports on transformer circuit research, covering five identified hurdles, advances in linear representation methods, investigations of "dark matter" activations, new pivot table techniques, and analyses of feature sensitivity. Each item summarizes recent findings, experimental approaches, and open questions for further work.<br /><strong>Summary (CN):</strong> 2024年7月的更新汇总了关于 Transformer 电路研究的一系列小进展，包括五个关键难题、线性表征方法的进展、“暗物质”激活的探讨、枢轴表技术以及特征敏感性的分析。每个章节简要介绍了最新实验结果、方法以及后续研究的开放问题。<br /><strong>Keywords:</strong> transformer circuits, mechanistic interpretability, linear representations, feature sensitivity, pivot tables, circuit analysis, transformer<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 8, Safety: 2, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A collection of small updates: five hurdles, linear representations, dark matter, pivot tables, feature sensitivity.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The July 2024 update provides a set of short progress reports on transformer circuit research, covering five identified hurdles, advances in linear representation methods, investigations of \"dark matter\" activations, new pivot table techniques, and analyses of feature sensitivity. Each item summarizes recent findings, experimental approaches, and open questions for further work.", "summary_cn": "2024年7月的更新汇总了关于 Transformer 电路研究的一系列小进展，包括五个关键难题、线性表征方法的进展、“暗物质”激活的探讨、枢轴表技术以及特征敏感性的分析。每个章节简要介绍了最新实验结果、方法以及后续研究的开放问题。", "keywords": "transformer circuits, mechanistic interpretability, linear representations, feature sensitivity, pivot tables, circuit analysis, transformer", "scoring": {"interpretability": 8, "understanding": 8, "safety": 2, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Mon, 01 Jul 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — June 2024</title>
+<link>https://transformer-circuits.pub/2024/june-update/index.html</link>
+<guid>https://transformer-circuits.pub/2024/june-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The June 2024 update presents a set of incremental investigations into transformer circuit mechanisms, focusing on top‑k token selection and gated sparse autoencoders (SAEs). It reports new experimental findings, analysis techniques, and hypotheses about how gating interacts with the SAE's internal representations, aiming to refine our mechanistic understanding of transformer internals.<br /><strong>Summary (CN):</strong> 2024 年 6 月的更新报告了一系列关于 Transformer 电路机制的增量研究，重点关注 top‑k 令牌选择以及带门控的稀疏自编码器（SAE）。文中展示了新的实验结果、分析方法以及关于门控如何影响 SAE 内部表征的假设，以进一步完善我们对 Transformer 内部机制的可解释性理解。<br /><strong>Keywords:</strong> transformer circuits, sparse autoencoder, SAE, top‑k gating, gated SAE, mechanistic interpretability, model circuits, update<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 6, Safety: 2, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A collection of small updates: topk and gated SAE investigation.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The June 2024 update presents a set of incremental investigations into transformer circuit mechanisms, focusing on top‑k token selection and gated sparse autoencoders (SAEs). It reports new experimental findings, analysis techniques, and hypotheses about how gating interacts with the SAE's internal representations, aiming to refine our mechanistic understanding of transformer internals.", "summary_cn": "2024 年 6 月的更新报告了一系列关于 Transformer 电路机制的增量研究，重点关注 top‑k 令牌选择以及带门控的稀疏自编码器（SAE）。文中展示了新的实验结果、分析方法以及关于门控如何影响 SAE 内部表征的假设，以进一步完善我们对 Transformer 内部机制的可解释性理解。", "keywords": "transformer circuits, sparse autoencoder, SAE, top‑k gating, gated SAE, mechanistic interpretability, model circuits, update", "scoring": {"interpretability": 7, "understanding": 6, "safety": 2, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Sat, 01 Jun 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet</title>
+<link>https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html</link>
+<guid>https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper presents a method for scaling monosemantic feature extraction from the Claude 3 Sonnet model using a sparse autoencoder, yielding a large set of interpretable neurons. By analyzing these features, the authors identify many that correspond to human-understandable concepts, including several that appear directly relevant to AI safety concerns. The work demonstrates that systematic, large‑scale circuit‑level analysis can uncover safety‑related internal representations in powerful language models.<br /><strong>Summary (CN):</strong> 本文提出使用稀疏自编码器对 Claude 3 Sonnet 模型进行大规模单义特征提取，得到大量可解释的神经元。通过对这些特征的分析，作者发现许多对应人类可理解的概念，其中一些与 AI 安全直接相关。该工作展示了系统化的大规模电路层分析能够在强大语言模型中发现与安全相关的内部表征。<br /><strong>Keywords:</strong> monosemanticity, sparse autoencoder, mechanistic interpretability, transformer circuits, safety-relevant features, Claude 3 Sonnet<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 6, Technicality: 8, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - interpretability</div>
+Using a sparse autoencoder, we extract a large number of interpretable features from Claude 3 Sonnet. Some appear to be safety-relevant.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper presents a method for scaling monosemantic feature extraction from the Claude 3 Sonnet model using a sparse autoencoder, yielding a large set of interpretable neurons. By analyzing these features, the authors identify many that correspond to human-understandable concepts, including several that appear directly relevant to AI safety concerns. The work demonstrates that systematic, large‑scale circuit‑level analysis can uncover safety‑related internal representations in powerful language models.", "summary_cn": "本文提出使用稀疏自编码器对 Claude 3 Sonnet 模型进行大规模单义特征提取，得到大量可解释的神经元。通过对这些特征的分析，作者发现许多对应人类可理解的概念，其中一些与 AI 安全直接相关。该工作展示了系统化的大规模电路层分析能够在强大语言模型中发现与安全相关的内部表征。", "keywords": "monosemanticity, sparse autoencoder, mechanistic interpretability, transformer circuits, safety-relevant features, Claude 3 Sonnet", "scoring": {"interpretability": 8, "understanding": 7, "safety": 6, "technicality": 8, "surprisal": 7}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Wed, 01 May 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — April 2024</title>
+<link>https://transformer-circuits.pub/2024/april-update/index.html</link>
+<guid>https://transformer-circuits.pub/2024/april-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The April 2024 update from the Anthropic Interpretability Team provides a brief overview of recent progress on transformer circuit analysis, including new tooling, case studies on attention heads and MLPs, and refinements to existing mechanistic interpretability methods.<br /><strong>Summary (CN):</strong> 本文概述了 Anthropic 可解释性团队在 2024 年 4 月的最新进展，主要包括对 Transformer 电路的分析更新，如新的工具、注意力头和 MLP 的案例研究，以及对已有机制解释方法的改进。<br /><strong>Keywords:</strong> mechanistic interpretability, transformer circuits, attention heads, MLP analysis, interpretability tools, Anthropic, circuit case studies, model internals<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 6, Safety: 4, Technicality: 7, Surprisal: 4<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A collection of small updates from the Anthropic Interpretability Team.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The April 2024 update from the Anthropic Interpretability Team provides a brief overview of recent progress on transformer circuit analysis, including new tooling, case studies on attention heads and MLPs, and refinements to existing mechanistic interpretability methods.", "summary_cn": "本文概述了 Anthropic 可解释性团队在 2024 年 4 月的最新进展，主要包括对 Transformer 电路的分析更新，如新的工具、注意力头和 MLP 的案例研究，以及对已有机制解释方法的改进。", "keywords": "mechanistic interpretability, transformer circuits, attention heads, MLP analysis, interpretability tools, Anthropic, circuit case studies, model internals", "scoring": {"interpretability": 7, "understanding": 6, "safety": 4, "technicality": 7, "surprisal": 4}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Mon, 01 Apr 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — March 2024</title>
+<link>https://transformer-circuits.pub/2024/march-update/index.html</link>
+<guid>https://transformer-circuits.pub/2024/march-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The post presents a set of recent, incremental findings and releases from the Anthropic Interpretability Team, including new mechanistic analyses of transformer components, updated visualization tools, and publicly released datasets to aid circuit‑level research.<br /><strong>Summary (CN):</strong> 本文汇报了 Anthropic 可解释性团队最近的一系列小幅更新，内容包括对 Transformer 组件的新的机制分析、改进的可视化工具以及公开发布的用于电路研究的数据集。<br /><strong>Keywords:</strong> transformer interpretability, mechanistic analysis, circuits, Anthropic, tool release, model internals, visualization<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 7, Safety: 4, Technicality: 6, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A collection of small updates from the Anthropic Interpretability Team.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The post presents a set of recent, incremental findings and releases from the Anthropic Interpretability Team, including new mechanistic analyses of transformer components, updated visualization tools, and publicly released datasets to aid circuit‑level research.", "summary_cn": "本文汇报了 Anthropic 可解释性团队最近的一系列小幅更新，内容包括对 Transformer 组件的新的机制分析、改进的可视化工具以及公开发布的用于电路研究的数据集。", "keywords": "transformer interpretability, mechanistic analysis, circuits, Anthropic, tool release, model internals, visualization", "scoring": {"interpretability": 7, "understanding": 7, "safety": 4, "technicality": 6, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Fri, 01 Mar 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Reflections on Qualitative Research</title>
+<link>https://transformer-circuits.pub/2024/qualitative-essay/index.html</link>
+<guid>https://transformer-circuits.pub/2024/qualitative-essay/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The essay argues that interpretability research should place greater emphasis on qualitative methods, drawing parallels with other scientific fields where qualitative insights guide hypothesis formation and theory building. It discusses the benefits of narrative descriptions, case studies, and reflective analysis for uncovering model mechanisms, and cautions against an overreliance on purely quantitative techniques.<br /><strong>Summary (CN):</strong> 本文主张可解释性研究应更重视定性方法，借鉴其他科学领域中定性洞见对假设生成与理论构建的作用。文章讨论了叙事描述、案例研究和反思性分析在揭示模型机制方面的益处，并警示过度依赖纯量化技术的风险。<br /><strong>Keywords:</strong> interpretability, qualitative research, mechanistic interpretability, research methodology, epistemology<br /><strong>Scores:</strong> Interpretability: 5, Understanding: 6, Safety: 3, Technicality: 2, Surprisal: 4<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+Some opinionated thoughts on why interpretability research may have qualitative aspects be more central than we're used to in other fields.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The essay argues that interpretability research should place greater emphasis on qualitative methods, drawing parallels with other scientific fields where qualitative insights guide hypothesis formation and theory building. It discusses the benefits of narrative descriptions, case studies, and reflective analysis for uncovering model mechanisms, and cautions against an overreliance on purely quantitative techniques.", "summary_cn": "本文主张可解释性研究应更重视定性方法，借鉴其他科学领域中定性洞见对假设生成与理论构建的作用。文章讨论了叙事描述、案例研究和反思性分析在揭示模型机制方面的益处，并警示过度依赖纯量化技术的风险。", "keywords": "interpretability, qualitative research, mechanistic interpretability, research methodology, epistemology", "scoring": {"interpretability": 5, "understanding": 6, "safety": 3, "technicality": 2, "surprisal": 4}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Fri, 01 Mar 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — February 2024</title>
+<link>https://transformer-circuits.pub/2024/feb-update/index.html</link>
+<guid>https://transformer-circuits.pub/2024/feb-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article presents a series of brief updates from the Anthropic Interpretability Team, summarizing recent findings on transformer circuit mechanisms such as attention head behavior, induction heads, MLP neuron roles, and new tools for mechanistic analysis. It highlights incremental progress in dissecting model internals and sharing open‑source resources.<br /><strong>Summary (CN):</strong> 本文汇集了 Anthropic 可解释性团队的若干最新进展，简要概述了关于 Transformer 电路机制的最新发现，包括注意力头行为、诱导头、MLP 神经元功能以及用于机械解释的新工具。文章突出展示了对模型内部结构的逐步剖析以及开源资源的共享。<br /><strong>Keywords:</strong> mechanistic interpretability, transformer circuits, attention heads, induction heads, MLP analysis, circuit discovery, Anthropic<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 5, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A collection of small updates from the Anthropic Interpretability Team.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article presents a series of brief updates from the Anthropic Interpretability Team, summarizing recent findings on transformer circuit mechanisms such as attention head behavior, induction heads, MLP neuron roles, and new tools for mechanistic analysis. It highlights incremental progress in dissecting model internals and sharing open‑source resources.", "summary_cn": "本文汇集了 Anthropic 可解释性团队的若干最新进展，简要概述了关于 Transformer 电路机制的最新发现，包括注意力头行为、诱导头、MLP 神经元功能以及用于机械解释的新工具。文章突出展示了对模型内部结构的逐步剖析以及开源资源的共享。", "keywords": "mechanistic interpretability, transformer circuits, attention heads, induction heads, MLP analysis, circuit discovery, Anthropic", "scoring": {"interpretability": 8, "understanding": 7, "safety": 5, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Thu, 01 Feb 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — January 2024</title>
+<link>https://transformer-circuits.pub/2024/jan-update/index.html</link>
+<guid>https://transformer-circuits.pub/2024/jan-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The January 2024 update from the Anthropic Interpretability Team aggregates a series of recent findings on transformer circuit mechanisms, including new analyses of attention heads, MLP pathways, and tooling improvements for probing internal representations. It highlights incremental progress towards clearer mechanistic explanations of model behavior and outlines future research directions.<br /><strong>Summary (CN):</strong> 本文汇总了 Anthropic 可解释性团队在 2024 年 1 月的最新进展，展示了对 Transformer 电路机制的系列研究，包括注意力头、MLP 路径的新分析以及用于探测内部表征的工具改进。文章强调了在模型行为机械解释方面的逐步进展，并阐述了后续研究方向。<br /><strong>Keywords:</strong> transformer circuits, interpretability, attention heads, MLP analysis, mechanistic interpretability, Anthropic, update, neural network circuits, sparse activation<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 4, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A collection of small updates from the Anthropic Interpretability Team.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The January 2024 update from the Anthropic Interpretability Team aggregates a series of recent findings on transformer circuit mechanisms, including new analyses of attention heads, MLP pathways, and tooling improvements for probing internal representations. It highlights incremental progress towards clearer mechanistic explanations of model behavior and outlines future research directions.", "summary_cn": "本文汇总了 Anthropic 可解释性团队在 2024 年 1 月的最新进展，展示了对 Transformer 电路机制的系列研究，包括注意力头、MLP 路径的新分析以及用于探测内部表征的工具改进。文章强调了在模型行为机械解释方面的逐步进展，并阐述了后续研究方向。", "keywords": "transformer circuits, interpretability, attention heads, MLP analysis, mechanistic interpretability, Anthropic, update, neural network circuits, sparse activation", "scoring": {"interpretability": 8, "understanding": 7, "safety": 4, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Mon, 01 Jan 2024 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Towards Monosemanticity: Decomposing Language Models With Dictionary Learning</title>
+<link>https://transformer-circuits.pub/2023/monosemantic-features/index.html</link>
+<guid>https://transformer-circuits.pub/2023/monosemantic-features/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces a dictionary‑learning approach using a sparse autoencoder to extract a large set of monosemantic features from a single‑layer transformer language model. By decomposing the model’s hidden representations into sparse, interpretable basis vectors, the authors demonstrate that many neurons correspond to nearly atomic concepts, facilitating mechanistic analysis of model behavior.<br /><strong>Summary (CN):</strong> 本文提出一种基于稀疏自编码器的字典学习方法，从单层 Transformer 语言模型中提取大量单义特征。通过将隐藏表示分解为稀疏、可解释的基向量，作者展示了多数神经元对应几乎原子的概念，从而促进模型行为的机械化分析。<br /><strong>Keywords:</strong> monosemantic, sparse autoencoder, dictionary learning, transformer, mechanistic interpretability, feature decomposition, language model, sparse coding, circuit analysis, interpretability<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 3, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+Using a sparse autoencoder, we extract a large number of interpretable features from a one-layer transformer.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces a dictionary‑learning approach using a sparse autoencoder to extract a large set of monosemantic features from a single‑layer transformer language model. By decomposing the model’s hidden representations into sparse, interpretable basis vectors, the authors demonstrate that many neurons correspond to nearly atomic concepts, facilitating mechanistic analysis of model behavior.", "summary_cn": "本文提出一种基于稀疏自编码器的字典学习方法，从单层 Transformer 语言模型中提取大量单义特征。通过将隐藏表示分解为稀疏、可解释的基向量，作者展示了多数神经元对应几乎原子的概念，从而促进模型行为的机械化分析。", "keywords": "monosemantic, sparse autoencoder, dictionary learning, transformer, mechanistic interpretability, feature decomposition, language model, sparse coding, circuit analysis, interpretability", "scoring": {"interpretability": 8, "understanding": 7, "safety": 3, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Sun, 01 Oct 2023 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — July 2023</title>
+<link>https://transformer-circuits.pub/2023/july-update/index.html</link>
+<guid>https://transformer-circuits.pub/2023/july-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The July 2023 update from the Anthropic Interpretability Team presents a series of short notes detailing recent progress on analyzing transformer circuits, including new methods for probing attention heads, activation patching techniques, and preliminary findings on intermediate representations. These updates reflect ongoing work to dissect model internals and identify functional substructures within large language models.<br /><strong>Summary (CN):</strong> 2023年7月的更新汇总了Anthropic可解释性团队近期在Transformer电路分析方面的若干进展，涵盖了对注意力头的新探测方法、激活修补（activation patching）技术以及对中间表示的初步发现。这些小幅更新展示了团队持续拆解模型内部结构、寻找大语言模型功能子结构的工作。<br /><strong>Keywords:</strong> transformer circuits, mechanistic interpretability, attention head analysis, activation patching, Anthropic, circuit discovery, model internals<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 7, Safety: 4, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A collection of small updates from the Anthropic Interpretability Team.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The July 2023 update from the Anthropic Interpretability Team presents a series of short notes detailing recent progress on analyzing transformer circuits, including new methods for probing attention heads, activation patching techniques, and preliminary findings on intermediate representations. These updates reflect ongoing work to dissect model internals and identify functional substructures within large language models.", "summary_cn": "2023年7月的更新汇总了Anthropic可解释性团队近期在Transformer电路分析方面的若干进展，涵盖了对注意力头的新探测方法、激活修补（activation patching）技术以及对中间表示的初步发现。这些小幅更新展示了团队持续拆解模型内部结构、寻找大语言模型功能子结构的工作。", "keywords": "transformer circuits, mechanistic interpretability, attention head analysis, activation patching, Anthropic, circuit discovery, model internals", "scoring": {"interpretability": 7, "understanding": 7, "safety": 4, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Sat, 01 Jul 2023 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Circuits Updates — May 2023</title>
+<link>https://transformer-circuits.pub/2023/may-update/index.html</link>
+<guid>https://transformer-circuits.pub/2023/may-update/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The May 2023 update from the Anthropic Interpretability Team compiles a series of short reports on recent progress in mechanistic analysis of transformer models, including new observations about attention head functions, feed‑forward layer motifs, and early‑stage circuit‑level hypotheses. Each entry presents experimental findings, visualizations, and tentative theories that aim to incrementally build a more detailed picture of transformer internals.<br /><strong>Summary (CN):</strong> 本文为 Anthropic 可解释性团队 2023 年 5 月的更新，汇总了多篇关于 transformer 模型机制分析的短报告，涵盖注意力头功能、前馈层模式以及初步的电路级假设等新发现。每篇条目提供实验结果、可视化以及提出的理论，旨在逐步构建对 transformer 内部工作机制的更细致理解。<br /><strong>Keywords:</strong> transformer circuits, mechanistic interpretability, attention heads, feed‑forward layers, Anthropic, circuit analysis, model internals<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 7, Safety: 4, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A collection of small updates from the Anthropic Interpretability Team.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The May 2023 update from the Anthropic Interpretability Team compiles a series of short reports on recent progress in mechanistic analysis of transformer models, including new observations about attention head functions, feed‑forward layer motifs, and early‑stage circuit‑level hypotheses. Each entry presents experimental findings, visualizations, and tentative theories that aim to incrementally build a more detailed picture of transformer internals.", "summary_cn": "本文为 Anthropic 可解释性团队 2023 年 5 月的更新，汇总了多篇关于 transformer 模型机制分析的短报告，涵盖注意力头功能、前馈层模式以及初步的电路级假设等新发现。每篇条目提供实验结果、可视化以及提出的理论，旨在逐步构建对 transformer 内部工作机制的更细致理解。", "keywords": "transformer circuits, mechanistic interpretability, attention heads, feed‑forward layers, Anthropic, circuit analysis, model internals", "scoring": {"interpretability": 7, "understanding": 7, "safety": 4, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Mon, 01 May 2023 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Interpretability Dreams</title>
+<link>https://transformer-circuits.pub/2023/interpretability-dreams/index.html</link>
+<guid>https://transformer-circuits.pub/2023/interpretability-dreams/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper outlines a vision for mechanistic interpretability of transformer models, proposing a foundational research agenda and highlighting long‑term goals for understanding the inner workings of large language models.<br /><strong>Summary (CN):</strong> 本文阐述了对 transformer 机制可解释性的愿景，提出建立机械解释研究基础的目标，并讨论未来研究方向，以推动对大模型内部工作原理的深入理解。<br /><strong>Keywords:</strong> mechanistic interpretability, transformer circuits, foundation models, model understanding, AI safety<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 7, Safety: 5, Technicality: 5, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+Our present research aims to create a foundation for mechanistic interpretability research. In doing so, it's important to keep sight of what we're trying to lay the foundations for.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper outlines a vision for mechanistic interpretability of transformer models, proposing a foundational research agenda and highlighting long‑term goals for understanding the inner workings of large language models.", "summary_cn": "本文阐述了对 transformer 机制可解释性的愿景，提出建立机械解释研究基础的目标，并讨论未来研究方向，以推动对大模型内部工作原理的深入理解。", "keywords": "mechanistic interpretability, transformer circuits, foundation models, model understanding, AI safety", "scoring": {"interpretability": 7, "understanding": 7, "safety": 5, "technicality": 5, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Mon, 01 May 2023 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Distributed Representations: Composition &amp; Superposition</title>
+<link>https://transformer-circuits.pub/2023/superposition-composition/index.html</link>
+<guid>https://transformer-circuits.pub/2023/superposition-composition/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The note discusses two contrasting ways that transformer models can store information in distributed representations: composition, where features are combined additively, and superposition, where multiple features share the same subspace. It outlines the theoretical properties of each strategy, their implications for mechanistic interpretability, and how they can be identified in practice.<br /><strong>Summary (CN):</strong> 本文笔记探讨了 transformer 模型中分布式表征的两种对立存储方式——组合 (composition) 与叠加 (superposition)。文章阐述了各自的理论特性、对机械可解释性的影响，以及在实际模型中如何辨别这两种策略。<br /><strong>Keywords:</strong> distributed representations, composition, superposition, mechanistic interpretability, transformer circuits<br /><strong>Scores:</strong> Interpretability: 6, Understanding: 7, Safety: 2, Technicality: 5, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+An informal note on how "distributed representations" might be understood as two different, competing strategies — "composition" and "superposition" — with quite different properties.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The note discusses two contrasting ways that transformer models can store information in distributed representations: composition, where features are combined additively, and superposition, where multiple features share the same subspace. It outlines the theoretical properties of each strategy, their implications for mechanistic interpretability, and how they can be identified in practice.", "summary_cn": "本文笔记探讨了 transformer 模型中分布式表征的两种对立存储方式——组合 (composition) 与叠加 (superposition)。文章阐述了各自的理论特性、对机械可解释性的影响，以及在实际模型中如何辨别这两种策略。", "keywords": "distributed representations, composition, superposition, mechanistic interpretability, transformer circuits", "scoring": {"interpretability": 6, "understanding": 7, "safety": 2, "technicality": 5, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Mon, 01 May 2023 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Privileged Bases in the Transformer Residual Stream</title>
+<link>https://transformer-circuits.pub/2023/privileged-basis/index.html</link>
+<guid>https://transformer-circuits.pub/2023/privileged-basis/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper investigates why certain dimensions in the transformer stream exhibit privileged behavior despite theoretical expectations of symmetry, and attributes this effect primarily to the per-dimension normalizers used by the Adam optimizer. Empirical analyses and experiments demonstrate the emergence of these privileged bases and their impact on model behavior.<br /><strong>Summary (CN):</strong> 本文研究了尽管理论上残差流的各坐标应无特殊意义，但实际中某些维度表现出特权行为的现象，并初步归因于 Adam 优化器的逐维归一化器。通过实证分析和实验验证，作者展示了这些特权基的出现及其对模型行为的影响。<br /><strong>Keywords:</strong> transformer residual stream, privileged dimensions, Adam optimizer, per-dimension normalizer, mechanistic interpretability, neural network analysis<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 4, Technicality: 8, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+Our mathematical theories of the Transformer architecture suggest that individual coordinates in the residual stream should have no special significance, but recent work has shown that this observation is false in practice. We investigate this phenomenon and provisionally conclude that the per-dimension normalizers in the Adam optimizer are to blame for the effect.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper investigates why certain dimensions in the transformer stream exhibit privileged behavior despite theoretical expectations of symmetry, and attributes this effect primarily to the per-dimension normalizers used by the Adam optimizer. Empirical analyses and experiments demonstrate the emergence of these privileged bases and their impact on model behavior.", "summary_cn": "本文研究了尽管理论上残差流的各坐标应无特殊意义，但实际中某些维度表现出特权行为的现象，并初步归因于 Adam 优化器的逐维归一化器。通过实证分析和实验验证，作者展示了这些特权基的出现及其对模型行为的影响。", "keywords": "transformer residual stream, privileged dimensions, Adam optimizer, per-dimension normalizer, mechanistic interpretability, neural network analysis", "scoring": {"interpretability": 8, "understanding": 7, "safety": 4, "technicality": 8, "surprisal": 7}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Wed, 01 Mar 2023 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Superposition, Memorization, and Double Descent</title>
+<link>https://transformer-circuits.pub/2023/toy-double-descent/index.html</link>
+<guid>https://transformer-circuits.pub/2023/toy-double-descent/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper investigates why transformer models exhibit double‑descent behavior by analyzing toy models where memorization and superposition coexist. It extends prior mechanistic circuit work to show how representations transition from distributed to memorized as training size varies, and offers a simple theoretical account of the double‑descent curve.<br /><strong>Summary (CN):</strong> 本文通过分析记忆与叠加共存的玩具模型，研究Transformer模型出现双重下降（double‑descent）现象的原因。它在之前的电路机制工作基础上，展示了随着训练规模变化，表征如何从分布式转向记忆化，并提供了对双重下降曲线的简洁理论解释。<br /><strong>Keywords:</strong> double descent, memorization, superposition, transformer circuits, mechanistic interpretability, toy models, generalization, representation learning<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 8, Safety: 4, Technicality: 7, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+We have little mechanistic understanding of how deep learning models overfit to their training data, despite it being a central problem. Here we extend our previous work on toy models to shed light on how models generalize beyond their training data.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper investigates why transformer models exhibit double‑descent behavior by analyzing toy models where memorization and superposition coexist. It extends prior mechanistic circuit work to show how representations transition from distributed to memorized as training size varies, and offers a simple theoretical account of the double‑descent curve.", "summary_cn": "本文通过分析记忆与叠加共存的玩具模型，研究Transformer模型出现双重下降（double‑descent）现象的原因。它在之前的电路机制工作基础上，展示了随着训练规模变化，表征如何从分布式转向记忆化，并提供了对双重下降曲线的简洁理论解释。", "keywords": "double descent, memorization, superposition, transformer circuits, mechanistic interpretability, toy models, generalization, representation learning", "scoring": {"interpretability": 8, "understanding": 8, "safety": 4, "technicality": 7, "surprisal": 7}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Sun, 01 Jan 2023 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Toy Models of Superposition</title>
+<link>https://transformer-circuits.pub/2022/toy_model/index.html</link>
+<guid>https://transformer-circuits.pub/2022/toy_model/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces simplified toy models that fully capture the phenomenon of polysemantic neurons—where a single neuron encodes multiple unrelated concepts—allowing the authors to analytically trace the origins and dynamics of superposition in neural networks. By proving concepts in a controlled setting, the work sheds light on why and how superposition arises, providing a foundation for future mechanistic interpretability research.<br /><strong>Summary (CN):</strong> 本文提出了可完全解析的玩具模型，用以解释多义神经元（polysemanticity）——即单个神经元包含多个不相关概念的现象，进而分析超位置（superposition）的起源和演化动力学。通过在受控环境中的严格证明，阐释了超位置产生的机制，为后续机械可解释性研究奠定基础。<br /><strong>Keywords:</strong> polysemanticity, superposition, toy model, mechanistic interpretability, transformer circuits, neuron analysis<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 4, Technicality: 7, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+Neural networks often seem to pack many unrelated concepts into a single neuron - a puzzling phenomenon known as 'polysemanticity'. In our latest interpretability work, we build toy models where the origins and dynamics of polysemanticity can be fully understood.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces simplified toy models that fully capture the phenomenon of polysemantic neurons—where a single neuron encodes multiple unrelated concepts—allowing the authors to analytically trace the origins and dynamics of superposition in neural networks. By proving concepts in a controlled setting, the work sheds light on why and how superposition arises, providing a foundation for future mechanistic interpretability research.", "summary_cn": "本文提出了可完全解析的玩具模型，用以解释多义神经元（polysemanticity）——即单个神经元包含多个不相关概念的现象，进而分析超位置（superposition）的起源和演化动力学。通过在受控环境中的严格证明，阐释了超位置产生的机制，为后续机械可解释性研究奠定基础。", "keywords": "polysemanticity, superposition, toy model, mechanistic interpretability, transformer circuits, neuron analysis", "scoring": {"interpretability": 8, "understanding": 7, "safety": 4, "technicality": 7, "surprisal": 7}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Thu, 01 Sep 2022 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Softmax Linear Units</title>
+<link>https://transformer-circuits.pub/2022/solu/index.html</link>
+<guid>https://transformer-circuits.pub/2022/solu/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces Softmax Linear Units (SLU), an alternative activation function for transformer networks that, when applied, increases the proportion of neurons whose activations align with human‑understandable concepts, facilitating mechanistic interpretability.<br /><strong>Summary (CN):</strong> 本文提出 Softmax Linear Units（SLU），一种用于 Transformer 网络的替代激活函数，实验表明它能够提升与人类可理解概念对应的神经元比例，从而有助于机械可解释性分析。<br /><strong>Keywords:</strong> Softmax Linear Units, activation function, transformer, concept neurons, mechanistic interpretability, feature alignment<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 2, Technicality: 6, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+An alternative activation function increases the fraction of neurons which appear to correspond to human-understandable concepts.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces Softmax Linear Units (SLU), an alternative activation function for transformer networks that, when applied, increases the proportion of neurons whose activations align with human‑understandable concepts, facilitating mechanistic interpretability.", "summary_cn": "本文提出 Softmax Linear Units（SLU），一种用于 Transformer 网络的替代激活函数，实验表明它能够提升与人类可理解概念对应的神经元比例，从而有助于机械可解释性分析。", "keywords": "Softmax Linear Units, activation function, transformer, concept neurons, mechanistic interpretability, feature alignment", "scoring": {"interpretability": 8, "understanding": 7, "safety": 2, "technicality": 6, "surprisal": 7}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Wed, 01 Jun 2022 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Mechanistic Interpretability, Variables, and the Importance of Interpretable Bases</title>
+<link>https://transformer-circuits.pub/2022/mech-interp-essay/index.html</link>
+<guid>https://transformer-circuits.pub/2022/mech-interp-essay/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The note explores intuitive perspectives on mechanistic interpretability, emphasizing how the choice of an interpretable basis and the definition of variables affect the analysis of transformer circuits. It argues that selecting appropriate bases can simplify the discovery of meaningful circuit components and improve our ability to reason about model behavior.<br /><strong>Summary (CN):</strong> 本文探讨了机械可解释性中的直觉视角，强调可解释基底的选择以及变量的定义如何影响对 transformer 电路的分析。作者主张，选取合适的基底能够简化发现有意义的电路部件提升对模型行为的推理能力。<br /><strong>Keywords:</strong> mechanistic interpretability, transformer circuits, interpretability bases, variable analysis, neural network internals, AI alignment<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 6, Safety: 4, Technicality: 3, Surprisal: 4<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+An informal note on intuitions related to mechanistic interpretability.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The note explores intuitive perspectives on mechanistic interpretability, emphasizing how the choice of an interpretable basis and the definition of variables affect the analysis of transformer circuits. It argues that selecting appropriate bases can simplify the discovery of meaningful circuit components and improve our ability to reason about model behavior.", "summary_cn": "本文探讨了机械可解释性中的直觉视角，强调可解释基底的选择以及变量的定义如何影响对 transformer 电路的分析。作者主张，选取合适的基底能够简化发现有意义的电路部件提升对模型行为的推理能力。", "keywords": "mechanistic interpretability, transformer circuits, interpretability bases, variable analysis, neural network internals, AI alignment", "scoring": {"interpretability": 8, "understanding": 6, "safety": 4, "technicality": 3, "surprisal": 4}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Wed, 01 Jun 2022 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>In-Context Learning and Induction Heads</title>
+<link>https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html</link>
+<guid>https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper investigates the hypothesis that induction heads are the primary mechanism enabling in-context learning in transformer language models, providing mechanistic analyses and experiments to support this claim. It also discovers and characterizes a previously unknown phase change occurring in transformers as model scale increases. The work advances our mechanistic understanding of how attention heads contribute to contextual generalization.<br /><strong>Summary (CN):</strong> 本文研究归纳头（induction heads）是 transformer 语言模型实现上下文学习的核心机制，通过机制分析和实验验证支持该假设。同时，作者发现并描述了模型规模增大时出现的先前未知的相变现象。该工作提升了我们对注意力头在上下文泛化中作用的机械解释。<br /><strong>Keywords:</strong> in-context learning, induction heads, transformer circuits, phase change, mechanistic interpretability, attention heads, language models<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 8, Safety: 4, Technicality: 8, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+An exploration of the hypothesis that induction heads are the primary mechanism behind in-context learning. We also report the existence of a previously unknown phase change in transformers language models.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper investigates the hypothesis that induction heads are the primary mechanism enabling in-context learning in transformer language models, providing mechanistic analyses and experiments to support this claim. It also discovers and characterizes a previously unknown phase change occurring in transformers as model scale increases. The work advances our mechanistic understanding of how attention heads contribute to contextual generalization.", "summary_cn": "本文研究归纳头（induction heads）是 transformer 语言模型实现上下文学习的核心机制，通过机制分析和实验验证支持该假设。同时，作者发现并描述了模型规模增大时出现的先前未知的相变现象。该工作提升了我们对注意力头在上下文泛化中作用的机械解释。", "keywords": "in-context learning, induction heads, transformer circuits, phase change, mechanistic interpretability, attention heads, language models", "scoring": {"interpretability": 8, "understanding": 8, "safety": 4, "technicality": 8, "surprisal": 7}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 01 Mar 2022 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>A Mathematical Framework for Transformer Circuits</title>
+<link>https://transformer-circuits.pub/2021/framework/index.html</link>
+<guid>https://transformer-circuits.pub/2021/framework/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces a formal mathematical framework for describing and analyzing circuits inside transformer models, defining components such as attention heads and MLPs, and demonstrates its use by reverse‑engineering several small toy models.<br /><strong>Summary (CN):</strong> 本文提出了一套用于描述和分析 Transformer 模型内部电路的数学框架，定义了注意力头、MLP 等组件，并通过逆向工程若干小型玩具模型进行演示。<br /><strong>Keywords:</strong> transformer circuits, mechanistic interpretability, circuit analysis, attention heads, MLP, mathematical framework, reverse engineering, toy models<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 4, Technicality: 8, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+Our early mathematical framework for reverse engineering models, demonstrated by reverse engineering small toy models.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces a formal mathematical framework for describing and analyzing circuits inside transformer models, defining components such as attention heads and MLPs, and demonstrates its use by reverse‑engineering several small toy models.", "summary_cn": "本文提出了一套用于描述和分析 Transformer 模型内部电路的数学框架，定义了注意力头、MLP 等组件，并通过逆向工程若干小型玩具模型进行演示。", "keywords": "transformer circuits, mechanistic interpretability, circuit analysis, attention heads, MLP, mathematical framework, reverse engineering, toy models", "scoring": {"interpretability": 8, "understanding": 7, "safety": 4, "technicality": 8, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Wed, 01 Dec 2021 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Exercises</title>
+<link>https://transformer-circuits.pub/2021/exercises/index.html</link>
+<guid>https://transformer-circuits.pub/2021/exercises/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> This collection presents a suite of exercises designed to deepen mechanistic understanding of how transformer networks implement algorithms at the level of individual parameters. By probing specific circuit components and behaviors, the exercises aim to reveal internal algorithmic structures and guide future interpretability research.<br /><strong>Summary (CN):</strong> 本合集提供了一系列练习，旨在加深对 Transformer 网络在参数层面实现算法的机制性理解。通过针对特定电路组件和行为的探究，这些练习帮助揭示内部算法结构，并为后续可解释性研究提供指引。<br /><strong>Keywords:</strong> mechanistic interpretability, transformer circuits, algorithmic understanding, model internals, exercises, circuit analysis<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 3, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+Some exercises we've developed to improve our understanding of how neural networks implement algorithms at the parameter level.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "This collection presents a suite of exercises designed to deepen mechanistic understanding of how transformer networks implement algorithms at the level of individual parameters. By probing specific circuit components and behaviors, the exercises aim to reveal internal algorithmic structures and guide future interpretability research.", "summary_cn": "本合集提供了一系列练习，旨在加深对 Transformer 网络在参数层面实现算法的机制性理解。通过针对特定电路组件和行为的探究，这些练习帮助揭示内部算法结构，并为后续可解释性研究提供指引。", "keywords": "mechanistic interpretability, transformer circuits, algorithmic understanding, model internals, exercises, circuit analysis", "scoring": {"interpretability": 8, "understanding": 7, "safety": 3, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Wed, 01 Dec 2021 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Videos</title>
+<link>https://transformer-circuits.pub/2021/videos/index.html</link>
+<guid>https://transformer-circuits.pub/2021/videos/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> These informal video talks document the authors' ongoing attempts to reverse‑engineer transformer language models, presenting early observations, hypotheses, and exploratory circuit analyses. The material is rough and conversational, highlighting challenges and promising directions for mechanistic interpretability of transformers.<br /><strong>Summary (CN):</strong> 这些非正式视频记录了作者们逆向工程 Transformer 语言模型的持续尝，展示了早期观察、假设以及探索性的电路分析。内容较为粗糙且对话式，凸显了可解释性研究面临的挑战和潜在方向。<br /><strong>Keywords:</strong> transformer interpretability, mechanistic interpretability, circuit analysis, reverse engineering, attention mechanisms, language models, transformer circuits, model internals<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 7, Safety: 2, Technicality: 4, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+Very rough informal talks as we search for a way to reverse engineering transformers.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "These informal video talks document the authors' ongoing attempts to reverse‑engineer transformer language models, presenting early observations, hypotheses, and exploratory circuit analyses. The material is rough and conversational, highlighting challenges and promising directions for mechanistic interpretability of transformers.", "summary_cn": "这些非正式视频记录了作者们逆向工程 Transformer 语言模型的持续尝，展示了早期观察、假设以及探索性的电路分析。内容较为粗糙且对话式，凸显了可解释性研究面临的挑战和潜在方向。", "keywords": "transformer interpretability, mechanistic interpretability, circuit analysis, reverse engineering, attention mechanisms, language models, transformer circuits, model internals", "scoring": {"interpretability": 7, "understanding": 7, "safety": 2, "technicality": 4, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Wed, 01 Dec 2021 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>PySvelte</title>
+<link>https://transformer-circuits.pub/https://github.com/anthropics/PySvelte</link>
+<guid>https://transformer-circuits.pub/https://github.com/anthropics/PySvelte</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> PySvelte is a framework that links Python code with web‑based interactive diagrams, enabling researchers to create, explore, and manipulate visual representations of transformer circuits for interpretability studies. The tool streamlines the workflow between model analysis in Python and dynamic, browser‑rendered visualizations.<br /><strong>Summary (CN):</strong> 本文介绍了 PySvelte，这是一套将 Python 与基于网页的交互式图表相结合的框架，帮助解释性研究者创建、探索并操作 transformer 电路的可视化表示。该工具简化了在 Python 中进行模型分析与浏览器中动态可视化之间的工作流。<br /><strong>Keywords:</strong> PySvelte, interactive diagrams, interpretability, transformer circuits, visualization, web, Python<br /><strong>Scores:</strong> Interpretability: 5, Understanding: 4, Safety: 2, Technicality: 6, Surprisal: 3<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+One approach to bridging Python and web-based interactive diagrams for interpretability research.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "PySvelte is a framework that links Python code with web‑based interactive diagrams, enabling researchers to create, explore, and manipulate visual representations of transformer circuits for interpretability studies. The tool streamlines the workflow between model analysis in Python and dynamic, browser‑rendered visualizations.", "summary_cn": "本文介绍了 PySvelte，这是一套将 Python 与基于网页的交互式图表相结合的框架，帮助解释性研究者创建、探索并操作 transformer 电路的可视化表示。该工具简化了在 Python 中进行模型分析与浏览器中动态可视化之间的工作流。", "keywords": "PySvelte, interactive diagrams, interpretability, transformer circuits, visualization, web, Python", "scoring": {"interpretability": 5, "understanding": 4, "safety": 2, "technicality": 6, "surprisal": 3}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Wed, 01 Dec 2021 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Garcon</title>
+<link>https://transformer-circuits.pub/2021/garcon/index.html</link>
+<guid>https://transformer-circuits.pub/2021/garcon/index.html</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> Garçon describes a suite of open‑source tools designed to facilitate mechanistic interpretability of large transformer models. It provides data pipelines, activation‑recording utilities, circuit‑discovery notebooks, and visualization modules that enable researchers to trace information flow and analyze internal components at scale.<br /><strong>Summary (CN):</strong> Garçon 介绍了一套开源工具，旨在促进大规模 Transformer 模型的机制可解释性研究。该工具套件包括数据流水线、激活记录工具、电路发现笔记本以及可视化模块，使研究者能够追踪信息流并在大模型内部进行细粒度分析。<br /><strong>Keywords:</strong> Garçon, interpretability tooling, transformer circuits, activation analysis, mechanistic interpretability, model internals, visualization, open-source<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 4, Technicality: 7, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+A description of our tooling for doing interpretability on large models.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "Garçon describes a suite of open‑source tools designed to facilitate mechanistic interpretability of large transformer models. It provides data pipelines, activation‑recording utilities, circuit‑discovery notebooks, and visualization modules that enable researchers to trace information flow and analyze internal components at scale.", "summary_cn": "Garçon 介绍了一套开源工具，旨在促进大规模 Transformer 模型的机制可解释性研究。该工具套件包括数据流水线、激活记录工具、电路发现笔记本以及可视化模块，使研究者能够追踪信息流并在大模型内部进行细粒度分析。", "keywords": "Garçon, interpretability tooling, transformer circuits, activation analysis, mechanistic interpretability, model internals, visualization, open-source", "scoring": {"interpretability": 8, "understanding": 7, "safety": 4, "technicality": 7, "surprisal": 7}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Wed, 01 Dec 2021 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Original Distill Circuits Thread</title>
+<link>https://transformer-circuits.pub/https://distill.pub/2020/circuits/</link>
+<guid>https://transformer-circuits.pub/https://distill.pub/2020/circuits/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The Distill Circuits thread provides a detailed mechanistic investigation of transformer models, introducing the concept of neural "circuits" composed of attention heads and MLP layers that implement recognizable algorithms. It demonstrates how to locate, visualize, and interpret these subcomponents, establishing a foundation for systematic interpretability research on large language models.<br /><strong>Summary (CN):</strong> 本文在 Distill 平台上对 Transformer 模型进行深入的机械化分析，引入了由注意力头和 MLP 层组成的神经“电路”概念，展示这些子结构实现了可辨认的算法。文章阐述了定位、可视化和解释这些子组件的方法，为大型语言模型的系统化可解释性研究奠定了基础。<br /><strong>Keywords:</strong> transformer interpretability, mechanistic interpretability, circuit analysis, attention heads, token embeddings, model internals<br /><strong>Scores:</strong> Interpretability: 9, Understanding: 8, Safety: 3, Technicality: 8, Surprisal: 8<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+Our exploration of Transformers builds heavily on the original Circuits thread on Distill.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The Distill Circuits thread provides a detailed mechanistic investigation of transformer models, introducing the concept of neural \"circuits\" composed of attention heads and MLP layers that implement recognizable algorithms. It demonstrates how to locate, visualize, and interpret these subcomponents, establishing a foundation for systematic interpretability research on large language models.", "summary_cn": "本文在 Distill 平台上对 Transformer 模型进行深入的机械化分析，引入了由注意力头和 MLP 层组成的神经“电路”概念，展示这些子结构实现了可辨认的算法。文章阐述了定位、可视化和解释这些子组件的方法，为大型语言模型的系统化可解释性研究奠定了基础。", "keywords": "transformer interpretability, mechanistic interpretability, circuit analysis, attention heads, token embeddings, model internals", "scoring": {"interpretability": 9, "understanding": 8, "safety": 3, "technicality": 8, "surprisal": 8}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Sun, 01 Mar 2020 00:00:00 -0000</pubDate>
+</item>
+</channel>
+</rss>

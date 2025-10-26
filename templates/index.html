@@ -250,7 +250,7 @@
             other: 'ti ti-route-x-2'
         };
 
-        const PAGE_SIZE_DEFAULT = 25;
+        const PAGE_SIZE_DEFAULT = 100;
 
         // Global state
         let allFeeds = [];
@@ -264,7 +264,7 @@
         let showKeywords = true;
         let showScores = true;
         let showAuthors = true;
-        let arxivLinkFormat = 'papers.cool';
+        let arxivLinkFormat = 'arxiv-pdf';
         let currentArticles = [];
         let totalArticles = 0;
         let totalPages = 0;
@@ -815,7 +815,7 @@
             if (!showKeywords) params.set('hideKeywords', '1');
             if (!showScores) params.set('hideScores', '1');
             if (!showAuthors) params.set('hideAuthors', '1');
-            if (arxivLinkFormat !== 'papers.cool') params.set('arxivLink', arxivLinkFormat);
+            if (arxivLinkFormat !== 'arxiv-pdf') params.set('arxivLink', arxivLinkFormat);
 
             const url = params.toString() ? `?${params.toString()}` : window.location.pathname;
             window.history.replaceState({}, '', url);
@@ -893,7 +893,7 @@
             showKeywords = !params.has('hideKeywords');
             showScores = !params.has('hideScores');
             showAuthors = !params.has('hideAuthors');
-            arxivLinkFormat = params.get('arxivLink') || 'papers.cool';
+            arxivLinkFormat = params.get('arxivLink') || 'arxiv-pdf';
 
             // Update checkbox states
             document.getElementById('toggle-summary').checked = showSummary;

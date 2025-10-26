@@ -1,0 +1,1268 @@
+------------------------------------------------------
+Started: 2025-10-22 02:48:51.128346
+Existing_entries: 0
+Fetching from https://papers.cool/arxiv/cs.CL/feed
+Append: [How Do LLMs Use Their Depth?](https://papers.cool/arxiv/2510.18871)
+Authors: Akshat Gupta, Jay Yeung, Gopala Anumanchipalli, Anna Ivanova
+Append: [LightMem: Lightweight and Efficient Memory-Augmented Generation](https://papers.cool/arxiv/2510.18866)
+Authors: Jizhan Fang, Xinle Deng, Haoming Xu, Ziyan Jiang, Yuqi Tang, Ziwen Xu, Shumin Deng, Yunzhi Yao, Mengru Wang, Shuofei Qiao, Huajun Chen, Ningyu Zhang
+Append: [Every Step Evolves: Scaling Reinforcement Learning for Trillion-Scale Thinking Model](https://papers.cool/arxiv/2510.18855)
+Authors: Ling Team, Anqi Shen, Baihui Li, Bin Hu, Bin Jing, Cai Chen, Chao Huang, Chao Zhang, Chaokun Yang, Cheng Lin, Chengyao Wen, Congqi Li, Deng Zhao, Dingbo Yuan, Donghai You, Fagui Mao, Fanzhuang Meng, Feng Xu, Guojie Li, Guowei Wang, Hao Dai, Haonan Zheng, Hong Liu, Jia Guo, Jiaming Liu, Jian Liu, Jianhao Fu, Jiannan Shi, Jianwen Wang, Jianxin Lai, Jin Yang, Jun Mei, Jun Zhou, Junbo Zhao, Junping Zhao, Kuan Xu, Le Su, Lei Chen, Li Tang, Liang Jiang, Liangcheng Fu, Lianhao Xu, Linfeng Shi, Lisha Liao, Longfei Zheng, Meng Li, Mingchun Chen, Qi Zuo, Qiang Cheng, Qianggang Cao, Qitao Shi, Quanrui Guo, Senlin Zhu, Shaofei Wang, Shaomian Zheng, Shuaicheng Li, Shuwei Gu, Siba Chen, Tao Wu, Tao Zhang, Tianyu Zhang, Tianyu Zhou, Tiwei Bie, Tongkai Yang, Wang Hong, Wang Ren, Weihua Chen, Wenbo Yu, Wengang Zheng, Xiangchun Wang, Xiaodong Yan, Xiaopei Wan, Xin Zhao, Xinyu Kong, Xinyu Tang, Xudong Han, Xudong Wang, Xuemin Yang, Xueyu Hu, Yalin Zhang, Yan Sun, Yicheng Shan, Yilong Wang, Yingying Xu, Yongkang Liu, Yongzhen Guo, Yuanyuan Wang, Yuchen Yan, Yuefan Wang, Yuhong Guo, Zehuan Li, Zhankai Xu, Zhe Li, Zhenduo Zhang, Zhengke Gui, Zhenxuan Pan, Zhenyu Huang, Zhenzhong Lan, Zhiqiang Ding, Zhiqiang Zhang, Zhixun Li, Zhizhen Liu, Zihao Wang, Zujie Wen
+Append: [Towards Faithful and Controllable Personalization via Critique-Post-Edit Reinforcement Learning](https://papers.cool/arxiv/2510.18849)
+Authors: Chenghao Zhu, Meiling Tao, Tiannan Wang, Dongyi Ding, Yuchen Eleanor Jiang, Wangchunshu Zhou
+Append: [MTraining: Distributed Dynamic Sparse Attention for Efficient Ultra-Long Context Training](https://papers.cool/arxiv/2510.18830)
+Authors: Wenxuan Li, Chengruidong Zhang, Huiqiang Jiang, Yucheng Li, Yuqing Yang, Lili Qiu
+Append: [Fine-Tuned Thoughts: Leveraging Chain-of-Thought Reasoning for Industrial Asset Health Monitoring](https://papers.cool/arxiv/2510.18817)
+Authors: Shuxin Lin, Dhaval Patel, Christodoulos Constantinides
+Append: [WebSeer: Training Deeper Search Agents through Reinforcement Learning with Self-Reflection](https://papers.cool/arxiv/2510.18798)
+Authors: Guanzhong He, Zhen Yang, Jinxin Liu, Bin Xu, Lei Hou, Juanzi Li
+Append: [KAT-Coder Technical Report](https://papers.cool/arxiv/2510.18779)
+Authors: Zizheng Zhan, Ken Deng, Xiaojiang Zhang, Jinghui Wang, Huaixi Tang, Zhiyi Lai, Haoyang Huang, Wen Xiang, Kun Wu, Wenhao Zhuang, Minglei Zhang, Shaojie Wang, Shangpeng Yan, Kepeng Lei, Zongxian Feng, Huiming Wang, Zheng Lin, Mengtong Li, Mengfei Xie, Yinghan Cui, Xuxing Chen, Chao Wang, Weihao Li, Wenqiang Zhu, Jiarong Zhang, Jingxuan Xu, Songwei Yu, Yifan Yao, Xinping Lei, Han Li, Junqi Xiong, Zuchen Gao, Dailin Li, Haimo Li, Jiaheng Liu, Yuqun Zhang, Junyi Peng, Haotian Zhang, Bin Chen
+Append: [AI use in American newspapers is widespread, uneven, and rarely disclosed](https://papers.cool/arxiv/2510.18774)
+Authors: Jenna Russell, Marzena Karpinska, Destiny Akinode, Katherine Thai, Bradley Emi, Max Spero, Mohit Iyyer
+Append: [Topoformer: brain-like topographic organization in Transformer language models through spatial querying and reweighting](https://papers.cool/arxiv/2510.18745)
+Authors: Taha Binhuraib, Greta Tuckute, Nicholas Blauch
+Append: [Verifiable Accuracy and Abstention Rewards in Curriculum RL to Alleviate Lost-in-Conversation](https://papers.cool/arxiv/2510.18731)
+Authors: Ming Li
+Append: [SemiAdapt and SemiLoRA: Efficient Domain Adaptation for Transformer-based Low-Resource Language Translation with a Case Study on Irish](https://papers.cool/arxiv/2510.18725)
+Authors: Josh McGiff, Nikola S. Nikolov
+Append: [Adapting Language Balance in Code-Switching Speech](https://papers.cool/arxiv/2510.18724)
+Authors: Enes Yavuz Ugan, Ngoc-Quan Pham, Alexander Waibel
+Append: [Bayesian Low-Rank Factorization for Robust Model Adaptation](https://papers.cool/arxiv/2510.18723)
+Authors: Enes Yavuz Ugan, Ngoc-Quan Pham, Alexander Waibel
+Append: [Investigating LLM Capabilities on Long Context Comprehension for Medical Question Answering](https://papers.cool/arxiv/2510.18691)
+Authors: Feras AlMannaa, Talia Tseriotou, Jenny Chim, Maria Liakata
+Append: [MLMA: Towards Multilingual with Mamba Based Architectures](https://papers.cool/arxiv/2510.18684)
+Authors: Mohamed Nabih Ali, Daniele Falavigna, Alessio Brutti
+Append: [Dynamical model parameters from ultrasound tongue kinematics](https://papers.cool/arxiv/2510.18629)
+Authors: Sam Kirkham, Patrycja Strycharczuk
+Append: [Beyond the Explicit: A Bilingual Dataset for Dehumanization Detection in Social Media](https://papers.cool/arxiv/2510.18582)
+Authors: Dennis Assenmacher, Paloma Piot, Katarina Laken, David Jurgens, Claudia Wagner
+Append: [Large language models for folktale type automation based on motifs: Cinderella case study](https://papers.cool/arxiv/2510.18561)
+Authors: Tjaša Arčon, Marko Robnik-Šikonja, Polona Tratnik
+Append: [Building Trust in Clinical LLMs: Bias Analysis and Dataset Transparency](https://papers.cool/arxiv/2510.18556)
+Authors: Svetlana Maslenkova, Clement Christophe, Marco AF Pimentel, Tathagata Raha, Muhammad Umar Salman, Ahmed Al Mahrooqi, Avani Gupta, Shadab Khan, Ronnie Rajan, Praveenkumar Kanithi
+Append: [Identity-Aware Large Language Models require Cultural Reasoning](https://papers.cool/arxiv/2510.18510)
+Authors: Alistair Plum, Anne-Marie Lutgen, Christoph Purschke, Achim Rettinger
+Append: [How Efficient Are Diffusion Language Models? A Critical Examination of Efficiency Evaluation Practices](https://papers.cool/arxiv/2510.18480)
+Authors: Han Peng, Peiyu Liu, Zican Dong, Daixuan Cheng, Junyi Li, Yiru Tang, Shuo Wang, Wayne Xin Zhao
+Append: [DART: A Structured Dataset of Regulatory Drug Documents in Italian for Clinical NLP](https://papers.cool/arxiv/2510.18475)
+Authors: Mariano Barone, Antonio Laudante, Giuseppe Riccio, Antonio Romano, Marco Postiglione, Vincenzo Moscato
+Append: [IMB: An Italian Medical Benchmark for Question Answering](https://papers.cool/arxiv/2510.18468)
+Authors: Antonio Romano, Giuseppe Riccio, Mariano Barone, Marco Postiglione, Vincenzo Moscato
+Append: [CEFR-Annotated WordNet: LLM-Based Proficiency-Guided Semantic Database for Language Learning](https://papers.cool/arxiv/2510.18466)
+Authors: Masato Kikuchi, Masatsugu Ono, Toshioki Soga, Tetsu Tanabe, Tadachika Ozono
+Append: [DePass: Unified Feature Attributing by Simple Decomposed Forward Pass](https://papers.cool/arxiv/2510.18462)
+Authors: Xiangyu Hong, Che Jiang, Kai Tian, Biqing Qi, Youbang Sun, Ning Ding, Bowen Zhou
+Append: [ChronoPlay: A Framework for Modeling Dual Dynamics and Authenticity in Game RAG Benchmarks](https://papers.cool/arxiv/2510.18455)
+Authors: Liyang He, Yuren Zhang, Ziwei Zhu, Zhenghui Li, Shiwei Tong
+Append: [Engagement Undermines Safety: How Stereotypes and Toxicity Shape Humor in Language Models](https://papers.cool/arxiv/2510.18454)
+Authors: Atharvan Dogra, Soumya Suvra Ghosal, Ameet Deshpande, Ashwin Kalyan, Dinesh Manocha
+Append: [Grounding or Guessing? Visual Signals for Detecting Hallucinations in Sign Language Translation](https://papers.cool/arxiv/2510.18439)
+Authors: Yasser Hamidullah, Koel Dutta Chowdury, Yusser Al-Ghussin, Shakib Yazdani, Cennet Oguz, Josef van Genabith, Cristina España-Bonet
+Append: [Chain-of-Conceptual-Thought: Eliciting the Agent to Deeply Think within the Response](https://papers.cool/arxiv/2510.18434)
+Authors: Qingqing Gu, Dan Wang, Yue Zhao, Xiaoyu Wang, Zhonglin Jiang, Yong Chen, Hongyan Li, Luo Ji
+Append: [Adamas: Hadamard Sparse Attention for Efficient Long-Context Inference](https://papers.cool/arxiv/2510.18413)
+Authors: Siyuan Yan, Guo-Qing Jiang, Yuchen Zhang, Xiaoxing Ma, Ran Zhu, Chun Cao, Jingwei Xu
+Append: [MENTOR: A Reinforcement Learning Framework for Model Enhancement via Teacher-Optimized Rewards in Small Models](https://papers.cool/arxiv/2510.18383)
+Authors: ChangSu Choi, Hoyun Song, Dongyeon Kim, WooHyeon Jung, Minkyung Cho, Sunjin Park, NohHyeob Bae, Seona Yu, KyungTae Lim
+Append: [Towards Fair ASR For Second Language Speakers Using Fairness Prompted Finetuning](https://papers.cool/arxiv/2510.18374)
+Authors: Monorama Swain, Bubai Maji, Jagabandhu Mishra, Markus Schedl, Anders Søgaard, Jesper Rindom Jensen
+Append: [KoSimpleQA: A Korean Factuality Benchmark with an Analysis of Reasoning LLMs](https://papers.cool/arxiv/2510.18368)
+Authors: Donghyeon Ko, Yeguk Jin, Kyubyung Chae, Byungwook Lee, Chansong Jo, Sookyo In, Jaehong Lee, Taesup Kim, Donghyun Kwak
+Append: [KrishokBondhu: A Retrieval-Augmented Voice-Based Agricultural Advisory Call Center for Bengali Farmers](https://papers.cool/arxiv/2510.18355)
+Authors: Mohd Ruhul Ameen, Akif Islam, Farjana Aktar, M. Saifuzzaman Rafat
+Append: [Combining Distantly Supervised Models with In Context Learning for Monolingual and Cross-Lingual Relation Extraction](https://papers.cool/arxiv/2510.18344)
+Authors: Vipul Rathore, Malik Hammad Faisal, Parag Singla, Mausam
+Append: [ECG-LLM-- training and evaluation of domain-specific large language models for electrocardiography](https://papers.cool/arxiv/2510.18339)
+Authors: Lara Ahrens, Wilhelm Haverkamp, Nils Strodthoff
+Append: [From Retrieval to Generation: Unifying External and Parametric Knowledge for Medical Question Answering](https://papers.cool/arxiv/2510.18297)
+Authors: Lei Li, Xiao Zhou, Yingying Zhang, Xian Wu
+Append: [Food4All: A Multi-Agent Framework for Real-time Free Food Discovery with Integrated Nutritional Metadata](https://papers.cool/arxiv/2510.18289)
+Authors: Zhengqing Yuan, Yiyang Li, Weixiang Sun, Zheyuan Zhang, Kaiwen Shi, Keerthiram Murugesan, Yanfang Ye
+Append: [BrailleLLM: Braille Instruction Tuning with Large Language Models for Braille Domain Tasks](https://papers.cool/arxiv/2510.18288)
+Authors: Tianyuan Huang, Zepeng Zhu, Hangdi Xing, Zirui Shao, Zhi Yu, Chaoxiong Yang, Jiaxian He, Xiaozhong Liu, Jiajun Bu
+Append: [Text or Pixels? It Takes Half: On the Token Efficiency of Visual Text Inputs in Multimodal LLMs](https://papers.cool/arxiv/2510.18279)
+Authors: Yanhong Li, Zixuan Lan, Jiawei Zhou
+Append: [DelvePO: Direction-Guided Self-Evolving Framework for Flexible Prompt Optimization](https://papers.cool/arxiv/2510.18257)
+Authors: Tao Tao, Guanghui Zhu, Lang Guo, Hongyi Chen, Chunfeng Yuan, Yihua Huang
+Append: [MARCUS: An Event-Centric NLP Pipeline that generates Character Arcs from Narratives](https://papers.cool/arxiv/2510.18201)
+Authors: Sriharsh Bhyravajjula, Ujwal Narayan, Manish Shrivastava
+Append: [Contrastive Decoding Mitigates Score Range Bias in LLM-as-a-Judge](https://papers.cool/arxiv/2510.18196)
+Authors: Yoshinari Fujinuma
+Append: [CMT-Bench: Cricket Multi-Table Generation Benchmark for Probing Robustness in Large Language Models](https://papers.cool/arxiv/2510.18173)
+Authors: Ritam Upadhyay, Naman Ahuja, Rishabh Baral, Aparna Garimella, Vivek Gupta
+Append: [Automatic Prompt Generation via Adaptive Selection of Prompting Techniques](https://papers.cool/arxiv/2510.18162)
+Authors: Yohei Ikenoue, Hitomi Tashiro, Shigeru Kuroyanagi
+Append: [Extracting Rule-based Descriptions of Attention Features in Transformers](https://papers.cool/arxiv/2510.18148)
+Authors: Dan Friedman, Adithya Bhaskar, Alexander Wettig, Danqi Chen
+Append: [LLMs Encode How Difficult Problems Are](https://papers.cool/arxiv/2510.18147)
+Authors: William Lugoloobi, Chris Russell
+Append: [Does Reasoning Help LLM Agents Play Dungeons and Dragons? A Prompt Engineering Experiment](https://papers.cool/arxiv/2510.18112)
+Authors: Patricia Delafuente, Arya Honraopatil, Lara J. Martin
+Append: [Na Prática, qual IA Entende o Direito? Um Estudo Experimental com IAs Generalistas e uma IA Jurídica](https://papers.cool/arxiv/2510.18108)
+Authors: Marina Soares Marinho, Daniela Vianna, Livy Real, Altigran da Silva, Gabriela Migliorini
+Append: [Chain-of-Thought Reasoning Improves Context-Aware Translation with Large Language Models](https://papers.cool/arxiv/2510.18077)
+Authors: Shabnam Ataee, Andrei Popescu-Belis
+Append: [Language Models as Semantic Augmenters for Sequential Recommenders](https://papers.cool/arxiv/2510.18046)
+Authors: Mahsa Valizadeh, Xiangjue Dong, Rui Tuo, James Caverlee
+Append: [From Local to Global: Revisiting Structured Pruning Paradigms for Large Language Models](https://papers.cool/arxiv/2510.18030)
+Authors: Ziyan Wang, Enmao Diao, Qi Le, Pu Wang, Minwoo Lee, Shu-ping Yeh, Evgeny Stupachenko, Hao Feng, Li Yang
+Append: [Is Multilingual LLM Watermarking Truly Multilingual? A Simple Back-Translation Solution](https://papers.cool/arxiv/2510.18019)
+Authors: Asim Mohamed, Martin Gubri
+Append: [SimBA: Simplifying Benchmark Analysis Using Performance Matrices Alone](https://papers.cool/arxiv/2510.17998)
+Authors: Nishant Subramani, Alfredo Gomez, Mona Diab
+Append: [Believe It or Not: How Deeply do LLMs Believe Implanted Facts?](https://papers.cool/arxiv/2510.17941)
+Authors: Stewart Slocum, Julian Minder, Clément Dumas, Henry Sleight, Ryan Greenblatt, Samuel Marks, Rowan Wang
+Append: [AtlasKV: Augmenting LLMs with Billion-Scale Knowledge Graphs in 20GB VRAM](https://papers.cool/arxiv/2510.17934)
+Authors: Haoyu Huang, Hong Ting Tsang, Jiaxin Bai, Xi Peng, Gong Zhang, Yangqiu Song
+Append: [Diagnosing Representation Dynamics in NER Model Extension](https://papers.cool/arxiv/2510.17930)
+Authors: Xirui Zhang, Philippe de La Chevasnerie, Benoit Fabre
+Append: [Efficient Toxicity Detection in Gaming Chats: A Comparative Study of Embeddings, Fine-Tuned Transformers and LLMs](https://papers.cool/arxiv/2510.17924)
+Authors: Yehor Tereshchenko, Mika Hämäläinen
+Append: [Select-Then-Decompose: From Empirical Analysis to Adaptive Selection Strategy for Task Decomposition in Large Language Models](https://papers.cool/arxiv/2510.17922)
+Authors: Shuodi Liu, Yingzhuo Liu, Zi Wang, Yusheng Wang, Huijia Wu, Liuyu Xiang, Zhaofeng He
+Append: [CLAWS:Creativity detection for LLM-generated solutions using Attention Window of Sections](https://papers.cool/arxiv/2510.17921)
+Authors: Keuntae Kim, Eunhye Jeong, Sehyeon Lee, Seohee Yoon, Yong Suk Choi
+Append: [JT-Safe: Intrinsically Enhancing the Safety and Trustworthiness of LLMs](https://papers.cool/arxiv/2510.17918)
+Authors: Junlan Feng, Fanyu Meng, Chong Long, Pengyu Cong, Duqing Wang, Yan Zheng, Yuyao Zhang, Xuanchang Gao, Ye Yuan, Yunfei Ma, Zhijie Ren, Fan Yang, Na Wu, Di Jin, Chao Deng
+Append: [Atomic Literary Styling: Mechanistic Manipulation of Prose Generation in Neural Language Models](https://papers.cool/arxiv/2510.17909)
+Authors: Tsogt-Ochir Enkhbayar
+Append: [Advances in Pre-trained Language Models for Domain-Specific Text Classification: A Systematic Review](https://papers.cool/arxiv/2510.17892)
+Authors: Zhyar Rzgar K. Rostam, Gábor Kertész
+Append: [POPI: Personalizing LLMs via Optimized Natural Language Preference Inference](https://papers.cool/arxiv/2510.17881)
+Authors: Yizhuo Chen, Xin Liu, Ruijie Wang, Zheng Li, Pei Chen, Changlong Yu, Priyanka Nigam, Meng Jiang, Bing Yin
+Append: [Outraged AI: Large language models prioritise emotion over cost in fairness enforcement](https://papers.cool/arxiv/2510.17880)
+Authors: Hao Liu, Yiqing Dai, Haotian Tan, Yu Lei, Yujia Zhou, Zhen Wu
+Append: [Modeling Layered Consciousness with Multi-Agent Large Language Models](https://papers.cool/arxiv/2510.17844)
+Authors: Sang Hun Kim, Jongmin Lee, Dongkyu Park, So Young Lee, Yosep Chong
+Append: [Grasp Any Region: Towards Precise, Contextual Pixel Understanding for Multimodal LLMs](https://papers.cool/arxiv/2510.18876)
+Authors: Haochen Wang, Yuhao Wang, Tao Zhang, Yikang Zhou, Yanwei Li, Jiacong Wang, Ye Tian, Jiahao Meng, Zilong Huang, Guangcan Mai, Anran Wang, Yunhai Tong, Zhuochen Wang, Xiangtai Li, Zhaoxiang Zhang
+Append: [Retaining by Doing: The Role of On-Policy Data in Mitigating Forgetting](https://papers.cool/arxiv/2510.18874)
+Authors: Howard Chen, Noam Razin, Karthik Narasimhan, Danqi Chen
+Append: [See the Text: From Tokenization to Visual Reading](https://papers.cool/arxiv/2510.18840)
+Authors: Ling Xing, Alex Jinpeng Wang, Rui Yan, Hongyu Qu, Zechao Li, Jinhui Tang
+Append: [Zero-Shot Vehicle Model Recognition via Text-Based Retrieval-Augmented Generation](https://papers.cool/arxiv/2510.18502)
+Authors: Wei-Chia Chang, Yan-Ann Chen
+Append: [Probabilistic Modeling of Intentions in Socially Intelligent LLM Agents](https://papers.cool/arxiv/2510.18476)
+Authors: Feifan Xia, Yuyang Fang, Defang Li, Yantong Xie, Weikang Li, Yang Li, Deguo Xia, Jizhou Huang
+Append: [CodeRL+: Improving Code Generation via Reinforcement with Execution Semantics Alignment](https://papers.cool/arxiv/2510.18471)
+Authors: Xue Jiang, Yihong Dong, Mengyang Liu, Hongyi Deng, Tian Wang, Yongding Tao, Rongyu Cao, Binhua Li, Zhi Jin, Wenpin Jiao, Fei Huang, Yongbin Li, Ge Li
+Append: [Position: LLM Watermarking Should Align Stakeholders' Incentives for Practical Adoption](https://papers.cool/arxiv/2510.18333)
+Authors: Yepeng Liu, Xuandong Zhao, Dawn Song, Gregory W. Wornell, Yuheng Bu
+Append: [The Impact of Image Resolution on Biomedical Multimodal Large Language Models](https://papers.cool/arxiv/2510.18304)
+Authors: Liangyu Chen, James Burgess, Jeffrey J Nirschl, Orr Zohar, Serena Yeung-Levy
+Append: [VLSU: Mapping the Limits of Joint Multimodal Understanding for AI Safety](https://papers.cool/arxiv/2510.18214)
+Authors: Shruti Palaskar, Leon Gatys, Mona Abdelrahman, Mar Jacobo, Larry Lindsey, Rutika Moharir, Gunnar Lund, Yang Xu, Navid Shiee, Jeffrey Bigham, Charles Maalouf, Joseph Yitan Cheng
+Append: [Saber: An Efficient Sampling with Adaptive Acceleration and Backtracking Enhanced Remasking for Diffusion Language Model](https://papers.cool/arxiv/2510.18165)
+Authors: Yihong Dong, Zhaoyu Ma, Xue Jiang, Zhiyuan Fan, Jiaru Qian, Yongmin Li, Jianha Xiao, Zhi Jin, Rongyu Cao, Binhua Li, Fei Huang, Yongbin Li, Ge Li
+Append: [SafeCoop: Unravelling Full Stack Safety in Agentic Collaborative Driving](https://papers.cool/arxiv/2510.18123)
+Authors: Xiangbo Gao, Tzu-Hsiang Lin, Ruojing Song, Yuheng Wu, Kuan-Ru Huang, Zicheng Jin, Fangzhou Lin, Shinan Liu, Zhengzhong Tu
+Append: [SMaRT: Select, Mix, and ReinvenT - A Strategy Fusion Framework for LLM-Driven Reasoning and Planning](https://papers.cool/arxiv/2510.18095)
+Authors: Nikhil Verma, Manasa Bharadwaj, Wonjun Jang, Harmanpreet Singh, Yixiao Wang, Homa Fashandi, Chul Lee
+Append: [HouseTour: A Virtual Real Estate A(I)gent](https://papers.cool/arxiv/2510.18054)
+Authors: Ata Çelen, Marc Pollefeys, Daniel Barath, Iro Armeni
+Append: [Subject-Event Ontology Without Global Time: Foundations and Execution Semantics](https://papers.cool/arxiv/2510.18040)
+Authors: Alexander Boldachev
+Append: [PLAGUE: Plug-and-play framework for Lifelong Adaptive Generation of Multi-turn Exploits](https://papers.cool/arxiv/2510.17947)
+Authors: Neeladri Bhuiya, Madhav Aggarwal, Diptanshu Purwar
+Append: [Interpretability Framework for LLMs in Undergraduate Calculus](https://papers.cool/arxiv/2510.17910)
+Authors: Sagnik Dakshit, Sushmita Sinha Roy
+Append: [BreakFun: Jailbreaking LLMs via Schema Exploitation](https://papers.cool/arxiv/2510.17904)
+Authors: Amirkia Rafiei Oskooei, Mehmet S. Aktas
+Append: [Are LLMs Court-Ready? Evaluating Frontier Models on Indian Legal Reasoning](https://papers.cool/arxiv/2510.17900)
+Authors: Kush Juvekar, Arghya Bhattacharya, Sai Khadloya, Utkarsh Saxena
+Append: [Hierarchical Federated Unlearning for Large Language Models](https://papers.cool/arxiv/2510.17895)
+Authors: Yisheng Zhong, Zhengbang Yang, Zhuangdi Zhu
+Append: [Metrics and evaluations for computational and sustainable AI efficiency](https://papers.cool/arxiv/2510.17885)
+Authors: Hongyuan Liu, Xinyang Liu, Guosheng Hu
+Append: [Does GenAI Rewrite How We Write? An Empirical Study on Two-Million Preprints](https://papers.cool/arxiv/2510.17882)
+Authors: Minfeng Qi, Zhongmin Cao, Qin Wang, Ningran Li, Tianqing Zhu
+Token length: 1162
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 495, "prompt_tokens": 3401, "total_tokens": 3896, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 227, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00053701, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028951, "upstream_inference_completions_cost": 0.0002475}}
+Cost (USD): 0.000537
+Token length: 821
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 566, "prompt_tokens": 3327, "total_tokens": 3893, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 313, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00056141, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027841, "upstream_inference_completions_cost": 0.000283}}
+Cost (USD): 0.000561
+Token length: 749
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 489, "prompt_tokens": 3307, "total_tokens": 3796, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 230, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00051991, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027541, "upstream_inference_completions_cost": 0.0002445}}
+Cost (USD): 0.000520
+Token length: 1378
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 622, "prompt_tokens": 3453, "total_tokens": 4075, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 312, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060831, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029731, "upstream_inference_completions_cost": 0.000311}}
+Cost (USD): 0.000608
+Token length: 998
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 617, "prompt_tokens": 3353, "total_tokens": 3970, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 410, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00059081, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028231, "upstream_inference_completions_cost": 0.0003085}}
+Cost (USD): 0.000591
+Token length: 936
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 578, "prompt_tokens": 3355, "total_tokens": 3933, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 313, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00057161, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028261, "upstream_inference_completions_cost": 0.000289}}
+Cost (USD): 0.000572
+Token length: 1585
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 670, "prompt_tokens": 3452, "total_tokens": 4122, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 465, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00063216, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029716, "upstream_inference_completions_cost": 0.000335}}
+Cost (USD): 0.000632
+Token length: 1201
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 682, "prompt_tokens": 3426, "total_tokens": 4108, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 304, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00063426, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029326, "upstream_inference_completions_cost": 0.000341}}
+Cost (USD): 0.000634
+Token length: 1214
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 694, "prompt_tokens": 3431, "total_tokens": 4125, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 500, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00064101, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029401, "upstream_inference_completions_cost": 0.000347}}
+Cost (USD): 0.000641
+Token length: 1918
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 597, "prompt_tokens": 3544, "total_tokens": 4141, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 328, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060946, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00031096, "upstream_inference_completions_cost": 0.0002985}}
+Cost (USD): 0.000609
+Token length: 613
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 766, "prompt_tokens": 3315, "total_tokens": 4081, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 507, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00065961, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027661, "upstream_inference_completions_cost": 0.000383}}
+Cost (USD): 0.000660
+Token length: 1375
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 699, "prompt_tokens": 3482, "total_tokens": 4181, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 419, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00065116, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030166, "upstream_inference_completions_cost": 0.0003495}}
+Cost (USD): 0.000651
+Token length: 588
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 724, "prompt_tokens": 3280, "total_tokens": 4004, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 499, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00063336, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027136, "upstream_inference_completions_cost": 0.000362}}
+Cost (USD): 0.000633
+Token length: 593
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 815, "prompt_tokens": 3319, "total_tokens": 4134, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 537, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00068471, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027721, "upstream_inference_completions_cost": 0.0004075}}
+Cost (USD): 0.000685
+Token length: 1437
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 749, "prompt_tokens": 3440, "total_tokens": 4189, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 448, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00066986, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029536, "upstream_inference_completions_cost": 0.0003745}}
+Cost (USD): 0.000670
+Token length: 1459
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 830, "prompt_tokens": 3439, "total_tokens": 4269, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 577, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00071021, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029521, "upstream_inference_completions_cost": 0.000415}}
+Cost (USD): 0.000710
+Token length: 1420
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 620, "prompt_tokens": 3446, "total_tokens": 4066, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 282, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060626, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029626, "upstream_inference_completions_cost": 0.00031}}
+Cost (USD): 0.000606
+Token length: 889
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 864, "prompt_tokens": 3374, "total_tokens": 4238, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 634, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00071746, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028546, "upstream_inference_completions_cost": 0.000432}}
+Cost (USD): 0.000717
+Token length: 1396
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 610, "prompt_tokens": 3444, "total_tokens": 4054, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 243, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060096, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029596, "upstream_inference_completions_cost": 0.000305}}
+Cost (USD): 0.000601
+Token length: 1222
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 664, "prompt_tokens": 3425, "total_tokens": 4089, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 481, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00062511, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029311, "upstream_inference_completions_cost": 0.000332}}
+Cost (USD): 0.000625
+Token length: 1477
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 685, "prompt_tokens": 3440, "total_tokens": 4125, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 328, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00063786, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029536, "upstream_inference_completions_cost": 0.0003425}}
+Cost (USD): 0.000638
+Token length: 1785
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 699, "prompt_tokens": 3509, "total_tokens": 4208, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 369, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00065521, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030571, "upstream_inference_completions_cost": 0.0003495}}
+Cost (USD): 0.000655
+Token length: 1305
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 708, "prompt_tokens": 3437, "total_tokens": 4145, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 389, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3424}, "cost": 0.00062987, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027587, "upstream_inference_completions_cost": 0.000354}}
+Cost (USD): 0.000630
+Token length: 1002
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 708, "prompt_tokens": 3407, "total_tokens": 4115, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 408, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00064441, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029041, "upstream_inference_completions_cost": 0.000354}}
+Cost (USD): 0.000644
+Token length: 1231
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 1057, "prompt_tokens": 3426, "total_tokens": 4483, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 914, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00082176, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029326, "upstream_inference_completions_cost": 0.0005285}}
+Cost (USD): 0.000822
+Token length: 1810
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 749, "prompt_tokens": 3517, "total_tokens": 4266, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 505, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00068141, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030691, "upstream_inference_completions_cost": 0.0003745}}
+Cost (USD): 0.000681
+Token length: 1874
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 1114, "prompt_tokens": 3515, "total_tokens": 4629, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 1005, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00086361, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030661, "upstream_inference_completions_cost": 0.000557}}
+Cost (USD): 0.000864
+Token length: 828
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 784, "prompt_tokens": 3337, "total_tokens": 4121, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 521, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00067191, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027991, "upstream_inference_completions_cost": 0.000392}}
+Cost (USD): 0.000672
+Token length: 1055
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 794, "prompt_tokens": 3370, "total_tokens": 4164, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 565, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00068186, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028486, "upstream_inference_completions_cost": 0.000397}}
+Cost (USD): 0.000682
+Token length: 1326
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 799, "prompt_tokens": 3436, "total_tokens": 4235, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 563, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3424}, "cost": 0.00067522, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027572, "upstream_inference_completions_cost": 0.0003995}}
+Cost (USD): 0.000675
+Token length: 1492
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 800, "prompt_tokens": 3495, "total_tokens": 4295, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 404, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00070361, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030361, "upstream_inference_completions_cost": 0.0004}}
+Cost (USD): 0.000704
+Token length: 1068
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 952, "prompt_tokens": 3382, "total_tokens": 4334, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 707, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00076266, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028666, "upstream_inference_completions_cost": 0.000476}}
+Cost (USD): 0.000763
+Token length: 1404
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 839, "prompt_tokens": 3456, "total_tokens": 4295, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 539, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00071726, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029776, "upstream_inference_completions_cost": 0.0004195}}
+Cost (USD): 0.000717
+Token length: 1262
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 839, "prompt_tokens": 3395, "total_tokens": 4234, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 761, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00070811, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028861, "upstream_inference_completions_cost": 0.0004195}}
+Cost (USD): 0.000708
+Token length: 1872
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 851, "prompt_tokens": 3511, "total_tokens": 4362, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 742, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00073151, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030601, "upstream_inference_completions_cost": 0.0004255}}
+Cost (USD): 0.000732
+Token length: 1061
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 866, "prompt_tokens": 3355, "total_tokens": 4221, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 710, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00071561, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028261, "upstream_inference_completions_cost": 0.000433}}
+Cost (USD): 0.000716
+Token length: 940
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 744, "prompt_tokens": 3399, "total_tokens": 4143, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 501, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00066121, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028921, "upstream_inference_completions_cost": 0.000372}}
+Cost (USD): 0.000661
+Token length: 951
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 658, "prompt_tokens": 3342, "total_tokens": 4000, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 467, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3328}, "cost": 0.00059734, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026834, "upstream_inference_completions_cost": 0.000329}}
+Cost (USD): 0.000597
+Token length: 877
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 597, "prompt_tokens": 3358, "total_tokens": 3955, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 365, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3344}, "cost": 0.00056812, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026962, "upstream_inference_completions_cost": 0.0002985}}
+Cost (USD): 0.000568
+Token length: 1074
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 611, "prompt_tokens": 3396, "total_tokens": 4007, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 374, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00059426, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028876, "upstream_inference_completions_cost": 0.0003055}}
+Cost (USD): 0.000594
+Token length: 1296
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 987, "prompt_tokens": 3417, "total_tokens": 4404, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 819, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00078541, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029191, "upstream_inference_completions_cost": 0.0004935}}
+Cost (USD): 0.000785
+Token length: 1542
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 719, "prompt_tokens": 3496, "total_tokens": 4215, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 394, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00066326, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030376, "upstream_inference_completions_cost": 0.0003595}}
+Cost (USD): 0.000663
+Token length: 1240
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 600, "prompt_tokens": 3392, "total_tokens": 3992, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 391, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00058816, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028816, "upstream_inference_completions_cost": 0.0003}}
+Cost (USD): 0.000588
+Token length: 1490
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 630, "prompt_tokens": 3510, "total_tokens": 4140, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 408, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00062086, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030586, "upstream_inference_completions_cost": 0.000315}}
+Cost (USD): 0.000621
+Token length: 1472
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 600, "prompt_tokens": 3500, "total_tokens": 4100, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 308, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060436, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030436, "upstream_inference_completions_cost": 0.0003}}
+Cost (USD): 0.000604
+Token length: 1094
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 490, "prompt_tokens": 3391, "total_tokens": 3881, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 220, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3376}, "cost": 0.00051733, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027233, "upstream_inference_completions_cost": 0.000245}}
+Cost (USD): 0.000517
+Token length: 1346
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 655, "prompt_tokens": 3425, "total_tokens": 4080, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 412, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3424}, "cost": 0.00060157, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027407, "upstream_inference_completions_cost": 0.0003275}}
+Cost (USD): 0.000602
+Token length: 1691
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 565, "prompt_tokens": 3492, "total_tokens": 4057, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 326, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00058566, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030316, "upstream_inference_completions_cost": 0.0002825}}
+Cost (USD): 0.000586
+Token length: 1003
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 1083, "prompt_tokens": 3407, "total_tokens": 4490, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 837, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00083191, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029041, "upstream_inference_completions_cost": 0.0005415}}
+Cost (USD): 0.000832
+Token length: 1578
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 579, "prompt_tokens": 3473, "total_tokens": 4052, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 301, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3472}, "cost": 0.00056741, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027791, "upstream_inference_completions_cost": 0.0002895}}
+Cost (USD): 0.000567
+Token length: 1262
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 582, "prompt_tokens": 3387, "total_tokens": 3969, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 278, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00057841, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028741, "upstream_inference_completions_cost": 0.000291}}
+Cost (USD): 0.000578
+Token length: 764
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 599, "prompt_tokens": 3340, "total_tokens": 3939, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 402, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00057986, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028036, "upstream_inference_completions_cost": 0.0002995}}
+Cost (USD): 0.000580
+Token length: 1804
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 517, "prompt_tokens": 3496, "total_tokens": 4013, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 282, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00056226, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030376, "upstream_inference_completions_cost": 0.0002585}}
+Cost (USD): 0.000562
+Token length: 1220
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 740, "prompt_tokens": 3413, "total_tokens": 4153, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 468, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00066131, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029131, "upstream_inference_completions_cost": 0.00037}}
+Cost (USD): 0.000661
+Token length: 1485
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 740, "prompt_tokens": 3460, "total_tokens": 4200, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 514, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00066836, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029836, "upstream_inference_completions_cost": 0.00037}}
+Cost (USD): 0.000668
+Token length: 678
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 799, "prompt_tokens": 3311, "total_tokens": 4110, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 596, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3296}, "cost": 0.00066543, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026593, "upstream_inference_completions_cost": 0.0003995}}
+Cost (USD): 0.000665
+Token length: 1615
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 802, "prompt_tokens": 3505, "total_tokens": 4307, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 590, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00070611, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030511, "upstream_inference_completions_cost": 0.000401}}
+Cost (USD): 0.000706
+Token length: 1910
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 658, "prompt_tokens": 3551, "total_tokens": 4209, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 380, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00064101, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00031201, "upstream_inference_completions_cost": 0.000329}}
+Cost (USD): 0.000641
+Token length: 1284
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 830, "prompt_tokens": 3433, "total_tokens": 4263, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 531, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3424}, "cost": 0.00069027, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027527, "upstream_inference_completions_cost": 0.000415}}
+Cost (USD): 0.000690
+Token length: 1478
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 696, "prompt_tokens": 3475, "total_tokens": 4171, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 362, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00064861, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030061, "upstream_inference_completions_cost": 0.000348}}
+Cost (USD): 0.000649
+Token length: 1479
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 670, "prompt_tokens": 3471, "total_tokens": 4141, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 362, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00063501, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030001, "upstream_inference_completions_cost": 0.000335}}
+Cost (USD): 0.000635
+Token length: 1471
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 954, "prompt_tokens": 3420, "total_tokens": 4374, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 815, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00076936, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029236, "upstream_inference_completions_cost": 0.000477}}
+Cost (USD): 0.000769
+Token length: 1128
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 860, "prompt_tokens": 3416, "total_tokens": 4276, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 622, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00072176, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029176, "upstream_inference_completions_cost": 0.00043}}
+Cost (USD): 0.000722
+Token length: 1307
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 754, "prompt_tokens": 3440, "total_tokens": 4194, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 493, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3424}, "cost": 0.00065332, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027632, "upstream_inference_completions_cost": 0.000377}}
+Cost (USD): 0.000653
+Token length: 1264
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 800, "prompt_tokens": 3445, "total_tokens": 4245, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 522, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00069611, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029611, "upstream_inference_completions_cost": 0.0004}}
+Cost (USD): 0.000696
+Token length: 1659
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 851, "prompt_tokens": 3487, "total_tokens": 4338, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 618, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3472}, "cost": 0.00070551, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028001, "upstream_inference_completions_cost": 0.0004255}}
+Cost (USD): 0.000706
+Token length: 1557
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 681, "prompt_tokens": 3477, "total_tokens": 4158, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 334, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00064141, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030091, "upstream_inference_completions_cost": 0.0003405}}
+Cost (USD): 0.000641
+Token length: 1221
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 891, "prompt_tokens": 3408, "total_tokens": 4299, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 686, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3392}, "cost": 0.00071926, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027376, "upstream_inference_completions_cost": 0.0004455}}
+Cost (USD): 0.000719
+Token length: 1554
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 756, "prompt_tokens": 3463, "total_tokens": 4219, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 452, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00067681, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029881, "upstream_inference_completions_cost": 0.000378}}
+Cost (USD): 0.000677
+Token length: 1910
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 1167, "prompt_tokens": 3558, "total_tokens": 4725, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 939, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00089656, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00031306, "upstream_inference_completions_cost": 0.0005835}}
+Cost (USD): 0.000897
+Token length: 888
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 725, "prompt_tokens": 3352, "total_tokens": 4077, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 501, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00064466, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028216, "upstream_inference_completions_cost": 0.0003625}}
+Cost (USD): 0.000645
+Token length: 1560
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 781, "prompt_tokens": 3444, "total_tokens": 4225, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 519, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00068646, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029596, "upstream_inference_completions_cost": 0.0003905}}
+Cost (USD): 0.000686
+Token length: 1439
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 678, "prompt_tokens": 3457, "total_tokens": 4135, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 458, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00063691, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029791, "upstream_inference_completions_cost": 0.000339}}
+Cost (USD): 0.000637
+Token length: 1540
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 780, "prompt_tokens": 3432, "total_tokens": 4212, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 528, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00068416, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029416, "upstream_inference_completions_cost": 0.00039}}
+Cost (USD): 0.000684
+Token length: 1130
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 693, "prompt_tokens": 3389, "total_tokens": 4082, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 376, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3376}, "cost": 0.00061853, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027203, "upstream_inference_completions_cost": 0.0003465}}
+Cost (USD): 0.000619
+Token length: 1009
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 760, "prompt_tokens": 3345, "total_tokens": 4105, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 605, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3344}, "cost": 0.00064767, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026767, "upstream_inference_completions_cost": 0.00038}}
+Cost (USD): 0.000648
+Token length: 1468
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 717, "prompt_tokens": 3480, "total_tokens": 4197, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 439, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3472}, "cost": 0.00063746, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027896, "upstream_inference_completions_cost": 0.0003585}}
+Cost (USD): 0.000637
+Token length: 1089
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 819, "prompt_tokens": 3374, "total_tokens": 4193, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 566, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3360}, "cost": 0.0006804, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.0002709, "upstream_inference_completions_cost": 0.0004095}}
+Cost (USD): 0.000680
+Token length: 1702
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 800, "prompt_tokens": 3502, "total_tokens": 4302, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 561, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3488}, "cost": 0.00068114, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028114, "upstream_inference_completions_cost": 0.0004}}
+Cost (USD): 0.000681
+Token length: 1006
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 1130, "prompt_tokens": 3388, "total_tokens": 4518, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 946, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00085256, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028756, "upstream_inference_completions_cost": 0.000565}}
+Cost (USD): 0.000853
+Token length: 1314
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 807, "prompt_tokens": 3427, "total_tokens": 4234, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 605, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3424}, "cost": 0.00067787, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027437, "upstream_inference_completions_cost": 0.0004035}}
+Cost (USD): 0.000678
+Token length: 1454
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 667, "prompt_tokens": 3436, "total_tokens": 4103, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 506, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00062826, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029476, "upstream_inference_completions_cost": 0.0003335}}
+Cost (USD): 0.000628
+Token length: 1785
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 986, "prompt_tokens": 3502, "total_tokens": 4488, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 769, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00079766, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030466, "upstream_inference_completions_cost": 0.000493}}
+Cost (USD): 0.000798
+Token length: 1080
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 716, "prompt_tokens": 3422, "total_tokens": 4138, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 404, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00065066, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029266, "upstream_inference_completions_cost": 0.000358}}
+Cost (USD): 0.000651
+Token length: 980
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 788, "prompt_tokens": 3351, "total_tokens": 4139, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 453, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00067601, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028201, "upstream_inference_completions_cost": 0.000394}}
+Cost (USD): 0.000676
+Token length: 1870
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 1158, "prompt_tokens": 3524, "total_tokens": 4682, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 933, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00088696, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030796, "upstream_inference_completions_cost": 0.000579}}
+Cost (USD): 0.000887
+Token length: 1615
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 826, "prompt_tokens": 3505, "total_tokens": 4331, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 530, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3504}, "cost": 0.00069347, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028047, "upstream_inference_completions_cost": 0.000413}}
+Cost (USD): 0.000693
+Token length: 1357
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 898, "prompt_tokens": 3442, "total_tokens": 4340, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 654, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3440}, "cost": 0.0007245, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.0002755, "upstream_inference_completions_cost": 0.000449}}
+Cost (USD): 0.000724
+append_entries: 88
+Finish: 2025-10-22 02:49:34.629350
+------------------------------------------------------
+Started: 2025-10-22 02:50:10.343188
+Existing_entries: 88
+Fetching from https://papers.cool/arxiv/cs.CL/feed
+append_entries: 0
+Finish: 2025-10-22 02:50:11.964336
+------------------------------------------------------
+Started: 2025-10-22 03:28:42.444580
+Existing_entries: 88
+Fetching from https://papers.cool/arxiv/cs.CL/feed
+append_entries: 0
+Finish: 2025-10-22 03:28:44.517546
+------------------------------------------------------
+Started: 2025-10-24 17:32:35.179413
+Existing_entries: 88
+Fetching from https://papers.cool/arxiv/cs.CL/feed
+Append: [On the Detectability of LLM-Generated Text: What Exactly Is LLM-Generated Text?](https://papers.cool/arxiv/2510.20810)
+Authors: Mingmeng Geng, Thierry Poibeau
+Append: [Simple Context Compression: Mean-Pooling and Multi-Ratio Training](https://papers.cool/arxiv/2510.20797)
+Authors: Yair Feldman, Yoav Artzi
+Append: [Alleviating Forgetfulness of Linear Attention by Hybrid Sparse Attention and Contextualized Learnable Token Eviction](https://papers.cool/arxiv/2510.20787)
+Authors: Mutian He, Philip N. Garner
+Append: [A Use-Case Specific Dataset for Measuring Dimensions of Responsible Performance in LLM-generated Text](https://papers.cool/arxiv/2510.20782)
+Authors: Alicia Sagae, Chia-Jung Lee, Sandeep Avula, Brandon Dang, Vanessa Murdock
+Append: [Are Large Reasoning Models Good Translation Evaluators? Analysis and Performance Boost](https://papers.cool/arxiv/2510.20780)
+Authors: Runzhe Zhan, Zhihong Huang, Xinyi Yang, Lidia S. Chao, Min Yang, Derek F. Wong
+Append: [Automated Extraction of Fluoropyrimidine Treatment and Treatment-Related Toxicities from Clinical Notes Using Natural Language Processing](https://papers.cool/arxiv/2510.20727)
+Authors: Xizhi Wu, Madeline S. Kreider, Philip E. Empey, Chenyu Li, Yanshan Wang
+Append: [User Perceptions of Privacy and Helpfulness in LLM Responses to Privacy-Sensitive Scenarios](https://papers.cool/arxiv/2510.20721)
+Authors: Xiaoyuan Wu, Roshni Kaushik, Wenkai Li, Lujo Bauer, Koichi Onoue
+Append: [Structure-Conditional Minimum Bayes Risk Decoding](https://papers.cool/arxiv/2510.20700)
+Authors: Bryan Eikema, Anna Rutkiewicz, Mario Giulianelli
+Append: [Neural Diversity Regularizes Hallucinations in Small Models](https://papers.cool/arxiv/2510.20690)
+Authors: Kushal Chakrabarti, Nirmal Balachundhar
+Append: [\textsc{CantoNLU}: A benchmark for Cantonese natural language understanding](https://papers.cool/arxiv/2510.20670)
+Authors: Junghyun Min, York Hay Ng, Sophia Chan, Helena Shunhua Zhao, En-Shiun Annie Lee
+Append: [The Reasoning Lingua Franca: A Double-Edged Sword for Multilingual AI](https://papers.cool/arxiv/2510.20647)
+Authors: Alan Saji, Raj Dabre, Anoop Kunchukuttan, Ratish Puduppully
+Append: [Why Did Apple Fall To The Ground: Evaluating Curiosity In Large Language Model](https://papers.cool/arxiv/2510.20635)
+Authors: Haoyu Wang, Sihang Jiang, Yuyan Chen, Yitong Wang, Yanghua Xiao
+Append: [BUSTED at AraGenEval Shared Task: A Comparative Study of Transformer-Based Models for Arabic AI-Generated Text Detection](https://papers.cool/arxiv/2510.20610)
+Authors: Ali Zain, Sareem Farooqui, Muhammad Rafi
+Append: [Can ChatGPT Code Communication Data Fairly?: Empirical Evidence from Multiple Collaborative Tasks](https://papers.cool/arxiv/2510.20584)
+Authors: Jiangang Hao, Wenju Cui, Patrick Kyllonen, Emily Kerzabi
+Append: [Beyond Retrieval-Ranking: A Multi-Agent Cognitive Decision Framework for E-Commerce Search](https://papers.cool/arxiv/2510.20567)
+Authors: Zhouwei Zhai, Mengxiang Chen, Haoyun Xia, Jin Li, Renquan Zhou, Min Yang
+Append: [GlobalRAG: Enhancing Global Reasoning in Multi-hop Question Answering via Reinforcement Learning](https://papers.cool/arxiv/2510.20548)
+Authors: Jinchang Luo, Mingquan Cheng, Fan Wan, Ni Li, Xiaoling Xia, Shuangshuang Tian, Tingcheng Bian, Haiwei Wang, Haohuan Fu, Yan Tao
+Append: [The Dog the Cat Chased Stumped the Model: Measuring When Language Models Abandon Structure for Shortcuts](https://papers.cool/arxiv/2510.20543)
+Authors: Sangmitra Madhusudan, Kaige Chen, Ali Emami
+Append: [ARC-Encoder: learning compressed text representations for large language models](https://papers.cool/arxiv/2510.20535)
+Authors: Hippolyte Pilchen, Edouard Grave, Patrick Pérez
+Append: [Assessing the Political Fairness of Multilingual LLMs: A Case Study based on a 21-way Multiparallel EuroParl Dataset](https://papers.cool/arxiv/2510.20508)
+Authors: Paul Lerner, François Yvon
+Append: [Hierarchical Sequence Iteration for Heterogeneous Question Answering](https://papers.cool/arxiv/2510.20505)
+Authors: Ruiyi Yang, Hao Xue, Imran Razzak, Hakim Hacid, Flora D. Salim
+Append: [Robust Preference Alignment via Directional Neighborhood Consensus](https://papers.cool/arxiv/2510.20498)
+Authors: Ruochen Mao, Yuling Shi, Xiaodong Gu, Jiaheng Wei
+Append: [Steering Evaluation-Aware Language Models To Act Like They Are Deployed](https://papers.cool/arxiv/2510.20487)
+Authors: Tim Tian Hua, Andrew Qin, Samuel Marks, Neel Nanda
+Append: [RECALL: REpresentation-aligned Catastrophic-forgetting ALLeviation via Hierarchical Model Merging](https://papers.cool/arxiv/2510.20479)
+Authors: Bowen Wang, Haiyuan Wan, Liwen Shi, Chen Yang, Peng He, Yue Ma, Haochen Han, Wenhao Li, Tiao Tan, Yongjian Li, Fangming Liu, Yifan Gong, Sheng Zhang
+Append: [Mask and You Shall Receive: Optimizing Masked Language Modeling For Pretraining BabyLMs](https://papers.cool/arxiv/2510.20475)
+Authors: Lukas Edman, Alexander Fraser
+Append: [Systematic Evaluation of Uncertainty Estimation Methods in Large Language Models](https://papers.cool/arxiv/2510.20460)
+Authors: Christian Hobelsberger, Theresa Winner, Andreas Nawroth, Oliver Mitevski, Anna-Carolina Haensch
+Append: [LM-mixup: Text Data Augmentation via Language Model based Mixup](https://papers.cool/arxiv/2510.20449)
+Authors: Zhijie Deng, Zhouan Shen, Ling Li, Yao Zhou, Zhaowei Zhu, Yanji He, Wei Wang, Jiaheng Wei
+Append: [Teacher Demonstrations in a BabyLM's Zone of Proximal Development for Contingent Multi-Turn Interaction](https://papers.cool/arxiv/2510.20411)
+Authors: Suchir Salhan, Hongyi Gu, Donya Rooein, Diana Galvan-Sosa, Gabrielle Gaudeau, Andrew Caines, Zheng Yuan, Paula Buttery
+Append: [NeoDictaBERT: Pushing the Frontier of BERT models for Hebrew](https://papers.cool/arxiv/2510.20386)
+Authors: Shaltiel Shmidman, Avi Shmidman, Moshe Koppel
+Append: [VLSP 2025 MLQA-TSR Challenge: Vietnamese Multimodal Legal Question Answering on Traffic Sign Regulation](https://papers.cool/arxiv/2510.20381)
+Authors: Son T. Luu, Trung Vo, Hiep Nguyen, Khanh Quoc Tran, Kiet Van Nguyen, Vu Tran, Ngan Luu-Thuy Nguyen, Le-Minh Nguyen
+Append: [The Impact of Negated Text on Hallucination with Large Language Models](https://papers.cool/arxiv/2510.20375)
+Authors: Jaehyung Seo, Hyeonseok Moon, Heuiseok Lim
+Append: [Dialogue Is Not Enough to Make a Communicative BabyLM (But Neither Is Developmentally Inspired Reinforcement Learning)](https://papers.cool/arxiv/2510.20358)
+Authors: Francesca Padovani, Bastian Bunzeck, Manar Ali, Omar Momen, Arianna Bisazza, Hendrik Buschmeier, Sina Zarrieß
+Append: [FreeChunker: A Cross-Granularity Chunking Framework](https://papers.cool/arxiv/2510.20356)
+Authors: Wenxuan Zhang, Yuan-Hao Jiang, Yonghe Wu
+Append: [Evaluating Latent Knowledge of Public Tabular Datasets in Large Language Models](https://papers.cool/arxiv/2510.20351)
+Authors: Matteo Silvestri, Flavio Giorgi, Fabrizio Silvestri, Gabriele Tolomei
+Append: [Teaching Language Models to Reason with Tools](https://papers.cool/arxiv/2510.20342)
+Authors: Chengpeng Li, Zhengyang Tang, Ziniu Li, Mingfeng Xue, Keqin Bao, Tian Ding, Ruoyu Sun, Benyou Wang, Xiang Wang, Junyang Lin, Dayiheng Liu
+Append: [Exploring Generative Process Reward Modeling for Semi-Structured Data: A Case Study of Table Question Answering](https://papers.cool/arxiv/2510.20304)
+Authors: Lei Tang, Wei Zhou, Mohsen Mesgar
+Append: [Citation Failure: Definition, Analysis and Efficient Mitigation](https://papers.cool/arxiv/2510.20303)
+Authors: Jan Buchmann, Iryna Gurevych
+Append: [Context-level Language Modeling by Learning Predictive Context Embeddings](https://papers.cool/arxiv/2510.20280)
+Authors: Beiya Dai, Yuliang Liu, Daozheng Xue, Qipeng Guo, Kai Chen, Xinbing Wang
+Append: [Tri-Modal Severity Fused Diagnosis across Depression and Post-traumatic Stress Disorders](https://papers.cool/arxiv/2510.20239)
+Authors: Filippo Cenacchi, Deborah Richards, Longbing Cao
+Append: [Decoding-Free Sampling Strategies for LLM Marginalization](https://papers.cool/arxiv/2510.20208)
+Authors: David Pohl, Marco Cognetta, Junyoung Lee, Naoaki Okazaki
+Append: [Stuck in the Matrix: Probing Spatial Reasoning in Large Language Models](https://papers.cool/arxiv/2510.20198)
+Authors: Maggie Bai, Ava Kim Cohen, Eleanor Koss, Charlie Lichtenbaum
+Append: [Mixture-of-Minds: Multi-Agent Reinforcement Learning for Table Understanding](https://papers.cool/arxiv/2510.20176)
+Authors: Yuhang Zhou, Mingrui Zhang, Ke Li, Mingyi Wang, Qiao Liu, Qifei wang, Jiayi Liu, Fei Liu, Serena Li, Weiwi Li, Mingze Gao, Abhishek Kumar, Xiangjun Fan, Zhuokai Zhao, Lizhu Zhang
+Append: [DeepWideSearch: Benchmarking Depth and Width in Agentic Information Seeking](https://papers.cool/arxiv/2510.20168)
+Authors: Tian Lan, Bin Zhu, Qianghuai Jia, Junyang Ren, Haijun Li, Longyue Wang, Zhao Xu, Weihua Luo, Kaifu Zhang
+Append: [Are Stereotypes Leading LLMs' Zero-Shot Stance Detection ?](https://papers.cool/arxiv/2510.20154)
+Authors: Anthony Dubreuil, Antoine Gourru, Christine Largeron, Amine Trabelsi
+Append: [BoundRL: Efficient Structured Text Segmentation through Reinforced Boundary Generation](https://papers.cool/arxiv/2510.20151)
+Authors: Haoyuan Li, Zhengyuan Shen, Sullam Jeoung, Yueyan Chen, Jiayu Li, Qi Zhu, Shuai Wang, Vassilis Ioannidis, Huzefa Rangwala
+Append: [Leveraging the Power of Large Language Models in Entity Linking via Adaptive Routing and Targeted Reasoning](https://papers.cool/arxiv/2510.20098)
+Authors: Yajie Li, Albert Galimov, Mitra Datta Ganapaneni, Pujitha Thejaswi, De Meng, Priyanshu Kumar, Saloni Potdar
+Append: [CreativityPrism: A Holistic Benchmark for Large Language Model Creativity](https://papers.cool/arxiv/2510.20091)
+Authors: Zhaoyi Joey Hou, Bowei Alvin Zhang, Yining Lu, Bhiman Kumar Baghel, Anneliese Brei, Ximing Lu, Meng Jiang, Faeze Brahman, Snigdha Chaturvedi, Haw-Shiuan Chang, Daniel Khashabi, Xiang Lorraine Li
+Append: [Enhancing Reasoning Skills in Small Persian Medical Language Models Can Outperform Large-Scale Data Training](https://papers.cool/arxiv/2510.20059)
+Authors: Mehrdad Ghassabi, Sadra Hakim, Hamidreza Baradaran Kashani, Pedram Rostami
+Append: [From Facts to Folklore: Evaluating Large Language Models on Bengali Cultural Knowledge](https://papers.cool/arxiv/2510.20043)
+Authors: Nafis Chowdhury, Moinul Haque, Anika Ahmed, Nazia Tasnim, Md. Istiak Hossain Shihab, Sajjadur Rahman, Farig Sadeque
+Append: [ToolScope: Enhancing LLM Agent Tool Use through Tool Merging and Context-Aware Filtering](https://papers.cool/arxiv/2510.20036)
+Authors: Marianne Menglin Liu, Daniel Garcia, Fjona Parllaku, Vikas Upadhyay, Syed Fahad Allam Shah, Dan Roth
+Append: [Improving Transfer Learning for Sequence Labeling Tasks by Adapting Pre-trained Neural Language Models](https://papers.cool/arxiv/2510.20033)
+Authors: David Dukić
+Append: [Forging GEMs: Advancing Greek NLP through Quality-Based Corpus Curation and Specialized Pre-training](https://papers.cool/arxiv/2510.20002)
+Authors: Alexandra Apostolopoulou, Konstantinos Kanaris, Athanasios Koursaris, Dimitris Tsakalidis, George Domalis, Ioannis E. Livieris
+Append: [Beyond MedQA: Towards Real-world Clinical Decision Making in the Era of LLMs](https://papers.cool/arxiv/2510.20001)
+Authors: Yunpeng Xiao, Carl Yang, Mark Mai, Xiao Hu, Kai Shu
+Append: [A Fundamental Algorithm for Dependency Parsing (With Corrections)](https://papers.cool/arxiv/2510.19996)
+Authors: Michael A. Covington
+Append: [LLM-Augmented Symbolic NLU System for More Reliable Continuous Causal Statement Interpretation](https://papers.cool/arxiv/2510.19988)
+Authors: Xin Lian, Kenneth D. Forbus
+Append: [LyriCAR: A Difficulty-Aware Curriculum Reinforcement Learning Framework For Controllable Lyric Translation](https://papers.cool/arxiv/2510.19967)
+Authors: Le Ren, Xiangjian Zeng, Qingqiang Wu, Ruoxuan Liang
+Append: [Learning from Supervision with Semantic and Episodic Memory: A Reflective Approach to Agent Adaptation](https://papers.cool/arxiv/2510.19897)
+Authors: Jackson Hassell, Dan Zhang, Hannah Kim, Tom Mitchell, Estevam Hruschka
+Append: [Large Language Model enabled Mathematical Modeling](https://papers.cool/arxiv/2510.19895)
+Authors: Guoyun Zhang
+Append: [Can They Dixit? Yes they Can! Dixit as a Playground for Multimodal Language Model Capabilities](https://papers.cool/arxiv/2510.19892)
+Authors: Nishant Balepur, Dang Nguyen, Dayeon Ki
+Append: [An Expert-grounded benchmark of General Purpose LLMs in LCA](https://papers.cool/arxiv/2510.19886)
+Authors: Artur Donaldson, Bharathan Balaji, Cajetan Oriekezie, Manish Kumar, Laure Patouillard
+Append: [Automated HIV Screening on Dutch EHR with Large Language Models](https://papers.cool/arxiv/2510.19879)
+Authors: Lang Zhou, Amrish Jhingoer, Yinghao Luo, Klaske Vliegenthart--Jongbloed, Carlijn Jordans, Ben Werkhoven, Tom Seinen, Erik van Mulligen, Casper Rokx, Yunlei Li
+Append: [Stream: Scaling up Mechanistic Interpretability to Long Context in LLMs via Sparse Attention](https://papers.cool/arxiv/2510.19875)
+Authors: J Rosser, José Luis Redondo García, Gustavo Penha, Konstantina Palla, Hugues Bouchard
+Append: [From Denoising to Refining: A Corrective Framework for Vision-Language Diffusion Model](https://papers.cool/arxiv/2510.19871)
+Authors: Yatai Ji, Teng Wang, Yuying Ge, Zhiheng Liu, Sidi Yang, Ying Shan, Ping Luo
+Append: [An Evaluation of the Pedagogical Soundness and Usability of AI-Generated Lesson Plans Across Different Models and Prompt Frameworks in High-School Physics](https://papers.cool/arxiv/2510.19866)
+Authors: Xincheng Liu
+Append: [DeBERTa-KC: A Transformer-Based Classifier for Knowledge Construction in Online Learning Discourse](https://papers.cool/arxiv/2510.19858)
+Authors: Jindi Wang, Yidi Zhang, Zhaoxing Li
+Append: [Small Drafts, Big Verdict: Information-Intensive Visual Reasoning via Speculation](https://papers.cool/arxiv/2510.20812)
+Authors: Yuhan Liu, Lianhui Qin, Shengjie Wang
+Append: [Real Deep Research for AI, Robotics and Beyond](https://papers.cool/arxiv/2510.20809)
+Authors: Xueyan Zou, Jianglong Ye, Hao Zhang, Xiaoyu Xiang, Mingyu Ding, Zhaojing Yang, Yong Jae Lee, Zhuowen Tu, Sifei Liu, Xiaolong Wang
+Append: [Compress to Impress: Efficient LLM Adaptation Using a Single Gradient Step on 100 Samples](https://papers.cool/arxiv/2510.20800)
+Authors: Shiva Sreeram, Alaa Maalouf, Pratyusha Sharma, Daniela Rus
+Append: [BadGraph: A Backdoor Attack Against Latent Diffusion Model for Text-Guided Graph Generation](https://papers.cool/arxiv/2510.20792)
+Authors: Liang Ye, Shengqin Chen, Jiazhu Dai
+Append: [Empathic Prompting: Non-Verbal Context Integration for Multimodal LLM Conversations](https://papers.cool/arxiv/2510.20743)
+Authors: Lorenzo Stacchio, Andrea Ubaldi, Alessandro Galdelli, Maurizio Mauri, Emanuele Frontoni, Andrea Gaggioli
+Append: [Co-Designing Quantum Codes with Transversal Diagonal Gates via Multi-Agent Systems](https://papers.cool/arxiv/2510.20728)
+Authors: Xi He, Sirui Lu, Bei Zeng
+Append: [Analyticup E-commerce Product Search Competition Technical Report from Team Tredence_AICOE](https://papers.cool/arxiv/2510.20674)
+Authors: Rakshith R, Shubham Sharma, Mohammed Sameer Khan, Ankush Chopra
+Append: [What Defines Good Reasoning in LLMs? Dissecting Reasoning Steps with Multi-Aspect Evaluation](https://papers.cool/arxiv/2510.20603)
+Authors: Heejin Do, Jaehui Hwang, Dongyoon Han, Seong Joon Oh, Sangdoo Yun
+Append: [Decoding the Ear: A Framework for Objectifying Expressiveness from Human Preference Through Efficient Alignment](https://papers.cool/arxiv/2510.20513)
+Authors: Zhiyu Lin, Jingwen Yang, Jiale Zhao, Meng Liu, Sunzhu Li, Benyou Wang
+Append: [Relative-Based Scaling Law for Neural Language Models](https://papers.cool/arxiv/2510.20387)
+Authors: Baoqing Yue, Jinyuan Zhou, Zixi Wei, Jingtao Zhan, Qingyao Ai, Yiqun Liu
+Append: [IKnow: Instruction-Knowledge-Aware Continual Pretraining for Effective Domain Adaptation](https://papers.cool/arxiv/2510.20377)
+Authors: Tianyi Zhang, Florian Mai, Lucie Flek
+Append: [ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases](https://papers.cool/arxiv/2510.20270)
+Authors: Ziqian Zhong, Aditi Raghunathan, Nicholas Carlini
+Append: [Calibrating Multimodal Consensus for Emotion Recognition](https://papers.cool/arxiv/2510.20256)
+Authors: Guowei Zhong, Junjie Li, Huaiyu Zhu, Ruohong Huan, Yun Pan
+Append: [Why LVLMs Are More Prone to Hallucinations in Longer Responses: The Role of Context](https://papers.cool/arxiv/2510.20229)
+Authors: Ge Zheng, Jiaye Qian, Jiajin Tang, Sibei Yang
+Append: [Multimedia-Aware Question Answering: A Review of Retrieval and Cross-Modal Reasoning Architectures](https://papers.cool/arxiv/2510.20193)
+Authors: Rahul Raja, Arpita Vats
+Append: [Every Question Has Its Own Value: Reinforcement Learning with Explicit Human Values](https://papers.cool/arxiv/2510.20187)
+Authors: Dian Yu, Yulai Zhao, Kishan Panaganti, Linfeng Song, Haitao Mi, Dong Yu
+Append: [AI PB: A Grounded Generative Agent for Personalized Investment Insights](https://papers.cool/arxiv/2510.20099)
+Authors: Daewoo Park, Suho Park, Inseok Hong, Hanwool Lee, Junkyu Park, Sangjun Lee, Jeongman An, Hyunbin Loh
+Append: [BIOCAP: Exploiting Synthetic Captions Beyond Labels in Biological Foundation Models](https://papers.cool/arxiv/2510.20095)
+Authors: Ziheng Zhang, Xinyue Ma, Arpita Chowdhury, Elizabeth G. Campolongo, Matthew J. Thompson, Net Zhang, Samuel Stevens, Hilmar Lapp, Tanya Berger-Wolf, Yu Su, Wei-Lun Chao, Jianyang Gu
+Append: [LLMs can hide text in other text of the same length.ipynb](https://papers.cool/arxiv/2510.20075)
+Authors: Antonio Norelli, Michael Bronstein
+Append: [Beyond One-Way Influence: Bidirectional Opinion Dynamics in Multi-Turn Human-LLM Interactions](https://papers.cool/arxiv/2510.20039)
+Authors: Yuyang Jiang, Longjie Guo, Yuchen Wu, Aylin Caliskan, Tanu Mitra, Hua Shen
+Append: [Communication to Completion: Modeling Collaborative Workflows with Intelligent Multi-Agent Communication](https://papers.cool/arxiv/2510.19995)
+Authors: Yiming Lu, Xun Wang, Simin Ma, Shujian Liu, Sathish Reddy Indurthi, Song Wang, Haoyun Deng, Fei Liu, Kaiqiang Song
+Append: [SODBench: A Large Language Model Approach to Documenting Spreadsheet Operations](https://papers.cool/arxiv/2510.19864)
+Authors: Amila Indika, Igor Molybog
+Append: [Prompt Decorators: A Declarative and Composable Syntax for Reasoning, Formatting, and Control in LLMs](https://papers.cool/arxiv/2510.19850)
+Authors: Mostapha Kalami Heris
+Append: [Branch-and-Browse: Efficient and Controllable Web Exploration with Tree-Structured Reasoning and Action Memory](https://papers.cool/arxiv/2510.19838)
+Authors: Shiqi He, Yue Cui, Xinyu Ma, Yaliang Li, Bolin Ding, Mosharaf Chowdhury
+Token length: 862
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 595, "prompt_tokens": 3351, "total_tokens": 3946, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 317, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00057951, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028201, "upstream_inference_completions_cost": 0.0002975}}
+Cost (USD): 0.000580
+Token length: 973
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 615, "prompt_tokens": 3347, "total_tokens": 3962, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 350, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00058891, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028141, "upstream_inference_completions_cost": 0.0003075}}
+Cost (USD): 0.000589
+Token length: 710
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 682, "prompt_tokens": 3361, "total_tokens": 4043, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 364, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00062451, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028351, "upstream_inference_completions_cost": 0.000341}}
+Cost (USD): 0.000625
+Token length: 684
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 618, "prompt_tokens": 3319, "total_tokens": 3937, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 406, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00058621, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027721, "upstream_inference_completions_cost": 0.000309}}
+Cost (USD): 0.000586
+Token length: 1631
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 576, "prompt_tokens": 3471, "total_tokens": 4047, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 295, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00058801, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030001, "upstream_inference_completions_cost": 0.000288}}
+Cost (USD): 0.000588
+Token length: 1033
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 625, "prompt_tokens": 3361, "total_tokens": 3986, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 433, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00059601, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028351, "upstream_inference_completions_cost": 0.0003125}}
+Cost (USD): 0.000596
+Token length: 968
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 604, "prompt_tokens": 3331, "total_tokens": 3935, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 355, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00058101, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027901, "upstream_inference_completions_cost": 0.000302}}
+Cost (USD): 0.000581
+Token length: 930
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 608, "prompt_tokens": 3346, "total_tokens": 3954, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 314, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00058526, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028126, "upstream_inference_completions_cost": 0.000304}}
+Cost (USD): 0.000585
+Token length: 881
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 637, "prompt_tokens": 3369, "total_tokens": 4006, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 395, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060321, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028471, "upstream_inference_completions_cost": 0.0003185}}
+Cost (USD): 0.000603
+Token length: 863
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 645, "prompt_tokens": 3377, "total_tokens": 4022, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 397, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060841, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028591, "upstream_inference_completions_cost": 0.0003225}}
+Cost (USD): 0.000608
+Token length: 1356
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 639, "prompt_tokens": 3428, "total_tokens": 4067, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 405, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00061306, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029356, "upstream_inference_completions_cost": 0.0003195}}
+Cost (USD): 0.000613
+Token length: 542
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 663, "prompt_tokens": 3297, "total_tokens": 3960, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 431, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060541, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027391, "upstream_inference_completions_cost": 0.0003315}}
+Cost (USD): 0.000605
+Token length: 580
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 725, "prompt_tokens": 3304, "total_tokens": 4029, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 443, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00063746, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027496, "upstream_inference_completions_cost": 0.0003625}}
+Cost (USD): 0.000637
+Token length: 1006
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 653, "prompt_tokens": 3362, "total_tokens": 4015, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 326, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00061016, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028366, "upstream_inference_completions_cost": 0.0003265}}
+Cost (USD): 0.000610
+Token length: 1502
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 735, "prompt_tokens": 3453, "total_tokens": 4188, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 452, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00066481, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029731, "upstream_inference_completions_cost": 0.0003675}}
+Cost (USD): 0.000665
+Token length: 1027
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 696, "prompt_tokens": 3375, "total_tokens": 4071, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 475, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00063361, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028561, "upstream_inference_completions_cost": 0.000348}}
+Cost (USD): 0.000634
+Token length: 1377
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 701, "prompt_tokens": 3406, "total_tokens": 4107, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 390, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00064076, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029026, "upstream_inference_completions_cost": 0.0003505}}
+Cost (USD): 0.000641
+Token length: 1179
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 674, "prompt_tokens": 3418, "total_tokens": 4092, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 396, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00062906, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029206, "upstream_inference_completions_cost": 0.000337}}
+Cost (USD): 0.000629
+Token length: 1468
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 727, "prompt_tokens": 3482, "total_tokens": 4209, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 361, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00066516, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030166, "upstream_inference_completions_cost": 0.0003635}}
+Cost (USD): 0.000665
+Token length: 1854
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 733, "prompt_tokens": 3506, "total_tokens": 4239, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 376, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00067176, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030526, "upstream_inference_completions_cost": 0.0003665}}
+Cost (USD): 0.000672
+Token length: 1189
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 750, "prompt_tokens": 3405, "total_tokens": 4155, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 490, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00066511, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029011, "upstream_inference_completions_cost": 0.000375}}
+Cost (USD): 0.000665
+Token length: 1185
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 610, "prompt_tokens": 3415, "total_tokens": 4025, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 382, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00059661, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029161, "upstream_inference_completions_cost": 0.000305}}
+Cost (USD): 0.000597
+Token length: 1315
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 755, "prompt_tokens": 3423, "total_tokens": 4178, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 470, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00067031, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029281, "upstream_inference_completions_cost": 0.0003775}}
+Cost (USD): 0.000670
+Token length: 943
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 642, "prompt_tokens": 3360, "total_tokens": 4002, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 370, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060436, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028336, "upstream_inference_completions_cost": 0.000321}}
+Cost (USD): 0.000604
+Token length: 1549
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 789, "prompt_tokens": 3456, "total_tokens": 4245, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 575, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00069226, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029776, "upstream_inference_completions_cost": 0.0003945}}
+Cost (USD): 0.000692
+Token length: 1145
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 797, "prompt_tokens": 3422, "total_tokens": 4219, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 562, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00069116, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029266, "upstream_inference_completions_cost": 0.0003985}}
+Cost (USD): 0.000691
+Token length: 1181
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 630, "prompt_tokens": 3414, "total_tokens": 4044, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 395, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060646, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029146, "upstream_inference_completions_cost": 0.000315}}
+Cost (USD): 0.000606
+Token length: 1072
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 642, "prompt_tokens": 3378, "total_tokens": 4020, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 435, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060706, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028606, "upstream_inference_completions_cost": 0.000321}}
+Cost (USD): 0.000607
+Token length: 1660
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 646, "prompt_tokens": 3515, "total_tokens": 4161, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 358, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00062961, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030661, "upstream_inference_completions_cost": 0.000323}}
+Cost (USD): 0.000630
+Token length: 1370
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 651, "prompt_tokens": 3422, "total_tokens": 4073, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 306, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00061816, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029266, "upstream_inference_completions_cost": 0.0003255}}
+Cost (USD): 0.000618
+Token length: 1471
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 819, "prompt_tokens": 3452, "total_tokens": 4271, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 699, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00070666, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029716, "upstream_inference_completions_cost": 0.0004095}}
+Cost (USD): 0.000707
+Token length: 794
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 823, "prompt_tokens": 3317, "total_tokens": 4140, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 683, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00068841, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027691, "upstream_inference_completions_cost": 0.0004115}}
+Cost (USD): 0.000688
+Token length: 1799
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 657, "prompt_tokens": 3477, "total_tokens": 4134, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 321, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00062941, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030091, "upstream_inference_completions_cost": 0.0003285}}
+Cost (USD): 0.000629
+Token length: 1540
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 672, "prompt_tokens": 3462, "total_tokens": 4134, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 477, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00063466, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029866, "upstream_inference_completions_cost": 0.000336}}
+Cost (USD): 0.000635
+Token length: 1053
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 674, "prompt_tokens": 3371, "total_tokens": 4045, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 439, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3360}, "cost": 0.00060745, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027045, "upstream_inference_completions_cost": 0.000337}}
+Cost (USD): 0.000607
+Token length: 1002
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 688, "prompt_tokens": 3357, "total_tokens": 4045, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 437, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00062691, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028291, "upstream_inference_completions_cost": 0.000344}}
+Cost (USD): 0.000627
+Token length: 1172
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 865, "prompt_tokens": 3391, "total_tokens": 4256, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 639, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00072051, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028801, "upstream_inference_completions_cost": 0.0004325}}
+Cost (USD): 0.000721
+Token length: 1150
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 708, "prompt_tokens": 3387, "total_tokens": 4095, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 475, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00064141, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028741, "upstream_inference_completions_cost": 0.000354}}
+Cost (USD): 0.000641
+Token length: 1904
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 1014, "prompt_tokens": 3601, "total_tokens": 4615, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 846, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00082651, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00031951, "upstream_inference_completions_cost": 0.000507}}
+Cost (USD): 0.000827
+Token length: 651
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 715, "prompt_tokens": 3347, "total_tokens": 4062, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 527, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00063891, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028141, "upstream_inference_completions_cost": 0.0003575}}
+Cost (USD): 0.000639
+Token length: 1384
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 739, "prompt_tokens": 3474, "total_tokens": 4213, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 492, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00066996, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030046, "upstream_inference_completions_cost": 0.0003695}}
+Cost (USD): 0.000670
+Token length: 1292
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 981, "prompt_tokens": 3414, "total_tokens": 4395, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 762, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00078196, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029146, "upstream_inference_completions_cost": 0.0004905}}
+Cost (USD): 0.000782
+Token length: 1100
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 726, "prompt_tokens": 3399, "total_tokens": 4125, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 473, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00065221, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028921, "upstream_inference_completions_cost": 0.000363}}
+Cost (USD): 0.000652
+Token length: 1664
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 965, "prompt_tokens": 3488, "total_tokens": 4453, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 743, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00078506, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030256, "upstream_inference_completions_cost": 0.0004825}}
+Cost (USD): 0.000785
+Token length: 1274
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 840, "prompt_tokens": 3407, "total_tokens": 4247, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 608, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00071041, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029041, "upstream_inference_completions_cost": 0.00042}}
+Cost (USD): 0.000710
+Token length: 1625
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 1125, "prompt_tokens": 3474, "total_tokens": 4599, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 940, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00086296, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030046, "upstream_inference_completions_cost": 0.0005625}}
+Cost (USD): 0.000863
+Token length: 1797
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 856, "prompt_tokens": 3547, "total_tokens": 4403, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 653, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00073941, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00031141, "upstream_inference_completions_cost": 0.000428}}
+Cost (USD): 0.000739
+Token length: 859
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 1045, "prompt_tokens": 3349, "total_tokens": 4394, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 960, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00080421, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028171, "upstream_inference_completions_cost": 0.0005225}}
+Cost (USD): 0.000804
+Token length: 454
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 557, "prompt_tokens": 3278, "total_tokens": 3835, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 329, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00054956, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00027106, "upstream_inference_completions_cost": 0.0002785}}
+Cost (USD): 0.000550
+Token length: 1101
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 930, "prompt_tokens": 3394, "total_tokens": 4324, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 693, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00075346, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028846, "upstream_inference_completions_cost": 0.000465}}
+Cost (USD): 0.000753
+Token length: 1919
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 949, "prompt_tokens": 3554, "total_tokens": 4503, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 782, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00078696, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00031246, "upstream_inference_completions_cost": 0.0004745}}
+Cost (USD): 0.000787
+Token length: 1494
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 628, "prompt_tokens": 3450, "total_tokens": 4078, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 342, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00061086, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029686, "upstream_inference_completions_cost": 0.000314}}
+Cost (USD): 0.000611
+Token length: 1027
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 466, "prompt_tokens": 3368, "total_tokens": 3834, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 241, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00051756, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028456, "upstream_inference_completions_cost": 0.000233}}
+Cost (USD): 0.000518
+Token length: 1173
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 564, "prompt_tokens": 3399, "total_tokens": 3963, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 306, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00057121, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028921, "upstream_inference_completions_cost": 0.000282}}
+Cost (USD): 0.000571
+Token length: 1505
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 651, "prompt_tokens": 3456, "total_tokens": 4107, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 406, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00062326, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029776, "upstream_inference_completions_cost": 0.0003255}}
+Cost (USD): 0.000623
+Token length: 989
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 657, "prompt_tokens": 3372, "total_tokens": 4029, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 458, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00061366, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028516, "upstream_inference_completions_cost": 0.0003285}}
+Cost (USD): 0.000614
+Token length: 1154
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 617, "prompt_tokens": 3402, "total_tokens": 4019, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 363, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00059816, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028966, "upstream_inference_completions_cost": 0.0003085}}
+Cost (USD): 0.000598
+Token length: 1366
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 674, "prompt_tokens": 3457, "total_tokens": 4131, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 452, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00063491, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029791, "upstream_inference_completions_cost": 0.000337}}
+Cost (USD): 0.000635
+Token length: 1899
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 642, "prompt_tokens": 3565, "total_tokens": 4207, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 370, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00063511, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00031411, "upstream_inference_completions_cost": 0.000321}}
+Cost (USD): 0.000635
+Token length: 1644
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 677, "prompt_tokens": 3480, "total_tokens": 4157, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 391, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00063986, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030136, "upstream_inference_completions_cost": 0.0003385}}
+Cost (USD): 0.000640
+Token length: 945
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 597, "prompt_tokens": 3364, "total_tokens": 3961, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 391, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00058246, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028396, "upstream_inference_completions_cost": 0.0002985}}
+Cost (USD): 0.000582
+Token length: 1485
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 622, "prompt_tokens": 3432, "total_tokens": 4054, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 354, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060516, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029416, "upstream_inference_completions_cost": 0.000311}}
+Cost (USD): 0.000605
+Token length: 1471
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 728, "prompt_tokens": 3448, "total_tokens": 4176, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 543, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00066056, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029656, "upstream_inference_completions_cost": 0.000364}}
+Cost (USD): 0.000661
+Token length: 1342
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 772, "prompt_tokens": 3467, "total_tokens": 4239, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 458, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00068541, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029941, "upstream_inference_completions_cost": 0.000386}}
+Cost (USD): 0.000685
+Token length: 1365
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 635, "prompt_tokens": 3433, "total_tokens": 4068, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 389, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00061181, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029431, "upstream_inference_completions_cost": 0.0003175}}
+Cost (USD): 0.000612
+Token length: 1341
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 584, "prompt_tokens": 3405, "total_tokens": 3989, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 369, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00058211, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029011, "upstream_inference_completions_cost": 0.000292}}
+Cost (USD): 0.000582
+Token length: 1216
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 620, "prompt_tokens": 3405, "total_tokens": 4025, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 329, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060011, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029011, "upstream_inference_completions_cost": 0.00031}}
+Cost (USD): 0.000600
+Token length: 1848
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 863, "prompt_tokens": 3523, "total_tokens": 4386, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 477, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00073931, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030781, "upstream_inference_completions_cost": 0.0004315}}
+Cost (USD): 0.000739
+Token length: 1126
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 720, "prompt_tokens": 3404, "total_tokens": 4124, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 415, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00064996, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028996, "upstream_inference_completions_cost": 0.00036}}
+Cost (USD): 0.000650
+Token length: 1118
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 639, "prompt_tokens": 3392, "total_tokens": 4031, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 414, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060766, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028816, "upstream_inference_completions_cost": 0.0003195}}
+Cost (USD): 0.000608
+Token length: 1254
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 705, "prompt_tokens": 3439, "total_tokens": 4144, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 490, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00064771, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029521, "upstream_inference_completions_cost": 0.0003525}}
+Cost (USD): 0.000648
+Token length: 1258
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 637, "prompt_tokens": 3433, "total_tokens": 4070, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 437, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00061281, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029431, "upstream_inference_completions_cost": 0.0003185}}
+Cost (USD): 0.000613
+Token length: 1475
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 663, "prompt_tokens": 3453, "total_tokens": 4116, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 392, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00062881, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029731, "upstream_inference_completions_cost": 0.0003315}}
+Cost (USD): 0.000629
+Token length: 1507
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 704, "prompt_tokens": 3451, "total_tokens": 4155, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 493, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00064901, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029701, "upstream_inference_completions_cost": 0.000352}}
+Cost (USD): 0.000649
+Token length: 939
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 729, "prompt_tokens": 3342, "total_tokens": 4071, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 619, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00064516, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028066, "upstream_inference_completions_cost": 0.0003645}}
+Cost (USD): 0.000645
+Token length: 1368
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 1016, "prompt_tokens": 3441, "total_tokens": 4457, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 850, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00080351, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029551, "upstream_inference_completions_cost": 0.000508}}
+Cost (USD): 0.000804
+Token length: 1902
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 1009, "prompt_tokens": 3601, "total_tokens": 4610, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 751, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00082401, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00031951, "upstream_inference_completions_cost": 0.0005045}}
+Cost (USD): 0.000824
+Token length: 1185
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 706, "prompt_tokens": 3396, "total_tokens": 4102, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 475, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00064176, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028876, "upstream_inference_completions_cost": 0.000353}}
+Cost (USD): 0.000642
+Token length: 1582
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 757, "prompt_tokens": 3498, "total_tokens": 4255, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 553, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00068256, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030406, "upstream_inference_completions_cost": 0.0003785}}
+Cost (USD): 0.000683
+Token length: 901
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 670, "prompt_tokens": 3346, "total_tokens": 4016, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 442, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00061626, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028126, "upstream_inference_completions_cost": 0.000335}}
+Cost (USD): 0.000616
+Token length: 1232
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 659, "prompt_tokens": 3395, "total_tokens": 4054, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 417, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00061811, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028861, "upstream_inference_completions_cost": 0.0003295}}
+Cost (USD): 0.000618
+Token length: 1142
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 759, "prompt_tokens": 3436, "total_tokens": 4195, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 526, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00067426, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029476, "upstream_inference_completions_cost": 0.0003795}}
+Cost (USD): 0.000674
+Token length: 913
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 784, "prompt_tokens": 3355, "total_tokens": 4139, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 510, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00067461, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028261, "upstream_inference_completions_cost": 0.000392}}
+Cost (USD): 0.000675
+Token length: 1180
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 774, "prompt_tokens": 3425, "total_tokens": 4199, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 448, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00068011, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029311, "upstream_inference_completions_cost": 0.000387}}
+Cost (USD): 0.000680
+Token length: 990
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 657, "prompt_tokens": 3399, "total_tokens": 4056, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 325, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00061771, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00028921, "upstream_inference_completions_cost": 0.0003285}}
+Cost (USD): 0.000618
+Token length: 1593
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 968, "prompt_tokens": 3485, "total_tokens": 4453, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 895, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00078611, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00030211, "upstream_inference_completions_cost": 0.000484}}
+Cost (USD): 0.000786
+Token length: 1302
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 1334, "prompt_tokens": 3416, "total_tokens": 4750, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 1165, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00095876, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029176, "upstream_inference_completions_cost": 0.000667}}
+Cost (USD): 0.000959
+Token length: 1193
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 1148, "prompt_tokens": 3416, "total_tokens": 4564, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 1011, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00086576, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00029176, "upstream_inference_completions_cost": 0.000574}}
+Cost (USD): 0.000866
+append_entries: 88
+Finish: 2025-10-24 17:33:06.593634
+------------------------------------------------------
+Started: 2025-10-25 20:09:28.814255
+Existing_entries: 176
+Fetching from https://papers.cool/arxiv/cs.CL/feed
+append_entries: 0
+Finish: 2025-10-25 20:09:30.511289
+------------------------------------------------------
+Started: 2025-10-25 20:19:04.079632
+Existing_entries: 176
+Fetching from https://papers.cool/arxiv/cs.CL/feed
+append_entries: 0
+Finish: 2025-10-25 20:19:05.761893

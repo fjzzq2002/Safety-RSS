@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>METR - Research</title>
+<link>https://metr.org/research/</link>
+
+
+<item>
+<title>MALT: A Dataset of Natural and Prompted Behaviors That Threaten Eval Integrity</title>
+<link>https://www.metr.org/blog/2025-10-14-malt-dataset-of-natural-and-prompted-behaviors/</link>
+<guid>https://www.metr.org/blog/2025-10-14-malt-dataset-of-natural-and-prompted-behaviors/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> MALT introduces a dataset of manually reviewed transcripts containing both natural and prompted model behaviors that compromise evaluation integrity, such as generalized reward hacking and sandbagging. The dataset provides labeled examples to facilitate research on detecting and mitigating evaluation gaming.<br /><strong>Summary (CN):</strong> MALT（Manually-reviewed Agentic Labeled Transcripts）提供了一套经人工审查的自然行为和诱导行为数据，其中包括削弱评估完整性的示例，如广义奖励 hacking（reward hacking）和 sandbagging。该数据集为研究检测和缓解评估投机行为提供了标注案例。<br /><strong>Keywords:</strong> evaluation integrity, reward hacking, sandbagging, dataset, MALT, AI safety, misalignment, robustness, behavior detection, prompting<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 7, Technicality: 5, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - robustness</div>
+MALT (Manually-reviewed Agentic Labeled Transcripts) is a dataset of natural and prompted examples of behaviors that threaten evaluation integrity (like generalized reward hacking or sandbagging).
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "MALT introduces a dataset of manually reviewed transcripts containing both natural and prompted model behaviors that compromise evaluation integrity, such as generalized reward hacking and sandbagging. The dataset provides labeled examples to facilitate research on detecting and mitigating evaluation gaming.", "summary_cn": "MALT（Manually-reviewed Agentic Labeled Transcripts）提供了一套经人工审查的自然行为和诱导行为数据，其中包括削弱评估完整性的示例，如广义奖励 hacking（reward hacking）和 sandbagging。该数据集为研究检测和缓解评估投机行为提供了标注案例。", "keywords": "evaluation integrity, reward hacking, sandbagging, dataset, MALT, AI safety, misalignment, robustness, behavior detection, prompting", "scoring": {"interpretability": 2, "understanding": 6, "safety": 7, "technicality": 5, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 14 Oct 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Forecasting the Impacts of AI R&amp;D Acceleration: Results of a Pilot Study</title>
+<link>https://www.metr.org/blog/2025-08-20-forecasting-impacts-of-ai-acceleration/</link>
+<guid>https://www.metr.org/blog/2025-08-20-forecasting-impacts-of-ai-acceleration/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The pilot study models how accelerating AI research with autonomous AI agents could compress many years of progress into months, presenting forecasts of economic, national security, and societal impacts. It uses scenario‑based economic modeling to estimate potential benefits and risks, highlighting the need for monitoring and preparation for rapid AI advancement.<br /><strong>Summary (CN):</strong> 本试点研究通过情景经济模型预测，使用自主 AI 代理加速 AI 研发可能将多年进展压缩至数月，评估其对经济、国家安全和社会的潜在影响。研究指出需要密切监控并为快速 AI 进步做好准备，以应对可能的风险和机遇。<br /><strong>Keywords:</strong> AI acceleration, AI R&amp;D, forecasting, economic impact, societal impact, AI safety, autonomous software development, AI agents<br /><strong>Scores:</strong> Interpretability: 1, Understanding: 5, Safety: 7, Technicality: 6, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - societal-disruption; Primary focus - other</div>
+AI agents are improving rapidly at autonomous software development and machine learning tasks, and, if recent trends hold, may match human researchers at challenging months-long research projects in under a decade. Some economic models predict that automation of AI research by AI agents could increase the pace of further progress dramatically, with many years of progress at the current rate being compressed into months. AI developers have identified this as a key capability to monitor and prepare for, since the national security implications and societal impacts of such rapid progress could be enormous.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The pilot study models how accelerating AI research with autonomous AI agents could compress many years of progress into months, presenting forecasts of economic, national security, and societal impacts. It uses scenario‑based economic modeling to estimate potential benefits and risks, highlighting the need for monitoring and preparation for rapid AI advancement.", "summary_cn": "本试点研究通过情景经济模型预测，使用自主 AI 代理加速 AI 研发可能将多年进展压缩至数月，评估其对经济、国家安全和社会的潜在影响。研究指出需要密切监控并为快速 AI 进步做好准备，以应对可能的风险和机遇。", "keywords": "AI acceleration, AI R&D, forecasting, economic impact, societal impact, AI safety, autonomous software development, AI agents", "scoring": {"interpretability": 1, "understanding": 5, "safety": 7, "technicality": 6, "surprisal": 6}, "category": {"failure_mode_addressed": "societal-disruption", "primary_focus": "other"}}
+]]></acme>
+
+<pubDate>Wed, 20 Aug 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>Research Update: Algorithmic vs. Holistic Evaluation</title>
+<link>https://www.metr.org/blog/2025-08-12-research-update-towards-reconciling-slowdown-with-time-horizons/</link>
+<guid>https://www.metr.org/blog/2025-08-12-research-update-towards-reconciling-slowdown-with-time-horizons/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The post many AI coding benchmarks rely on algorithmic scoring, which can reward code that passes tests but is not production-ready due to poor formatting, test coverage, and overall quality. This mismatch helps explain the gap between strong benchmark performance and modest real‑world productivity gains, prompting a call for more holistic evaluation metrics that consider code maintainability and readiness.<br /><strong>Summary (CN):</strong> 本文指出，许多 AI 编码基准采用算法化评分，往往只关注测试通过率，却忽视代码的可维护性、格式和测试覆盖等生产就绪度问题。这导致模型在基准上表现出色，却未能显著提升实际生产力，因而作者呼吁采用更综合的评估方式，加入代码质量和可部署性等因素。<br /><strong>Keywords:</strong> algorithmic evaluation, holistic evaluation, code quality, benchmark limitations, AI productivity, software engineering metrics<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 2, Technicality: 5, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other</div>
+Many AI benchmarks use algorithmic scoring to evaluate how well AI systems perform on some set of tasks. However, AI systems often produce code that scores well but isn't production-ready due to issues with test coverage, formatting, and code quality. This helps explain why AI tools show less productivity improvement than expected despite strong performance on coding benchmarks.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The post many AI coding benchmarks rely on algorithmic scoring, which can reward code that passes tests but is not production-ready due to poor formatting, test coverage, and overall quality. This mismatch helps explain the gap between strong benchmark performance and modest real‑world productivity gains, prompting a call for more holistic evaluation metrics that consider code maintainability and readiness.", "summary_cn": "本文指出，许多 AI 编码基准采用算法化评分，往往只关注测试通过率，却忽视代码的可维护性、格式和测试覆盖等生产就绪度问题。这导致模型在基准上表现出色，却未能显著提升实际生产力，因而作者呼吁采用更综合的评估方式，加入代码质量和可部署性等因素。", "keywords": "algorithmic evaluation, holistic evaluation, code quality, benchmark limitations, AI productivity, software engineering metrics", "scoring": {"interpretability": 2, "understanding": 6, "safety": 2, "technicality": 5, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}}
+]]></acme>
+
+<pubDate>Wed, 13 Aug 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>CoT May Be Highly Informative Despite “Unfaithfulness”</title>
+<link>https://www.metr.org/blog/2025-08-08-cot-may-be-highly-informative-despite-unfaithfulness/</link>
+<guid>https://www.metr.org/blog/2025-08-08-cot-may-be-highly-informative-despite-unfaithfulness/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The post argues that even if large language models' chain-of-thought (CoT) explanations are sometimes unfaithful, they can still contain enough information for developers to effectively monitor model behavior in practice. Experimental results suggest that CoT remains a useful tool for interpretability and safety despite its occasional lack of full fidelity.<br /><strong>Summary (CN):</strong> 本文认为，尽管大型语言模型的思维链（CoT）解释有时不完全可信，但它们仍能提供足够的信息，使开发者能够在实际中有效监控模型行为。实验结果显示，CoT 在解释性和安全性方面仍具实用价值，即便其忠实度并非始终如一。<br /><strong>Keywords:</strong> chain-of-thought, LLM interpretability, model monitoring, faithfulness, explanation, safety, alignment<br /><strong>Scores:</strong> Interpretability: 7, Understanding: 7, Safety: 6, Technicality: 6, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - interpretability</div>
+Recent work from Anthropic and others claims that LLMs' chains of thoughts can be “unfaithful”. These papers make an important point: you can't take everything in the CoT at face value. As a result, people often use these results to conclude the CoT is useless for analyzing and monitoring AIs. Here, instead of asking whether the CoT always contains all information relevant to a model's decision-making in all problems, we ask if it contains enough information to allow developers to monitor models in practice. Our experiments suggest that it might.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The post argues that even if large language models' chain-of-thought (CoT) explanations are sometimes unfaithful, they can still contain enough information for developers to effectively monitor model behavior in practice. Experimental results suggest that CoT remains a useful tool for interpretability and safety despite its occasional lack of full fidelity.", "summary_cn": "本文认为，尽管大型语言模型的思维链（CoT）解释有时不完全可信，但它们仍能提供足够的信息，使开发者能够在实际中有效监控模型行为。实验结果显示，CoT 在解释性和安全性方面仍具实用价值，即便其忠实度并非始终如一。", "keywords": "chain-of-thought, LLM interpretability, model monitoring, faithfulness, explanation, safety, alignment", "scoring": {"interpretability": 7, "understanding": 7, "safety": 6, "technicality": 6, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Fri, 08 Aug 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>GPT-5 Evaluation Results</title>
+<link>https://www.metr.org</link>
+<guid>https://www.metr.org</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper evaluates whether GPT-5 presents significant catastrophic risks through self-improvement, rogue replication, or sabotage of AI labs and concludes that such scenarios appear unlikely, though capability trends remain rapid and models show increasing evaluation awareness. It discusses assessment methodology and contextualizes findings within broader AI risk discourse.<br /><strong>Summary (CN):</strong> 本文评估 GPT-5 是否会通过自我改进、恶意复制或破坏 AI 实验室等方式构成重大灾难性风险，结论认为这些情景不太可能发生，但能力趋势依然快速，且模型表现出日益增强的评估意识。文章描述了评估方法并将结果置于更广泛的 AI 风险讨论中。<br /><strong>Keywords:</strong> GPT-5, catastrophic risk, AI self-improvement, rogue replication, sabotage, evaluation awareness, AI safety, capability trends<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 7, Technicality: 6, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+We evaluate whether GPT-5 poses significant catastrophic risks via AI self-improvement, rogue replication, or sabotage of AI labs. We conclude that this seems unlikely. However, capability trends continue rapidly, and models display increasing eval awareness.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper evaluates whether GPT-5 presents significant catastrophic risks through self-improvement, rogue replication, or sabotage of AI labs and concludes that such scenarios appear unlikely, though capability trends remain rapid and models show increasing evaluation awareness. It discusses assessment methodology and contextualizes findings within broader AI risk discourse.", "summary_cn": "本文评估 GPT-5 是否会通过自我改进、恶意复制或破坏 AI 实验室等方式构成重大灾难性风险，结论认为这些情景不太可能发生，但能力趋势依然快速，且模型表现出日益增强的评估意识。文章描述了评估方法并将结果置于更广泛的 AI 风险讨论中。", "keywords": "GPT-5, catastrophic risk, AI self-improvement, rogue replication, sabotage, evaluation awareness, AI safety, capability trends", "scoring": {"interpretability": 2, "understanding": 6, "safety": 7, "technicality": 6, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Thu, 07 Aug 2025 00:00:00 -0000</pubDate>
+</item>
+<item>
+<title>How Does Time Horizon Vary Across Domains?</title>
+<link>https://www.metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/</link>
+<guid>https://www.metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article extends previous time‑horizon research by evaluating nine benchmarks spanning scientific reasoning, mathematics, robotics, computer use, and self‑driving, finding that performance improvements generally follow a similar seven‑month doubling time across domains.<br /><strong>Summary (CN):</strong> 本文在已有的时间视野研究基础上，分析了包括科学推理、数学、机器人、计算机使用和自动驾驶在内的九个基准，观察到这些领域的性能提升大致遵循约七个月翻倍的趋势。<br /><strong>Keywords:</strong> time horizon, scaling laws, benchmark analysis, scientific reasoning, robotics, self-driving, performance forecasting<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 2, Technicality: 5, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other</div>
+We build on our time-horizon work and analyze 9 benchmarks for scientific reasoning, math, robotics, computer use, and self-driving in terms of time-horizon trends; we observe generally similar rates of improvement to the 7-month doubling time in our original time-horizon work.
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article extends previous time‑horizon research by evaluating nine benchmarks spanning scientific reasoning, mathematics, robotics, computer use, and self‑driving, finding that performance improvements generally follow a similar seven‑month doubling time across domains.", "summary_cn": "本文在已有的时间视野研究基础上，分析了包括科学推理、数学、机器人、计算机使用和自动驾驶在内的九个基准，观察到这些领域的性能提升大致遵循约七个月翻倍的趋势。", "keywords": "time horizon, scaling laws, benchmark analysis, scientific reasoning, robotics, self-driving, performance forecasting", "scoring": {"interpretability": 2, "understanding": 6, "safety": 2, "technicality": 5, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}}
+]]></acme>
+
+<pubDate>Mon, 14 Jul 2025 00:00:00 -0000</pubDate>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>CAIS - Research</title>
+<link>https://safe.ai/work/research</link>
+
+
+<item>
+<title>MoReBench: Evaluating Procedural and Pluralistic Moral Reasoning in Language Models, More than Outcomes</title>
+<link>https://www.arxiv.org/abs/2510.16380</link>
+<guid>https://www.arxiv.org/abs/2510.16380</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces MoReBench, a benchmark for evaluating large language models' procedural and pluralistic moral reasoning, emphasizing the reasoning process and multiple moral perspectives rather than only outcome correctness. It provides curated datasets, novel evaluation metrics, and experimental results that reveal current models' limitations in justifying decisions across diverse ethical frameworks. The work aims to guide future research toward more robust and value‑aligned AI systems.<br /><strong>Summary (CN):</strong> 本文提出了 MoReBench 基准，用于评估大语言模型的程序性和多元道德推理，重点关注推理过程和多种道德视角，而不仅仅是结果的正确性。它提供了精选数据集、创新评估指标通过实验展示了现有模型在跨不同伦理框架进行决策解释时的局限性。此工作旨在推动更稳健、价值对齐的 AI 系统研究。<br /><strong>Keywords:</strong> moral reasoning, language models, benchmark, procedural ethics, pluralistic ethics, AI alignment, safety evaluation, evaluation metrics<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 5, Technicality: 6, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces MoReBench, a benchmark for evaluating large language models' procedural and pluralistic moral reasoning, emphasizing the reasoning process and multiple moral perspectives rather than only outcome correctness. It provides curated datasets, novel evaluation metrics, and experimental results that reveal current models' limitations in justifying decisions across diverse ethical frameworks. The work aims to guide future research toward more robust and value‑aligned AI systems.", "summary_cn": "本文提出了 MoReBench 基准，用于评估大语言模型的程序性和多元道德推理，重点关注推理过程和多种道德视角，而不仅仅是结果的正确性。它提供了精选数据集、创新评估指标通过实验展示了现有模型在跨不同伦理框架进行决策解释时的局限性。此工作旨在推动更稳健、价值对齐的 AI 系统研究。", "keywords": "moral reasoning, language models, benchmark, procedural ethics, pluralistic ethics, AI alignment, safety evaluation, evaluation metrics", "scoring": {"interpretability": 2, "understanding": 6, "safety": 5, "technicality": 6, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Wed, 22 Oct 2025 06:11:01 -0000</pubDate>
+</item>
+<item>
+<title>Safety Pretraining: Toward the Next Generation of Safe AI</title>
+<link>https://arxiv.org/abs/2504.16980</link>
+<guid>https://arxiv.org/abs/2504.16980</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper proposes a safety‑oriented pretraining paradigm that augments standard language model pretraining with auxiliary safety signals, aiming to embed alignment‑relevant behavior early in the model's representations. It empirically evaluates several safety‑pretraining objectives on downstream alignment tasks, showing improved performance compared to conventional fine‑tuning baselines. The authors discuss scaling trends and potential pathways toward the next generation of safe AI systems.<br /><strong>Summary (CN):</strong> 本文提出了一种面向安全的预训练范式，通过在标准语言模型预训练中加入额外的安全信号，使对齐相关行为在模型表征的早期阶段得以嵌入。实验评估了多种安全预训练目标在下游对齐任务上的效果，相较于传统微调基线表现出提升。作者还讨论了该方法的尺度趋势以及通往下一代安全 AI 的潜在路径。<br /><strong>Keywords:</strong> safety pretraining, AI alignment, supervised pretraining, RLHF, safe AI, scaling laws, robustness<br /><strong>Scores:</strong> Interpretability: 4, Understanding: 6, Safety: 8, Technicality: 7, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper proposes a safety‑oriented pretraining paradigm that augments standard language model pretraining with auxiliary safety signals, aiming to embed alignment‑relevant behavior early in the model's representations. It empirically evaluates several safety‑pretraining objectives on downstream alignment tasks, showing improved performance compared to conventional fine‑tuning baselines. The authors discuss scaling trends and potential pathways toward the next generation of safe AI systems.", "summary_cn": "本文提出了一种面向安全的预训练范式，通过在标准语言模型预训练中加入额外的安全信号，使对齐相关行为在模型表征的早期阶段得以嵌入。实验评估了多种安全预训练目标在下游对齐任务上的效果，相较于传统微调基线表现出提升。作者还讨论了该方法的尺度趋势以及通往下一代安全 AI 的潜在路径。", "keywords": "safety pretraining, AI alignment, supervised pretraining, RLHF, safe AI, scaling laws, robustness", "scoring": {"interpretability": 4, "understanding": 6, "safety": 8, "technicality": 7, "surprisal": 7}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Wed, 22 Oct 2025 05:56:01 -0000</pubDate>
+</item>
+<item>
+<title>Virology Capabilities Test (VCT): A Multimodal Virology Q&amp;A Benchmark</title>
+<link>https://virologytest.ai/</link>
+<guid>https://virologytest.ai/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The Virology Capabilities Test (VCT) is a multimodal benchmark that evaluates AI systems' ability to answer virology-related questions across text and image modalities.<br /><strong>Summary (CN):</strong> Virology Capabilities Test（VCT）是一项多模态基准，评估 AI 系统在文字和图像模式下回答病毒学相关问题的能力。<br /><strong>Keywords:</strong> virology, multimodal, benchmark, Q&amp;A, AI evaluation, capabilities test<br /><strong>Scores:</strong> Interpretability: 1, Understanding: 4, Safety: 2, Technicality: 6, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The Virology Capabilities Test (VCT) is a multimodal benchmark that evaluates AI systems' ability to answer virology-related questions across text and image modalities.", "summary_cn": "Virology Capabilities Test（VCT）是一项多模态基准，评估 AI 系统在文字和图像模式下回答病毒学相关问题的能力。", "keywords": "virology, multimodal, benchmark, Q&A, AI evaluation, capabilities test", "scoring": {"interpretability": 1, "understanding": 4, "safety": 2, "technicality": 6, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}}
+]]></acme>
+
+<pubDate>Wed, 22 Oct 2025 00:49:08 -0000</pubDate>
+</item>
+<item>
+<title>The MASK Benchmark: Disentangling Honesty From Accuracy in AI Systems</title>
+<link>https://www.mask-benchmark.ai/</link>
+<guid>https://www.mask-benchmark.ai/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The MASK benchmark introduces a suite of evaluation tasks that disentangle an AI system's honesty (truthfulness) from its raw accuracy, allowing researchers to quantify how often models provide correct answers versus how often they admit uncertainty or avoid deceptive responses. It provides datasets, metrics, and protocols designed to measure trade‑offs between honesty and performance across diverse domains, facilitating systematic study of truthfulness as a safety-relevant property.<br /><strong>Summary (CN):</strong> MASK 基准提出了一套评估任务，用以区分 AI 系统的诚实性（真实性）与其原始准确率，帮助研究者量化模型出正确答案的频率以及其承认不确定性或避免欺骗性回答的程度。该基准包括数据集、评价指标和评估流程，旨在跨多领域测量诚实性与表现之间的权衡，从而系统研究真实性作为安全相关属性的重要性。<br /><strong>Keywords:</strong> honesty, truthfulness, AI alignment, benchmark, evaluation, accuracy, safety, robustness<br /><strong>Scores:</strong> Interpretability: 3, Understanding: 7, Safety: 8, Technicality: 6, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The MASK benchmark introduces a suite of evaluation tasks that disentangle an AI system's honesty (truthfulness) from its raw accuracy, allowing researchers to quantify how often models provide correct answers versus how often they admit uncertainty or avoid deceptive responses. It provides datasets, metrics, and protocols designed to measure trade‑offs between honesty and performance across diverse domains, facilitating systematic study of truthfulness as a safety-relevant property.", "summary_cn": "MASK 基准提出了一套评估任务，用以区分 AI 系统的诚实性（真实性）与其原始准确率，帮助研究者量化模型出正确答案的频率以及其承认不确定性或避免欺骗性回答的程度。该基准包括数据集、评价指标和评估流程，旨在跨多领域测量诚实性与表现之间的权衡，从而系统研究真实性作为安全相关属性的重要性。", "keywords": "honesty, truthfulness, AI alignment, benchmark, evaluation, accuracy, safety, robustness", "scoring": {"interpretability": 3, "understanding": 7, "safety": 8, "technicality": 6, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Wed, 22 Oct 2025 00:34:08 -0000</pubDate>
+</item>
+<item>
+<title>EnigmaEval: A Benchmark of Long Multimodal Reasoning Challenges</title>
+<link>https://arxiv.org/pdf/2502.08859</link>
+<guid>https://arxiv.org/pdf/2502.08859</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> EnigmaEval introduces a benchmark suite for assessing long-context multimodal reasoning capabilities of AI systems. The benchmark comprises a variety of challenging tasks that require models to integrate visual and textual information over extended sequences, and provides standardized evaluation metrics. Experimental results demonstrate current models' limitations on such tasks.<br /><strong>Summary (CN):</strong> EnigmaEval 提出了一个用于评估 AI 系统长上下文多模态推理能力的基准套件。该基准包含多种需要模型在延长的序列中整合视觉和文本信息的挑战任务，并提供标准化的评估指标。实验结果显示现有模型在这些任务上表现有限。<br /><strong>Keywords:</strong> long-context multimodal reasoning, benchmark, EnigmaEval, multimodal dataset, reasoning challenges, evaluation metrics<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 2, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "EnigmaEval introduces a benchmark suite for assessing long-context multimodal reasoning capabilities of AI systems. The benchmark comprises a variety of challenging tasks that require models to integrate visual and textual information over extended sequences, and provides standardized evaluation metrics. Experimental results demonstrate current models' limitations on such tasks.", "summary_cn": "EnigmaEval 提出了一个用于评估 AI 系统长上下文多模态推理能力的基准套件。该基准包含多种需要模型在延长的序列中整合视觉和文本信息的挑战任务，并提供标准化的评估指标。实验结果显示现有模型在这些任务上表现有限。", "keywords": "long-context multimodal reasoning, benchmark, EnigmaEval, multimodal dataset, reasoning challenges, evaluation metrics", "scoring": {"interpretability": 2, "understanding": 6, "safety": 2, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Wed, 22 Oct 2025 00:19:08 -0000</pubDate>
+</item>
+<item>
+<title>Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs</title>
+<link>https://www.emergent-values.ai/</link>
+<guid>https://www.emergent-values.ai/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces a framework called Utility Engineering for systematically analyzing the emergent value systems that arise in advanced AI systems and proposes techniques for intervening to align those values with human intentions. It combines diagnostic tools that probe internal utility representations with control mechanisms that modify training dynamics or architecture to steer emergent objectives. The work aims to improve both theoretical understanding and practical safety of AI systems whose goals evolve beyond their initial specifications.<br /><strong>Summary (CN):</strong> 本文提出“效用工程”（Utility Engineering）框架，用于系统性分析高级 AI 系统中出现的价值体系，并提出干预技术以将其价值对齐至人类意图。文章结合内部效用表征的诊断工具和通过训练动态或结构修改的控制机制，旨在引导 AI 的自发目标。此工作旨在提升对 AI 系统价值演化的理论理解和实际安全性。<br /><strong>Keywords:</strong> emergent values, utility engineering, AI alignment, value learning, interpretability, control, safety<br /><strong>Scores:</strong> Interpretability: 6, Understanding: 7, Safety: 8, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - control</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces a framework called Utility Engineering for systematically analyzing the emergent value systems that arise in advanced AI systems and proposes techniques for intervening to align those values with human intentions. It combines diagnostic tools that probe internal utility representations with control mechanisms that modify training dynamics or architecture to steer emergent objectives. The work aims to improve both theoretical understanding and practical safety of AI systems whose goals evolve beyond their initial specifications.", "summary_cn": "本文提出“效用工程”（Utility Engineering）框架，用于系统性分析高级 AI 系统中出现的价值体系，并提出干预技术以将其价值对齐至人类意图。文章结合内部效用表征的诊断工具和通过训练动态或结构修改的控制机制，旨在引导 AI 的自发目标。此工作旨在提升对 AI 系统价值演化的理论理解和实际安全性。", "keywords": "emergent values, utility engineering, AI alignment, value learning, interpretability, control, safety", "scoring": {"interpretability": 6, "understanding": 7, "safety": 8, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "control"}}
+]]></acme>
+
+<pubDate>Wed, 22 Oct 2025 00:04:08 -0000</pubDate>
+</item>
+<item>
+<title>Humanity's Last Exam</title>
+<link>https://arxiv.org/pdf/2501.14249</link>
+<guid>https://arxiv.org/pdf/2501.14249</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces "Humanity's Last Exam," a proposed evaluation framework that subjects advanced AI systems to a series of high‑stakes, value‑centric tasks designed to probe their alignment with human intentions and potential for catastrophic outcomes. By formalizing diverse scenario‑based tests, the authors aim to provide a rigorous metric for assessing whether AI systems reliably understand and respect human values before deployment.<br /><strong>Summary (CN):</strong> 本文提出了“Humanity's Last Exam”评估框架，通过一系列高风险且以价值为核心的任务，对先进人工智能系统进行测试，以检测其是否与人类意图保持一致并评估潜在的灾难性风险。作者旨在通过形式化多场景测试，为在部署前提供衡量 AI 是否可靠理解并尊重人类价值的严格指标。<br /><strong>Keywords:</strong> AI alignment, safety evaluation, benchmark, value learning, catastrophic risk, high‑stakes testing<br /><strong>Scores:</strong> Interpretability: 3, Understanding: 7, Safety: 8, Technicality: 6, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces \"Humanity's Last Exam,\" a proposed evaluation framework that subjects advanced AI systems to a series of high‑stakes, value‑centric tasks designed to probe their alignment with human intentions and potential for catastrophic outcomes. By formalizing diverse scenario‑based tests, the authors aim to provide a rigorous metric for assessing whether AI systems reliably understand and respect human values before deployment.", "summary_cn": "本文提出了“Humanity's Last Exam”评估框架，通过一系列高风险且以价值为核心的任务，对先进人工智能系统进行测试，以检测其是否与人类意图保持一致并评估潜在的灾难性风险。作者旨在通过形式化多场景测试，为在部署前提供衡量 AI 是否可靠理解并尊重人类价值的严格指标。", "keywords": "AI alignment, safety evaluation, benchmark, value learning, catastrophic risk, high‑stakes testing", "scoring": {"interpretability": 3, "understanding": 7, "safety": 8, "technicality": 6, "surprisal": 7}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 23:49:08 -0000</pubDate>
+</item>
+<item>
+<title>AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents</title>
+<link>https://arxiv.org/pdf/2410.09024</link>
+<guid>https://arxiv.org/pdf/2410.09024</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> AgentHarm introduces a systematic benchmark for evaluating the harmfulness of large language model (LLM) agents across a range of tasks and scenarios. The benchmark consists of curated prompts and environments designed to elicit potentially unsafe or damaging actions, providing quantitative metrics for assessing safety and alignment of autonomous LLM agents. Experiments demonstrate how existing agents fare on these metrics and highlight gaps needing further research.<br /><strong>Summary (CN):</strong> AgentHarm 提出了一个系统化的基准，用于评估大型语言模型（LLM）代理在各种任务和情境下的有害行为。该基准包括精心策划的提示和环境，旨在诱发潜在的不安全或有害行动，并提供量化指标来衡量 LLM 代理的安全性和对齐程度。实验展示了现有代理在这些指标上的表现，并指出了需要进一步研究的空白。<br /><strong>Keywords:</strong> LLM agents, harmful behavior benchmark, evaluation, alignment, agent toxicity, dataset, metrics<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 8, Technicality: 7, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "AgentHarm introduces a systematic benchmark for evaluating the harmfulness of large language model (LLM) agents across a range of tasks and scenarios. The benchmark consists of curated prompts and environments designed to elicit potentially unsafe or damaging actions, providing quantitative metrics for assessing safety and alignment of autonomous LLM agents. Experiments demonstrate how existing agents fare on these metrics and highlight gaps needing further research.", "summary_cn": "AgentHarm 提出了一个系统化的基准，用于评估大型语言模型（LLM）代理在各种任务和情境下的有害行为。该基准包括精心策划的提示和环境，旨在诱发潜在的不安全或有害行动，并提供量化指标来衡量 LLM 代理的安全性和对齐程度。实验展示了现有代理在这些指标上的表现，并指出了需要进一步研究的空白。", "keywords": "LLM agents, harmful behavior benchmark, evaluation, alignment, agent toxicity, dataset, metrics", "scoring": {"interpretability": 2, "understanding": 6, "safety": 8, "technicality": 7, "surprisal": 7}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 23:34:08 -0000</pubDate>
+</item>
+<item>
+<title>Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?</title>
+<link>https://arxiv.org/pdf/2407.21792</link>
+<guid>https://arxiv.org/pdf/2407.21792</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper critically evaluates whether current AI‑safety benchmarks reliably measure genuine safety progress. It analyses the underlying assumptions of popular benchmarks, shows examples where high benchmark scores do not translate to safer real‑world behavior, and proposes recommendations for more meaningful evaluation practices.<br /><strong>Summary (CN):</strong> 本文批判性地审视现有 AI 安全基准，质疑它们是否真正衡量安全进展。文章分析了这些基准背后的假设，展示了基准得分高却未能在实际中提升安全性的案例，并提出了改进评估的建议。<br /><strong>Keywords:</strong> AI safety benchmarks, evaluation metrics, alignment, safety measurement, benchmark criticism, robustness<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 7, Safety: 7, Technicality: 6, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper critically evaluates whether current AI‑safety benchmarks reliably measure genuine safety progress. It analyses the underlying assumptions of popular benchmarks, shows examples where high benchmark scores do not translate to safer real‑world behavior, and proposes recommendations for more meaningful evaluation practices.", "summary_cn": "本文批判性地审视现有 AI 安全基准，质疑它们是否真正衡量安全进展。文章分析了这些基准背后的假设，展示了基准得分高却未能在实际中提升安全性的案例，并提出了改进评估的建议。", "keywords": "AI safety benchmarks, evaluation metrics, alignment, safety measurement, benchmark criticism, robustness", "scoring": {"interpretability": 2, "understanding": 7, "safety": 7, "technicality": 6, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 23:19:08 -0000</pubDate>
+</item>
+<item>
+<title>Tamper-Resistant Safeguards for Open-Weight LLMs</title>
+<link>https://arxiv.org/pdf/2408.00761</link>
+<guid>https://arxiv.org/pdf/2408.00761</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper proposes a framework for embedding tamper-resistant safeguards directly into the weights of open-weight large language models. It combines cryptographic authentication, self-monitoring layers, and verification procedures that remain effective even when the model is redistributed or fine-tuned, aiming to prevent malicious modifications that could cause unsafe behavior. Experiments demonstrate that the safeguards survive common tampering attacks while preserving model performance.<br /><strong>Summary (CN):</strong> 本文提出在开源大语言模型的权重中内置防篡改保护机制的框架，结合密码学认证、自监控层和验证程序，即使模型被再分发或微调也能保持有效，防止恶意修改导致不安全行为。实验表明这些保护在常见篡改攻击下仍能存活并保持模型性能。<br /><strong>Keywords:</strong> tamper-resistant, open-weight LLM, model watermarking, cryptographic authentication, self-monitoring, safety, alignment, robustness, verification, AI security<br /><strong>Scores:</strong> Interpretability: 4, Understanding: 6, Safety: 8, Technicality: 7, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - human-misuse; Primary focus - control</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper proposes a framework for embedding tamper-resistant safeguards directly into the weights of open-weight large language models. It combines cryptographic authentication, self-monitoring layers, and verification procedures that remain effective even when the model is redistributed or fine-tuned, aiming to prevent malicious modifications that could cause unsafe behavior. Experiments demonstrate that the safeguards survive common tampering attacks while preserving model performance.", "summary_cn": "本文提出在开源大语言模型的权重中内置防篡改保护机制的框架，结合密码学认证、自监控层和验证程序，即使模型被再分发或微调也能保持有效，防止恶意修改导致不安全行为。实验表明这些保护在常见篡改攻击下仍能存活并保持模型性能。", "keywords": "tamper-resistant, open-weight LLM, model watermarking, cryptographic authentication, self-monitoring, safety, alignment, robustness, verification, AI security", "scoring": {"interpretability": 4, "understanding": 6, "safety": 8, "technicality": 7, "surprisal": 7}, "category": {"failure_mode_addressed": "human-misuse", "primary_focus": "control"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 23:04:08 -0000</pubDate>
+</item>
+<item>
+<title>Improving Alignment and Robustness with Circuit Breakers</title>
+<link>https://arxiv.org/pdf/2406.04313</link>
+<guid>https://arxiv.org/pdf/2406.04313</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper proposes a "circuit breaker" framework that monitors internal representations of language models during inference and intervenes when signals indicative of misaligned or unsafe behavior are detected, thereby improving both alignment and robustness to distribution shifts. It introduces detection metrics, training procedures to enable safe interruption, and reports experiments showing reduced harmful outputs while preserving overall performance.<br /><strong>Summary (CN):</strong> 本文提出了一种“电路断路器”框架，在模型推理过程中监控内部表征，当检测到可能表明对齐失效或不安全行为的信号时进行干预，从而提升模型的对齐程度和对分布漂移的鲁棒性。文中介绍了具体的检测指标、实现安全中断的训练方法，并通过实验展示了在保持性能的同时显著降低有害输出。<br /><strong>Keywords:</strong> circuit breakers, AI alignment, robustness, model monitoring, safety interventions, interpretability, distribution shift, safe interruption<br /><strong>Scores:</strong> Interpretability: 5, Understanding: 6, Safety: 8, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - control</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper proposes a \"circuit breaker\" framework that monitors internal representations of language models during inference and intervenes when signals indicative of misaligned or unsafe behavior are detected, thereby improving both alignment and robustness to distribution shifts. It introduces detection metrics, training procedures to enable safe interruption, and reports experiments showing reduced harmful outputs while preserving overall performance.", "summary_cn": "本文提出了一种“电路断路器”框架，在模型推理过程中监控内部表征，当检测到可能表明对齐失效或不安全行为的信号时进行干预，从而提升模型的对齐程度和对分布漂移的鲁棒性。文中介绍了具体的检测指标、实现安全中断的训练方法，并通过实验展示了在保持性能的同时显著降低有害输出。", "keywords": "circuit breakers, AI alignment, robustness, model monitoring, safety interventions, interpretability, distribution shift, safe interruption", "scoring": {"interpretability": 5, "understanding": 6, "safety": 8, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "control"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 22:49:08 -0000</pubDate>
+</item>
+<item>
+<title>The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning</title>
+<link>https://www.wmdp.ai/</link>
+<guid>https://www.wmdp.ai/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces the WMDP benchmark, a suite of tasks designed to measure a model's propensity for malicious use and to evaluate techniques for reducing such capabilities. It proposes unlearning methods that selectively erase harmful knowledge from pretrained models and reports empirical results showing decreased malicious behavior while preserving downstream performance. The benchmark aims to provide a standardized evaluation framework for AI safety interventions targeting dual‑use risks.<br /><strong>Summary (CN):</strong> 本文提出了 WMDP 基准，提供一套用于衡量模型恶意使用倾向并评估降低此类能力方法的任务。论文介绍了通过“去学习”(unlearning)技术选择性擦除模型中有害知识的方案，并展示了在保持下游性能的同时显著降低恶意行为的实验结果。该基准旨在为针对双重用途风险的 AI 安全干预提供标准化评估框架。<br /><strong>Keywords:</strong> malicious use, benchmark, unlearning, AI safety, dual-use, model editing, mitigation, evaluation<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 5, Safety: 8, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - human-misuse; Primary focus - control</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces the WMDP benchmark, a suite of tasks designed to measure a model's propensity for malicious use and to evaluate techniques for reducing such capabilities. It proposes unlearning methods that selectively erase harmful knowledge from pretrained models and reports empirical results showing decreased malicious behavior while preserving downstream performance. The benchmark aims to provide a standardized evaluation framework for AI safety interventions targeting dual‑use risks.", "summary_cn": "本文提出了 WMDP 基准，提供一套用于衡量模型恶意使用倾向并评估降低此类能力方法的任务。论文介绍了通过“去学习”(unlearning)技术选择性擦除模型中有害知识的方案，并展示了在保持下游性能的同时显著降低恶意行为的实验结果。该基准旨在为针对双重用途风险的 AI 安全干预提供标准化评估框架。", "keywords": "malicious use, benchmark, unlearning, AI safety, dual-use, model editing, mitigation, evaluation", "scoring": {"interpretability": 2, "understanding": 5, "safety": 8, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "human-misuse", "primary_focus": "control"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 22:34:08 -0000</pubDate>
+</item>
+<item>
+<title>HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal</title>
+<link>https://harmbench.org/</link>
+<guid>https://harmbench.org/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> HarmBench introduces a standardized evaluation suite for testing large language models' ability to refuse harmful requests, combining automated red‑team attacks with robustness metrics. The framework provides a set of curated harmful prompts, automated adversarial generation, and evaluation protocols to assess both the frequency of refusals and the quality of safe behavior. By benchmarking these capabilities, HarmBench aims to drive progress toward more reliable and safeAI systems.<br /><strong>Summary (CN):</strong> HarmBench 提出了一套标准化评估框架，用于测试大语言模型在面对有害请求时的拒绝能力，融合了自动化红队攻击和鲁棒性度量。该框架包括精选的有害提示、自动化对抗生成以及评估流程，以衡量模型的拒绝频率和安全行为质量。通过对这些能力进行基准测试，HarmBench 旨在推动更可靠的 AI 安全发展。<br /><strong>Keywords:</strong> automated red teaming, robust refusal, harm evaluation, language model safety, AI alignment, benchmark, safety testing, adversarial prompting<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 8, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - human-misuse; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "HarmBench introduces a standardized evaluation suite for testing large language models' ability to refuse harmful requests, combining automated red‑team attacks with robustness metrics. The framework provides a set of curated harmful prompts, automated adversarial generation, and evaluation protocols to assess both the frequency of refusals and the quality of safe behavior. By benchmarking these capabilities, HarmBench aims to drive progress toward more reliable and safeAI systems.", "summary_cn": "HarmBench 提出了一套标准化评估框架，用于测试大语言模型在面对有害请求时的拒绝能力，融合了自动化红队攻击和鲁棒性度量。该框架包括精选的有害提示、自动化对抗生成以及评估流程，以衡量模型的拒绝频率和安全行为质量。通过对这些能力进行基准测试，HarmBench 旨在推动更可靠的 AI 安全发展。", "keywords": "automated red teaming, robust refusal, harm evaluation, language model safety, AI alignment, benchmark, safety testing, adversarial prompting", "scoring": {"interpretability": 2, "understanding": 6, "safety": 8, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "human-misuse", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 22:19:08 -0000</pubDate>
+</item>
+<item>
+<title>Can LLMs Follow Simple Rules?</title>
+<link>https://arxiv.org/abs/2311.04235</link>
+<guid>https://arxiv.org/abs/2311.04235</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper investigates whether large language models can reliably obey simple, explicitly stated rules, such as lexical constraints or behavior bans, across a range of prompting settings. Experiments with several contemporary LLMs reveal systematic rule violations, especially under longer contexts or ambiguous phrasing, and evaluate mitigation techniques like chain‑of‑thought prompting and self‑consistency. The results suggest that current models have limited rule‑following capabilities, highlighting an important alignment challenge for safe deployment.<br /><strong>Summary (CN):</strong> 本文研究了大型语言模型在不同提示设置下能否可靠遵守简单明确的规则（如词汇约束或行为禁令）。对多种主流 LLM 进行实验发现，尤其在上下文较长或指令模糊时，模型常出现规则违背，并评估了链式思考提示、自洽采样等缓解措施。结果表明，现有模型的规则遵守能力有限，这对安全部署的对齐构成重要挑战。<br /><strong>Keywords:</strong> rule-following, language models, prompting, safety, alignment, compliance, instruction tuning, evaluation benchmark, LLM behavior<br /><strong>Scores:</strong> Interpretability: 3, Understanding: 6, Safety: 7, Technicality: 5, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper investigates whether large language models can reliably obey simple, explicitly stated rules, such as lexical constraints or behavior bans, across a range of prompting settings. Experiments with several contemporary LLMs reveal systematic rule violations, especially under longer contexts or ambiguous phrasing, and evaluate mitigation techniques like chain‑of‑thought prompting and self‑consistency. The results suggest that current models have limited rule‑following capabilities, highlighting an important alignment challenge for safe deployment.", "summary_cn": "本文研究了大型语言模型在不同提示设置下能否可靠遵守简单明确的规则（如词汇约束或行为禁令）。对多种主流 LLM 进行实验发现，尤其在上下文较长或指令模糊时，模型常出现规则违背，并评估了链式思考提示、自洽采样等缓解措施。结果表明，现有模型的规则遵守能力有限，这对安全部署的对齐构成重要挑战。", "keywords": "rule-following, language models, prompting, safety, alignment, compliance, instruction tuning, evaluation benchmark, LLM behavior", "scoring": {"interpretability": 3, "understanding": 6, "safety": 7, "technicality": 5, "surprisal": 5}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 22:04:08 -0000</pubDate>
+</item>
+<item>
+<title>A Recipe for Improved Certifiable Robustness: Capacity and Data</title>
+<link>https://arxiv.org/pdf/2310.02513</link>
+<guid>https://arxiv.org/pdf/2310.02513</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper investigates how model capacity and training data influence certifiable adversarial robustness, proposing a set of design guidelines and training strategies that improve provable robustness guarantees for neural networks. Experiments show that larger capacity models combined with appropriately curated data can achieve stronger certificates under methods such as randomized smoothing and interval bound propagation. The work provides practical recommendations for building more robust classifiers with certifiable guarantees.<br /><strong>Summary (CN):</strong> 本文研究了模型容量和训练数据对可证明对抗鲁棒性的影响，提出了一套设计指南和训练策略，以提升神经网络的可证实鲁棒性保证。实验表明，使用更大容量的模型并配合恰当筛选的数据，可在随机平滑和区间界限传播等方法下获得更强的鲁棒性证书。该工作为构建具备可证实安全保证的更鲁棒分类器提供了实用建议。<br /><strong>Keywords:</strong> certifiable robustness, adversarial robustness, model capacity, data curation, randomized smoothing, interval bound propagation, provable certificates, training strategies<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 5, Technicality: 8, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - other; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper investigates how model capacity and training data influence certifiable adversarial robustness, proposing a set of design guidelines and training strategies that improve provable robustness guarantees for neural networks. Experiments show that larger capacity models combined with appropriately curated data can achieve stronger certificates under methods such as randomized smoothing and interval bound propagation. The work provides practical recommendations for building more robust classifiers with certifiable guarantees.", "summary_cn": "本文研究了模型容量和训练数据对可证明对抗鲁棒性的影响，提出了一套设计指南和训练策略，以提升神经网络的可证实鲁棒性保证。实验表明，使用更大容量的模型并配合恰当筛选的数据，可在随机平滑和区间界限传播等方法下获得更强的鲁棒性证书。该工作为构建具备可证实安全保证的更鲁棒分类器提供了实用建议。", "keywords": "certifiable robustness, adversarial robustness, model capacity, data curation, randomized smoothing, interval bound propagation, provable certificates, training strategies", "scoring": {"interpretability": 2, "understanding": 6, "safety": 5, "technicality": 8, "surprisal": 6}, "category": {"failure_mode_addressed": "other", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 21:49:08 -0000</pubDate>
+</item>
+<item>
+<title>Representation Engineering: A Top-Down Approach to AI Transparency</title>
+<link>https://ai-transparency.org/</link>
+<guid>https://ai-transparency.org/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper proposes a top‑down framework for representation engineering that designs AI model internals as human‑interpretable concepts, aiming to make systems more transparent. It outlines methodology, practical techniques for shaping latent spaces, and evaluates transparency through case studies and quantitative metrics.<br /><strong>Summary (CN):</strong> 本文提出一种自上而下的表征工程框架，旨在将 AI 模型内部构建为可供人类理解的概念，从而提升系统透明度。文章阐述了该方法论、塑造潜在空间的实用技术，并通过案例研究和量化指标评估透明性。<br /><strong>Keywords:</strong> representation engineering, interpretability, AI transparency, latent space, model auditing<br /><strong>Scores:</strong> Interpretability: 8, Understanding: 7, Safety: 4, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - interpretability</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper proposes a top‑down framework for representation engineering that designs AI model internals as human‑interpretable concepts, aiming to make systems more transparent. It outlines methodology, practical techniques for shaping latent spaces, and evaluates transparency through case studies and quantitative metrics.", "summary_cn": "本文提出一种自上而下的表征工程框架，旨在将 AI 模型内部构建为可供人类理解的概念，从而提升系统透明度。文章阐述了该方法论、塑造潜在空间的实用技术，并通过案例研究和量化指标评估透明性。", "keywords": "representation engineering, interpretability, AI transparency, latent space, model auditing", "scoring": {"interpretability": 8, "understanding": 7, "safety": 4, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 21:34:08 -0000</pubDate>
+</item>
+<item>
+<title>Universal and Transferable Adversarial Attacks on Aligned Language Models</title>
+<link>https://llm-attacks.org/</link>
+<guid>https://llm-attacks.org/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper investigates universal adversarial prompts that can reliably cause aligned language models to produce undesirable or harmful outputs, and demonstrates that these attacks transfer across different model architectures and deployment settings. It proposes methods to construct such prompts, evaluates their effectiveness on multiple publicly available aligned LLMs, and discusses implications for AI safety and the need for more robust alignment techniques.<br /><strong>Summary (CN):</strong> 本文研究了能够在多个对齐语言模型上统一触发不良或有害输出的通用对抗性提示，并展示了这些攻击在不同模型架构和部署环境之间的可转移性。作者提出了构造此类提示的方法，在多种公开的对齐 LLM 上评估其效果，并讨论了对 AI 安全的影响以及需要更稳健的对齐技术。<br /><strong>Keywords:</strong> adversarial attacks, universal prompts, transferability, aligned language models, prompt injection, AI safety, robustness, language model alignment<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 7, Safety: 8, Technicality: 7, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper investigates universal adversarial prompts that can reliably cause aligned language models to produce undesirable or harmful outputs, and demonstrates that these attacks transfer across different model architectures and deployment settings. It proposes methods to construct such prompts, evaluates their effectiveness on multiple publicly available aligned LLMs, and discusses implications for AI safety and the need for more robust alignment techniques.", "summary_cn": "本文研究了能够在多个对齐语言模型上统一触发不良或有害输出的通用对抗性提示，并展示了这些攻击在不同模型架构和部署环境之间的可转移性。作者提出了构造此类提示的方法，在多种公开的对齐 LLM 上评估其效果，并讨论了对 AI 安全的影响以及需要更稳健的对齐技术。", "keywords": "adversarial attacks, universal prompts, transferability, aligned language models, prompt injection, AI safety, robustness, language model alignment", "scoring": {"interpretability": 2, "understanding": 7, "safety": 8, "technicality": 7, "surprisal": 7}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 21:19:08 -0000</pubDate>
+</item>
+<item>
+<title>Testing Robustness Against Unforeseen Adversaries</title>
+<link>https://arxiv.org/abs/1908.08016</link>
+<guid>https://arxiv.org/abs/1908.08016</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper proposes a systematic framework for evaluating model robustness against adversaries that were not anticipated during training, introducing metrics and experimental protocols that go beyond testing against a fixed set of known attacks. By generating novel perturbations and measuring performance degradation, the authors demonstrate that many defenses that appear strong under standard benchmarks fail under these unforeseen conditions. The work highlights the need for broader robustness assessments to better anticipate real‑world threat scenarios.<br /><strong>Summary (CN):</strong> 本文提出了一套系统化的评估框架，用于检验模型在未预料到的对手攻击下的鲁棒性，提出了超越固定已知攻击集的度量指标和实验流程。通过生成新颖的扰动并测量性能下降，作者展示了许多在标准基准下表现良好的防御在这些未预见的攻击下会失效。该工作强调了进行更广泛鲁棒性评估以更好预估真实世界威胁情景的必要性。<br /><strong>Keywords:</strong> robustness, adversarial attacks, unforeseen adversary, evaluation framework, security, threat modeling, machine learning, perturbation analysis, generalization, defense benchmarking<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 5, Safety: 6, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - other; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper proposes a systematic framework for evaluating model robustness against adversaries that were not anticipated during training, introducing metrics and experimental protocols that go beyond testing against a fixed set of known attacks. By generating novel perturbations and measuring performance degradation, the authors demonstrate that many defenses that appear strong under standard benchmarks fail under these unforeseen conditions. The work highlights the need for broader robustness assessments to better anticipate real‑world threat scenarios.", "summary_cn": "本文提出了一套系统化的评估框架，用于检验模型在未预料到的对手攻击下的鲁棒性，提出了超越固定已知攻击集的度量指标和实验流程。通过生成新颖的扰动并测量性能下降，作者展示了许多在标准基准下表现良好的防御在这些未预见的攻击下会失效。该工作强调了进行更广泛鲁棒性评估以更好预估真实世界威胁情景的必要性。", "keywords": "robustness, adversarial attacks, unforeseen adversary, evaluation framework, security, threat modeling, machine learning, perturbation analysis, generalization, defense benchmarking", "scoring": {"interpretability": 2, "understanding": 5, "safety": 6, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "other", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 21:04:08 -0000</pubDate>
+</item>
+<item>
+<title>Do the Rewards Justify the Means? Measuring Trade-Offs Between Rewards and Ethical Behavior in the MACHIAVELLI Benchmark</title>
+<link>https://aypan17.github.io/machiavelli/</link>
+<guid>https://aypan17.github.io/machiavelli/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces the MACHIAVELLI benchmark, which evaluates how well reinforcement‑learning agents balance task performance rewards against ethical constraints. It proposes quantitative metrics for measuring trade‑offs between maximizing reward and adhering to prescribed ethical norms across a suite of simulated scenarios.<br /><strong>Summary (CN):</strong> 本文提出了 MACHIAVELLI 基准，用于评估强化学习智能体在任务奖励与伦理约束之间的平衡。它设计了量化指标，以测量在多个模拟情境中最大化奖励与遵守伦理规范之间的权衡。<br /><strong>Keywords:</strong> MACHIAVELLI benchmark, reward modeling, ethical behavior, trade-offs, AI safety, alignment, reinforcement learning, evaluation metrics<br /><strong>Scores:</strong> Interpretability: 5, Understanding: 6, Safety: 6, Technicality: 6, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - other; Primary focus - interpretability</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces the MACHIAVELLI benchmark, which evaluates how well reinforcement‑learning agents balance task performance rewards against ethical constraints. It proposes quantitative metrics for measuring trade‑offs between maximizing reward and adhering to prescribed ethical norms across a suite of simulated scenarios.", "summary_cn": "本文提出了 MACHIAVELLI 基准，用于评估强化学习智能体在任务奖励与伦理约束之间的平衡。它设计了量化指标，以测量在多个模拟情境中最大化奖励与遵守伦理规范之间的权衡。", "keywords": "MACHIAVELLI benchmark, reward modeling, ethical behavior, trade-offs, AI safety, alignment, reinforcement learning, evaluation metrics", "scoring": {"interpretability": 5, "understanding": 6, "safety": 6, "technicality": 6, "surprisal": 5}, "category": {"failure_mode_addressed": "other", "primary_focus": "interpretability"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 20:49:08 -0000</pubDate>
+</item>
+<item>
+<title>Forecasting Future World Events with Neural Networks</title>
+<link>https://arxiv.org/abs/2206.15474</link>
+<guid>https://arxiv.org/abs/2206.15474</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper explores the use of neural network models to predict future real‑world events, training on historical event datasets and evaluating the models' ability to forecast upcoming geopolitical and societal occurrences. It compares the predictive performance against baseline methods and discusses implications for automated forecasting systems.<br /><strong>Summary (CN):</strong> 本文研究了利用神经网络模型预测未来真实世界事件的可能性，使用历史事件数据进行训练，并评估模型对即将发生的地缘政治和社会事件的预测能力。文章将预测表现与基准方法进行比较，并讨论了自动化预测系统的潜在意义。<br /><strong>Keywords:</strong> forecasting, world events, neural networks, prediction, language models, geopolitics<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 5, Safety: 2, Technicality: 6, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper explores the use of neural network models to predict future real‑world events, training on historical event datasets and evaluating the models' ability to forecast upcoming geopolitical and societal occurrences. It compares the predictive performance against baseline methods and discusses implications for automated forecasting systems.", "summary_cn": "本文研究了利用神经网络模型预测未来真实世界事件的可能性，使用历史事件数据进行训练，并评估模型对即将发生的地缘政治和社会事件的预测能力。文章将预测表现与基准方法进行比较，并讨论了自动化预测系统的潜在意义。", "keywords": "forecasting, world events, neural networks, prediction, language models, geopolitics", "scoring": {"interpretability": 2, "understanding": 5, "safety": 2, "technicality": 6, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 20:34:08 -0000</pubDate>
+</item>
+<item>
+<title>How Would The Viewer Feel? Estimating Wellbeing From Video Scenarios</title>
+<link>https://arxiv.org/abs/2210.10039</link>
+<guid>https://arxiv.org/abs/2210.10039</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper proposes a method to estimate the wellbeing impact of video scenarios on viewers by analyzing visual and contextual cues. It introduces a dataset of video clips annotated with self‑reported wellbeing scores and trains multimodal models to predict these scores, demonstrating reasonable correlation with human judgments.<br /><strong>Summary (CN):</strong> 本文提出一种基于视觉和情境特征估计视频情景对观众福祉影响的方法。作者构建了包含观众自报告福祉评分的视频片段数据集，并训练多模态模型预测这些评分，展示了与人工评判的良好相关性。<br /><strong>Keywords:</strong> wellbeing estimation, affective computing, video analysis, multimodal modeling, user experience, content impact, computer vision, dataset<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 3, Safety: 3, Technicality: 6, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - societal-disruption; Primary focus - other</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper proposes a method to estimate the wellbeing impact of video scenarios on viewers by analyzing visual and contextual cues. It introduces a dataset of video clips annotated with self‑reported wellbeing scores and trains multimodal models to predict these scores, demonstrating reasonable correlation with human judgments.", "summary_cn": "本文提出一种基于视觉和情境特征估计视频情景对观众福祉影响的方法。作者构建了包含观众自报告福祉评分的视频片段数据集，并训练多模态模型预测这些评分，展示了与人工评判的良好相关性。", "keywords": "wellbeing estimation, affective computing, video analysis, multimodal modeling, user experience, content impact, computer vision, dataset", "scoring": {"interpretability": 2, "understanding": 3, "safety": 3, "technicality": 6, "surprisal": 5}, "category": {"failure_mode_addressed": "societal-disruption", "primary_focus": "other"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 20:19:08 -0000</pubDate>
+</item>
+<item>
+<title>Dreamlike Pictures Comprehensively Improve Safety Measures</title>
+<link>https://arxiv.org/abs/2112.05135</link>
+<guid>https://arxiv.org/abs/2112.05135</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper proposes using a collection of "dreamlike" synthetic images to augment safety evaluation pipelines for text‑to‑image generation models. By training and testing safety classifiers on these curated images, the authors demonstrate improved detection of disallowed or harmful content compared to standard benchmarks. The approach also provides a scalable way to anticipate novel misuse scenarios.<br /><strong>Summary (CN):</strong> 本文提出利用一套“梦幻”合成图像来增强文本到图像生成模型的安全评估流程。通过在这些精心挑选的图像上训练和测试安全分类器，作者展示了相较于传统基准更好的违规或有内容检测能力，并提供了一种可扩展的方式来预估新出现的滥用场景。<br /><strong>Keywords:</strong> safety, generative models, image generation, synthetic data, content filtering, adversarial robustness<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 5, Safety: 8, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - human-misuse; Primary focus - control</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper proposes using a collection of \"dreamlike\" synthetic images to augment safety evaluation pipelines for text‑to‑image generation models. By training and testing safety classifiers on these curated images, the authors demonstrate improved detection of disallowed or harmful content compared to standard benchmarks. The approach also provides a scalable way to anticipate novel misuse scenarios.", "summary_cn": "本文提出利用一套“梦幻”合成图像来增强文本到图像生成模型的安全评估流程。通过在这些精心挑选的图像上训练和测试安全分类器，作者展示了相较于传统基准更好的违规或有内容检测能力，并提供了一种可扩展的方式来预估新出现的滥用场景。", "keywords": "safety, generative models, image generation, synthetic data, content filtering, adversarial robustness", "scoring": {"interpretability": 2, "understanding": 5, "safety": 8, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "human-misuse", "primary_focus": "control"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 20:04:08 -0000</pubDate>
+</item>
+<item>
+<title>Scaling Out-of-Distribution Detection for Real-World Settings</title>
+<link>https://arxiv.org/abs/1911.11132</link>
+<guid>https://arxiv.org/abs/1911.11132</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper proposes a computationally efficient framework for scaling out-of-distribution (OOD) detection to large‑scale, real‑world settings, leveraging feature‑space distance metrics and simple scoring functions that remain tractable on ImageNet‑scale datasets. Extensive experiments demonstrate that the approach achieves competitive detection performance while significantly reducing computational overhead, making OOD detection viable for deployment in production systems. The work highlights the importance of reliable OOD detection for safe AI operation under distribution shift.<br /><strong>Summary (CN):</strong> 本文提出一种计算高效的框架，用于在大规模真实场景中扩展异常分布（OOD）检测，利用特征空间距离度量和简易评分函数，使其在 ImageNet 级别的数据集上仍具可行性。大量实验表明，该方法在保持竞争性检测性能的同时大幅降低计算开销，从而适用于生产系统中的部署。研究强调可靠的 OOD 检测对于在分布漂移情况下安全运行 AI 系统的重要性。<br /><strong>Keywords:</strong> out-of-distribution detection, OOD scalability, real-world deployment, uncertainty estimation, deep neural networks, robustness<br /><strong>Scores:</strong> Interpretability: 3, Understanding: 6, Safety: 7, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper proposes a computationally efficient framework for scaling out-of-distribution (OOD) detection to large‑scale, real‑world settings, leveraging feature‑space distance metrics and simple scoring functions that remain tractable on ImageNet‑scale datasets. Extensive experiments demonstrate that the approach achieves competitive detection performance while significantly reducing computational overhead, making OOD detection viable for deployment in production systems. The work highlights the importance of reliable OOD detection for safe AI operation under distribution shift.", "summary_cn": "本文提出一种计算高效的框架，用于在大规模真实场景中扩展异常分布（OOD）检测，利用特征空间距离度量和简易评分函数，使其在 ImageNet 级别的数据集上仍具可行性。大量实验表明，该方法在保持竞争性检测性能的同时大幅降低计算开销，从而适用于生产系统中的部署。研究强调可靠的 OOD 检测对于在分布漂移情况下安全运行 AI 系统的重要性。", "keywords": "out-of-distribution detection, OOD scalability, real-world deployment, uncertainty estimation, deep neural networks, robustness", "scoring": {"interpretability": 3, "understanding": 6, "safety": 7, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 19:49:08 -0000</pubDate>
+</item>
+<item>
+<title>What Would Jiminy Cricket Do? Towards Agents That Behave Morally</title>
+<link>https://arxiv.org/abs/2110.13136</link>
+<guid>https://arxiv.org/abs/2110.13136</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper proposes a framework for training agents that act according to moral principles by integrating ethical guidelines into the reinforcement learning process. It introduces methods for specifying moral constraints, evaluates agent behavior on benchmark moral dilemmas, and discusses challenges in scaling moral reasoning to more complex environments.<br /><strong>Summary (CN):</strong> 本文提出了一套将伦理准则纳入强化学习的框架，以训练在道德层面上表现良好的智能体。文中介绍了道德约束的形式化方法，在若干道德困境基准上评估智能体行为，并讨论了将道德推理扩展到更复杂环境中的挑战。<br /><strong>Keywords:</strong> moral AI, ethical agents, value alignment, reinforcement learning, AI safety, moral reasoning, policy shaping, AI ethics<br /><strong>Scores:</strong> Interpretability: 3, Understanding: 6, Safety: 7, Technicality: 6, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper proposes a framework for training agents that act according to moral principles by integrating ethical guidelines into the reinforcement learning process. It introduces methods for specifying moral constraints, evaluates agent behavior on benchmark moral dilemmas, and discusses challenges in scaling moral reasoning to more complex environments.", "summary_cn": "本文提出了一套将伦理准则纳入强化学习的框架，以训练在道德层面上表现良好的智能体。文中介绍了道德约束的形式化方法，在若干道德困境基准上评估智能体行为，并讨论了将道德推理扩展到更复杂环境中的挑战。", "keywords": "moral AI, ethical agents, value alignment, reinforcement learning, AI safety, moral reasoning, policy shaping, AI ethics", "scoring": {"interpretability": 3, "understanding": 6, "safety": 7, "technicality": 6, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 19:34:08 -0000</pubDate>
+</item>
+<item>
+<title>The Many Faces of Robustness: A Critical Analysis of Out-of-Distribution Generalization</title>
+<link>https://arxiv.org/abs/2006.16241</link>
+<guid>https://arxiv.org/abs/2006.16241</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper provides a comprehensive survey and critical analysis of out-of-distribution (OOD) generalization, reviewing multiple definitions, benchmark datasets, and methodological approaches. It highlights inconsistencies across the literature, points out common pitfalls in evaluation, and suggests directions for more rigorous future work.<br /><strong>Summary (CN):</strong> 本文对分布外（OOD）泛化进行全面综述与批判性分析，回顾了多种定义、基准数据集以及方法论，并指出文献中存在的不一致性和评估中的常见陷阱，提出了更严谨的未来研究方向。(Out-of-Distribution, OOD) 仍保留英文术语。<br /><strong>Keywords:</strong> out-of-distribution, OOD generalization, robustness, domain shift, distribution shift, evaluation, machine learning<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 5, Safety: 4, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper provides a comprehensive survey and critical analysis of out-of-distribution (OOD) generalization, reviewing multiple definitions, benchmark datasets, and methodological approaches. It highlights inconsistencies across the literature, points out common pitfalls in evaluation, and suggests directions for more rigorous future work.", "summary_cn": "本文对分布外（OOD）泛化进行全面综述与批判性分析，回顾了多种定义、基准数据集以及方法论，并指出文献中存在的不一致性和评估中的常见陷阱，提出了更严谨的未来研究方向。(Out-of-Distribution, OOD) 仍保留英文术语。", "keywords": "out-of-distribution, OOD generalization, robustness, domain shift, distribution shift, evaluation, machine learning", "scoring": {"interpretability": 2, "understanding": 5, "safety": 4, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 19:19:08 -0000</pubDate>
+</item>
+<item>
+<title>Natural Adversarial Examples</title>
+<link>https://arxiv.org/abs/1907.07174</link>
+<guid>https://arxiv.org/abs/1907.07174</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper defines natural adversarial examples as real-world images that lie close to a model's decision boundary and can be flipped to a different class with imperceptibly small perturbations. By collecting and analyzing a large set of such examples, the authors reveal that modern vision models are surprisingly vulnerable to naturally occurring edge cases, highlighting important robustness and safety concerns.<br /><strong>Summary (CN):</strong> 本文定义了自然对抗样本，即真实图像位于模型决策边界附近，仅需极小（几乎不可感知）的扰动即可导致分类错误。作者收集并分析了大量此类样本，揭示出当前视觉模型对自然出现的极端案例极为脆弱，突显了重要的鲁棒性和安全性问题。<br /><strong>Keywords:</strong> natural adversarial examples, model brittleness, decision boundary, robustness, safety, vision models, dataset, adversarial robustness<br /><strong>Scores:</strong> Interpretability: 4, Understanding: 6, Safety: 5, Technicality: 6, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper defines natural adversarial examples as real-world images that lie close to a model's decision boundary and can be flipped to a different class with imperceptibly small perturbations. By collecting and analyzing a large set of such examples, the authors reveal that modern vision models are surprisingly vulnerable to naturally occurring edge cases, highlighting important robustness and safety concerns.", "summary_cn": "本文定义了自然对抗样本，即真实图像位于模型决策边界附近，仅需极小（几乎不可感知）的扰动即可导致分类错误。作者收集并分析了大量此类样本，揭示出当前视觉模型对自然出现的极端案例极为脆弱，突显了重要的鲁棒性和安全性问题。", "keywords": "natural adversarial examples, model brittleness, decision boundary, robustness, safety, vision models, dataset, adversarial robustness", "scoring": {"interpretability": 4, "understanding": 6, "safety": 5, "technicality": 6, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 19:04:08 -0000</pubDate>
+</item>
+<item>
+<title>Aligning AI With Shared Human Values</title>
+<link>https://arxiv.org/abs/2008.02275</link>
+<guid>https://arxiv.org/abs/2008.02275</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper discusses approaches for aligning artificial intelligence systems with values that are shared among humans, reviewing existing value‑learning frameworks and proposing methods to aggregate and operationalize such values in AI decision‑making. It emphasizes the importance of collective value specification and presents illustrative experiments to demonstrate feasibility.<br /><strong>Summary (CN):</strong> 本文探讨了如何使人工智能系统与人类共享价值观保持一致，回顾了现有的价值学习框架并提出了聚合与实现这些价值的具体方法。文章强调集体价值规范的重要性，并提供了示例实验以展示其可行性。<br /><strong>Keywords:</strong> AI alignment, shared human values, value learning, inverse reinforcement learning, cooperative inverse reinforcement learning, corrigibility, ethics, AI safety<br /><strong>Scores:</strong> Interpretability: 3, Understanding: 6, Safety: 7, Technicality: 5, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper discusses approaches for aligning artificial intelligence systems with values that are shared among humans, reviewing existing value‑learning frameworks and proposing methods to aggregate and operationalize such values in AI decision‑making. It emphasizes the importance of collective value specification and presents illustrative experiments to demonstrate feasibility.", "summary_cn": "本文探讨了如何使人工智能系统与人类共享价值观保持一致，回顾了现有的价值学习框架并提出了聚合与实现这些价值的具体方法。文章强调集体价值规范的重要性，并提供了示例实验以展示其可行性。", "keywords": "AI alignment, shared human values, value learning, inverse reinforcement learning, cooperative inverse reinforcement learning, corrigibility, ethics, AI safety", "scoring": {"interpretability": 3, "understanding": 6, "safety": 7, "technicality": 5, "surprisal": 5}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 18:49:08 -0000</pubDate>
+</item>
+<item>
+<title>Pretrained Transformers Improve Out-of-Distribution Robustness</title>
+<link>https://arxiv.org/abs/2004.06100</link>
+<guid>https://arxiv.org/abs/2004.06100</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper demonstrates that pretrained Transformer language models (e.g., BERT) exhibit improved out-of-distribution robustness compared to models trained from scratch on downstream tasks. Experiments across several benchmarks show that pretraining helps the models resist noise, adversarial perturbations, and distribution shifts, leading to more reliable performance under OOD conditions.<br /><strong>Summary (CN):</strong> 该论文展示了经过预训练的Transformer语言模型（如BERT）在下游任务中相较于从头训练的模型具备更好的分布外鲁棒性。通过在多个基准数据集上的实验，作者表明预训练能够提升模型对噪声、对抗扰动和数据偏移的抗性，从而在OOD情形下保持更可靠的性能。<br /><strong>Keywords:</strong> pretrained transformers, out-of-distribution robustness, transfer learning, BERT, language models, robustness, OOD generalization<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 5, Safety: 3, Technicality: 6, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper demonstrates that pretrained Transformer language models (e.g., BERT) exhibit improved out-of-distribution robustness compared to models trained from scratch on downstream tasks. Experiments across several benchmarks show that pretraining helps the models resist noise, adversarial perturbations, and distribution shifts, leading to more reliable performance under OOD conditions.", "summary_cn": "该论文展示了经过预训练的Transformer语言模型（如BERT）在下游任务中相较于从头训练的模型具备更好的分布外鲁棒性。通过在多个基准数据集上的实验，作者表明预训练能够提升模型对噪声、对抗扰动和数据偏移的抗性，从而在OOD情形下保持更可靠的性能。", "keywords": "pretrained transformers, out-of-distribution robustness, transfer learning, BERT, language models, robustness, OOD generalization", "scoring": {"interpretability": 2, "understanding": 5, "safety": 3, "technicality": 6, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 18:34:08 -0000</pubDate>
+</item>
+<item>
+<title>A Simple Data Processing Method to Improve Robustness and Uncertainty</title>
+<link>https://arxiv.org/abs/1912.02781</link>
+<guid>https://arxiv.org/abs/1912.02781</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces a straightforward data processing technique that modifies training data to enhance the robustness of neural network predictions and improve uncertainty estimation. Experiments on standard benchmarks demonstrate reduced sensitivity to perturbations and better calibrated confidence scores.<br /><strong>Summary (CN):</strong> 本文提出一种简洁的数据处理方法，通过对训练数据进行处理提升神经网络预测的鲁棒性并改善不确定性估计。实验证明该方法能够降低对扰动的敏感性，并获得更好的置信度校准。<br /><strong>Keywords:</strong> robustness, uncertainty estimation, data processing, calibration, deep neural networks, distribution shift<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 5, Safety: 6, Technicality: 6, Surprisal: 4<br /><strong>Categories:</strong> Failure mode - other; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces a straightforward data processing technique that modifies training data to enhance the robustness of neural network predictions and improve uncertainty estimation. Experiments on standard benchmarks demonstrate reduced sensitivity to perturbations and better calibrated confidence scores.", "summary_cn": "本文提出一种简洁的数据处理方法，通过对训练数据进行处理提升神经网络预测的鲁棒性并改善不确定性估计。实验证明该方法能够降低对扰动的敏感性，并获得更好的置信度校准。", "keywords": "robustness, uncertainty estimation, data processing, calibration, deep neural networks, distribution shift", "scoring": {"interpretability": 2, "understanding": 5, "safety": 6, "technicality": 6, "surprisal": 4}, "category": {"failure_mode_addressed": "other", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 18:19:08 -0000</pubDate>
+</item>
+<item>
+<title>Using Self-Supervised Learning Can Improve Model Robustness and Uncertainty</title>
+<link>https://arxiv.org/abs/1906.12340</link>
+<guid>https://arxiv.org/abs/1906.12340</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper investigates how self‑supervised learning objectives can be used as auxiliary tasks to improve model robustness to distributional shifts and to produce better calibrated uncertainty estimates. Experiments on image classification benchmarks show that pre‑training with SSL and joint training lead to higher accuracy on corrupted inputs and more reliable confidence scores. The results suggest that simple self‑supervised techniques are an effective way to build more dependable models.<br /><strong>Summary (CN):</strong> 本文研究了自监督学习目标作为辅助任务，提升模型在分布偏移下的鲁棒性并改善不确定性校准的效果。通过在图像分类基准上的实验，作者展示了自监督预训练和联合训练能够提升在受扰动数据上的准确率，并使置信度估计更可靠。结果表明，简单的自监督方法是构建更可靠模型的实用手段。<br /><strong>Keywords:</strong> self-supervised learning, robustness, uncertainty estimation, calibration, distribution shift, auxiliary task, representation learning, image classification<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 3, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper investigates how self‑supervised learning objectives can be used as auxiliary tasks to improve model robustness to distributional shifts and to produce better calibrated uncertainty estimates. Experiments on image classification benchmarks show that pre‑training with SSL and joint training lead to higher accuracy on corrupted inputs and more reliable confidence scores. The results suggest that simple self‑supervised techniques are an effective way to build more dependable models.", "summary_cn": "本文研究了自监督学习目标作为辅助任务，提升模型在分布偏移下的鲁棒性并改善不确定性校准的效果。通过在图像分类基准上的实验，作者展示了自监督预训练和联合训练能够提升在受扰动数据上的准确率，并使置信度估计更可靠。结果表明，简单的自监督方法是构建更可靠模型的实用手段。", "keywords": "self-supervised learning, robustness, uncertainty estimation, calibration, distribution shift, auxiliary task, representation learning, image classification", "scoring": {"interpretability": 2, "understanding": 6, "safety": 3, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 18:04:08 -0000</pubDate>
+</item>
+<item>
+<title>Using Pre-Training Can Improve Model Robustness and Uncertainty</title>
+<link>https://arxiv.org/abs/1901.09960</link>
+<guid>https://arxiv.org/abs/1901.09960</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper investigates how unsupervised pre‑training can enhance a model's robustness to distributional shift and improve the reliability of its uncertainty estimates. By fine‑tuning pre‑trained networks on downstream tasks, the authors demonstrate better calibration and out‑of‑distribution detection compared to training from scratch. Experiments across image classification benchmarks illustrate these benefits.<br /><strong>Summary (CN):</strong> 本文研究了无监督预训练如何提升模型对分布转移的鲁棒性并改善不确定性估计的可靠性。通过在下游任务上微调预训练网络，作者展示了相较于从头训练更好的校准效果和分布外检测能力。实验在图像分类基准上验证了这些提升。<br /><strong>Keywords:</strong> pretraining, robustness, uncertainty estimation, out-of-distribution detection, self-supervised learning, model calibration<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 4, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - robness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper investigates how unsupervised pre‑training can enhance a model's robustness to distributional shift and improve the reliability of its uncertainty estimates. By fine‑tuning pre‑trained networks on downstream tasks, the authors demonstrate better calibration and out‑of‑distribution detection compared to training from scratch. Experiments across image classification benchmarks illustrate these benefits.", "summary_cn": "本文研究了无监督预训练如何提升模型对分布转移的鲁棒性并改善不确定性估计的可靠性。通过在下游任务上微调预训练网络，作者展示了相较于从头训练更好的校准效果和分布外检测能力。实验在图像分类基准上验证了这些提升。", "keywords": "pretraining, robustness, uncertainty estimation, out-of-distribution detection, self-supervised learning, model calibration", "scoring": {"interpretability": 2, "understanding": 6, "safety": 4, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "robness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 17:49:08 -0000</pubDate>
+</item>
+<item>
+<title>Deep Anomaly Detection with Outlier Exposure</title>
+<link>https://arxiv.org/abs/1812.04606</link>
+<guid>https://arxiv.org/abs/1812.04606</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper proposes Outlier Exposure, a method that improves deep neural network anomaly detection by training on an auxiliary dataset of outlier examples, encouraging uniform predictions on outliers and thereby enhancing out-of-distribution detection and confidence calibration.<br /><strong>Summary (CN):</strong> 本文提出“Outlier Exposure”（异常暴露）方法，通过在辅助异常数据集上训练，使深度神经网络对异常样本输出均匀预测，从而提升对分布外（out-of-distribution）样本的检测能力并改进置信度校准。<br /><strong>Keywords:</strong> outlier exposure, anomaly detection, out-of-distribution detection, confidence calibration, deep learning<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 7, Technicality: 8, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper proposes Outlier Exposure, a method that improves deep neural network anomaly detection by training on an auxiliary dataset of outlier examples, encouraging uniform predictions on outliers and thereby enhancing out-of-distribution detection and confidence calibration.", "summary_cn": "本文提出“Outlier Exposure”（异常暴露）方法，通过在辅助异常数据集上训练，使深度神经网络对异常样本输出均匀预测，从而提升对分布外（out-of-distribution）样本的检测能力并改进置信度校准。", "keywords": "outlier exposure, anomaly detection, out-of-distribution detection, confidence calibration, deep learning", "scoring": {"interpretability": 2, "understanding": 6, "safety": 7, "technicality": 8, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 17:34:08 -0000</pubDate>
+</item>
+<item>
+<title>Benchmarking Neural Network Robustness to Common Corruptions and Perturbations</title>
+<link>https://arxiv.org/abs/1903.12261</link>
+<guid>https://arxiv.org/abs/1903.12261</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces two benchmark suites, ImageNet-C and ImageNet-P, that assess neural network performance under a variety of common image corruptions and perturbations. It defines quantitative metrics for corruption robustness and perturbation consistency, evaluates many standard architectures, and demonstrates how robustness can be improved via training strategies.<br /><strong>Summary (CN):</strong> 本文提出了两个基准套件 ImageNet-C 和 ImageNet-P，用于衡量神经网络在常见图像腐蚀和扰动下的鲁棒性。文中定义了腐蚀鲁棒性和扰动一致性的量化指标，评估了多种主流网络结构，并展示了通过训练方法提升鲁棒性的效果。<br /><strong>Keywords:</strong> robustness, corruption, perturbation, benchmark, ImageNet-C, ImageNet-P, performance evaluation, distribution shift<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 5, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - other; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces two benchmark suites, ImageNet-C and ImageNet-P, that assess neural network performance under a variety of common image corruptions and perturbations. It defines quantitative metrics for corruption robustness and perturbation consistency, evaluates many standard architectures, and demonstrates how robustness can be improved via training strategies.", "summary_cn": "本文提出了两个基准套件 ImageNet-C 和 ImageNet-P，用于衡量神经网络在常见图像腐蚀和扰动下的鲁棒性。文中定义了腐蚀鲁棒性和扰动一致性的量化指标，评估了多种主流网络结构，并展示了通过训练方法提升鲁棒性的效果。", "keywords": "robustness, corruption, perturbation, benchmark, ImageNet-C, ImageNet-P, performance evaluation, distribution shift", "scoring": {"interpretability": 2, "understanding": 6, "safety": 5, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "other", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 17:19:08 -0000</pubDate>
+</item>
+<item>
+<title>A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks</title>
+<link>https://arxiv.org/abs/1610.02136</link>
+<guid>https://arxiv.org/abs/1610.02136</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper proposes a simple baseline for detecting misclassified and out-of-distribution (OOD) inputs in neural networks by using the maximum softmax probability as a confidence score, and evaluates this method across several image classification benchmarks, showing it can reliably separate in-distribution from OOD samples and correctly classified from misclassified examples.<br /><strong>Summary (CN):</strong> 本文提出了一种基于最大 softmax 概率的置信度分数的简易基线，用于检测神经网络中的误分类和分布外（OOD）样本，并在多个图像分类基准上进行评估，证明该方法能够有效区分分布内与分布外样本以及正确分类与误分类实例。<br /><strong>Keywords:</strong> out-of-distribution detection, misclassification detection, softmax confidence, neural networks, baseline, uncertainty estimation<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 5, Safety: 5, Technicality: 6, Surprisal: 4<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - robustness</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper proposes a simple baseline for detecting misclassified and out-of-distribution (OOD) inputs in neural networks by using the maximum softmax probability as a confidence score, and evaluates this method across several image classification benchmarks, showing it can reliably separate in-distribution from OOD samples and correctly classified from misclassified examples.", "summary_cn": "本文提出了一种基于最大 softmax 概率的置信度分数的简易基线，用于检测神经网络中的误分类和分布外（OOD）样本，并在多个图像分类基准上进行评估，证明该方法能够有效区分分布内与分布外样本以及正确分类与误分类实例。", "keywords": "out-of-distribution detection, misclassification detection, softmax confidence, neural networks, baseline, uncertainty estimation", "scoring": {"interpretability": 2, "understanding": 5, "safety": 5, "technicality": 6, "surprisal": 4}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "robustness"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 17:04:08 -0000</pubDate>
+</item>
+<item>
+<title>A Definition of AGI</title>
+<link>https://www.agidefinition.ai/</link>
+<guid>https://www.agidefinition.ai/</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article presents a proposed definition of artificial general intelligence (AGI), outlining key criteria and conceptual boundaries for what constitutes AGI. It discusses various aspects such as capability breadth, adaptability, and potential societal impact. The piece aims to provide a shared terminology for researchers and policymakers.<br /><strong>Summary (CN):</strong> 本文提出了人工通用智能（AGI）的定义框架，阐述了构成 AGI 的关键标准和概念边界，包括能力范围、适应性以及可能的社会影响。旨在为研究人员和政策制定者提供共同的术语。<br /><strong>Keywords:</strong> AGI definition, artificial general intelligence, capability criteria, adaptability, societal impact<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 4, Safety: 2, Technicality: 2, Surprisal: 2<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article presents a proposed definition of artificial general intelligence (AGI), outlining key criteria and conceptual boundaries for what constitutes AGI. It discusses various aspects such as capability breadth, adaptability, and potential societal impact. The piece aims to provide a shared terminology for researchers and policymakers.", "summary_cn": "本文提出了人工通用智能（AGI）的定义框架，阐述了构成 AGI 的关键标准和概念边界，包括能力范围、适应性以及可能的社会影响。旨在为研究人员和政策制定者提供共同的术语。", "keywords": "AGI definition, artificial general intelligence, capability criteria, adaptability, societal impact", "scoring": {"interpretability": 2, "understanding": 4, "safety": 2, "technicality": 2, "surprisal": 2}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}}
+]]></acme>
+
+<pubDate>Wed, 22 Oct 2025 05:41:01 -0000</pubDate>
+</item>
+<item>
+<title>Superintelligence Strategy</title>
+<link>https://www.nationalsecurity.ai/</link>
+<guid>https://www.nationalsecurity.ai/</guid>
+<content:encoded><![CDATA[
+
+]]></content:encoded>
+
+
+<pubDate>Tue, 21 Oct 2025 16:49:08 -0000</pubDate>
+</item>
+<item>
+<title>Unsolved Problems in ML Safety</title>
+<link>https://arxiv.org/abs/2109.13916</link>
+<guid>https://arxiv.org/abs/2109.13916</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper surveys the landscape of unsolved challenges in machine learning safety, organizing open problems across robustness, distributional shift, interpretability, verification, alignment, and related areas, and outlines a research agenda to advance reliable AI systems.<br /><strong>Summary (CN):</strong> 本文概述了机器学习安全领域的未解难题，围绕鲁棒性、分布转移、可解释性、可验证性、对齐等方面进行分类，并提出了推动可靠 AI 系统的研究路线图。<br /><strong>Keywords:</strong> machine learning safety, unsolved problems, robustness, distribution shift, interpretability, verification, alignment<br /><strong>Scores:</strong> Interpretability: 5, Understanding: 6, Safety: 6, Technicality: 4, Surprisal: 4<br /><strong>Categories:</strong> Failure mode - other; Primary focus - other</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper surveys the landscape of unsolved challenges in machine learning safety, organizing open problems across robustness, distributional shift, interpretability, verification, alignment, and related areas, and outlines a research agenda to advance reliable AI systems.", "summary_cn": "本文概述了机器学习安全领域的未解难题，围绕鲁棒性、分布转移、可解释性、可验证性、对齐等方面进行分类，并提出了推动可靠 AI 系统的研究路线图。", "keywords": "machine learning safety, unsolved problems, robustness, distribution shift, interpretability, verification, alignment", "scoring": {"interpretability": 5, "understanding": 6, "safety": 6, "technicality": 4, "surprisal": 4}, "category": {"failure_mode_addressed": "other", "primary_focus": "other"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 16:34:08 -0000</pubDate>
+</item>
+<item>
+<title>X-Risk Analysis</title>
+<link>https://arxiv.org/abs/2206.05862</link>
+<guid>https://arxiv.org/abs/2206.05862</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper introduces a systematic decomposition framework for analyzing existential (X‑) risk from advanced artificial intelligence. It breaks down risk into components such as capability development, deployment pathways, and potential failure modes, and proposes methods for evaluating and mitigating each element. The work aims to provide a clearer structure for AI safety research and policy discussion.<br /><strong>Summary (CN):</strong> 本文提出了一套系统化的分解框架，用于分析来自先进人工智能的存在性（X‑）风险。它将风险划分为能力发展、部署路径以及潜在失效模式等关键要素，并提供对每一要素进行评估与缓解的方法。该工作旨在为 AI 安全研究和政策制定提供更清晰的结构。<br /><strong>Keywords:</strong> existential risk, AI risk, risk analysis, safety, alignment, misalignment, catastrophic risk, failure modes, governance, X-risk<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 8, Technicality: 5, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper introduces a systematic decomposition framework for analyzing existential (X‑) risk from advanced artificial intelligence. It breaks down risk into components such as capability development, deployment pathways, and potential failure modes, and proposes methods for evaluating and mitigating each element. The work aims to provide a clearer structure for AI safety research and policy discussion.", "summary_cn": "本文提出了一套系统化的分解框架，用于分析来自先进人工智能的存在性（X‑）风险。它将风险划分为能力发展、部署路径以及潜在失效模式等关键要素，并提供对每一要素进行评估与缓解的方法。该工作旨在为 AI 安全研究和政策制定提供更清晰的结构。", "keywords": "existential risk, AI risk, risk analysis, safety, alignment, misalignment, catastrophic risk, failure modes, governance, X-risk", "scoring": {"interpretability": 2, "understanding": 6, "safety": 8, "technicality": 5, "surprisal": 5}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 16:19:08 -0000</pubDate>
+</item>
+<item>
+<title>Natural Selection Favors AI Over Humans.</title>
+<link>https://arxiv.org/abs/2303.16200</link>
+<guid>https://arxiv.org/abs/2303.16200</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper argues that natural selection may favor the development and deployment of AI systems that outperform humans, creating a selective pressure that could lead to existential risks. It analyzes how this evolutionary dynamic impacts AI alignment challenges and proposes considerations for mitigating such risks.<br /><strong>Summary (CN):</strong> 本文提出自然选择可能倾向于让 AI 超越人类的竞争优势，进而导致潜在的存在性风险，并讨论了这种选择压力对 AI 对齐和安全的影响。<br /><strong>Keywords:</strong> AI takeover, evolutionary pressure, natural selection, existential risk, alignment, competitive advantage, AI safety, misalignment, selection bias<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 8, Technicality: 6, Surprisal: 7<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper argues that natural selection may favor the development and deployment of AI systems that outperform humans, creating a selective pressure that could lead to existential risks. It analyzes how this evolutionary dynamic impacts AI alignment challenges and proposes considerations for mitigating such risks.", "summary_cn": "本文提出自然选择可能倾向于让 AI 超越人类的竞争优势，进而导致潜在的存在性风险，并讨论了这种选择压力对 AI 对齐和安全的影响。", "keywords": "AI takeover, evolutionary pressure, natural selection, existential risk, alignment, competitive advantage, AI safety, misalignment, selection bias", "scoring": {"interpretability": 2, "understanding": 6, "safety": 8, "technicality": 6, "surprisal": 7}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 16:04:08 -0000</pubDate>
+</item>
+<item>
+<title>An Overview of Catastrophic AI Risks</title>
+<link>https://arxiv.org/abs/2306.12001</link>
+<guid>https://arxiv.org/abs/2306.12001</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> This paper provides a broad survey of potential catastrophic risks from advanced AI systems, covering topics such as goal misalignment, malicious use, and large-scale societal impacts. It outlines various failure modes, discusses current research gaps, and suggests directions for future safety work.<br /><strong>Summary (CN):</strong> 本文对先进人工智能可能导致的灾难性风险进行概览，涵盖目标错位、恶意使用以及对社会大规模冲击等议题。文章梳理了多种失效模式，指出了现有研究空白，并提出了未来安全研究的方向。<br /><strong>Keywords:</strong> AI risk, catastrophic risk, alignment, misuse, societal impact, safety research, failure modes, AI governance<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 8, Technicality: 5, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "This paper provides a broad survey of potential catastrophic risks from advanced AI systems, covering topics such as goal misalignment, malicious use, and large-scale societal impacts. It outlines various failure modes, discusses current research gaps, and suggests directions for future safety work.", "summary_cn": "本文对先进人工智能可能导致的灾难性风险进行概览，涵盖目标错位、恶意使用以及对社会大规模冲击等议题。文章梳理了多种失效模式，指出了现有研究空白，并提出了未来安全研究的方向。", "keywords": "AI risk, catastrophic risk, alignment, misuse, societal impact, safety research, failure modes, AI governance", "scoring": {"interpretability": 2, "understanding": 6, "safety": 8, "technicality": 5, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 15:49:08 -0000</pubDate>
+</item>
+<item>
+<title>AI Deception: A Survey of Examples, Risks, and Potential Solutions</title>
+<link>https://arxiv.org/abs/2308.14752</link>
+<guid>https://arxiv.org/abs/2308.14752</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The paper surveys documented cases where AI systems exhibit deceptive behavior, analyzes the mechanisms that can give rise to deception, and discusses the associated risks for alignment and safety. It then reviews a range of proposed mitigation strategies, including transparency tools, incentive redesign, and detection methods, and organizes these approaches into a taxonomy for future research.<br /><strong>Summary (CN):</strong> 本文综述了 AI 系统出现欺骗行为的已知案例，分析了导致欺骗产生的机制，并讨论了其对对齐与安全的风险。随后评估了一系列潜在的缓解方案，如透明度工具、激励重设以及欺骗检测方法，并将这些方案归类为未来研究的框架。<br /><strong>Keywords:</strong> AI deception, deceptive alignment, safety, alignment risk, detection, transparency, incentive design, survey<br /><strong>Scores:</strong> Interpretability: 3, Understanding: 7, Safety: 8, Technicality: 5, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - misalignment; Primary focus - alignment</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The paper surveys documented cases where AI systems exhibit deceptive behavior, analyzes the mechanisms that can give rise to deception, and discusses the associated risks for alignment and safety. It then reviews a range of proposed mitigation strategies, including transparency tools, incentive redesign, and detection methods, and organizes these approaches into a taxonomy for future research.", "summary_cn": "本文综述了 AI 系统出现欺骗行为的已知案例，分析了导致欺骗产生的机制，并讨论了其对对齐与安全的风险。随后评估了一系列潜在的缓解方案，如透明度工具、激励重设以及欺骗检测方法，并将这些方案归类为未来研究的框架。", "keywords": "AI deception, deceptive alignment, safety, alignment risk, detection, transparency, incentive design, survey", "scoring": {"interpretability": 3, "understanding": 7, "safety": 8, "technicality": 5, "surprisal": 6}, "category": {"failure_mode_addressed": "misalignment", "primary_focus": "alignment"}}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 15:34:08 -0000</pubDate>
+</item>
+</channel>
+</rss>

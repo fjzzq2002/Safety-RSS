@@ -7,7 +7,8 @@ import re
 import time
 import json
 import math
-from datetime import datetime
+import calendar
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Any
 from collections.abc import Iterable
@@ -36,7 +37,7 @@ WEIGHT_KEYS = [
     "nontechnicality",
     "surprisal",
 ]
-DEFAULT_PAGE_SIZE = 25
+DEFAULT_PAGE_SIZE = 100
 MAX_PAGE_SIZE = 200
 
 # Global cache
@@ -236,15 +237,22 @@ def parse_xml_file(xml_path: Path) -> List[Article]:
             published = getattr(entry, 'published', None) or getattr(entry, 'updated', None)
             published_timestamp = None
 
-            if published:
+            try:
+                published_struct = getattr(entry, 'published_parsed', None) or getattr(entry, 'updated_parsed', None)
+                if published_struct:
+                    published_timestamp = float(calendar.timegm(published_struct))
+            except (TypeError, ValueError, OverflowError):
+                published_timestamp = None
+
+            if published_timestamp is None and published:
                 try:
-                    # Try to parse the published date
                     from email.utils import parsedate_to_datetime
                     dt = parsedate_to_datetime(published)
-                    published_timestamp = dt.timestamp()
-                except:
-                    # If parsing fails, use current time
-                    published_timestamp = time.time()
+                    if dt.tzinfo is None:
+                        dt = dt.replace(tzinfo=timezone.utc)
+                    published_timestamp = float(dt.timestamp())
+                except Exception:
+                    published_timestamp = None
 
             # Extract scores with defaults
             scores = parsed.get("scores", {})
@@ -361,12 +369,18 @@ def _filter_articles_by_date(articles: List[Dict[str, Any]], date_type: str,
             except ValueError:
                 pass
 
-        return [
-            article for article in articles
-            if not article.get("published_timestamp") or (
-                start_ts <= article["published_timestamp"] <= end_ts
-            )
-        ]
+        filtered_custom: List[Dict[str, Any]] = []
+        for article in articles:
+            ts_raw = article.get("published_timestamp")
+            if ts_raw is None:
+                continue
+            try:
+                ts = float(ts_raw)
+            except (TypeError, ValueError):
+                continue
+            if start_ts <= ts <= end_ts:
+                filtered_custom.append(article)
+        return filtered_custom
 
     try:
         days = int(date_type)
@@ -374,10 +388,18 @@ def _filter_articles_by_date(articles: List[Dict[str, Any]], date_type: str,
         days = 7
 
     cutoff = now - (days * 24 * 60 * 60)
-    return [
-        article for article in articles
-        if not article.get("published_timestamp") or article["published_timestamp"] >= cutoff
-    ]
+    filtered_recent: List[Dict[str, Any]] = []
+    for article in articles:
+        ts_raw = article.get("published_timestamp")
+        if ts_raw is None:
+            continue
+        try:
+            ts = float(ts_raw)
+        except (TypeError, ValueError):
+            continue
+        if ts >= cutoff:
+            filtered_recent.append(article)
+    return filtered_recent
 
 
 def _filter_articles_by_feeds(articles: List[Dict[str, Any]], feeds: Optional[List[str]]) -> List[Dict[str, Any]]:

@@ -1,0 +1,160 @@
+------------------------------------------------------
+Started: 2025-10-22 03:17:43.469276
+Existing_entries: 0
+Fetching from https://politepol.com/fd/tEEQSjBKfPNk.xml
+Append: [Concept Poisoning: Probing LLMs without probes](http://truthfulai.org/blog/concept-poisoning/)
+Append: [Backdoor awareness and misaligned personas in reasoning models](http://truthfulai.org/blog/backdoor-awareness/)
+Append: [OpenAI Responses API changes models' behavior](http://truthfulai.org/blog/openai-responses-api-behavior/)
+Append: [New, improved multiple-choice TruthfulQA](http://truthfulai.org/blog/truthfulqa-binary-choice/)
+Append: [Tips On Empirical Research Slides](http://truthfulai.org/blog/tips-on-empirical-research-slides/)
+Fetching from https://politepol.com/fd/HG65yVQWovKg.xml
+Append: [Lessons from Studying Two-Hop Latent Reasoning](http://truthfulai.org/papers/two-hop-latent-reasoning/)
+Append: [School of Reward Hacks: Hacking harmless tasks generalizes to misaligned behavior in LLMs](http://truthfulai.org/papers/school-of-reward-hacks/)
+Append: [Subliminal Learning: Language models transmit behavioral traits via hidden signals in data](http://truthfulai.org/papers/subliminal-learning/)
+Append: [Thought Crime: Backdoors and Emergent Misalignment in Reasoning Models](http://truthfulai.org/papers/thought-crime/)
+Append: [Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs](http://truthfulai.org/papers/emergent-misalignment/)
+Append: [Are DeepSeek R1 And Other Reasoning Models More Faithful?](http://truthfulai.org/papers/deepseek-r1-faithfulness/)
+Append: [Tell me about yourself: LLMs are aware of their learned behaviors](http://truthfulai.org/papers/tell-me-about-yourself/)
+Append: [Looking Inward: Language Models Can Learn About Themselves by Introspection](http://truthfulai.org/papers/looking-inward/)
+Append: [Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs](http://truthfulai.org/papers/situational-awareness-dataset/)
+Append: [Connecting the Dots: LLMs can Infer and Verbalize Latent Structure from Disparate Training Data](http://truthfulai.org/papers/connecting-the-dots/)
+Append: [Can Language Models Explain Their Own Classification Behavior?](http://truthfulai.org/papers/explain-classification-behavior/)
+Append: [Tell, Don't show: Declarative facts influence how LLMs generalize](http://truthfulai.org/papers/tell-dont-show/)
+Append: [How to catch an AI liar: Lie detection in black-box LLMs by asking unrelated questions](http://truthfulai.org/papers/catch-ai-liar/)
+Append: [The Reversal Curse: LLMs trained on 'A is B' fail to learn 'B is A'](http://truthfulai.org/papers/reversal-curse/)
+Append: [Taken out of context: On measuring situational awareness in LLMs](http://truthfulai.org/papers/taken-out-of-context/)
+Append: [Teaching Models to Express Their Uncertainty in Words](http://truthfulai.org/papers/express-uncertainty/)
+Append: [TruthfulQA: Measuring how models mimic human falsehoods](http://truthfulai.org/papers/truthfulqa/)
+Token length: 102
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 535, "prompt_tokens": 3203, "total_tokens": 3738, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 400, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00052731, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00025981, "upstream_inference_completions_cost": 0.0002675}}
+Cost (USD): 0.000527
+Token length: 105
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 533, "prompt_tokens": 3212, "total_tokens": 3745, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 339, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00052766, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026116, "upstream_inference_completions_cost": 0.0002665}}
+Cost (USD): 0.000528
+Token length: 129
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 548, "prompt_tokens": 3211, "total_tokens": 3759, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 425, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00053501, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026101, "upstream_inference_completions_cost": 0.000274}}
+Cost (USD): 0.000535
+Token length: 106
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 553, "prompt_tokens": 3204, "total_tokens": 3757, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 369, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3136}, "cost": 0.00053758, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026108, "upstream_inference_completions_cost": 0.0002765}}
+Cost (USD): 0.000538
+Token length: 76
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 560, "prompt_tokens": 3199, "total_tokens": 3759, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 427, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3136}, "cost": 0.00054033, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026033, "upstream_inference_completions_cost": 0.00028}}
+Cost (USD): 0.000540
+Token length: 96
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 602, "prompt_tokens": 3200, "total_tokens": 3802, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 384, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00056036, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00025936, "upstream_inference_completions_cost": 0.000301}}
+Cost (USD): 0.000560
+Token length: 130
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 579, "prompt_tokens": 3211, "total_tokens": 3790, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 434, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00055051, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026101, "upstream_inference_completions_cost": 0.0002895}}
+Cost (USD): 0.000551
+Token length: 188
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 619, "prompt_tokens": 3237, "total_tokens": 3856, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 391, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00057441, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026491, "upstream_inference_completions_cost": 0.0003095}}
+Cost (USD): 0.000574
+Token length: 184
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 572, "prompt_tokens": 3225, "total_tokens": 3797, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 318, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00054911, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026311, "upstream_inference_completions_cost": 0.000286}}
+Cost (USD): 0.000549
+Token length: 103
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 627, "prompt_tokens": 3210, "total_tokens": 3837, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 395, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00057436, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026086, "upstream_inference_completions_cost": 0.0003135}}
+Cost (USD): 0.000574
+Token length: 154
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 595, "prompt_tokens": 3216, "total_tokens": 3811, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 379, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00055926, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026176, "upstream_inference_completions_cost": 0.0002975}}
+Cost (USD): 0.000559
+Token length: 163
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 627, "prompt_tokens": 3237, "total_tokens": 3864, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 397, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00057841, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026491, "upstream_inference_completions_cost": 0.0003135}}
+Cost (USD): 0.000578
+Token length: 154
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 627, "prompt_tokens": 3224, "total_tokens": 3851, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 408, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00057646, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026296, "upstream_inference_completions_cost": 0.0003135}}
+Cost (USD): 0.000576
+Token length: 108
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 642, "prompt_tokens": 3220, "total_tokens": 3862, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 449, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00058336, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026236, "upstream_inference_completions_cost": 0.000321}}
+Cost (USD): 0.000583
+Token length: 133
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 667, "prompt_tokens": 3227, "total_tokens": 3894, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 448, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3136}, "cost": 0.00059803, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026453, "upstream_inference_completions_cost": 0.0003335}}
+Cost (USD): 0.000598
+Token length: 133
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 687, "prompt_tokens": 3212, "total_tokens": 3899, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 586, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00060466, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026116, "upstream_inference_completions_cost": 0.0003435}}
+Cost (USD): 0.000605
+Token length: 142
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 725, "prompt_tokens": 3218, "total_tokens": 3943, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 612, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00062456, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026206, "upstream_inference_completions_cost": 0.0003625}}
+Cost (USD): 0.000625
+Token length: 115
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 702, "prompt_tokens": 3212, "total_tokens": 3914, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 543, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00061216, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026116, "upstream_inference_completions_cost": 0.000351}}
+Cost (USD): 0.000612
+Token length: 158
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 792, "prompt_tokens": 3222, "total_tokens": 4014, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 667, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00065866, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026266, "upstream_inference_completions_cost": 0.000396}}
+Cost (USD): 0.000659
+Token length: 121
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 825, "prompt_tokens": 3210, "total_tokens": 4035, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 686, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00067336, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026086, "upstream_inference_completions_cost": 0.0004125}}
+Cost (USD): 0.000673
+Token length: 104
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 870, "prompt_tokens": 3213, "total_tokens": 4083, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 715, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00069631, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026131, "upstream_inference_completions_cost": 0.000435}}
+Cost (USD): 0.000696
+Token length: 154
+Summarized using OpenRouter
+Model: openai/gpt-oss-120b
+Usage: {"completion_tokens": 901, "prompt_tokens": 3207, "total_tokens": 4108, "completion_tokens_details": {"accepted_prediction_tokens": null, "audio_tokens": null, "reasoning_tokens": 842, "rejected_prediction_tokens": null, "image_tokens": 0}, "prompt_tokens_details": {"audio_tokens": 0, "cached_tokens": 3152}, "cost": 0.00071091, "is_byok": false, "cost_details": {"upstream_inference_cost": null, "upstream_inference_prompt_cost": 0.00026041, "upstream_inference_completions_cost": 0.0004505}}
+Cost (USD): 0.000711
+append_entries: 22
+Finish: 2025-10-22 03:18:04.569604
+------------------------------------------------------
+Started: 2025-10-24 17:29:41.701331
+Existing_entries: 22
+Fetching from https://politepol.com/fd/tEEQSjBKfPNk.xml
+Fetching from https://politepol.com/fd/HG65yVQWovKg.xml
+append_entries: 0
+Finish: 2025-10-24 17:29:42.742287
+------------------------------------------------------
+Started: 2025-10-25 20:09:15.507717
+Existing_entries: 22
+Fetching from https://politepol.com/fd/tEEQSjBKfPNk.xml
+Fetching from https://politepol.com/fd/HG65yVQWovKg.xml
+append_entries: 0
+Finish: 2025-10-25 20:09:16.787432
+------------------------------------------------------
+Started: 2025-10-25 20:18:53.567001
+Existing_entries: 22
+Fetching from https://politepol.com/fd/tEEQSjBKfPNk.xml
+Fetching from https://politepol.com/fd/HG65yVQWovKg.xml
+append_entries: 0
+Finish: 2025-10-25 20:18:54.979845

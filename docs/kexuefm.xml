@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>科学空间|Scientific Spaces</title>
+<link>https://kexue.fm/</link>
+
+
+<item>
+<title>MuP之上：1. 好模型的三个特征</title>
+<link>https://kexue.fm/archives/11340</link>
+<guid>https://kexue.fm/archives/11340</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article examines the connection between the Muon optimizer (Momentum Orthogonalized by Newton‑Schulz) and the Maximal Update Parametrization (MuP), describing how their different origins converge on similar optimization goals and outlining three traits of a good model based on the author’s experimentation.<br /><strong>Summary (CN):</strong> 本文探讨了 Muon（Momentum Orthogonalized by Newton‑Schulz）优化器与 MuP（Maximal Update Parametrization）之间的关系，指出它们虽出发点不同却在模型优化目标上趋同，并总结出作者在实践中得到的好模型的三个特征。<br /><strong>Keywords:</strong> MuP, Muon, model optimization, maximal update parametrization, Newton‑Schulz orthogonalization, training dynamics, deep learning, optimizer design<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 2, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other<br /><strong>Authors:</strong> 苏剑林</div>
+<p>不知道大家有没有发现一个有趣的细节，Muon和MuP都是“Mu”开头，但两个“Mu”的原意完全不一样，前者是“<strong><font color="red">M</font></strong>oment<strong><font color="red">U</font></strong>m Orthogonalized by Newton-Schulz”，后者是“<strong><font color="red">M</font></strong>aximal <strong><font color="red">U</font></strong>pdate Parametrization”，可它们俩之间确实有着非常深刻的联系。也就是说，Muon和MuP有着截然不同的出发点，但最终都走向了相同的方向，甚至无意间取了相似的名字，似乎真应了那句“冥冥中自有安排”。</p><p>言归正传。总之，笔者在各种机缘巧合之下，刚好同时学习到了Muon和MuP，这大大加深了笔者对模型优化的理解，同时也让笔者开始思考关于模型优化更本质的原理。经过一段时间的试错，算是有些粗浅的收获，在此跟大家分享一下。</p><h2>写在前面</h2><p>按照提出时间的先后顺序，是先有MuP再有Muon，但笔者的学习顺序正好反过来，先学习了Muon然后再学习MuP，事后来看，这也不失为一个不错的学习顺序。</p><p class="more"><a href="https://kexue.fm/archives/11340" title="MuP之上：1. 好模型的三个特征">[...]</a></p>
+<div><strong>Authors:</strong> 苏剑林</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article examines the connection between the Muon optimizer (Momentum Orthogonalized by Newton‑Schulz) and the Maximal Update Parametrization (MuP), describing how their different origins converge on similar optimization goals and outlining three traits of a good model based on the author’s experimentation.", "summary_cn": "本文探讨了 Muon（Momentum Orthogonalized by Newton‑Schulz）优化器与 MuP（Maximal Update Parametrization）之间的关系，指出它们虽出发点不同却在模型优化目标上趋同，并总结出作者在实践中得到的好模型的三个特征。", "keywords": "MuP, Muon, model optimization, maximal update parametrization, Newton‑Schulz orthogonalization, training dynamics, deep learning, optimizer design", "scoring": {"interpretability": 2, "understanding": 6, "safety": 2, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}, "authors": ["苏剑林"]}
+]]></acme>
+
+<pubDate>Tue, 21 Oct 2025 15:19:00 +0800</pubDate>
+</item>
+<item>
+<title>随机矩阵的谱范数的快速估计</title>
+<link>https://kexue.fm/archives/11335</link>
+<guid>https://kexue.fm/archives/11335</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article presents a fast estimation method for the spectral norm (largest singular value) of an $n\times m$ matrix whose entries are independent standard normal variables, confirming that its expected value is roughly $\sqrt{n}+\sqrt{m}$ and detailing efficient computational techniques for this estimate.<br /><strong>Summary (CN):</strong> 本文介绍了一种快速估计 $n\times m$ 标准正态随机矩阵谱范数（最大奇异值）的方法，证明其期望值约为 $\sqrt{n}+\sqrt{m}$，并给出实现高效估计的算法。<br /><strong>Keywords:</strong> spectral norm, random matrix, Gaussian matrix, operator norm, estimation, singular value, random matrix theory<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 4, Safety: 1, Technicality: 7, Surprisal: 3<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other<br /><strong>Authors:</strong> 苏剑林</div>
+<p>在<a href="https://kexue.fm/archives/10795" target="_blank">《高阶MuP：更简明但更高明的谱条件缩放》</a>的“近似估计”一节中，我们曾“预支”了一个结论：“一个服从标准正态分布的$n\times m$大小的随机矩阵，它的谱范数大致是$\sqrt{n}+\sqrt{m}$。”</p><p>这篇文章我们来补充讨论这个结论，给出随机矩阵谱范数的快速估计方法。</p><h2>随机矩阵论</h2><p>设有随机矩阵$\boldsymbol{W}\in\mathbb{R}^{n\times m}$，每个元素都是从标准正态分布$\mathcal{N}(0,1)$中独立重复地采样出来的，要求估计$\boldsymbol{W}$的谱范数，也就是最大奇异值，我们以$\mathbb{E}[\Vert\boldsymbol{W}\Vert_2]$为最终的估计结果。</p><p class="more"><a href="https://kexue.fm/archives/11335" title="随机矩阵的谱范数的快速估计">[...]</a></p>
+<div><strong>Authors:</strong> 苏剑林</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article presents a fast estimation method for the spectral norm (largest singular value) of an $n\\times m$ matrix whose entries are independent standard normal variables, confirming that its expected value is roughly $\\sqrt{n}+\\sqrt{m}$ and detailing efficient computational techniques for this estimate.", "summary_cn": "本文介绍了一种快速估计 $n\\times m$ 标准正态随机矩阵谱范数（最大奇异值）的方法，证明其期望值约为 $\\sqrt{n}+\\sqrt{m}$，并给出实现高效估计的算法。", "keywords": "spectral norm, random matrix, Gaussian matrix, operator norm, estimation, singular value, random matrix theory", "scoring": {"interpretability": 2, "understanding": 4, "safety": 1, "technicality": 7, "surprisal": 3}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}, "authors": ["苏剑林"]}
+]]></acme>
+
+<pubDate>Sun, 12 Oct 2025 21:52:00 +0800</pubDate>
+</item>
+<item>
+<title>DiVeQ：一种非常简洁的VQ训练方案</title>
+<link>https://kexue.fm/archives/11328</link>
+<guid>https://kexue.fm/archives/11328</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> DiVeQ proposes a very concise training scheme for vector quantization (VQ) that replaces the traditional auxiliary loss with a new Straight-Through Estimator (STE) technique. By eliminating the extra loss term, the method simplifies the VQ training pipeline and reduces the need for additional hyperparameters, while maintaining performance.<br /><strong>Summary (CN):</strong> DiVeQ 提出了一种极简的 VQ（向量量化）训练方案，使用全新的 STE（Straight-Through Estimator）技巧取代传统的 Aux Loss。该方法不再需要额外的辅助损失和超参数调节，使 VQ 的训练过程更加端到端且简洁。<br /><strong>Keywords:</strong> vector quantization, VQ-VAE-through estimator, DiVeQ, discrete tokenization, deep learning, auxiliary loss removal, training simplification<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 5, Safety: 1, Technicality: 7, Surprisal: 6<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other<br /><strong>Authors:</strong> 苏剑林</div>
+<p>对于坚持离散化路线的研究人员来说，VQ（Vector Quantization）是视觉理解和生成的关键部分，担任着视觉中的“Tokenizer”的角色。它提出在2017年的论文<a href="https://arxiv.org/abs/1711.00937" target="_blank">《Neural Discrete Representation Learning》</a>，笔者在2019年的博客<a href="https://kexue.fm/archives/6760" target="_blank">《VQ-VAE的简明介绍：量子化自编码器》</a>也介绍过它。</p><p>然而，这么多年过去了，我们可以发现VQ的训练技术几乎没有变化，都是STE（Straight-Through Estimator）加额外的Aux Loss。STE倒是没啥问题，它可以说是给离散化运算设计梯度的标准方式了，但Aux Loss的存在总让人有种不够端到端的感觉，同时还引入了额外的超参要调。</p><p>幸运的是，这个局面可能要结束了，上周的论文<a href="https://arxiv.org/abs/2509.26469" target="_blank">《DiVeQ: Differentiable Vector Quantization Using the Reparameterization Trick》</a>提出了一个新的STE技巧，它最大亮点是不需要Aux Loss，这让它显得特别简洁漂亮！</p><p class="more"><a href="https://kexue.fm/archives/11328" title="DiVeQ：一种非常简洁的VQ训练方案">[...]</a></p>
+<div><strong>Authors:</strong> 苏剑林</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "DiVeQ proposes a very concise training scheme for vector quantization (VQ) that replaces the traditional auxiliary loss with a new Straight-Through Estimator (STE) technique. By eliminating the extra loss term, the method simplifies the VQ training pipeline and reduces the need for additional hyperparameters, while maintaining performance.", "summary_cn": "DiVeQ 提出了一种极简的 VQ（向量量化）训练方案，使用全新的 STE（Straight-Through Estimator）技巧取代传统的 Aux Loss。该方法不再需要额外的辅助损失和超参数调节，使 VQ 的训练过程更加端到端且简洁。", "keywords": "vector quantization, VQ-VAE-through estimator, DiVeQ, discrete tokenization, deep learning, auxiliary loss removal, training simplification", "scoring": {"interpretability": 2, "understanding": 5, "safety": 1, "technicality": 7, "surprisal": 6}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}, "authors": ["苏剑林"]}
+]]></acme>
+
+<pubDate>Wed, 08 Oct 2025 21:52:00 +0800</pubDate>
+</item>
+<item>
+<title>为什么线性注意力要加Short Conv？</title>
+<link>https://kexue.fm/archives/11320</link>
+<guid>https://kexue.fm/archives/11320</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article examines why recent linear attention models add a short convolution to the Q, K, V projections, arguing that it compensates for the loss of expressivity caused by linearization and enhances token-mixing depth. The author proposes a more precise hypothesis about the mechanism, suggesting that the convolution injects local context and improves information flow across tokens.<br /><strong>Summary (CN):</strong> 本文探讨了为何最新的线性注意力模型在 Q、K、V 投影上加入 Short Conv，认为这是为了弥补线性化导致的表达能力下降并加强 Token 之间的混合。作者给出更具体的猜测机制，指出卷积引入局部上下文，提升信息在 Tokens 之间的流动。<br /><strong>Keywords:</strong> linear attention, short convolution, token mixing, model architecture, QKV projection, expressivity<br /><strong>Scores:</strong> Interpretability: 4, Understanding: 6, Safety: 2, Technicality: 5, Surprisal: 4<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other<br /><strong>Authors:</strong> 苏剑林</div>
+<p>如果读者有关注模型架构方面的进展，那么就会发现，比较新的线性Attention（参考<a href="https://kexue.fm/archives/11033" target="_blank">《线性注意力简史：从模仿、创新到反哺》</a>）模型都给$\boldsymbol{Q},\boldsymbol{K},\boldsymbol{V}$加上了Short Conv，比如下图所示的<a href="https://arxiv.org/abs/2406.06484" target="_blank">DeltaNet</a>：<br />
+<a href="https://kexue.fm/usr/uploads/2025/10/175536171.png" target="_blank" title="点击查看原图"><img alt="DeltaNet中的Short Conv.png" src="https://kexue.fm/usr/uploads/2025/10/175536171.png" width="360" /></a></p><p>为什么要加这个Short Conv呢？直观理解可能是增加模型深度、增强模型的Token-Mixing能力等，说白了就是补偿线性化导致的表达能力下降。这个说法当然是大差不差，但它属于“万能模版”式的回答，我们更想对它的生效机制有更准确的认知。</p><p>接下来，笔者将给出自己的一个理解（更准确说应该是猜测）。</p><p class="more"><a href="https://kexue.fm/archives/11320" title="为什么线性注意力要加Short Conv？">[...]</a></p>
+<div><strong>Authors:</strong> 苏剑林</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article examines why recent linear attention models add a short convolution to the Q, K, V projections, arguing that it compensates for the loss of expressivity caused by linearization and enhances token-mixing depth. The author proposes a more precise hypothesis about the mechanism, suggesting that the convolution injects local context and improves information flow across tokens.", "summary_cn": "本文探讨了为何最新的线性注意力模型在 Q、K、V 投影上加入 Short Conv，认为这是为了弥补线性化导致的表达能力下降并加强 Token 之间的混合。作者给出更具体的猜测机制，指出卷积引入局部上下文，提升信息在 Tokens 之间的流动。", "keywords": "linear attention, short convolution, token mixing, model architecture, QKV projection, expressivity", "scoring": {"interpretability": 4, "understanding": 6, "safety": 2, "technicality": 5, "surprisal": 4}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}, "authors": ["苏剑林"]}
+]]></acme>
+
+<pubDate>Sun, 05 Oct 2025 16:25:00 +0800</pubDate>
+</item>
+<item>
+<title>AdamW的Weight RMS的渐近估计</title>
+<link>https://kexue.fm/archives/11307</link>
+<guid>https://kexue.fm/archives/11307</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article revisits the mean-field approximation for AdamW and demonstrates that the RMS of model weights can be asymptotically estimated from the optimizer's hyperparameters, a result that is counterintuitive because weight magnitudes are usually thought to be learned from data. It reproduces the derivation of the weight RMS asymptotic estimate and discusses its implications.<br /><strong>Summary (CN):</strong> 本文重新审视 AdamW 的平均场近似，展示模型权重的均方根（RMS）可以通过优化器的超参数提前获得渐近估计，这一结论令人意外，因为权重模长通常被认为是从训练数据中学习得到的。文章复现了权重 RMS 的渐近估计推导并讨论了其意义。<br /><strong>Keywords:</strong> AdamW, weight RMS, mean-field approximation, asymptotic estimation, optimizer hyperparameters, gradient descent<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 2, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other<br /><strong>Authors:</strong> 苏剑林</div>
+<p>在<a href="https://kexue.fm/archives/11267" target="_blank">《为什么Adam的Update RMS是0.2？》</a>中，我们用平均场近似估计了Adam的Update RMS。不久后，读者 <a href="https://x.com/EIFY/status/1965888629814988984" target="_blank">@EIFY</a> 指出相同的结果已经出现在论文<a href="https://arxiv.org/abs/2305.17212" target="_blank">《Rotational Equilibrium: How Weight Decay Balances Learning Across Neural Networks》</a>中。阅读后，笔者发现其中不仅包含了Update RMS的估计，还包含了Weight RMS的估计。</p><p>也就是说，AdamW训出来的模型，其权重的RMS是可以事先估计出来一个渐近结果的。大家会不会觉得这个结论有点意外？反正笔者第一次看到它是颇为意外的，直觉上权重模长是模型根据训练集自己学出来的，结果它告诉我这已经隐藏在优化器的超参中，可谓很反直觉了。</p><p>这篇文章我们还是用平均场近似方法，来复现对Weight RMS的渐近估计。</p><p class="more"><a href="https://kexue.fm/archives/11307" title="AdamW的Weight RMS的渐近估计">[...]</a></p>
+<div><strong>Authors:</strong> 苏剑林</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article revisits the mean-field approximation for AdamW and demonstrates that the RMS of model weights can be asymptotically estimated from the optimizer's hyperparameters, a result that is counterintuitive because weight magnitudes are usually thought to be learned from data. It reproduces the derivation of the weight RMS asymptotic estimate and discusses its implications.", "summary_cn": "本文重新审视 AdamW 的平均场近似，展示模型权重的均方根（RMS）可以通过优化器的超参数提前获得渐近估计，这一结论令人意外，因为权重模长通常被认为是从训练数据中学习得到的。文章复现了权重 RMS 的渐近估计推导并讨论了其意义。", "keywords": "AdamW, weight RMS, mean-field approximation, asymptotic estimation, optimizer hyperparameters, gradient descent", "scoring": {"interpretability": 2, "understanding": 6, "safety": 2, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}, "authors": ["苏剑林"]}
+]]></acme>
+
+<pubDate>Wed, 01 Oct 2025 12:51:00 +0800</pubDate>
+</item>
+<item>
+<title>重新思考学习率与Batch Size（四）：EMA</title>
+<link>https://kexue.fm/archives/11301</link>
+<guid>https://kexue.fm/archives/11301</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article revisits the role of exponential moving average (EMA) – commonly known as momentum – in optimizers such as Adam, Lion and Muon, and examines why SignSGD is not a perfect theoretical proxy for Adam. It highlights that SignSGD’s update norm stays constant at 1, unlike Adam where momentum changes the magnitude, and investigates how EMA influences learning‑rate and batch‑size scaling rules.<br /><strong>Summary (CN):</strong> 本文重新审视了 EMA（动量）在 Adam、Lion、Muon 等优化器中的作用，并探讨了 SignSGD 为什么并非 Adam 的理想理论近似。文章指出 SignSGD 的更新范数始终为 1，而 Adam 受动量影响其幅度会变化，进而分析 EMA 对学习率和批量大小尺度规则的影响。<br /><strong>Keywords:</strong> EMA, momentum, Adam, SignSGD, learning rate scaling, batch size scaling, optimizer analysis<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 5, Safety: 1, Technicality: 5, Surprisal: 4<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other<br /><strong>Authors:</strong> 苏剑林</div>
+<p>我们在<a href="https://kexue.fm/archives/11280" target="_blank">《重新思考学习率与Batch Size（二）：平均场》</a>中提到，关注SignSGD的原因之一是我们通常将它作为Adam的理论近似，这是Adam做理论分析时常用的简化策略。除了分析学习率的场景外，在<a href="https://kexue.fm/archives/10001" target="_blank">《配置不同的学习率，LoRA还能再涨一点？》</a>、<a href="https://kexue.fm/archives/10770" target="_blank">《初探MuP：超参数的跨模型尺度迁移规律》</a>等地方我们也用了这个简化。</p><p>然而，SignSGD真是Adam的良好近似吗？一个明显差异是SignSGD的Update RMS总是1，而Adam并非如此。笔者发现，导致这一差异的核心原因是动量，它普遍存在于Adam、Lion、Muon等优化器中。所以，本文我们来考察动量——更广义地说是EMA——的影响。</p><h2>问题分析</h2><p>从Adam的视角看，SignSGD对应$\beta_1=\beta_2=0$这个特例，或者对应于Adam的第一步更新量（不管$\beta_1,\beta_2$如何）。因此，我们认为它跟Adam肯定有一些共性，能够捕捉到一些通用的规律。</p><p class="more"><a href="https://kexue.fm/archives/11301" title="重新思考学习率与Batch Size（四）：EMA">[...]</a></p>
+<div><strong>Authors:</strong> 苏剑林</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article revisits the role of exponential moving average (EMA) – commonly known as momentum – in optimizers such as Adam, Lion and Muon, and examines why SignSGD is not a perfect theoretical proxy for Adam. It highlights that SignSGD’s update norm stays constant at 1, unlike Adam where momentum changes the magnitude, and investigates how EMA influences learning‑rate and batch‑size scaling rules.", "summary_cn": "本文重新审视了 EMA（动量）在 Adam、Lion、Muon 等优化器中的作用，并探讨了 SignSGD 为什么并非 Adam 的理想理论近似。文章指出 SignSGD 的更新范数始终为 1，而 Adam 受动量影响其幅度会变化，进而分析 EMA 对学习率和批量大小尺度规则的影响。", "keywords": "EMA, momentum, Adam, SignSGD, learning rate scaling, batch size scaling, optimizer analysis", "scoring": {"interpretability": 2, "understanding": 5, "safety": 1, "technicality": 5, "surprisal": 4}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}, "authors": ["苏剑林"]}
+]]></acme>
+
+<pubDate>Mon, 22 Sep 2025 14:37:00 +0800</pubDate>
+</item>
+<item>
+<title>重新思考学习率与Batch Size（三）：Muon</title>
+<link>https://kexue.fm/archives/11285</link>
+<guid>https://kexue.fm/archives/11285</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article revisits the relationship between learning rate and batch size, extending prior mean‑field analyses to the Muon optimizer, which uses a non‑element‑wise update rule. It adapts the previous mean‑field framework to derive conclusions about how Muon's learning rate should scale with batch size.<br /><strong>Summary (CN):</strong> 本文重新审视学习率与批量大小的关系，将之前的平均场分析方法扩展到采用非逐元素更新规则的 Muon 优化器，并推导出 Muon 学习率随批量大小的缩放结论。<br /><strong>Keywords:</strong> learning rate, batch size, Muon optimizer, mean field theory, optimization<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 4, Safety: 1, Technicality: 6, Surprisal: 3<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other<br /><strong>Authors:</strong> 苏剑林</div>
+<p>前两篇文章<a href="https://kexue.fm/archives/11260" target="_blank">《重新思考学习率与Batch Size（一）：现状》</a>和<a href="https://kexue.fm/archives/11280" target="_blank">《重新思考学习率与Batch Size（二）：平均场》</a>中，我们主要是提出了平均场方法，用以简化学习率与Batch Size的相关计算。当时我们分析的优化器是SGD、SignSGD和SoftSignSGD，并且主要目的是简化，本质上没有新的结论。</p><p>然而，在如今的优化器盛宴中，怎能少得了Muon的一席之地呢？所以，这篇文章我们就来尝试计算Muon的相关结论，看看它的学习率与Batch Size的关系是否会呈现出新的规律。</p><h2>基本记号</h2><p>众所周知，<a href="https://kexue.fm/archives/10592" target="_blank">Muon</a>的主要特点就是非Element-wise的更新规则，所以之前在<a href="https://kexue.fm/archives/10542" target="_blank">《当Batch Size增大时，学习率该如何随之变化？》</a>和<a href="https://kexue.fm/archives/10563" target="_blank">《Adam的epsilon如何影响学习率的Scaling Law？》</a>的Element-wise的计算方法将完全不可用。但幸运的是，上篇文章介绍的平均场依然好使，只需要稍微调整一下细节。</p><p class="more"><a href="https://kexue.fm/archives/11285" title="重新思考学习率与Batch Size（三）：Muon">[...]</a></p>
+<div><strong>Authors:</strong> 苏剑林</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article revisits the relationship between learning rate and batch size, extending prior mean‑field analyses to the Muon optimizer, which uses a non‑element‑wise update rule. It adapts the previous mean‑field framework to derive conclusions about how Muon's learning rate should scale with batch size.", "summary_cn": "本文重新审视学习率与批量大小的关系，将之前的平均场分析方法扩展到采用非逐元素更新规则的 Muon 优化器，并推导出 Muon 学习率随批量大小的缩放结论。", "keywords": "learning rate, batch size, Muon optimizer, mean field theory, optimization", "scoring": {"interpretability": 2, "understanding": 4, "safety": 1, "technicality": 6, "surprisal": 3}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}, "authors": ["苏剑林"]}
+]]></acme>
+
+<pubDate>Mon, 15 Sep 2025 22:52:00 +0800</pubDate>
+</item>
+<item>
+<title>重新思考学习率与Batch Size（二）：平均场</title>
+<link>https://kexue.fm/archives/11280</link>
+<guid>https://kexue.fm/archives/11280</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article revisits the relationship between learning rate and batch size, focusing on the use of mean-field approximations to simplify the derivation of optimal learning rates for algorithms like SignSGD and SoftSignSGD. By moving the expectation inside the nonlinear functions, the author derives an approximate formula for the optimal learning rate involving expectations of the sign gradients and the Hessian.<br /><strong>Summary (CN):</strong> 本文重新审视学习率与批量大小的关系，重点介绍利用平均场近似来简化 SignSGD 与 SoftSignSGD 等算法的学习率推导。通过将求期望移入非线性函数内部，作者得到一个涉及符号梯度期望和 Hessian 的近似最优学习率公式。<br /><strong>Keywords:</strong> learning rate, batch size, SignSGD, SoftSignSGD, mean-field approximation, optimization, gradient expectation, Hessian<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 5, Safety: 1, Technicality: 6, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other<br /><strong>Authors:</strong> 苏剑林</div>
+<p>上文<a href="https://kexue.fm/archives/11260" target="_blank">《重新思考学习率与Batch Size（一）：现状》</a>末尾我们说到，对于SignSGD、SoftSignSGD等$\tilde{\boldsymbol{\varphi}}_B$非线性依赖于$\tilde{\boldsymbol{g}}_B$的情形，计算过程的心智负担相当沉重，并且面临难以推广的困境。为此，笔者投入了一些精力去尝试简化其中的推导，万幸有些许收获，其中的关键思路便是本文的主题——平均场。</p><p>平均场是物理中常见的近似计算方法，它没有固定的形式，但大体思想就是将求平均移到函数之内。事实上，在<a href="https://kexue.fm/archives/11267" target="_blank">《为什么Adam的Update RMS是0.2？》</a>中我们就已经窥见过平均场的魅力，而在这篇文章中，我们再来见识它在计算SignSGD/SoftSignSGD的学习率规律上的奇效。</p><h2>方法大意</h2><p>沿着上文的记号，对于SignSGD我们有$\newcommand{sign}{\mathop{\text{sign}}}\tilde{\boldsymbol{\varphi}}_B=\sign(\tilde{\boldsymbol{g}}_B)$，我们需要先计算$\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B]$和$\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B\tilde{\boldsymbol{\varphi}}_B^{\top}]$，继而可以算出<br />
+\begin{equation}\newcommand{tr}{\mathop{\text{tr}}}\eta^* \approx \frac{\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B]^{\top}\boldsymbol{g}}{\tr(\mathbb{E}[\tilde{\boldsymbol{\varphi}}_B\tilde{\boldsymbol{\varphi}}_B^{\top}]\boldsymbol{H})}\label{eq:eta-opt}\end{equation}</p><p class="more"><a href="https://kexue.fm/archives/11280" title="重新思考学习率与Batch Size（二）：平均场">[...]</a></p>
+<div><strong>Authors:</strong> 苏剑林</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article revisits the relationship between learning rate and batch size, focusing on the use of mean-field approximations to simplify the derivation of optimal learning rates for algorithms like SignSGD and SoftSignSGD. By moving the expectation inside the nonlinear functions, the author derives an approximate formula for the optimal learning rate involving expectations of the sign gradients and the Hessian.", "summary_cn": "本文重新审视学习率与批量大小的关系，重点介绍利用平均场近似来简化 SignSGD 与 SoftSignSGD 等算法的学习率推导。通过将求期望移入非线性函数内部，作者得到一个涉及符号梯度期望和 Hessian 的近似最优学习率公式。", "keywords": "learning rate, batch size, SignSGD, SoftSignSGD, mean-field approximation, optimization, gradient expectation, Hessian", "scoring": {"interpretability": 2, "understanding": 5, "safety": 1, "technicality": 6, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}, "authors": ["苏剑林"]}
+]]></acme>
+
+<pubDate>Wed, 10 Sep 2025 10:18:00 +0800</pubDate>
+</item>
+<item>
+<title>为什么Adam的Update RMS是0.2？</title>
+<link>https://kexue.fm/archives/11267</link>
+<guid>https://kexue.fm/archives/11267</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> The article discusses an observed phenomenon that the root mean square (RMS) of Adam optimizer updates remains around 0.2–0.3 during large‑scale LLM training with beta1=0.9 and beta2=0.95, and questions why this value appears consistently. It mentions a technique called "Match Adam Update RMS" used to transfer from Adam to the Muon optimizer by fixing Muon's update RMS to 0.2, enabling reuse of learning rate and weight decay settings. The post seeks theoretical explanations for this empirical constant.<br /><strong>Summary (CN):</strong> 本文讨论了在大规模语言模型训练中，使用 Adam 优化器（beta1=0.9、beta2=0.95）时，其更新的均方根（RMS）大约保持在 0.2 到 0.3 之间的现象，并提出了 "Match Adam Update RMS" 技巧，即将 Muon 优化器的更新 RMS 固定为 0.2，以便直接复用 Adam 的学习率和权重衰减。文章试图从理论上解释这一经验常数的来源。<br /><strong>Keywords:</strong> Adam optimizer, update RMS, Muon optimizer, LLM training, learning rate transfer, beta1, beta2<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 5, Safety: 1, Technicality: 4, Surprisal: 3<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other<br /><strong>Authors:</strong> 苏剑林</div>
+<p>众所周知，我们很早就开始尝试将Muon用于大规模LLM的训练。特别地，在<a href="https://kexue.fm/archives/10739" target="_blank">《Muon续集：为什么我们选择尝试Muon？》</a>中，我们提出了“Match Adam Update RMS”的技巧，以便快速从Adam迁移到Muon上，这个技巧同样用到了Kimi K2的训练中。该技巧是指将Muon的Update RMS统一成0.2，这使得我们复用Adam的学习率和权重衰减率。</p><p>这一技巧的背后，是我们观察到Adam的Update RMS约等于0.2，并且这一现象是稳定且可复现的。这便引发了一个有趣的问题：为什么Adam的Update RMS是0.2？我们可以从理论上解释它吗？</p><h2>问题引入</h2><p>首先描述一下现象：从实验中我们观察到，大致上在Warmup结束、模型进入正式训练后，Adam的Update RMS几乎都保持在0.2～0.3之间，并且不同尺寸的模型也呈现出相似的规律。这些模型的共同点是都用Adam训练，参数是$\beta_1=0.9,\beta_2=0.95$。由于共性很明显，所以这大概率不是巧合，因此笔者尝试分析背后的原理。</p><p class="more"><a href="https://kexue.fm/archives/11267" title="为什么Adam的Update RMS是0.2？">[...]</a></p>
+<div><strong>Authors:</strong> 苏剑林</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "The article discusses an observed phenomenon that the root mean square (RMS) of Adam optimizer updates remains around 0.2–0.3 during large‑scale LLM training with beta1=0.9 and beta2=0.95, and questions why this value appears consistently. It mentions a technique called \"Match Adam Update RMS\" used to transfer from Adam to the Muon optimizer by fixing Muon's update RMS to 0.2, enabling reuse of learning rate and weight decay settings. The post seeks theoretical explanations for this empirical constant.", "summary_cn": "本文讨论了在大规模语言模型训练中，使用 Adam 优化器（beta1=0.9、beta2=0.95）时，其更新的均方根（RMS）大约保持在 0.2 到 0.3 之间的现象，并提出了 \"Match Adam Update RMS\" 技巧，即将 Muon 优化器的更新 RMS 固定为 0.2，以便直接复用 Adam 的学习率和权重衰减。文章试图从理论上解释这一经验常数的来源。", "keywords": "Adam optimizer, update RMS, Muon optimizer, LLM training, learning rate transfer, beta1, beta2", "scoring": {"interpretability": 2, "understanding": 5, "safety": 1, "technicality": 4, "surprisal": 3}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}, "authors": ["苏剑林"]}
+]]></acme>
+
+<pubDate>Tue, 02 Sep 2025 17:35:00 +0800</pubDate>
+</item>
+<item>
+<title>重新思考学习率与Batch Size（一）：现状</title>
+<link>https://kexue.fm/archives/11260</link>
+<guid>https://kexue.fm/archives/11260</guid>
+<content:encoded><![CDATA[
+<div><strong>Summary:</strong> This article revisits the relationship between learning rate and batch size, reviewing the classic second-order analysis introduced by OpenAI and highlighting its complexity when applied to non‑SGD optimizers. It proposes a simplified derivation pathway that is more general and lightweight, and explores how the analysis might be extended to the Muon optimizer. The goal is to provide clearer theoretical insight and practical guidance for scaling hyperparameters across different optimizers.<br /><strong>Summary (CN):</strong> 本文重新审视学习率与批次大小的关系，回顾了 OpenAI 提出的二阶近似分析，并指出该方法在非 SGD 优化器下计算复杂。作者提出了一条更通用、更简洁的推导路径，并探讨了将该分析推广到 Muon 优化器的可能性，旨在为不同优化器的超参数缩放提供更清晰的理论指导。<br /><strong>Keywords:</strong> learning rate scaling, batch size, optimizer, second-order analysis, Muon optimizer, SGD, hyperparameter theory, training dynamics<br /><strong>Scores:</strong> Interpretability: 2, Understanding: 6, Safety: 1, Technicality: 7, Surprisal: 5<br /><strong>Categories:</strong> Failure mode - non-applicable; Primary focus - other<br /><strong>Authors:</strong> 苏剑林</div>
+<p>在之前的文章<a href="https://kexue.fm/archives/10542" target="_blank">《当Batch Size增大时，学习率该如何随之变化？》</a>和<a href="https://kexue.fm/archives/10563" target="_blank">《Adam的epsilon如何影响学习率的Scaling Law？》</a>中，我们从理论上讨论了学习率随Batch Size的变化规律，其中比较经典的部分是由OpenAI提出的展开到二阶的分析。然而，当我们要处理非SGD优化器时，这套分析方法的计算过程往往会相当复杂，有种无从下手的感觉。</p><p>接下来的几篇文章，笔者将重新整理和思考上述文章中的相关细节，尝试简化其中的一些推导步骤，给出一条更通用、更轻盈的推导路径，并且探讨推广到Muon优化器的可能性。</p><h2>方法大意</h2><p>首先回顾一下之前的分析方法。在<a href="https://kexue.fm/archives/10542" target="_blank">《当Batch Size增大时，学习率该如何随之变化？》</a>中，我们介绍了多种分析学习率与Batch Size规律的思路，其中OpenAI在<a href="https://arxiv.org/abs/1812.06162" target="_blank">《An Empirical Model of Large-Batch Training》</a>提出的二阶近似分析占了主要篇幅，本文也是沿用同样的思路。</p><p class="more"><a href="https://kexue.fm/archives/11260" title="重新思考学习率与Batch Size（一）：现状">[...]</a></p>
+<div><strong>Authors:</strong> 苏剑林</div>
+]]></content:encoded>
+<acme type="application/json"><![CDATA[
+{"summary": "This article revisits the relationship between learning rate and batch size, reviewing the classic second-order analysis introduced by OpenAI and highlighting its complexity when applied to non‑SGD optimizers. It proposes a simplified derivation pathway that is more general and lightweight, and explores how the analysis might be extended to the Muon optimizer. The goal is to provide clearer theoretical insight and practical guidance for scaling hyperparameters across different optimizers.", "summary_cn": "本文重新审视学习率与批次大小的关系，回顾了 OpenAI 提出的二阶近似分析，并指出该方法在非 SGD 优化器下计算复杂。作者提出了一条更通用、更简洁的推导路径，并探讨了将该分析推广到 Muon 优化器的可能性，旨在为不同优化器的超参数缩放提供更清晰的理论指导。", "keywords": "learning rate scaling, batch size, optimizer, second-order analysis, Muon optimizer, SGD, hyperparameter theory, training dynamics", "scoring": {"interpretability": 2, "understanding": 6, "safety": 1, "technicality": 7, "surprisal": 5}, "category": {"failure_mode_addressed": "non-applicable", "primary_focus": "other"}, "authors": ["苏剑林"]}
+]]></acme>
+
+<pubDate>Mon, 01 Sep 2025 11:10:00 +0800</pubDate>
+</item>
+</channel>
+</rss>
